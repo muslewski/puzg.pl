@@ -1,0 +1,22 @@
+{
+  "LocaleLayout": {
+    "title": "PUZG"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, pl {🇵🇱 Polski} en {🇺🇸 English} other {Unknown}}"
+  },
+  "Navigation": {
+    "home": "Public Vocational College in Grudziądz",
+    "about": "About Us"
+  },
+  "HomePage": {
+    "title": "Public Vocational College in Grudziądz",
+    "description": "Learn more about our company and what we do.",
+    "about": "Go to the about page"
+  },
+  "AboutPage": {
+    "title": "About Us",
+    "description": "Learn more about our company and what we do."
+  }
+}

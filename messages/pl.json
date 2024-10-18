@@ -1,0 +1,22 @@
+{
+  "LocaleLayout": {
+    "title": "PUZG"
+  },
+  "LocaleSwitcher": {
+    "label": "Zmień język",
+    "locale": "{locale, select, pl {🇵🇱 Polski} en {🇺🇸 English} other {Nieznany}}"
+  },
+  "Navigation": {
+    "home": "Publiczna Uczelnia Zawodowa w Grudziądzu",
+    "about": "O Nas"
+  },
+  "HomePage": {
+    "title": "Publiczna Uczelnia Zawodowa w Grudziądzu",
+    "description": "Dowiedz się więcej o naszej firmie i czym się zajmujemy.",
+    "about": "Przejdź na stronę O nas"
+  },
+  "AboutPage": {
+    "title": "O Nas",
+    "description": "Dowiedz się więcej o naszej firmie i czym się zajmujemy."
+  }
+}
