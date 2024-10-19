@@ -38,3 +38,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## Examples
 
 - https://github.com/amannn/next-intl/tree/main/examples/example-app-router
+  https://next-intl-example-app-router.vercel.app/en
