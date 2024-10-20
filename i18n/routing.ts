@@ -18,6 +18,10 @@ export const routing = defineRouting({
       pl: "/o-nas",
       en: "/about-us",
     },
+    "/instytut": {
+      pl: "/instytut",
+      en: "/institute",
+    },
   },
 });
 

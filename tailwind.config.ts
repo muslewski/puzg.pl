@@ -19,8 +19,11 @@ const config: Config = {
         montserrat: ["var(--font-montserrat)"],
         outfit: ["var(--font-outfit)"],
       },
+      boxShadow: {
+        inner2: "inset 0 2px 4px 0 rgb(0 0 0 / 0.05)",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animated")],
 };
 export default config;

@@ -19,11 +19,13 @@ export default function LocaleButtons() {
   }
 
   return (
-    <div className="flex gap-2 self-end">
+    <div className="flex gap-6 self-end font-outfit text-base">
       <button
+        title="Zmień język na Polski"
         className={clsx(
-          isPending && "transition-opacity [&:disabled]:opacity-30",
-          currentLocale !== "pl" && "opacity-70"
+          "text-brandDark transition-all",
+          currentLocale !== "pl" &&
+            "opacity-70 scale-95 hover:scale-100 focus:opacity-95 focus:scale-110"
         )}
         onClick={() => changeLanguage("pl")}
         disabled={isPending}
@@ -31,9 +33,11 @@ export default function LocaleButtons() {
         PL
       </button>
       <button
+        title="Zmień język na Angielski"
         className={clsx(
-          isPending && "transition-opacity [&:disabled]:opacity-30",
-          currentLocale !== "en" && "opacity-70"
+          "text-brandDark transition-all",
+          currentLocale !== "en" &&
+            "opacity-70 scale-95 hover:scale-100 focus:opacity-95 focus:scale-110"
         )}
         onClick={() => changeLanguage("en")}
         disabled={isPending}
