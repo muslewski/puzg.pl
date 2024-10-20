@@ -4,8 +4,8 @@ import TopBar from "@/components/nav/TopBar";
 
 export default function Navigation() {
   return (
-    <div className="w-full flex justify-center">
-      <nav className="flex flex-col gap-4 w-full max-w-[2000px] py-12 px-36">
+    <div className="w-screen flex justify-center fixed">
+      <nav className="flex flex-col gap-4 w-screen max-w-[2000px] py-12 px-36">
         <LocaleButtons />
         <TopBar />
         <Links />

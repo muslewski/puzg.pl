@@ -9,8 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        brandDark: "#00152E",
+        brandNavyBlue: "#030057",
+        brandPrimaryBlue: "#09547C",
+        brandBrightBlue: "#1F85B1",
+        brandWashedBlue: "#ADCAEC",
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],

@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 
 type Props = {
   params: { locale: string };
@@ -27,6 +28,7 @@ export default function HomePage({ params: { locale } }: Props) {
     <div className="">
       {t("title")}
       <p className="text-5xl">
+        {/* <Image priority /> */}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a
         turpis iaculis quam congue efficitur sed quis dolor. Suspendisse ac
         elementum neque. In et metus nec elit vulputate porta. Nunc hendrerit
