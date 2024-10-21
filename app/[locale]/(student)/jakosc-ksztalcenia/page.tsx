@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 
@@ -5,7 +6,9 @@ type Props = {
   params: { locale: string };
 };
 
-export async function generateMetadata({ params: { locale } }: Props) {
+export async function generateMetadata({
+  params: { locale },
+}: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "AboutPage" });
 
   return {
@@ -14,10 +17,11 @@ export async function generateMetadata({ params: { locale } }: Props) {
   };
 }
 
-export default function AboutPage({ params: { locale } }: Props) {
+export default function JakoscKsztalceniaPage({ params: { locale } }: Props) {
   // Enable static rendering
   unstable_setRequestLocale(locale);
 
   const t = useTranslations("AboutPage");
-  return <div className="">{t("title")}</div>;
+
+  return <div>Jakość Kształcenia</div>;
 }

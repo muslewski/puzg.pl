@@ -14,13 +14,98 @@ export const routing = defineRouting({
   // paths are rewritten to the shared, internal ones.
   pathnames: {
     "/": "/",
-    "/o-nas": {
-      pl: "/o-nas",
-      en: "/about-us",
+
+    // Uczelnia
+    "/aktualnosci": {
+      pl: "/aktualnosci",
+      en: "/news",
     },
+    "/o-uczelni": {
+      pl: "/o-uczelni",
+      en: "/about-college",
+    },
+    "/wladze-uczelni": {
+      pl: "/wladze-uczelni",
+      en: "/college-authorities",
+    },
+
+    // Student
+    "/dziekanat": {
+      pl: "/dziekanat",
+      en: "/deanery",
+    },
+    "/jakosc-ksztalcenia": {
+      pl: "/jakosc-ksztalcenia",
+      en: "/education-quality",
+    },
+    "/kierunki-studiow": {
+      pl: "/kierunki-studiow",
+      en: "/fields-of-study",
+    },
+    "/organizacja-roku-akademickiego": {
+      pl: "/organizacja-roku-akademickiego",
+      en: "/academic-year-organization",
+    },
+    "/program-studiow": {
+      pl: "/program-studiow",
+      en: "/study-program",
+    },
+    "/regulamin-studiow": {
+      pl: "/regulamin-studiow",
+      en: "/study-regulations",
+    },
+
+    // Pracownik
+    "/oferty-pracy": {
+      pl: "/oferty-pracy",
+      en: "/job-offers",
+    },
+    "/ustawy-i-rozporzadzenia-mnisw": {
+      pl: "/ustawy-i-rozporzadzenia-mnisw",
+      en: "/laws-and-regulations-mnisw",
+    },
+    "/zasady-tworzenia-prowadzenia-i-likwidacji-kierunkow-studiow": {
+      pl: "/zasady-tworzenia-prowadzenia-i-likwidacji-kierunkow-studiow",
+      en: "/rules-for-creating-conducting-and-closing-study-programs",
+    },
+
+    // Rekrutacja
+    "/akty-prawne": {
+      pl: "/akty-prawne",
+      en: "/legal-acts",
+    },
+    "/elektroniczna-rejestracja-kandydata": {
+      pl: "/elektroniczna-rejestracja-kandydata",
+      en: "/electronic-candidate-registration",
+    },
+    "/limit-przyjec-na-studia": {
+      pl: "/limit-przyjec-na-studia",
+      en: "/admission-limits",
+    },
+    "/oplata-rekrutacyjna": {
+      pl: "/oplata-rekrutacyjna",
+      en: "/recruitment-fee",
+    },
+    "/rekrutacja-krok-po-kroku": {
+      pl: "/rekrutacja-krok-po-kroku",
+      en: "/recruitment-step-by-step",
+    },
+    "/terminarz-rekrutacji": {
+      pl: "/terminarz-rekrutacji",
+      en: "/recruitment-schedule",
+    },
+
     "/instytut": {
       pl: "/instytut",
       en: "/institute",
+    },
+    "/wspolpraca": {
+      pl: "/wspolpraca",
+      en: "/collaboration",
+    },
+    "/kontakt": {
+      pl: "/kontakt",
+      en: "/contact",
     },
   },
 });

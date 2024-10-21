@@ -1,13 +1,16 @@
 import SearchBox from "@/components/nav/SearchBox";
 import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function TopBar() {
+  const t = useTranslations("TopBar");
+
   return (
     <div className="w-full flex justify-between items-center">
       <Link
         href="/"
-        title="Przejdź na stronę główną"
+        title={t("homeLinkTitle")}
         className="flex items-center gap-6 h-16"
       >
         <div className="relative w-[50px] h-[59px]">
@@ -15,7 +18,7 @@ export default function TopBar() {
             src="/images/Herb_Polski.svg"
             fill
             sizes="50px"
-            alt="Herb Polski"
+            alt={t("emblemAlt")}
             className="object-contain"
           />
         </div>
@@ -24,16 +27,16 @@ export default function TopBar() {
             src="/images/Logo.svg"
             fill
             sizes="62px"
-            alt="Logo Publicznej Uczelni Zawodowej w Grudziądzu"
+            alt={t("logoAlt")}
             className="object-contain"
           />
         </div>
         <h3 className="font-outfit text-xl font-normal max-w-56 text-brandDark">
-          Publiczna Uczelnia Zawodowa w Grudziądzu
+          {t("home")}
         </h3>
       </Link>
 
-      <SearchBox />
+      <SearchBox placeholderText={t("search")} buttonText={t("searchButton")} />
     </div>
   );
 }

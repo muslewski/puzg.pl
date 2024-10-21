@@ -5,7 +5,7 @@ import TopBar from "@/components/nav/TopBar";
 export default function Navigation() {
   return (
     <div className="w-screen flex justify-center fixed">
-      <nav className="flex flex-col items-center gap-4 w-screen max-w-[2000px] py-12 px-24 2xl:px-36">
+      <nav className="flex flex-col items-center gap-5 w-screen 2xl:w-10/12 3xl:w-4/5 max-w-[2000px] py-12 px-24 3xl:px-36">
         <LocaleButtons />
         <TopBar />
         <Links />

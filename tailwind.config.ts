@@ -22,6 +22,9 @@ const config: Config = {
       boxShadow: {
         inner2: "inset 0 2px 4px 0 rgb(0 0 0 / 0.05)",
       },
+      screens: {
+        "3xl": "1750px",
+      },
     },
   },
   plugins: [require("tailwindcss-animated")],

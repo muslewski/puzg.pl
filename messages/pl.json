@@ -2,13 +2,44 @@
   "LocaleLayout": {
     "title": "PUZG"
   },
-  "LocaleSwitcher": {
-    "label": "Zmień język",
-    "locale": "{locale, select, pl {🇵🇱 Polski} en {🇺🇸 English} other {Nieznany}}"
-  },
-  "Navigation": {
+  "TopBar": {
     "home": "Publiczna Uczelnia Zawodowa w Grudziądzu",
-    "about": "O Nas"
+    "homeLinkTitle": "Przejdź na stronę główną",
+    "logoAlt": "Logo Publicznej Uczelni Zawodowej w Grudziądzu",
+    "emblemAlt": "Herb Polski",
+    "search": "Czego szukasz?",
+    "searchButton": "Szukaj"
+  },
+  "Links": {
+    "college": "Uczelnia",
+    "news": "Aktualności",
+    "aboutCollege": "O Uczelni",
+    "collegeAuthorities": "Władze Uczelni",
+
+    "student": "Student",
+    "deanery": "Dziekanat",
+    "educationQuality": "Jakość Kształcenia",
+    "fieldsOfStudy": "Kierunki Studiów",
+    "academicYearOrganization": "Organizacja Roku Akademickiego",
+    "studyProgram": "Program Studiów",
+    "studyRegulations": "Regulamin Studiów",
+
+    "employee": "Pracownik",
+    "jobOffers": "Oferty Pracy",
+    "lawsAndRegulations": "Ustawy i Rozporządzenia MNiSW",
+    "rulesForStudyPrograms": "Zasady Tworzenia, Prowadzenia i Likwidacji Kierunków Studiów",
+
+    "recruitment": "Rekrutacja",
+    "legalActs": "Akty Prawne",
+    "electronicRegistration": "Elektroniczna Rejestracja Kandydata",
+    "admissionLimits": "Limit Przyjęć na Studia",
+    "recruitmentFee": "Opłata Rekrutacyjna",
+    "recruitmentStepByStep": "Rekrutacja Krok po Kroku",
+    "recruitmentSchedule": "Terminarz Rekrutacji",
+
+    "institute": "Instytut",
+    "collaboration": "Współpraca",
+    "contact": "Kontakt"
   },
   "HomePage": {
     "title": "Publiczna Uczelnia Zawodowa w Grudziądzu",

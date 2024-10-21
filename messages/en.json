@@ -2,13 +2,44 @@
   "LocaleLayout": {
     "title": "PUZG"
   },
-  "LocaleSwitcher": {
-    "label": "Change language",
-    "locale": "{locale, select, pl {🇵🇱 Polski} en {🇺🇸 English} other {Unknown}}"
-  },
-  "Navigation": {
+  "TopBar": {
     "home": "Public Vocational College in Grudziądz",
-    "about": "About Us"
+    "homeLinkTitle": "Go to the home page",
+    "logoAlt": "Logo of the Public Vocational School in Grudziądz",
+    "emblemAlt": "Coat of arms of Poland",
+    "search": "What are you looking for?",
+    "searchButton": "Search"
+  },
+  "Links": {
+    "college": "College",
+    "news": "News",
+    "aboutCollege": "About College",
+    "collegeAuthorities": "University Authorities",
+
+    "student": "Student",
+    "deanery": "Deanery",
+    "educationQuality": "Education Quality",
+    "fieldsOfStudy": "Fields of Study",
+    "academicYearOrganization": "Academic Year Organization",
+    "studyProgram": "Study Program",
+    "studyRegulations": "Study Regulations",
+
+    "employee": "Employee",
+    "jobOffers": "Job Offers",
+    "lawsAndRegulations": "Laws and Regulations MNiSW",
+    "rulesForStudyPrograms": "Rules for Creating, Conducting, and Closing Study Programs",
+
+    "recruitment": "Recruitment",
+    "legalActs": "Legal Acts",
+    "electronicRegistration": "Electronic Candidate Registration",
+    "admissionLimits": "Admission Limits",
+    "recruitmentFee": "Recruitment Fee",
+    "recruitmentStepByStep": "Recruitment Step by Step",
+    "recruitmentSchedule": "Recruitment Schedule",
+
+    "institute": "Institute",
+    "collaboration": "Collaboration",
+    "contact": "Contact"
   },
   "HomePage": {
     "title": "Public Vocational College in Grudziądz",

@@ -2,66 +2,78 @@ import NavigationLink from "@/components/nav/NavigationLink";
 import { useTranslations } from "next-intl";
 
 export default function Links() {
-  const t = useTranslations("Navigation");
+  const t = useTranslations("Links");
 
   return (
-    <div className="flex justify-evenly gap-4 w-full px-14 py-2 bg-brandPrimaryBlue rounded-t-xl rounded-b-[2rem] border-t-2 border-brandDark shadow-md">
+    <div className="flex justify-evenly gap-2 w-full px-6 py-2 bg-brandPrimaryBlue rounded-t-xl rounded-b-[2rem] border-t-2 border-brandDark shadow-md">
       <NavigationLink
-        href="/o-nas"
         submenu={[
-          { label: "Aktualności", href: "/o-nas" },
-          { label: "O Uczelni", href: "/o-nas" },
-          { label: "Władze Uczelni", href: "/o-nas" },
+          { label: t("news"), href: "/aktualnosci" },
+          { label: t("contact"), href: "/kontakt" },
+          { label: t("aboutCollege"), href: "/o-uczelni" },
+          { label: t("collegeAuthorities"), href: "/wladze-uczelni" },
         ]}
         submenuWidth={7}
       >
-        Uczelnia
+        {t("college")}
       </NavigationLink>
       <NavigationLink
-        href="/o-nas"
         submenu={[
-          { label: "Dziekanat", href: "/o-nas" },
-          { label: "Regulamin studiów", href: "/o-nas" },
-          { label: "Organizacja roku akademickiego", href: "/o-nas" },
-          { label: "Kierunki studiów", href: "/o-nas" },
-          { label: "Program studiów", href: "/o-nas" },
-          { label: "Jakość kształcenia", href: "/o-nas" },
-        ]}
-        submenuWidth={9}
-      >
-        Student
-      </NavigationLink>
-      <NavigationLink
-        href="/o-nas"
-        submenu={[
-          { label: "Oferty pracy", href: "/o-nas" },
+          { label: t("deanery"), href: "/dziekanat" },
+          { label: t("educationQuality"), href: "/jakosc-ksztalcenia" },
+          { label: t("fieldsOfStudy"), href: "/kierunki-studiow" },
           {
-            label: "Zasady tworzenia, prowadzenia i likwidacji studiów",
-            href: "/o-nas",
+            label: t("academicYearOrganization"),
+            href: "/organizacja-roku-akademickiego",
           },
-          { label: "Ustawy i rozporządzenia MNiSW", href: "/o-nas" },
+          { label: t("studyProgram"), href: "/program-studiow" },
+          { label: t("studyRegulations"), href: "/regulamin-studiow" },
         ]}
         submenuWidth={9}
       >
-        Pracownik
+        {t("student")}
       </NavigationLink>
       <NavigationLink
-        href="/o-nas"
         submenu={[
-          { label: "Rekrutacja krok po kroku", href: "/o-nas" },
-          { label: "Elektroniczna rejestracja kandydata", href: "/o-nas" },
-          { label: "Akty prawne", href: "/o-nas" },
-          { label: "Terminarz rekrutacji", href: "/o-nas" },
-          { label: "Limit przyjęć na studia", href: "/o-nas" },
-          { label: "Opłata rekrutacyjna", href: "/o-nas" },
+          { label: t("jobOffers"), href: "/oferty-pracy" },
+          {
+            label: t("lawsAndRegulations"),
+            href: "/ustawy-i-rozporzadzenia-mnisw",
+          },
+          {
+            label: t("rulesForStudyPrograms"),
+            href: "/zasady-tworzenia-prowadzenia-i-likwidacji-kierunkow-studiow",
+          },
+        ]}
+        submenuWidth={9}
+      >
+        {t("employee")}
+      </NavigationLink>
+      <NavigationLink
+        submenu={[
+          { label: t("legalActs"), href: "/akty-prawne" },
+          {
+            label: t("electronicRegistration"),
+            href: "/elektroniczna-rejestracja-kandydata",
+          },
+          {
+            label: t("admissionLimits"),
+            href: "/limit-przyjec-na-studia",
+          },
+          { label: t("recruitmentFee"), href: "/oplata-rekrutacyjna" },
+          {
+            label: t("recruitmentStepByStep"),
+            href: "/rekrutacja-krok-po-kroku",
+          },
+          { label: t("recruitmentSchedule"), href: "/terminarz-rekrutacji" },
         ]}
         submenuWidth={10}
       >
-        Rekrutacja
+        {t("recruitment")}
       </NavigationLink>
-      <NavigationLink href="/instytut">Instytut</NavigationLink>
-      <NavigationLink href="/instytut">Współpraca</NavigationLink>
-      <NavigationLink href="/instytut">Kontakt</NavigationLink>
+      <NavigationLink href="/instytut">{t("institute")}</NavigationLink>
+      <NavigationLink href="/wspolpraca">{t("collaboration")}</NavigationLink>
+      <NavigationLink href="/kontakt">{t("contact")}</NavigationLink>
     </div>
   );
 }

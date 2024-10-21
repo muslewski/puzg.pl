@@ -9,7 +9,7 @@ type Props = {
 export async function generateMetadata({
   params: { locale },
 }: Props): Promise<Metadata> {
-  const t = await getTranslations({ locale, namespace: "HomePage" });
+  const t = await getTranslations({ locale, namespace: "AboutPage" });
 
   return {
     title: t("title"),
@@ -17,16 +17,11 @@ export async function generateMetadata({
   };
 }
 
-export default function HomePage({ params: { locale } }: Props) {
+export default function DziekanatPage({ params: { locale } }: Props) {
   // Enable static rendering
   unstable_setRequestLocale(locale);
 
-  const t = useTranslations("HomePage");
+  const t = useTranslations("AboutPage");
 
-  return (
-    <div className="">
-      {t("title")}
-      <p className="text-5xl">{/* <Image priority /> */}</p>
-    </div>
-  );
+  return <div>Dziekanat</div>;
 }
