@@ -27,6 +27,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animated")],
+  plugins: [],
 };
 export default config;

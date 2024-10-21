@@ -46,6 +46,11 @@
     "description": "Learn more about our company and what we do.",
     "about": "Go to the about page"
   },
+  "NotFoundPage": {
+    "title": "Page Not Found",
+    "description": "It seems we've hit a dead end. The page you were trying to reach may have been moved, renamed, or might no longer exist.",
+    "h1": "Oops! The page you're looking for isn't here."
+  },
   "AboutPage": {
     "title": "About Us",
     "description": "Learn more about our company and what we do."

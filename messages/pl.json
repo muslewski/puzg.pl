@@ -46,6 +46,11 @@
     "description": "Dowiedz się więcej o naszej firmie i czym się zajmujemy.",
     "about": "Przejdź na stronę O nas"
   },
+  "NotFoundPage": {
+    "title": "Strona nie została znaleziona",
+    "description": "Wygląda na to, że dotarliśmy do ślepego zaułka. Strona, do której próbowałeś dotrzeć, mogła zostać przeniesiona lub może już nie istnieć.",
+    "h1": "Ups! Strona, której szukasz, nie istnieje."
+  },
   "AboutPage": {
     "title": "O Nas",
     "description": "Dowiedz się więcej o naszej firmie i czym się zajmujemy."

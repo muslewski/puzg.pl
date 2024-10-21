@@ -4,10 +4,11 @@ import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
   getTranslations,
-  unstable_setRequestLocale,
+  setRequestLocale,
 } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Navigation from "@/components/nav/Navigation";
+import { notFound } from "next/navigation";
 
 type Props = {
   children: React.ReactNode;
@@ -30,12 +31,18 @@ export async function generateMetadata({
     },
   };
 }
+
 export default async function LocaleLayout({
   children,
   params: { locale },
 }: Props) {
+  // Ensure that the incoming `locale` is valid
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+
   // Enable static rendering
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
 
   // Providing all messages to the client
   // side is the easiest way to get started
