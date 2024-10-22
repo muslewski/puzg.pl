@@ -3,13 +3,7 @@
 import { Link, Pathnames } from "@/i18n/routing";
 import clsx from "clsx";
 import { useSelectedLayoutSegment } from "next/navigation";
-import {
-  ComponentProps,
-  useCallback,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import { ComponentProps, useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { AnimatePresence, motion } from "framer-motion";
 

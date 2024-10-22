@@ -14,7 +14,7 @@
     "college": "College",
     "news": "News",
     "aboutCollege": "About College",
-    "collegeAuthorities": "University Authorities",
+    "collegeAuthorities": "College Authorities",
 
     "student": "Student",
     "deanery": "Deanery",
@@ -43,16 +43,100 @@
   },
   "HomePage": {
     "title": "Public Vocational College in Grudziądz",
-    "description": "Learn more about our company and what we do.",
-    "about": "Go to the about page"
+    "description": "Learn more about our college, educational offer, and initiatives supporting the professional and scientific development of students."
   },
   "NotFoundPage": {
     "title": "Page Not Found",
-    "description": "It seems we've hit a dead end. The page you were trying to reach may have been moved, renamed, or might no longer exist.",
-    "h1": "Oops! The page you're looking for isn't here."
+    "description": "We're sorry, but the page you're looking for doesn't exist or has been moved. Check the URL or return to the homepage.",
+    "h1": "Oops! The page you're looking for doesn't exist."
   },
-  "AboutPage": {
-    "title": "About Us",
-    "description": "Learn more about our company and what we do."
+
+  "OfertyPracyPage": {
+    "title": "Job Offers",
+    "description": "Find current competitions for teaching and research-teaching positions. Check legal acts and download necessary documents."
+  },
+  "UstawyMNiSWPage": {
+    "title": "Laws and Regulations MNiSW",
+    "description": "Get acquainted with the current laws and regulations of the Ministry of Science and Higher Education related to higher education."
+  },
+  "ZasadyTworzeniaKierunkowStudiowPage": {
+    "title": "Rules for Creating, Conducting, and Closing Study Programs",
+    "description": "Learn about the rules for creating, running, and closing study programs at our college."
+  },
+
+  "AktyPrawnePage": {
+    "title": "Legal Acts",
+    "description": "Overview of legal acts concerning the functioning of our college and higher education in Poland."
+  },
+  "ElektronicznaRejestracjaPage": {
+    "title": "Electronic Candidate Registration",
+    "description": "Register online to participate in the admission process for studies at our college."
+  },
+  "LimitPrzyjecNaStudiaPage": {
+    "title": "Admission Limits",
+    "description": "Check the limits for available study programs in the current recruitment process."
+  },
+  "OplataRekrutacyjnaPage": {
+    "title": "Recruitment Fee",
+    "description": "Find out the amount of the recruitment fee and how it can be paid."
+  },
+  "RekrutacjaKrokPoKrokuPage": {
+    "title": "Recruitment Step by Step",
+    "description": "Learn about the recruitment process and the stages of registering for studies."
+  },
+  "TerminarzRekrutacjiPage": {
+    "title": "Recruitment Schedule",
+    "description": "Check key recruitment dates, such as document submission and result announcements."
+  },
+
+  "DziekanatPage": {
+    "title": "Deanery",
+    "description": "Contact the deanery and get information on academic progress and administrative matters."
+  },
+  "JakoscKsztalceniaPage": {
+    "title": "Education Quality",
+    "description": "Learn how we ensure high-quality education at our college and what initiatives we undertake in this regard."
+  },
+  "KierunkiStudiowPage": {
+    "title": "Fields of Study",
+    "description": "Explore the available fields of study at our college and find the right program for you."
+  },
+  "OrganizacjaRokuAkademickiegoPage": {
+    "title": "Academic Year Organization",
+    "description": "Check the academic calendar, including semester start and end dates and holiday breaks."
+  },
+  "ProgramStudiowPage": {
+    "title": "Study Program",
+    "description": "Familiarize yourself with study programs, required subjects, and the curriculum for different fields."
+  },
+  "RegulaminStudiowPage": {
+    "title": "Study Regulations",
+    "description": "Read the study regulations in force at our college, including student rights and obligations."
+  },
+
+  "AktualnosciPage": {
+    "title": "News",
+    "description": "Stay updated with the latest events, announcements, and information related to college life."
+  },
+  "OUczelniPage": {
+    "title": "About College",
+    "description": "Learn more about our college's history, mission, values, and available study programs."
+  },
+  "WladzeUczelniPage": {
+    "title": "College Authorities",
+    "description": "Meet the college authorities and find out who is responsible for various fields of its functioning."
+  },
+
+  "InstytutPage": {
+    "title": "Institute",
+    "description": "Get acquainted with the activities of our institutes, ongoing research, and educational offerings."
+  },
+  "KontaktPage": {
+    "title": "Contact",
+    "description": "Reach out to us via email, phone, or visit us in person. Check contact details."
+  },
+  "WspolpracaPage": {
+    "title": "Collaboration",
+    "description": "Discover collaboration opportunities with our university in the fields of scientific projects, teaching, and professional development."
   }
 }

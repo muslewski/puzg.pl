@@ -9,7 +9,7 @@ type Props = {
 export async function generateMetadata({
   params: { locale },
 }: Props): Promise<Metadata> {
-  const t = await getTranslations({ locale, namespace: "AboutPage" });
+  const t = await getTranslations({ locale, namespace: "WladzeUczelniPage" });
 
   return {
     title: t("title"),
@@ -21,7 +21,7 @@ export default function WladzeUczelniPage({ params: { locale } }: Props) {
   // Enable static rendering
   setRequestLocale(locale);
 
-  const t = useTranslations("AboutPage");
+  const t = useTranslations("WladzeUczelniPage");
 
   return <div>Władze Uczelni</div>;
 }

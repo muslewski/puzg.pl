@@ -43,16 +43,100 @@
   },
   "HomePage": {
     "title": "Publiczna Uczelnia Zawodowa w Grudziądzu",
-    "description": "Dowiedz się więcej o naszej firmie i czym się zajmujemy.",
-    "about": "Przejdź na stronę O nas"
+    "description": "Poznaj naszą uczelnię, ofertę edukacyjną oraz inicjatywy wspierające rozwój zawodowy i naukowy studentów."
   },
   "NotFoundPage": {
     "title": "Strona nie została znaleziona",
-    "description": "Wygląda na to, że dotarliśmy do ślepego zaułka. Strona, do której próbowałeś dotrzeć, mogła zostać przeniesiona lub może już nie istnieć.",
+    "description": "Przepraszamy, ale strona, której szukasz, nie istnieje lub została przeniesiona. Sprawdź adres URL lub wróć na stronę główną.",
     "h1": "Ups! Strona, której szukasz, nie istnieje."
   },
-  "AboutPage": {
-    "title": "O Nas",
-    "description": "Dowiedz się więcej o naszej firmie i czym się zajmujemy."
+
+  "OfertyPracyPage": {
+    "title": "Oferty Pracy",
+    "description": "Znajdź aktualne konkursy na stanowiska dydaktyczne i badawczo-dydaktyczne. Sprawdź akty prawne oraz pobierz niezbędne dokumenty."
+  },
+  "UstawyMNiSWPage": {
+    "title": "Ustawy i Rozporządzenia MNiSW",
+    "description": "Zapoznaj się z aktualnymi ustawami i rozporządzeniami Ministerstwa Nauki i Szkolnictwa Wyższego dotyczącymi szkolnictwa wyższego."
+  },
+  "ZasadyTworzeniaKierunkowStudiowPage": {
+    "title": "Zasady Tworzenia, Prowadzenia i Likwidacji Kierunków Studiów",
+    "description": "Dowiedz się, jakie są zasady tworzenia, prowadzenia oraz zamykania kierunków studiów na naszej uczelni."
+  },
+
+  "AktyPrawnePage": {
+    "title": "Akty Prawne",
+    "description": "Przegląd aktów prawnych dotyczących funkcjonowania naszej uczelni oraz szkolnictwa wyższego w Polsce."
+  },
+  "ElektronicznaRejestracjaPage": {
+    "title": "Elektroniczna Rejestracja Kandydata",
+    "description": "Zarejestruj się online, aby wziąć udział w procesie rekrutacji na studia na naszej uczelni."
+  },
+  "LimitPrzyjecNaStudiaPage": {
+    "title": "Limit Przyjęć na Studia",
+    "description": "Sprawdź limity miejsc na dostępne kierunki studiów w ramach bieżącej rekrutacji."
+  },
+  "OplataRekrutacyjnaPage": {
+    "title": "Opłata Rekrutacyjna",
+    "description": "Dowiedz się, jaka jest wysokość opłaty rekrutacyjnej oraz w jaki sposób można ją uiścić."
+  },
+  "RekrutacjaKrokPoKrokuPage": {
+    "title": "Rekrutacja Krok po Kroku",
+    "description": "Zapoznaj się z procesem rekrutacyjnym i poznaj poszczególne etapy rejestracji na studia."
+  },
+  "TerminarzRekrutacjiPage": {
+    "title": "Terminarz Rekrutacji",
+    "description": "Sprawdź kluczowe terminy rekrutacyjne na studia, takie jak składanie dokumentów i ogłoszenie wyników."
+  },
+
+  "DziekanatPage": {
+    "title": "Dziekanat",
+    "description": "Skontaktuj się z dziekanatem i uzyskaj informacje dotyczące toku studiów oraz spraw administracyjnych."
+  },
+  "JakoscKsztalceniaPage": {
+    "title": "Jakość Kształcenia",
+    "description": "Dowiedz się, jak dbamy o wysoką jakość kształcenia na naszej uczelni oraz jakie inicjatywy podejmujemy w tym zakresie."
+  },
+  "KierunkiStudiowPage": {
+    "title": "Kierunki Studiów",
+    "description": "Poznaj dostępne kierunki studiów na naszej uczelni i znajdź odpowiedni program edukacyjny dla siebie."
+  },
+  "OrganizacjaRokuAkademickiegoPage": {
+    "title": "Organizacja Roku Akademickiego",
+    "description": "Sprawdź kalendarz roku akademickiego, w tym daty rozpoczęcia i zakończenia semestrów oraz przerwy świąteczne."
+  },
+  "ProgramStudiowPage": {
+    "title": "Program Studiów",
+    "description": "Zapoznaj się z programami studiów, wymaganymi przedmiotami i planem nauczania na poszczególnych kierunkach."
+  },
+  "RegulaminStudiowPage": {
+    "title": "Regulamin Studiów",
+    "description": "Przeczytaj regulamin studiów obowiązujący na naszej uczelni, w tym prawa i obowiązki studentów."
+  },
+
+  "AktualnosciPage": {
+    "title": "Aktualności",
+    "description": "Bądź na bieżąco z najnowszymi wydarzeniami, ogłoszeniami i informacjami dotyczącymi życia uczelni."
+  },
+  "OUczelniPage": {
+    "title": "O Uczelni",
+    "description": "Dowiedz się więcej o historii, misji i wartościach naszej uczelni oraz oferowanych kierunkach studiów."
+  },
+  "WladzeUczelniPage": {
+    "title": "Władze Uczelni",
+    "description": "Poznaj skład władz uczelni oraz dowiedz się, kto odpowiada za poszczególne dziedziny jej funkcjonowania."
+  },
+
+  "InstytutPage": {
+    "title": "Instytut",
+    "description": "Zapoznaj się z działalnością naszych instytutów, prowadzonymi badaniami oraz ofertą edukacyjną."
+  },
+  "KontaktPage": {
+    "title": "Kontakt",
+    "description": "Skontaktuj się z nami poprzez e-mail, telefon lub odwiedź nas osobiście. Sprawdź szczegóły kontaktowe."
+  },
+  "WspolpracaPage": {
+    "title": "Współpraca",
+    "description": "Odkryj możliwości współpracy z naszą uczelnią w zakresie projektów naukowych, dydaktyki oraz rozwoju zawodowego."
   }
 }
