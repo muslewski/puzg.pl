@@ -1,5 +1,4 @@
 import { montserrat, outfit } from "@/app/fonts";
-import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
