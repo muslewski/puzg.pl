@@ -3,7 +3,7 @@
 import { Link, Pathnames } from "@/i18n/routing";
 import clsx from "clsx";
 import { useSelectedLayoutSegment } from "next/navigation";
-import { ComponentProps, useEffect, useState } from "react";
+import { ComponentProps, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -41,7 +41,7 @@ export default function NavigationLink<Pathname extends Pathnames>({
         <button
           onMouseEnter={() => setIsOpen(true)}
           onMouseLeave={() => setIsOpen(false)}
-          className="inline-flex items-center gap-2 px-4 py-4 transition-colors font-outfit text-lg text-white hover:text-gray-200"
+          className="inline-flex items-center gap-2 px-4 py-2 transition-colors font-outfit text-lg text-white hover:text-gray-200"
           aria-expanded={isOpen}
           aria-haspopup="true"
         >
@@ -85,10 +85,11 @@ export default function NavigationLink<Pathname extends Pathnames>({
                 {submenu.map((item, index) => (
                   <Link
                     key={item.href}
-                    className="font-outfit text-base text-white hover:text-gray-200"
+                    className="relative py-2 font-outfit text-base text-white hover:text-brandWashedBlue active:scale-105 active:text-white  transition-all duration-150 [&>span]:scale-x-0 [&>span]:hover:scale-x-100 [&>span]:focus:bg-brandPrimaryBlue w-fit"
                     href={item.href}
                     role="menuitem"
                   >
+                    <span className="absolute -bottom-0 -left-2 -right-2 h-1 origin-left rounded-full bg-brandWashedBlue transition-all duration-500 ease-out pointer-events-none" />
                     <motion.div
                       initial={{ opacity: 0, y: -10 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -119,13 +120,14 @@ export default function NavigationLink<Pathname extends Pathnames>({
     <Link
       aria-current={isActive ? "page" : undefined}
       className={clsx(
-        "inline-block px-4 py-4 transition-colors font-outfit text-lg",
-        isActive ? "text-gray-200" : "text-white hover:text-gray-200"
+        "relative inline-block px-4 py-2 font-outfit text-lg [&>span]:scale-x-0 [&>span]:hover:scale-x-100 w-fit active:scale-105 active:text-white hover:text-brandWashedBlue transition-all duration-150 [&>span]:focus:bg-brandPrimaryBlue",
+        isActive ? "text-gray-200" : "text-white "
       )}
       href={href}
       {...rest}
     >
       {children}
+      <span className="absolute -bottom-0 -left-2 -right-2 h-1 origin-left rounded-full bg-brandWashedBlue transition-all duration-500 ease-out pointer-events-none" />
     </Link>
   );
 }
