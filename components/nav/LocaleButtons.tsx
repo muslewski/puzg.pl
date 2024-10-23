@@ -25,7 +25,7 @@ export default function LocaleButtons() {
         className={clsx(
           "text-brandDark transition-all",
           currentLocale !== "pl" &&
-            "opacity-70 scale-95 hover:scale-100 focus:opacity-95 focus:scale-110"
+            "opacity-70 scale-95 hover:scale-100 active:opacity-95 active:scale-110"
         )}
         onClick={() => changeLanguage("pl")}
         disabled={isPending}
@@ -37,7 +37,7 @@ export default function LocaleButtons() {
         className={clsx(
           "text-brandDark transition-all",
           currentLocale !== "en" &&
-            "opacity-70 scale-95 hover:scale-100 focus:opacity-95 focus:scale-110"
+            "opacity-70 scale-95 hover:scale-100 active:opacity-95 active:scale-110"
         )}
         onClick={() => changeLanguage("en")}
         disabled={isPending}

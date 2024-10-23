@@ -14,13 +14,20 @@ type SubmenuItem = {
 
 // Extend the props to include submenu items
 type NavigationLinkProps<Pathname extends Pathnames> = Omit<
-  ComponentProps<typeof Link<Pathname>>,
+  ComponentProps<typeof Link>,
   "href"
 > & {
   href?: Pathnames;
   submenu?: SubmenuItem[];
   submenuWidth?: number;
+  children: React.ReactNode;
 };
+
+export function CustomUnderline() {
+  return (
+    <span className="absolute -bottom-0 -left-2 -right-2 h-1 origin-left rounded-full bg-gradient-to-r from-brandWashedBlue to-brandWashedBlue/85 transition-all duration-500 ease-out pointer-events-none" />
+  );
+}
 
 export default function NavigationLink<Pathname extends Pathnames>({
   href,
@@ -32,6 +39,7 @@ export default function NavigationLink<Pathname extends Pathnames>({
   const [isOpen, setIsOpen] = useState(false);
   const path = usePathname();
 
+  // <CustomUnderline /> need to be a children of item with linkStyle
   const linkStyle =
     "relative py-2 text-white font-outfit hover:text-brandWashedBlue active:scale-105 active:text-white  transition-all duration-500 [&>span]:scale-x-0 [&>span]:hover:scale-x-100 [&>span]:focus:bg-brandPrimaryBlue [&>span]:focus:scale-x-0 [&>span]:focus:origin-right w-fit";
 
@@ -91,7 +99,7 @@ export default function NavigationLink<Pathname extends Pathnames>({
                     href={item.href}
                     role="menuitem"
                   >
-                    <span className="absolute -bottom-0 -left-2 -right-2 h-1 origin-left rounded-full bg-brandWashedBlue transition-all duration-500 ease-out pointer-events-none" />
+                    <CustomUnderline />
                     <motion.div
                       initial={{ opacity: 0, y: -10 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -127,7 +135,7 @@ export default function NavigationLink<Pathname extends Pathnames>({
       {...rest}
     >
       {children}
-      <span className="absolute -bottom-0 -left-2 -right-2 h-1 origin-left rounded-full bg-brandWashedBlue transition-all duration-500 ease-out pointer-events-none" />
+      <CustomUnderline />
     </Link>
   );
 }

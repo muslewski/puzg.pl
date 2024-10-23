@@ -11,7 +11,7 @@ export default function TopBar() {
       <Link
         href="/"
         title={t("homeLinkTitle")}
-        className="flex items-center gap-6 h-16"
+        className="flex items-center gap-6 h-16 transition-transform  active:scale-[1.03]"
       >
         <div className="relative w-[50px] h-[59px]">
           <Image
