@@ -1,8 +1,7 @@
 "use client";
 
-import { Link, Pathnames } from "@/i18n/routing";
+import { Link, Pathnames, usePathname } from "@/i18n/routing";
 import clsx from "clsx";
-import { useSelectedLayoutSegment } from "next/navigation";
 import { ComponentProps, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { AnimatePresence, motion } from "framer-motion";
@@ -30,10 +29,11 @@ export default function NavigationLink<Pathname extends Pathnames>({
   children,
   ...rest
 }: NavigationLinkProps<Pathname>) {
-  const selectedLayoutSegment = useSelectedLayoutSegment();
-  const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : "/";
-  const isActive = href ? pathname === href : false;
   const [isOpen, setIsOpen] = useState(false);
+  const path = usePathname();
+
+  const linkStyle =
+    "relative py-2 text-white font-outfit hover:text-brandWashedBlue active:scale-105 active:text-white  transition-all duration-500 [&>span]:scale-x-0 [&>span]:hover:scale-x-100 [&>span]:focus:bg-brandPrimaryBlue [&>span]:focus:scale-x-0 [&>span]:focus:origin-right w-fit";
 
   if (submenu) {
     return (
@@ -41,7 +41,7 @@ export default function NavigationLink<Pathname extends Pathnames>({
         <button
           onMouseEnter={() => setIsOpen(true)}
           onMouseLeave={() => setIsOpen(false)}
-          className="inline-flex items-center gap-2 px-4 py-2 transition-colors font-outfit text-lg text-white hover:text-gray-200"
+          className="inline-flex items-center gap-2 p-2 transition-colors font-outfit text-lg text-white hover:text-gray-200"
           aria-expanded={isOpen}
           aria-haspopup="true"
         >
@@ -85,7 +85,9 @@ export default function NavigationLink<Pathname extends Pathnames>({
                 {submenu.map((item, index) => (
                   <Link
                     key={item.href}
-                    className="relative py-2 font-outfit text-base text-white hover:text-brandWashedBlue active:scale-105 active:text-white  transition-all duration-150 [&>span]:scale-x-0 [&>span]:hover:scale-x-100 [&>span]:focus:bg-brandPrimaryBlue w-fit"
+                    aria-current={path === item.href ? "page" : undefined}
+                    className={clsx("text-base", linkStyle)}
+                    style={{ color: path === item.href ? "#ADCAEC" : "" }}
                     href={item.href}
                     role="menuitem"
                   >
@@ -118,11 +120,9 @@ export default function NavigationLink<Pathname extends Pathnames>({
 
   return (
     <Link
-      aria-current={isActive ? "page" : undefined}
-      className={clsx(
-        "relative inline-block px-4 py-2 font-outfit text-lg [&>span]:scale-x-0 [&>span]:hover:scale-x-100 w-fit active:scale-105 active:text-white hover:text-brandWashedBlue transition-all duration-150 [&>span]:focus:bg-brandPrimaryBlue",
-        isActive ? "text-gray-200" : "text-white "
-      )}
+      aria-current={path === href ? "page" : undefined}
+      className={clsx("p-2 text-lg", linkStyle)}
+      style={{ color: path === href ? "#ADCAEC" : "" }}
       href={href}
       {...rest}
     >

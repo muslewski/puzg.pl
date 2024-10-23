@@ -16,7 +16,7 @@ export default function SearchBox({
         className="h-full pl-12 pr-6 bg-white rounded-l-2xl shadow-inner2 text-base w-72"
         placeholder={placeholderText}
       />
-      <button className="h-full  px-6 bg-brandBrightBlue text-white text-sm transition-all hover:bg-brandBrightBlue/90 focus:scale-105">
+      <button className="h-full  px-6 bg-brandBrightBlue rounded-r-[12px]  text-white text-sm transition-all hover:bg-brandBrightBlue/90 focus:scale-105">
         {buttonText}
       </button>
     </div>
