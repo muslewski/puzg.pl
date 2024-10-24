@@ -25,7 +25,7 @@ type NavigationLinkProps<Pathname extends Pathnames> = Omit<
 
 export function CustomUnderline() {
   return (
-    <span className="absolute -bottom-0 -left-2 -right-2 h-1 origin-left rounded-full bg-gradient-to-r from-brandWashedBlue to-brandWashedBlue/85 transition-all duration-500 ease-out pointer-events-none" />
+    <span className="absolute -bottom-0 -left-2 -right-2 h-1 origin-left rounded-full bg-gradient-to-r from-brandPrimaryBlue lg:from-brandWashedBlue to-brandPrimaryBlue/85 lg:to-brandWashedBlue/85 transition-all duration-500 ease-out pointer-events-none" />
   );
 }
 
@@ -41,15 +41,15 @@ export default function NavigationLink<Pathname extends Pathnames>({
 
   // <CustomUnderline /> need to be a children of item with linkStyle
   const linkStyle =
-    "relative py-2 text-white font-outfit hover:text-brandWashedBlue active:scale-105 active:text-white  transition-all duration-500 [&>span]:scale-x-0 [&>span]:hover:scale-x-100 [&>span]:focus:bg-brandPrimaryBlue [&>span]:focus:scale-x-0 [&>span]:focus:origin-right w-fit";
+    "relative py-2 text-brandDark lg:text-white font-outfit hover:text-brandPrimaryBlue lg:hover:text-brandWashedBlue active:scale-105 lg:active:text-white  transition-all duration-500 [&>span]:scale-x-0 [&>span]:hover:scale-x-100 [&>span]:focus:bg-brandPrimaryBlue [&>span]:focus:scale-x-0 [&>span]:focus:origin-right w-fit";
 
   if (submenu) {
     return (
-      <div className="relative">
+      <div className="lg:relative">
         <button
           onMouseEnter={() => setIsOpen(true)}
           onMouseLeave={() => setIsOpen(false)}
-          className="inline-flex items-center gap-2 p-2 transition-colors font-outfit text-lg text-white hover:text-gray-200"
+          className="inline-flex items-center gap-2 p-2 transition-colors duration-500 font-outfit text-lg text-brandDark lg:text-white hover:text-brandPrimaryBlue lg:hover:text-brandWashedBlue"
           aria-expanded={isOpen}
           aria-haspopup="true"
         >
@@ -79,7 +79,7 @@ export default function NavigationLink<Pathname extends Pathnames>({
                 },
                 pointerEvents: "none",
               }}
-              className="absolute left-4 bg-brandPrimaryBlue rounded-t-md rounded-b-3xl py-6 px-8 shadow-md"
+              className="absolute left-16 lg:left-2 top-0 lg:top-full bg-white/85 backdrop-blur-md lg:bg-brandPrimaryBlue rounded-t-md rounded-b-3xl py-6 px-8 shadow-md z-30"
               onMouseEnter={() => setIsOpen(true)}
               onMouseLeave={() => setIsOpen(false)}
             >
@@ -95,7 +95,7 @@ export default function NavigationLink<Pathname extends Pathnames>({
                     key={item.href}
                     aria-current={path === item.href ? "page" : undefined}
                     className={clsx("text-base", linkStyle)}
-                    style={{ color: path === item.href ? "#ADCAEC" : "" }}
+                    style={{ opacity: path === item.href ? "70%" : "" }}
                     href={item.href}
                     role="menuitem"
                   >
@@ -130,7 +130,7 @@ export default function NavigationLink<Pathname extends Pathnames>({
     <Link
       aria-current={path === href ? "page" : undefined}
       className={clsx("p-2 text-lg", linkStyle)}
-      style={{ color: path === href ? "#ADCAEC" : "" }}
+      style={{ opacity: path === href ? "70%" : "" }}
       href={href}
       {...rest}
     >

@@ -40,6 +40,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - https://github.com/amannn/next-intl/tree/main/examples/example-app-router
   https://next-intl-example-app-router.vercel.app/en
 
-## Eslintrc
+## TODO:
 
-Delete rules
+- [ ] Delete eslintrc rules:
+  - "@typescript-eslint/no-unused-vars": "off", // Disable unused variable rule for all files
+  - "@typescript-eslint/no-explicit-any": "off", // Disable no-explicit-any rule for all files
+- [ ] Define classes for h1-h5 in global.css
