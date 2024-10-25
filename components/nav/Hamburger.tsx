@@ -3,9 +3,13 @@
 import { motion, MotionConfig } from "framer-motion";
 import { useState } from "react";
 
-export default function Hamburger() {
-  const [active, setActive] = useState(false);
-
+export default function Hamburger({
+  active,
+  setActive,
+}: {
+  active: boolean;
+  setActive: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   return (
     <MotionConfig transition={{ duration: 0.5, ease: "easeInOut" }}>
       <motion.button

@@ -5,7 +5,7 @@ export default function Links() {
   const t = useTranslations("Links");
 
   return (
-    <div className="relative flex flex-wrap  lg:flex-row lg:justify-evenly lg:items-center gap-2 w-full px-6 py-4 bg-white lg:bg-brandPrimaryBlue rounded-t-xl rounded-b-[2rem] border-t-2 border-brandDark shadow-md">
+    <div className="relative flex flex-wrap  lg:flex-row md:justify-evenly lg:items-center gap-2 w-full px-6 py-4 bg-white lg:bg-brandPrimaryBlue rounded-t-xl rounded-b-[2rem] border-t-2 border-brandDark shadow-md">
       <NavigationLink
         submenu={[
           { label: t("news"), href: "/aktualnosci" },

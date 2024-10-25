@@ -4,7 +4,13 @@ import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-export default function TopBar() {
+export default function TopBar({
+  active,
+  setActive,
+}: {
+  active: boolean;
+  setActive: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   const t = useTranslations("TopBar");
 
   return (
@@ -13,7 +19,7 @@ export default function TopBar() {
         <Link
           href="/"
           title={t("homeLinkTitle")}
-          className="flex items-center gap-6 h-16 transition-transform  active:scale-[1.03]"
+          className="flex items-center gap-3 lg:gap-6 h-16 transition-transform  active:scale-[1.03]"
         >
           <div className="hidden lg:block relative w-[50px] h-[59px]">
             <Image
@@ -24,7 +30,7 @@ export default function TopBar() {
               className="object-contain"
             />
           </div>
-          <div className="relative w-[62px] h-[64px]">
+          <div className="relative w-[48px] h-[50px] sm:w-[62px] sm:h-[64px] min-w-[48px] min-h-[50px]">
             <Image
               src="/images/Logo.svg"
               fill
@@ -33,12 +39,12 @@ export default function TopBar() {
               className="object-contain brightness-0 invert lg:filter-none"
             />
           </div>
-          <h3 className="font-outfit text-base lg:text-xl font-normal text-white lg:text-brandDark max-w-56 ">
+          <h3 className="font-outfit text-base sm:text-xl font-normal text-white lg:text-brandDark max-w-48 sm:max-w-56 ">
             {t("home")}
           </h3>
         </Link>
 
-        <Hamburger />
+        <Hamburger active={active} setActive={setActive} />
       </div>
 
       <SearchBox placeholderText={t("search")} buttonText={t("searchButton")} />
