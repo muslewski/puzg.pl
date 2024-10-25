@@ -9,7 +9,7 @@ export default function TopBar() {
 
   return (
     <div className="w-full flex gap-5 flex-col lg:flex-row justify-between items-end lg:items-center">
-      <div className="flex justify-between items-center w-full lg:w-fit">
+      <div className="flex justify-between items-center w-full lg:w-fit gap-6">
         <Link
           href="/"
           title={t("homeLinkTitle")}
@@ -33,7 +33,7 @@ export default function TopBar() {
               className="object-contain brightness-0 invert lg:filter-none"
             />
           </div>
-          <h3 className="font-outfit text-xl font-normal max-w-56 text-white lg:text-brandDark">
+          <h3 className="font-outfit text-base lg:text-xl font-normal text-white lg:text-brandDark max-w-56 ">
             {t("home")}
           </h3>
         </Link>

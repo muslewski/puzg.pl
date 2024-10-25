@@ -5,6 +5,7 @@ import clsx from "clsx";
 import { ComponentProps, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { AnimatePresence, motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 // Define the structure for submenu items
 type SubmenuItem = {
@@ -38,6 +39,8 @@ export default function NavigationLink<Pathname extends Pathnames>({
 }: NavigationLinkProps<Pathname>) {
   const [isOpen, setIsOpen] = useState(false);
   const path = usePathname();
+
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
 
   // <CustomUnderline /> need to be a children of item with linkStyle
   const linkStyle =
@@ -79,13 +82,15 @@ export default function NavigationLink<Pathname extends Pathnames>({
                 },
                 pointerEvents: "none",
               }}
-              className="absolute left-16 lg:left-2 top-0 lg:top-full bg-white/85 backdrop-blur-md lg:bg-brandPrimaryBlue rounded-t-md rounded-b-3xl py-6 px-8 shadow-md z-30"
+              className="absolute left-0 w-full lg:w-fit lg:left-2 top-0 lg:top-full  bg-white/85 backdrop-blur-md lg:bg-brandPrimaryBlue rounded-t-md rounded-b-3xl py-6 px-8 shadow-md z-30"
               onMouseEnter={() => setIsOpen(true)}
               onMouseLeave={() => setIsOpen(false)}
             >
               <div
-                className="flex flex-col gap-6"
-                style={{ width: `${submenuWidth}rem` }}
+                className="w-full flex flex-row flex-wrap lg:flex-col gap-6"
+                style={{
+                  width: isTabletOrMobile ? "100%" : `${submenuWidth}rem`,
+                }}
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="options-menu"
