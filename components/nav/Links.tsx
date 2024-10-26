@@ -1,22 +1,16 @@
 "use client";
 
 import NavigationLink from "@/components/nav/NavigationLink";
+import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
-export default function Links({ active }: { active: boolean }) {
+export function ListOfLinks() {
   const t = useTranslations("Links");
 
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
-
-  const [isMounted, setIsMounted] = useState(false);
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
   return (
-    <div className="relative flex flex-wrap  lg:flex-row md:justify-evenly lg:items-center gap-2 w-full px-6 py-4 bg-white lg:bg-brandPrimaryBlue rounded-t-xl rounded-b-[2rem] border-t-2 border-brandDark shadow-md">
+    <>
       <NavigationLink
         submenu={[
           { label: t("news"), href: "/aktualnosci" },
@@ -76,7 +70,10 @@ export default function Links({ active }: { active: boolean }) {
             label: t("recruitmentStepByStep"),
             href: "/rekrutacja-krok-po-kroku",
           },
-          { label: t("recruitmentSchedule"), href: "/terminarz-rekrutacji" },
+          {
+            label: t("recruitmentSchedule"),
+            href: "/terminarz-rekrutacji",
+          },
         ]}
         submenuWidth={10}
       >
@@ -85,6 +82,56 @@ export default function Links({ active }: { active: boolean }) {
       <NavigationLink href="/instytut">{t("institute")}</NavigationLink>
       <NavigationLink href="/wspolpraca">{t("collaboration")}</NavigationLink>
       <NavigationLink href="/kontakt">{t("contact")}</NavigationLink>
-    </div>
+    </>
+  );
+}
+
+export default function Links({ active }: { active: boolean }) {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
+
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  return (
+    <>
+      {isMounted && !isTabletOrMobile ? (
+        <div className="relative flex flex-wrap  lg:flex-row md:justify-evenly lg:items-center gap-2 w-full px-6 py-4 bg-white lg:bg-brandPrimaryBlue rounded-t-xl rounded-b-[2rem] border-t-2 border-brandDark shadow-md">
+          <ListOfLinks />
+        </div>
+      ) : (
+        <AnimatePresence>
+          {isMounted && active && (
+            <motion.div
+              className="relative flex flex-wrap  lg:flex-row md:justify-evenly lg:items-center gap-2 w-full px-6 py-4 bg-white lg:bg-brandPrimaryBlue rounded-t-xl rounded-b-[2rem] border-t-2 border-brandDark shadow-md"
+              variants={{
+                hidden: {
+                  opacity: [1, 0],
+                  x: ["0%", "5%", "-150%", "-150%"],
+                  maxHeight: 0,
+                  marginTop: -75,
+                },
+                visible: {
+                  opacity: [0, 1],
+                  x: ["-90%", "-95%", "10%", "0%"],
+                  maxHeight: 500,
+                  marginTop: 0,
+                },
+              }}
+              initial="hidden"
+              animate="visible"
+              exit="hidden"
+              transition={{
+                duration: 1,
+                ease: "easeInOut",
+              }}
+            >
+              <ListOfLinks />
+            </motion.div>
+          )}
+        </AnimatePresence>
+      )}
+    </>
   );
 }

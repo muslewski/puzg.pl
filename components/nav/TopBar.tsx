@@ -63,36 +63,36 @@ export default function TopBar({
 
       {isMounted && !isTabletOrMobile ? (
         // Display SearchBox directly on larger screens
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 0.5,
-            ease: "easeOut",
-          }}
-        >
+        <div>
           <SearchBox
             placeholderText={t("search")}
             buttonText={t("searchButton")}
           />
-        </motion.div>
+        </div>
       ) : (
         // Animate SearchBox visibility on mobile/tablet screens
         <AnimatePresence>
           {isMounted && active && (
             <motion.div
               variants={{
-                hidden: { opacity: 0, height: 0, marginTop: -20 },
-                visible: { opacity: 1, height: "auto", marginTop: 0 },
+                hidden: {
+                  opacity: [1, 0],
+                  maxHeight: 0,
+                  x: ["0%", "-5%", "150%", "150%"],
+                },
+                visible: {
+                  opacity: [0, 1],
+                  maxHeight: 500,
+                  x: ["90%", "95%", "-10%", "0%"],
+                },
               }}
               initial="hidden"
               animate="visible"
               exit="hidden"
               transition={{
-                duration: 0.3,
+                duration: 1,
                 ease: "easeInOut",
               }}
-              style={{ overflow: "hidden" }}
             >
               <SearchBox
                 placeholderText={t("search")}

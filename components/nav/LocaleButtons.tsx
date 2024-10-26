@@ -1,11 +1,13 @@
 "use client";
 
-import { useTransition } from "react";
+import { useEffect, useState, useTransition } from "react";
 import { Locale, useRouter, usePathname } from "@/i18n/routing";
 import { useLocale } from "next-intl";
 import clsx from "clsx";
+import { useMediaQuery } from "react-responsive";
+import { motion, AnimatePresence } from "framer-motion";
 
-export default function LocaleButtons() {
+export function LocaleButtonsLogic() {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
   const pathname = usePathname();
@@ -19,7 +21,7 @@ export default function LocaleButtons() {
   }
 
   return (
-    <div className="flex gap-6 self-end font-outfit text-base">
+    <div className="flex gap-6 font-outfit text-base">
       <button
         title="Zmień język na Polski"
         className={clsx(
@@ -45,5 +47,53 @@ export default function LocaleButtons() {
         EN
       </button>
     </div>
+  );
+}
+
+export default function LocaleButtons({ active }: { active: boolean }) {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
+
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  return (
+    <>
+      {isMounted && !isTabletOrMobile ? (
+        <div className="self-end">
+          <LocaleButtonsLogic />
+        </div>
+      ) : (
+        <AnimatePresence>
+          {isMounted && active && (
+            <motion.div
+              className="self-end"
+              variants={{
+                hidden: {
+                  opacity: [1, 0],
+                  maxHeight: 0,
+                  marginTop: -16,
+                },
+                visible: {
+                  opacity: [0, 1],
+                  maxHeight: 500,
+                  marginTop: 0,
+                },
+              }}
+              initial="hidden"
+              animate="visible"
+              exit="hidden"
+              transition={{
+                duration: 1,
+                ease: "easeInOut",
+              }}
+            >
+              <LocaleButtonsLogic />
+            </motion.div>
+          )}
+        </AnimatePresence>
+      )}
+    </>
   );
 }
