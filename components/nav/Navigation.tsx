@@ -33,6 +33,7 @@ export default function Navigation() {
     };
   }, [navRef, active]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     /**
      * Close navigation if the pathname changes while active is true

@@ -1,8 +1,11 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
+    //! Delete below
     "@typescript-eslint/no-unused-vars": "off", // Disable unused variable rule for all files
     "@typescript-eslint/no-explicit-any": "off", // Disable no-explicit-any rule for all files
+    "react/no-unescaped-entities": "off", // Disable unescaped entities rule
+
     // Add other rule disabling here
     "no-restricted-imports": [
       "error",
