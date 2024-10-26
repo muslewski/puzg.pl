@@ -1,8 +1,19 @@
+"use client";
+
 import NavigationLink from "@/components/nav/NavigationLink";
 import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
-export default function Links() {
+export default function Links({ active }: { active: boolean }) {
   const t = useTranslations("Links");
+
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
+
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
     <div className="relative flex flex-wrap  lg:flex-row md:justify-evenly lg:items-center gap-2 w-full px-6 py-4 bg-white lg:bg-brandPrimaryBlue rounded-t-xl rounded-b-[2rem] border-t-2 border-brandDark shadow-md">

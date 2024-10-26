@@ -6,7 +6,8 @@ import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function TopBar({
   active,
@@ -16,7 +17,13 @@ export default function TopBar({
   setActive: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   const t = useTranslations("TopBar");
+
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
+
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
     <div className="w-full flex gap-5 flex-col lg:flex-row justify-between items-end lg:items-center">
@@ -49,20 +56,19 @@ export default function TopBar({
           </h3>
         </Link>
 
-        <Hamburger active={active} setActive={setActive} />
+        {isMounted && isTabletOrMobile && (
+          <Hamburger active={active} setActive={setActive} />
+        )}
       </div>
 
-      {(active || !isTabletOrMobile) && (
+      {isMounted && !isTabletOrMobile ? (
+        // Display SearchBox directly on larger screens
         <motion.div
-          initial={false}
-          animate={active ? "open" : "closed"}
-          variants={{
-            open: {
-              opacity: ["0%", "100%"],
-            },
-            closed: {
-              opacity: ["100%", "0%"],
-            },
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.5,
+            ease: "easeOut",
           }}
         >
           <SearchBox
@@ -70,6 +76,31 @@ export default function TopBar({
             buttonText={t("searchButton")}
           />
         </motion.div>
+      ) : (
+        // Animate SearchBox visibility on mobile/tablet screens
+        <AnimatePresence>
+          {isMounted && active && (
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, height: 0, marginTop: -20 },
+                visible: { opacity: 1, height: "auto", marginTop: 0 },
+              }}
+              initial="hidden"
+              animate="visible"
+              exit="hidden"
+              transition={{
+                duration: 0.3,
+                ease: "easeInOut",
+              }}
+              style={{ overflow: "hidden" }}
+            >
+              <SearchBox
+                placeholderText={t("search")}
+                buttonText={t("searchButton")}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
       )}
     </div>
   );
