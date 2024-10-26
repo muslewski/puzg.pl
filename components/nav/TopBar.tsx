@@ -1,8 +1,12 @@
+"use client";
+
 import Hamburger from "@/components/nav/Hamburger";
 import SearchBox from "@/components/nav/SearchBox";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useMediaQuery } from "react-responsive";
+import { motion } from "framer-motion";
 
 export default function TopBar({
   active,
@@ -12,6 +16,7 @@ export default function TopBar({
   setActive: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   const t = useTranslations("TopBar");
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
 
   return (
     <div className="w-full flex gap-5 flex-col lg:flex-row justify-between items-end lg:items-center">
@@ -47,7 +52,25 @@ export default function TopBar({
         <Hamburger active={active} setActive={setActive} />
       </div>
 
-      <SearchBox placeholderText={t("search")} buttonText={t("searchButton")} />
+      {(active || !isTabletOrMobile) && (
+        <motion.div
+          initial={false}
+          animate={active ? "open" : "closed"}
+          variants={{
+            open: {
+              opacity: ["0%", "100%"],
+            },
+            closed: {
+              opacity: ["100%", "0%"],
+            },
+          }}
+        >
+          <SearchBox
+            placeholderText={t("search")}
+            buttonText={t("searchButton")}
+          />
+        </motion.div>
+      )}
     </div>
   );
 }
