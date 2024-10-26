@@ -85,7 +85,7 @@ export default function LocaleButtons({ active }: { active: boolean }) {
               animate="visible"
               exit="hidden"
               transition={{
-                duration: 1,
+                duration: 0.8,
                 ease: "easeInOut",
               }}
             >
