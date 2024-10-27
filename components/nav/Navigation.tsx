@@ -44,10 +44,10 @@ export default function Navigation() {
   }, [pathname]);
 
   return (
-    <div className="w-screen flex justify-center fixed z-10">
+    <div className="w-screen flex justify-center fixed z-10 pointer-events-none">
       <nav
         ref={navRef}
-        className="flex flex-col items-center gap-5 w-screen 2xl:w-10/12 3xl:w-4/5 max-w-[2000px] py-6 lg:py-12 px-8 lg:px-24 3xl:px-36 bg-brandPrimaryBlue lg:bg-transparent border-[#1B7CB0] border-b-[5px] lg:border-b-0 rounded-b-2xl"
+        className="flex flex-col items-center gap-5 w-screen 2xl:w-10/12 3xl:w-4/5 max-w-[2000px] py-6 lg:py-12 px-8 lg:px-24 3xl:px-36 bg-brandPrimaryBlue lg:bg-transparent border-[#1B7CB0] border-b-[5px] lg:border-b-0 rounded-b-2xl pointer-events-auto"
       >
         <LocaleButtons active={active} />
         <TopBar active={active} setActive={setActive} />
