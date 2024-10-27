@@ -4,7 +4,7 @@ import Links from "@/components/nav/Links";
 import LocaleButtons from "@/components/nav/LocaleButtons";
 import TopBar from "@/components/nav/TopBar";
 import { useEffect, useRef, useState } from "react";
-import { usePathname, useRouter } from "@/i18n/routing";
+import { usePathname } from "@/i18n/routing";
 
 export default function Navigation() {
   const [active, setActive] = useState(false);
@@ -33,11 +33,11 @@ export default function Navigation() {
     };
   }, [navRef, active]);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     /**
      * Close navigation if the pathname changes while active is true
      */
+
     if (active) {
       setActive(false);
     }
