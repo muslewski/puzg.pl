@@ -9,3 +9,7 @@ body,
   padding: 0;
   width: 100%;
 }
+
+ul {
+  @apply list-disc list-inside;
+}

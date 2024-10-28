@@ -97,14 +97,14 @@ export default function Links({ active }: { active: boolean }) {
   return (
     <>
       {isMounted && !isTabletOrMobile ? (
-        <div className="relative flex flex-wrap  lg:flex-row md:justify-evenly lg:items-center gap-2 w-full px-6 py-4 bg-white lg:bg-brandPrimaryBlue rounded-t-xl rounded-b-[2rem] border-t-2 border-brandDark shadow-md">
+        <div className="relative flex flex-wrap  lg:flex-row md:justify-evenly lg:items-center gap-2 w-full px-6 py-4 bg-white lg:bg-brandPrimaryBlue rounded-t-xl rounded-b-[2rem] border-t-2 border-brandDark shadow-md pointer-events-auto">
           <ListOfLinks />
         </div>
       ) : (
         <AnimatePresence>
           {isMounted && active && (
             <motion.div
-              className="relative flex flex-wrap  lg:flex-row md:justify-evenly lg:items-center gap-2 w-full px-6 py-4 bg-white lg:bg-brandPrimaryBlue rounded-t-xl rounded-b-[2rem] border-t-2 border-brandDark shadow-md"
+              className="relative flex flex-wrap  lg:flex-row md:justify-evenly lg:items-center gap-2 w-full px-6 py-4 bg-white lg:bg-brandPrimaryBlue rounded-t-xl rounded-b-[2rem] border-t-2 border-brandDark shadow-md pointer-events-auto"
               variants={{
                 hidden: {
                   opacity: [1, 0],

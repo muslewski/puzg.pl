@@ -21,7 +21,7 @@ export function LocaleButtonsLogic() {
   }
 
   return (
-    <div className="flex gap-6 font-outfit text-base">
+    <div className="flex gap-6 font-outfit text-base pointer-events-auto">
       <button
         title="Zmień język na Polski"
         className={clsx(
