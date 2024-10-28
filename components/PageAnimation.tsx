@@ -12,7 +12,7 @@ export default function PageAnimation({
       initial={{ y: 15, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.75 }}
-      className=" min-h-screen"
+      className=" min-h-screen pt-[100px] lg:pt-0"
     >
       {children}
     </motion.div>

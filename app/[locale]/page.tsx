@@ -1,6 +1,8 @@
+import HomeArrow from "@/components/HomeArrow";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 
 type Props = {
   params: { locale: string };
@@ -24,21 +26,35 @@ export default function HomePage({ params: { locale } }: Props) {
   const t = useTranslations("HomePage");
 
   return (
-    <div className="">
-      {t("title")}
-      <p className="text-5xl">{/* <Image priority /> */}
+    <main>
+      <div className="relative rounded-b-[40%] bg-gradient-to-r from-brandPrimaryBlue via-brandBrightBlue/25 to-brandBrightBlue/0 pb-2 pl-1">
+        <div className="rounded-b-[40%] relative w-full h-[40vh] md:h-[50vh] lg:h-[66vh] xl:h-[75vh] overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-b before:from-white/95 before:to-transparent before:z-10">
+          <Image
+            src="/images/home/grudziadz2.jpeg"
+            fill
+            alt="Tło przedstawiające miasto Grudziądz"
+            priority
+            className="object-cover"
+          />
+          <div className="absolute left-0 bottom-0 flex items-center justify-center z-20 h-44 md:h-52 lg:h-64 xl:h-80 3xl:h-96 sm:max-w-[90%] px-16 sm:px-24 md:px-32 lg:px-36 xl:px-52 3xl:px-72 bg-gradient-to-r from-transparent via-white/75 to-white rounded-tr-[100px] sm:rounded-tr-[200px]">
+            <h1 className="text-brandDark font-bold text-3xl md:text-4xl xl:text-5xl 3xl:text-6xl md:leading-snug xl:leading-snug 3xl:leading-snug drop-shadow-md">
+              <span className="hidden sm:flex">
+                Twoja edukacyjna podróż
+                <br /> zaczyna się tutaj!
+              </span>
+              <span className="flex sm:hidden">
+                Twoja podróż
+                <br />
+                zaczyna się tutaj!
+              </span>
+            </h1>
+          </div>
+        </div>
 
-      The standard Lorem Ipsum passage, used since the 1500s
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-
-1914 translation by H. Rackham
-"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-
-
-      </p>
-    </div>
+        <div className="absolute left-[40%] sm:left-[52%] -bottom-40 z-20">
+          <HomeArrow />
+        </div>
+      </div>
+    </main>
   );
 }
