@@ -1,6 +1,6 @@
-export default function HomeTitle() {
+export default function HeroTitle() {
   return (
-    <h1 className="text-primaryBlue-700  text-3xl md:text-4xl xl:text-5xl 3xl:text-6xl md:leading-snug xl:leading-snug 3xl:leading-snug drop-shadow-white font-galindo">
+    <h1 className="text-primaryBlue-700  text-3xl md:text-4xl xl:text-5xl 3xl:text-6xl md:leading-snug xl:leading-snug 3xl:leading-snug drop-shadow-white font-extrabold font-montserrat">
       <span className="hidden sm:flex">
         Twoja edukacyjna podróż
         <br /> zaczyna się tutaj!

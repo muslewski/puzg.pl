@@ -42,6 +42,18 @@ const config: Config = {
           800: "#052E44",
           900: "#042334",
         },
+        washedBlue: {
+          50: "#F7FAFD",
+          100: "#E6EFF9",
+          200: "#D9E7F6",
+          300: "#C8DBF2",
+          400: "#BDD5F0",
+          500: "#ADCAEC",
+          600: "#9DB8D7",
+          700: "#7B8FA8",
+          800: "#5F6F82",
+          900: "#495563",
+        },
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],

@@ -13,3 +13,11 @@ body,
 ul {
   @apply list-disc list-inside;
 }
+
+h2 {
+  @apply text-xl md:text-2xl xl:text-3xl 3xl:text-4xl md:leading-snug xl:leading-snug 3xl:leading-snug font-montserrat font-semibold;
+}
+
+p {
+  @apply text-base md:text-lg xl:text-xl 3xl:text-2xl font-normal;
+}
