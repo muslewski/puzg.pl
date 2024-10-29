@@ -1,4 +1,4 @@
-import { montserrat, outfit } from "@/app/fonts";
+import { montserrat, outfit, galindo, rubik_vinyl } from "@/app/fonts";
 import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
@@ -67,7 +67,9 @@ export default async function LocaleLayout({
         <meta name="apple-mobile-web-app-title" content="PUZG" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </head>
-      <body className={`${montserrat.variable} ${outfit.variable}`}>
+      <body
+        className={`${montserrat.variable} ${outfit.variable} ${rubik_vinyl.variable} ${galindo.variable}`}
+      >
         <NextIntlClientProvider messages={messages}>
           <Navigation />
           {children}

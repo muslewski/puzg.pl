@@ -1,3 +1,4 @@
+import { galindo } from "@/app/fonts";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -29,13 +30,30 @@ const config: Config = {
           1200: "#14283F",
           1300: "#00152E",
         },
+        primaryBlue: {
+          50: "#E6EEF2",
+          100: "#B3CAD6",
+          200: "#8EB0C3",
+          300: "#5A8CA7",
+          400: "#3A7696",
+          500: "#09547C",
+          600: "#084C71",
+          700: "#063C58",
+          800: "#052E44",
+          900: "#042334",
+        },
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],
         outfit: ["var(--font-outfit)"],
+        rubikVinyl: ["var(--font-rubik-vinyl)"],
+        galindo: ["var(--font-galindo)"],
       },
       boxShadow: {
         inner2: "inset 0 2px 4px 0 rgb(0 0 0 / 0.05)",
+      },
+      dropShadow: {
+        white: "0 2px 18px rgba(235, 255, 255, 0.7)",
       },
       screens: {
         "3xl": "1750px",
