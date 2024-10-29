@@ -37,7 +37,7 @@ export default function HomePage({ params: { locale } }: Props) {
           </div>
         </div>
 
-        <div className="absolute left-[40%] sm:left-[52%] -bottom-32 xl:-bottom-52 3xl:-bottom-40 z-20 brightness-50">
+        <div className="absolute left-[40%] sm:left-[52%] -bottom-32 xl:-bottom-52 3xl:-bottom-40 z-20">
           <HomeArrow />
         </div>
       </div>
