@@ -1,3 +1,4 @@
+import Card from "@/components/card/Card";
 import Hero from "@/components/home/Hero";
 import SlideShow from "@/components/home/SlideShow";
 import { Metadata } from "next";
@@ -29,7 +30,11 @@ export default function HomePage({ params: { locale } }: Props) {
   return (
     <main className="flex flex-col items-center">
       <Hero />
-      <SlideShow />
+
+      <div className="w-full flex flex-col gap-48 lg:gap-64 items-center">
+        <SlideShow />
+        <Card />
+      </div>
     </main>
   );
 }

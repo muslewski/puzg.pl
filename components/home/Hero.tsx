@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <div className="min-h-[75vh] lg:min-h-screen w-full ">
+    <div className="min-h-[75vh] lg:min-h-screen w-full">
       <div className="relative md:rounded-b-[20%] bg-gradient-to-r from-brandPrimaryBlue via-brandBrightBlue/25 to-brandBrightBlue/0 pb-2 shadow-lg">
         <div className="md:rounded-b-[20%] relative w-full h-[50vh] lg:h-[66vh] xl:h-[75vh] overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-b before:from-white/65 sm:before:from-white/100 before:to-transparent before:z-10">
           <HeroImage />

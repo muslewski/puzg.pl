@@ -51,7 +51,7 @@ export default function TopBar({
               className="object-contain brightness-0 invert lg:filter-none"
             />
           </div>
-          <h3 className="font-outfit text-base sm:text-xl font-normal text-white lg:text-brandDark max-w-48 sm:max-w-56 ">
+          <h3 className="font-outfit text-base sm:text-xl font-normal text-white lg:text-brandDark bg-none max-w-48 sm:max-w-56 ">
             {t("home")}
           </h3>
         </Link>

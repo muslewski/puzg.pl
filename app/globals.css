@@ -9,6 +9,7 @@ body,
   padding: 0;
   width: 100%;
   overflow-x: hidden;
+  @apply font-outfit;
 }
 
 ul {
@@ -16,9 +17,13 @@ ul {
 }
 
 h2 {
-  @apply text-xl md:text-2xl xl:text-3xl 3xl:text-4xl md:leading-snug xl:leading-snug 3xl:leading-snug font-montserrat font-semibold;
+  @apply text-brandDark text-xl md:text-2xl xl:text-3xl 3xl:text-4xl md:leading-snug xl:leading-snug 3xl:leading-snug font-montserrat font-bold;
+}
+
+h3 {
+  @apply bg-gradient-to-br from-brandPrimaryBlue to-brandBrightBlue/65 text-transparent bg-clip-text w-fit text-xl xl:text-2xl 3xl:text-3xl md:leading-snug xl:leading-snug 3xl:leading-snug font-outfit font-semibold;
 }
 
 p {
-  @apply text-base md:text-lg xl:text-xl 3xl:text-2xl font-normal;
+  @apply text-brandDark text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal;
 }
