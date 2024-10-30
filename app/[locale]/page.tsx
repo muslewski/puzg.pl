@@ -33,7 +33,7 @@ export default function HomePage({ params: { locale } }: Props) {
 
       <div className="w-full flex flex-col gap-48 lg:gap-64 items-center">
         <SlideShow />
-        <Card />
+        <Card mainTitle="Dlaczego warto wybrać naszą uczelnię?" border="bl" />
       </div>
     </main>
   );

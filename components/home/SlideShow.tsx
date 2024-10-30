@@ -61,7 +61,7 @@ export default function SlideShow() {
   );
 
   return (
-    <div className="flex flex-col items-center lg:items-start gap-12 w-full 2xl:w-4/5 lg:px-12">
+    <div className="flex flex-col items-center lg:items-start gap-12 w-full 2xl:w-4/5 lg:px-12 2xl:px-0">
       <AnimatePresence mode="wait">
         <Slide data={slides[slideNumber]} key={slideNumber} />
       </AnimatePresence>
