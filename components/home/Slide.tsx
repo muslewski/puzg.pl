@@ -60,7 +60,7 @@ export default function Slide({ data }: slideProps) {
           ease: "easeInOut",
         }}
       >
-        <div className="lg:w-fit lg:max-w-[85%] pb-3 pt-6 px-8 bg-white/85 rounded-tr-2xl lg:rounded-t-2xl">
+        <div className="lg:w-fit lg:max-w-[85%] pb-3 pt-6 px-6 sm:px-12 bg-white/85 rounded-tr-2xl lg:rounded-t-2xl">
           <motion.h2
             initial={{ x: -40, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -72,7 +72,7 @@ export default function Slide({ data }: slideProps) {
             {data.title}
           </motion.h2>
         </div>
-        <div className="lg:w-fit min-w-[95%] pt-3 pb-6 px-8 bg-white/85 rounded-br-2xl lg:rounded-tr-2xl lg:rounded-b-2xl lg:rounded-br-none">
+        <div className="lg:w-fit min-w-[95%] pt-3 pb-6 px-6 sm:px-12 bg-white/85 rounded-br-2xl lg:rounded-tr-2xl lg:rounded-b-2xl lg:rounded-br-none">
           <motion.p
             initial={{ x: -80, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
