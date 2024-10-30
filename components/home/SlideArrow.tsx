@@ -1,3 +1,5 @@
+"use client";
+
 import clsx from "clsx";
 import { IoIosArrowDown } from "react-icons/io";
 import { Action } from "@/components/home/SlideShow";
@@ -15,7 +17,7 @@ export default function SlideArrow({
 
   return (
     <button
-      className="border-4 p-2 sm:p-3 rounded-2xl border-brandPrimaryBlue text-primaryBlue-400 transition-transform hover:scale-105 active:scale-110"
+      className="border-4 p-2 sm:p-3 rounded-2xl border-brandPrimaryBlue text-primaryBlue-400 hover:bg-brandWashedBlue/15 active:bg-brandWashedBlue/30 transition-all hover:scale-105 active:scale-110"
       onClick={handleClick}
     >
       <IoIosArrowDown

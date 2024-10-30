@@ -4,6 +4,7 @@ import Slide from "@/components/home/Slide";
 import SlideArrow from "@/components/home/SlideArrow";
 import SlideDot from "@/components/home/SlideDot";
 import { useReducer } from "react";
+import { AnimatePresence } from "framer-motion";
 
 export type Action =
   | { type: "NEXT" }
@@ -30,21 +31,26 @@ export default function SlideShow() {
     {
       title: "Rekrutacja uzupełniająca na rok akademicki 2024/2025",
       description: "Kierunek mechatronika trwa od 21.08.2024 do 20.09.2024",
-      imageSrc: "/images/home/grudziadz2.jpeg",
+      imageSrc: "/images/home/slide1.jpg",
       imageAlt: "Zdjęcie tła miasta Grudziądz",
     },
     {
-      title: "Rekasdasdrutacja uzupełniająca na rok akademicki 2024/2025",
-      description:
-        "Kieasdasdrunek mechatronika trwa od 21.08.2024 do 20.09.2024",
-      imageSrc: "/images/bip.png",
+      title: "Bezpłatne studia inżynierskie",
+      description: "Praktyczna wiedza, realne możliwości.",
+      imageSrc: "/images/home/slide2.jpg",
       imageAlt: "Zdjęcie tła miasta Grudziądz",
     },
     {
-      title: "Rekasdasdrutacja uzupełniająca na rok akademicki 2024/2025",
+      title: "Studia I stopnia w formie stacjonarnej ",
+      description: "W trybie dla osób pracujących",
+      imageSrc: "/images/home/slide3.jpg",
+      imageAlt: "Zdjęcie tła miasta Grudziądz",
+    },
+    {
+      title: "Darmowe certyfikowane szkolenia z zakresu: ",
       description:
-        "Kieasdasdrunek mechatronika trwa od 21.08.2024 do 20.09.2024",
-      imageSrc: "/images/Logo.svg",
+        "programowania robotów przemysłowych, obrabiarek CNC oraz spawalnictwa.",
+      imageSrc: "/images/home/slide4.jpg",
       imageAlt: "Zdjęcie tła miasta Grudziądz",
     },
   ];
@@ -56,7 +62,9 @@ export default function SlideShow() {
 
   return (
     <div className="flex flex-col items-center lg:items-start gap-12 w-full 2xl:w-3/4 lg:px-12">
-      <Slide data={slides[slideNumber]} />
+      <AnimatePresence mode="wait">
+        <Slide data={slides[slideNumber]} key={slideNumber} />
+      </AnimatePresence>
 
       <div className="w-full px-4 sm:px-8 lg:w-fit flex items-center justify-between lg:gap-32">
         <SlideArrow dispatch={dispatch} direction="left" />
