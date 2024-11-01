@@ -1,3 +1,5 @@
+import MainWrapper from "@/components/MainWrapper";
+import TopTitle from "@/components/TopTitle";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -23,5 +25,9 @@ export default function OfertyPracyPage({ params: { locale } }: Props) {
 
   const t = useTranslations("OfertyPracyPage");
 
-  return <div>Oferty Pracy</div>;
+  return (
+    <MainWrapper>
+      <TopTitle>{t("title")}</TopTitle>
+    </MainWrapper>
+  );
 }
