@@ -46,3 +46,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
   - "@typescript-eslint/no-unused-vars": "off", // Disable unused variable rule for all files
   - "@typescript-eslint/no-explicit-any": "off", // Disable no-explicit-any rule for all files
 - [ ] Define classes for h1-h5 in global.css
+- [ ] Change HeroImage to [obraz](https://stock.adobe.com/pl/search?k=grudziadz&asset_id=65177066)

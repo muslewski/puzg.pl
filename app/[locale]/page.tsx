@@ -28,6 +28,7 @@ export default function HomePage({ params: { locale } }: Props) {
 
   const t = useTranslations("HomePage");
 
+  // Get translation for SlideShow component
   const slideKeys = ["0", "1", "2", "3"] as const;
   const slides: slideProps[] = slideKeys.map((key) => ({
     title: t(`slides.${key}.title`),
@@ -93,8 +94,13 @@ export default function HomePage({ params: { locale } }: Props) {
           border="tr"
           simpleText={t("card2.simpleText")}
           customElement={
-            <TeamsButton text={t("card2.buttonText")} iconAlt="Logo Teams" />
+            <TeamsButton
+              text={t("card2.buttonText")}
+              iconAlt="Logo Microsoft Teams"
+            />
           }
+          customGradient="from-[#383d8f]/55 via-[#1c1f4a]/35 to-[#1c1f4a]/0"
+          customInsideBorder="border-[#c9d4f2] border-double"
         />
       </div>
     </main>
