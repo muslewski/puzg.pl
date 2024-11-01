@@ -1,6 +1,12 @@
 import Image from "next/image";
 
-export default function FooterTitle({ title }) {
+export default function FooterTitle({
+  title,
+  iconAlt,
+}: {
+  title: string;
+  iconAlt: string;
+}) {
   return (
     <div className="text-xl sm:text-2xl font-semibold flex items-center gap-6">
       <div className="relative w-[48px] h-[50px] sm:w-[72px] sm:h-[74px] min-w-[48px] min-h-[50px]">
@@ -8,11 +14,11 @@ export default function FooterTitle({ title }) {
           src="/images/Logo.svg"
           fill
           sizes="72px"
-          alt="Logo Publicznej Uczelni Zawodowej w Grudziądzu"
+          alt={iconAlt}
           className="object-contain brightness-0 invert "
         />
       </div>
-      Publiczna Uczelnia Zawodowa w Grudziądzu
+      {title}
     </div>
   );
 }

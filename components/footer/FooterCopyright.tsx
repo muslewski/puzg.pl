@@ -1,7 +1,7 @@
-export default function FooterCopyright() {
+export default function FooterCopyright({ title }: { title: string }) {
   return (
     <span className="text-base">
-      &copy; {new Date().getFullYear()} Publiczna Uczelnia Zawodowa w Grudziądzu
+      &copy; {new Date().getFullYear()} {title}
     </span>
   );
 }

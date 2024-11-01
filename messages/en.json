@@ -42,7 +42,14 @@
     "contact": "Contact"
   },
   "Footer": {
-    "title": "Public Vocational College in Grudziądz"
+    "title": "Public Vocational College in Grudziądz",
+    "titleAlt": "Logo of the Public Vocational School in Grudziądz",
+    "localization": "St.",
+    "contact": "Telephone contact (Recruitment):",
+    "bip": "Public Information Bulletin",
+    "accessibilityDeclaration": "Accessibility Declaration",
+    "privacyPolicy": "Privacy Policy",
+    "findUs": "Find us on:"
   },
   "HomePage": {
     "title": "Public Vocational College in Grudziądz",

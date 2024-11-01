@@ -10,11 +10,18 @@ export default function Footer() {
   return (
     <footer className="w-full bg-brandDark border-t-[5px] border-brandNeutrals-1000 rounded-t-2xl text-white py-24 mt-52 font-outfit flex justify-center">
       <div className="flex flex-col gap-16 w-4/5 text-lg">
-        <FooterTitle title={t("title")} />
+        <FooterTitle title={t("title")} iconAlt={t("titleAlt")} />
         <FooterHr />
-        <FooterContent />
+        <FooterContent
+          localization={t("localization")}
+          contact={t("contact")}
+          bip={t("bip")}
+          accessibilityDeclaration={t("accessibilityDeclaration")}
+          privacyPolicy={t("privacyPolicy")}
+          findUs={t("findUs")}
+        />
         <FooterHr />
-        <FooterCopyright />
+        <FooterCopyright title={t("title")} />
       </div>
     </footer>
   );
