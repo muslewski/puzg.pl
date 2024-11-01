@@ -2,7 +2,7 @@ import Card from "@/components/card/Card";
 import GrayCard from "@/components/card/GrayCard";
 import TeamsButton from "@/components/card/TeamsButton";
 import Hero from "@/components/home/Hero";
-import SlideShow from "@/components/slide/SlideShow";
+import SlideShow, { slideProps } from "@/components/slide/SlideShow";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -28,44 +28,52 @@ export default function HomePage({ params: { locale } }: Props) {
 
   const t = useTranslations("HomePage");
 
+  const slideKeys = ["0", "1", "2", "3"] as const;
+  const slides: slideProps[] = slideKeys.map((key) => ({
+    title: t(`slides.${key}.title`),
+    description: t(`slides.${key}.description`),
+    imageSrc: t(`slides.${key}.imageSrc`),
+    imageAlt: t(`slides.${key}.imageAlt`),
+  }));
+
   return (
     <main className="flex flex-col items-center">
-      <Hero />
+      <Hero
+        slogan={t.rich("slogan", { br: () => <br /> })}
+        sloganMobile={t.rich("sloganMobile", { br: () => <br /> })}
+      />
 
       <div className="w-full flex flex-col gap-32 lg:gap-52 items-center">
-        <SlideShow />
+        <SlideShow slides={slides} />
 
         <Card
-          mainTitle="Dlaczego warto wybrać naszą uczelnię?"
+          mainTitle={t("card1.mainTitle")}
           border="bl"
           listObject={[
             {
-              title: "Perspektywy zatrudnienia",
-              description:
-                "Po ukończeniu studiów czekają na Ciebie liczne możliwości pracy dzięki dynamicznemu rozwojowi przemysłu i biznesu w Grudziądzu.",
-              icon: "/images/home/card1.png",
-              iconAlt: "Ikona uścisku dłoni",
+              title: t("card1.0.title"),
+              description: t("card1.0.description"),
+              icon: t("card1.0.icon"),
+              iconAlt: t("card1.0.iconAlt"),
             },
             {
-              title: "Wygodna lokalizacja",
-              description:
-                "Nasza uczelnia znajduje się zaledwie 15 minut spacerem od stacji PKP Grudziądz - miasto, co ułatwia dojazd.",
-              icon: "/images/home/card2.png",
-              iconAlt: "Ikona mapy",
+              title: t("card1.1.title"),
+              description: t("card1.1.description"),
+              icon: t("card1.1.icon"),
+              iconAlt: t("card1.1.iconAlt"),
             },
             {
-              title: "Dostosowane dla pracujących",
-              description:
-                "Oferujemy elastyczny program studiów, który pozwala na łączenie nauki z pracą zawodową.",
-              icon: "/images/home/card3.png",
-              iconAlt: "Ikona walizki do pracy",
+              title: t("card1.2.title"),
+              description: t("card1.2.description"),
+              icon: t("card1.2.icon"),
+              iconAlt: t("card1.2.iconAlt"),
             },
           ]}
         />
 
         <GrayCard
-          mainTitle="Gdzie nas znajdziesz?"
-          simpleText="Znajdziesz nas na ulicy Czarnieckiego 5/7 oraz Hoffmanna 1-7, gdzie mieści się nasza nowoczesna infrastruktura edukacyjna."
+          mainTitle={t("grayCard1.mainTitle")}
+          simpleText={t("grayCard1.simpleText")}
           customElement={
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d522.5370547032383!2d18.753977153923262!3d53.479048888948526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4702cfd876a65acb%3A0xe6d78eb49d59c1f1!2sCzarnieckiego%205%2F7%2C%2086-300%20Grudzi%C4%85dz!5e0!3m2!1sen!2spl!4v1730317783353!5m2!1sen!2spl"
@@ -79,10 +87,12 @@ export default function HomePage({ params: { locale } }: Props) {
         />
 
         <Card
-          mainTitle="Dołącz do nas na Microsoft Teams!"
+          mainTitle={t("card2.mainTitle")}
           border="tr"
-          simpleText="Zajęcia, które nie mogą odbyć się na uczelni, będą prowadzone online na Microsoft Teams."
-          customElement={<TeamsButton iconAlt="Logo Teams" />}
+          simpleText={t("card2.simpleText")}
+          customElement={
+            <TeamsButton text={t("card2.buttonText")} iconAlt="Logo Teams" />
+          }
         />
       </div>
     </main>

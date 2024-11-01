@@ -53,7 +53,70 @@
   },
   "HomePage": {
     "title": "Public Vocational College in Grudziądz",
-    "description": "Learn more about our college, educational offer, and initiatives supporting the professional and scientific development of students."
+    "description": "Learn more about our college, educational offer, and initiatives supporting the professional and scientific development of students.",
+
+    "slogan": "Your educational journey <br></br> starts here!",
+    "sloganMobile": "Your journey <br></br> starts here!",
+
+    "slides": {
+      "0": {
+        "title": "Supplementary Recruitment for the 2024/2025 Academic Year",
+        "description": "The Mechatronics program runs from 08/21/2024 to 09/20/2024",
+        "imageSrc": "/images/home/slide0.jpg",
+        "imageAlt": "Photo of students sitting in a park"
+      },
+      "1": {
+        "title": "Free Engineering Studies",
+        "description": "Practical knowledge, real opportunities.",
+        "imageSrc": "/images/home/slide1.jpg",
+        "imageAlt": "Photo of a woman working on a project on a computer"
+      },
+      "2": {
+        "title": "Full-time Undergraduate Studies",
+        "description": "Designed for working individuals.",
+        "imageSrc": "/images/home/slide2.jpg",
+        "imageAlt": "Photo of students taking notes"
+      },
+      "3": {
+        "title": "Free Certified Training in:",
+        "description": "Industrial robot programming, CNC machining, and welding.",
+        "imageSrc": "/images/home/slide3.jpg",
+        "imageAlt": "Photo of robots"
+      }
+    },
+
+    "card1": {
+      "mainTitle": "Why Choose Our College?",
+      "0": {
+        "title": "Employment Opportunities",
+        "description": "Upon graduation, numerous job opportunities await you thanks to the dynamic growth of industry and business in Grudziądz.",
+        "icon": "/images/home/card1.png",
+        "iconAlt": "Handshake icon"
+      },
+      "1": {
+        "title": "Convenient Location",
+        "description": "Our university is just a 15-minute walk from the Grudziądz - Miasto train station, making it easily accessible.",
+        "icon": "/images/home/card2.png",
+        "iconAlt": "Map icon"
+      },
+      "2": {
+        "title": "Work-Friendly Schedule",
+        "description": "We offer a flexible study program that allows you to balance studies with your professional career.",
+        "icon": "/images/home/card3.png",
+        "iconAlt": "Work suitcase icon"
+      }
+    },
+
+    "grayCard1": {
+      "mainTitle": "Where to Find Us?",
+      "simpleText": "You can find us at Czarnieckiego 5/7 and Hoffmanna 1-7, where our modern educational facilities are located."
+    },
+
+    "card2": {
+      "mainTitle": "Join Us on Microsoft Teams!",
+      "simpleText": "Classes that cannot be held on campus will be conducted online on Microsoft Teams.",
+      "buttonText": "Click Here"
+    }
   },
   "NotFoundPage": {
     "title": "Page Not Found",

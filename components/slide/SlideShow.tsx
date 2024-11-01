@@ -6,6 +6,13 @@ import SlideDot from "@/components/slide/SlideDot";
 import { useReducer } from "react";
 import { AnimatePresence } from "framer-motion";
 
+export type slideProps = {
+  title: string;
+  description: string;
+  imageSrc: string;
+  imageAlt: string;
+};
+
 export type Action =
   | { type: "NEXT" }
   | { type: "PREV" }
@@ -26,35 +33,7 @@ function createSlideReducer(totalSlides: number) {
   };
 }
 
-export default function SlideShow() {
-  const slides = [
-    {
-      title: "Rekrutacja uzupełniająca na rok akademicki 2024/2025",
-      description: "Kierunek mechatronika trwa od 21.08.2024 do 20.09.2024",
-      imageSrc: "/images/home/slide1.jpg",
-      imageAlt: "Zdjęcie tła miasta Grudziądz",
-    },
-    {
-      title: "Bezpłatne studia inżynierskie",
-      description: "Praktyczna wiedza, realne możliwości.",
-      imageSrc: "/images/home/slide2.jpg",
-      imageAlt: "Zdjęcie tła miasta Grudziądz",
-    },
-    {
-      title: "Studia I stopnia w formie stacjonarnej ",
-      description: "W trybie dla osób pracujących",
-      imageSrc: "/images/home/slide3.jpg",
-      imageAlt: "Zdjęcie tła miasta Grudziądz",
-    },
-    {
-      title: "Darmowe certyfikowane szkolenia z zakresu: ",
-      description:
-        "programowania robotów przemysłowych, obrabiarek CNC oraz spawalnictwa.",
-      imageSrc: "/images/home/slide4.jpg",
-      imageAlt: "Zdjęcie tła miasta Grudziądz",
-    },
-  ];
-
+export default function SlideShow({ slides }: { slides: slideProps[] }) {
   const [slideNumber, dispatch] = useReducer(
     createSlideReducer(slides.length),
     0

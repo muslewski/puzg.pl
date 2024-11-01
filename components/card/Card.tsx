@@ -5,7 +5,7 @@ import { button } from "framer-motion/client";
 export type ListObjectItem = {
   title: string;
   description: string;
-  icon: `/images/${string}`;
+  icon: string;
   iconAlt: string;
 };
 

@@ -6,7 +6,13 @@ import HeroTitle from "@/components/home/HeroTitle";
 
 import { motion } from "framer-motion";
 
-export default function Hero() {
+export default function Hero({
+  slogan,
+  sloganMobile,
+}: {
+  slogan: React.ReactNode;
+  sloganMobile: React.ReactNode;
+}) {
   return (
     <div className="min-h-[75vh] lg:min-h-screen w-full">
       <div className="relative md:rounded-b-[20%] bg-gradient-to-r from-brandPrimaryBlue via-brandBrightBlue/25 to-brandBrightBlue/0 pb-2 shadow-lg">
@@ -18,7 +24,7 @@ export default function Hero() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ type: "spring", stiffness: 70 }}
           >
-            <HeroTitle />
+            <HeroTitle slogan={slogan} sloganMobile={sloganMobile} />
           </motion.div>
         </div>
 

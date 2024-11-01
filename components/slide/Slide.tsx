@@ -2,17 +2,9 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { slideProps } from "@/components/slide/SlideShow";
 
-type slideProps = {
-  data: {
-    title: string;
-    description: string;
-    imageSrc: string;
-    imageAlt: string;
-  };
-};
-
-export default function Slide({ data }: slideProps) {
+export default function Slide({ data }: { data: slideProps }) {
   return (
     <div className="relative w-full h-[28rem]">
       <motion.div

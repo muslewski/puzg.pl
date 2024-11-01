@@ -53,7 +53,70 @@
   },
   "HomePage": {
     "title": "Publiczna Uczelnia Zawodowa w Grudziądzu",
-    "description": "Poznaj naszą uczelnię, ofertę edukacyjną oraz inicjatywy wspierające rozwój zawodowy i naukowy studentów."
+    "description": "Poznaj naszą uczelnię, ofertę edukacyjną oraz inicjatywy wspierające rozwój zawodowy i naukowy studentów.",
+
+    "slogan": "Twoja edukacyjna podróż <br></br> zaczyna się tutaj!",
+    "sloganMobile": "Twoja podróż <br></br> zaczyna się tutaj!",
+
+    "slides": {
+      "0": {
+        "title": "Rekrutacja uzupełniająca na rok akademicki 2024/2025",
+        "description": "Kierunek mechatronika trwa od 21.08.2024 do 20.09.2024",
+        "imageSrc": "/images/home/slide0.jpg",
+        "imageAlt": "Zdjęcie studentów siedzących w parku"
+      },
+      "1": {
+        "title": "Bezpłatne studia inżynierskie",
+        "description": "Praktyczna wiedza, realne możliwości.",
+        "imageSrc": "/images/home/slide1.jpg",
+        "imageAlt": "Zdjęcie kobiety robiącej projekt na komputerze"
+      },
+      "2": {
+        "title": "Studia I stopnia w formie stacjonarnej ",
+        "description": "W trybie dla osób pracujących.",
+        "imageSrc": "/images/home/slide2.jpg",
+        "imageAlt": "Zdjęcie studentów robiących notatki"
+      },
+      "3": {
+        "title": "Darmowe certyfikowane szkolenia z zakresu: ",
+        "description": "programowania robotów przemysłowych, obrabiarek CNC oraz spawalnictwa.",
+        "imageSrc": "/images/home/slide3.jpg",
+        "imageAlt": "Zdjęcie robotów"
+      }
+    },
+
+    "card1": {
+      "mainTitle": "Dlaczego warto wybrać naszą uczelnię?",
+      "0": {
+        "title": "Perspektywy zatrudnienia",
+        "description": "Po ukończeniu studiów czekają na Ciebie liczne możliwości pracy dzięki dynamicznemu rozwojowi przemysłu i biznesu w Grudziądzu.",
+        "icon": "/images/home/card1.png",
+        "iconAlt": "Ikona uścisku dłoni"
+      },
+      "1": {
+        "title": "Wygodna lokalizacja",
+        "description": "Nasza uczelnia znajduje się zaledwie 15 minut spacerem od stacji PKP Grudziądz - miasto, co ułatwia dojazd.",
+        "icon": "/images/home/card2.png",
+        "iconAlt": "Ikona mapy"
+      },
+      "2": {
+        "title": "Dostosowane dla pracujących",
+        "description": "Oferujemy elastyczny program studiów, który pozwala na łączenie nauki z pracą zawodową.",
+        "icon": "/images/home/card3.png",
+        "iconAlt": "Ikona walizki do pracy"
+      }
+    },
+
+    "grayCard1": {
+      "mainTitle": "Gdzie nas znajdziesz?",
+      "simpleText": "Znajdziesz nas na ulicy Czarnieckiego 5/7 oraz Hoffmanna 1-7, gdzie mieści się nasza nowoczesna infrastruktura edukacyjna."
+    },
+
+    "card2": {
+      "mainTitle": "Dołącz do nas na Microsoft Teams!",
+      "simpleText": "Zajęcia, które nie mogą odbyć się na uczelni, będą prowadzone online na Microsoft Teams.",
+      "buttonText": "Kliknij Tutaj"
+    }
   },
   "NotFoundPage": {
     "title": "Strona nie została znaleziona",
