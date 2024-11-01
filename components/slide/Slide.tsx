@@ -16,7 +16,7 @@ export default function Slide({ data }: slideProps) {
   return (
     <div className="relative w-full h-[28rem]">
       <motion.div
-        className="absolute w-5/6 lg:w-3/5 h-2/3 lg:h-full bottom-1/4 lg:bottom-auto right-0 bg-brandPrimaryBlue rounded-l-2xl lg:rounded-2xl overflow-hidden flex"
+        className="absolute w-5/6 lg:w-3/5 h-2/3 lg:h-full bottom-1/4 lg:bottom-auto right-0 bg-gradient-to-br from-brandPrimaryBlue to-cyan-400 rounded-l-2xl lg:rounded-2xl overflow-hidden flex"
         initial={{ opacity: 0, x: 200, y: -15, rotate: 1 }}
         animate={{
           opacity: 1,

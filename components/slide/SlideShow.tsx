@@ -1,8 +1,8 @@
 "use client";
 
-import Slide from "@/components/home/Slide";
-import SlideArrow from "@/components/home/SlideArrow";
-import SlideDot from "@/components/home/SlideDot";
+import Slide from "@/components/slide/Slide";
+import SlideArrow from "@/components/slide/SlideArrow";
+import SlideDot from "@/components/slide/SlideDot";
 import { useReducer } from "react";
 import { AnimatePresence } from "framer-motion";
 
