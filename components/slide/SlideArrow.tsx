@@ -2,7 +2,7 @@
 
 import clsx from "clsx";
 import { IoIosArrowDown } from "react-icons/io";
-import { Action } from "@/components/home/SlideShow";
+import { Action } from "@/components/slide/SlideShow";
 
 export default function SlideArrow({
   direction,
