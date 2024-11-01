@@ -41,6 +41,8 @@ export default function HomePage({ params: { locale } }: Props) {
       <Hero
         slogan={t.rich("slogan", { br: () => <br /> })}
         sloganMobile={t.rich("sloganMobile", { br: () => <br /> })}
+        heroImageAlt={t("heroImageAlt")}
+        arrowAlt={t("arrowAlt")}
       />
 
       <div className="w-full flex flex-col gap-32 lg:gap-52 items-center">

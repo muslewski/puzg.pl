@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-export default function HeroArrow() {
+export default function HeroArrow({ arrowAlt }: { arrowAlt: string }) {
   const { scrollY } = useScroll();
   const rotateTransform = useTransform(scrollY, [0, 200], [0, 11]); // Adjust rotation range for subtle effect
 
@@ -22,7 +22,7 @@ export default function HeroArrow() {
       <Image
         src="/images/home/arrow.png"
         fill
-        alt="Strzałka"
+        alt={arrowAlt}
         className="object-contain"
       />
     </motion.div>

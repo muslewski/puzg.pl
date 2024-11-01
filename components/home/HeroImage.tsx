@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-export default function HeroImage() {
+export default function HeroImage({ heroImageAlt }: { heroImageAlt: string }) {
   // Use Framer Motion's useScroll to create a scroll effect
   const { scrollY } = useScroll();
   const yTransform = useTransform(scrollY, [0, 500], [0, 200]);
@@ -21,7 +21,7 @@ export default function HeroImage() {
       <Image
         src="/images/home/grudziadz2.jpeg"
         fill
-        alt="Tło przedstawiające miasto Grudziądz"
+        alt={heroImageAlt}
         priority
         className="object-cover"
       />
