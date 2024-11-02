@@ -122,8 +122,10 @@
   },
   "NotFoundPage": {
     "title": "Page Not Found",
-    "description": "We're sorry, but the page you're looking for doesn't exist or has been moved. Check the URL or return to the homepage.",
-    "h1": "Oops! The page you're looking for doesn't exist."
+    "description": "Check the URL or return to the homepage.",
+    "h1": "Oops! The page you're looking for doesn't exist.",
+    "buttonText": "Homepage",
+    "buttonIconAlt": "House icon"
   },
 
   "OfertyPracyPage": {

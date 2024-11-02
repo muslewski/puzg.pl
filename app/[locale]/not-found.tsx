@@ -1,6 +1,6 @@
 import Card from "@/components/card/Card";
+import FancyButton from "@/components/FancyButton";
 import MainWrapper from "@/components/MainWrapper";
-import { Link } from "@/i18n/routing";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
@@ -25,15 +25,19 @@ export default function NotFound() {
 
   return (
     <MainWrapper topTitle={t("title")}>
-      <Card border="bl" mainTitle={t("h1")} simpleText={t("description")} />
-
-      <div className="w-4/5 flex flex-col gap-12">
-        <div className="flex flex-col gap-6">
-          <h2></h2>
-          <p></p>
-        </div>
-        <Link href="/">Strona Główna</Link>
-      </div>
+      <Card
+        border="bl"
+        mainTitle={t("h1")}
+        simpleText={t("description")}
+        customElement={
+          <FancyButton
+            text={t("buttonText")}
+            icon="/images/home.png"
+            iconAlt={t("buttonIconAlt")}
+            link="/"
+          />
+        }
+      />
     </MainWrapper>
   );
 }

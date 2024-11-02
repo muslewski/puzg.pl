@@ -122,8 +122,10 @@
   },
   "NotFoundPage": {
     "title": "Strona nie została znaleziona",
-    "description": "Przepraszamy, ale strona, której szukasz, nie istnieje lub została przeniesiona. Sprawdź adres URL lub wróć na stronę główną.",
-    "h1": "Ups! Strona, której szukasz, nie istnieje."
+    "description": "Sprawdź adres URL lub wróć na stronę główną.",
+    "h1": "Ups! Strona, której szukasz, nie istnieje.",
+    "buttonText": "Strona Główna",
+    "buttonIconAlt": "Ikona domu"
   },
 
   "OfertyPracyPage": {
