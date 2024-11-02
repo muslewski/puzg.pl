@@ -1,6 +1,13 @@
-import { news } from "@/app/[locale]/(uczelnia)/aktualnosci/page";
+import { Locale } from "@/i18n/routing";
 
-export default function PostPage({ slug }: { slug: string }) {
-  console.log(slug);
-  return <div>test {slug}</div>;
+type Props = {
+  params: {
+    locale: Locale;
+    slug: string;
+  };
+};
+
+export default function PostPage({ params }: Props) {
+  console.log(params.slug);
+  return <div>test {params.slug}</div>;
 }
