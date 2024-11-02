@@ -27,7 +27,7 @@ export default function Slide({ data }: { data: slideProps }) {
           fill
           sizes="(max-width: 1024px) 83.333vw, 60vw"
           alt={data.imageAlt}
-          className="object-cover shadow-inner3"
+          className="object-cover"
         />
       </motion.div>
 

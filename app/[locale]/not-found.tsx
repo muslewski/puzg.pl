@@ -32,7 +32,7 @@ export default function NotFound() {
         customElement={
           <FancyButton
             text={t("buttonText")}
-            icon="/images/home.png"
+            icon="/images/icons/home.png"
             iconAlt={t("buttonIconAlt")}
             link="/"
           />

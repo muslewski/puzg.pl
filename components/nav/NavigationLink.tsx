@@ -10,15 +10,11 @@ import { useMediaQuery } from "react-responsive";
 // Define the structure for submenu items
 type SubmenuItem = {
   label: string;
-  href: Pathnames;
+  href: ComponentProps<typeof Link>["href"];
 };
 
 // Extend the props to include submenu items
-type NavigationLinkProps<Pathname extends Pathnames> = Omit<
-  ComponentProps<typeof Link>,
-  "href"
-> & {
-  href?: Pathnames;
+type NavigationLinkProps = ComponentProps<typeof Link> & {
   submenu?: SubmenuItem[];
   submenuWidth?: number;
   children: React.ReactNode;
@@ -30,13 +26,13 @@ export function CustomUnderline() {
   );
 }
 
-export default function NavigationLink<Pathname extends Pathnames>({
+export default function NavigationLink({
   href,
   submenu,
   submenuWidth = 36,
   children,
   ...rest
-}: NavigationLinkProps<Pathname>) {
+}: NavigationLinkProps) {
   const [isOpen, setIsOpen] = useState(false);
   const path = usePathname();
 
@@ -97,7 +93,7 @@ export default function NavigationLink<Pathname extends Pathnames>({
               >
                 {submenu.map((item, index) => (
                   <Link
-                    key={item.href}
+                    key={index}
                     aria-current={path === item.href ? "page" : undefined}
                     className={clsx("text-base", linkStyle)}
                     style={{ opacity: path === item.href ? "70%" : "" }}
