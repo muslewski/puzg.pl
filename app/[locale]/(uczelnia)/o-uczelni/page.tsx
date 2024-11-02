@@ -1,5 +1,5 @@
 import MainWrapper from "@/components/MainWrapper";
-import TopTitle from "@/components/TopTitle";
+
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -25,9 +25,5 @@ export default function OUczelniPage({ params: { locale } }: Props) {
 
   const t = useTranslations("OUczelniPage");
 
-  return (
-    <MainWrapper>
-      <TopTitle>{t("title")}</TopTitle>
-    </MainWrapper>
-  );
+  return <MainWrapper topTitle={t("title")}>nothing</MainWrapper>;
 }

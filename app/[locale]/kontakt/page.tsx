@@ -25,9 +25,5 @@ export default function KontaktPage({ params: { locale } }: Props) {
 
   const t = useTranslations("KontaktPage");
 
-  return (
-    <MainWrapper>
-      <TopTitle>{t("title")}</TopTitle>
-    </MainWrapper>
-  );
+  return <MainWrapper topTitle={t("title")}>nothing</MainWrapper>;
 }

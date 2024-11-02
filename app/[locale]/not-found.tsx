@@ -1,5 +1,5 @@
+import Card from "@/components/card/Card";
 import MainWrapper from "@/components/MainWrapper";
-import TopTitle from "@/components/TopTitle";
 import { Link } from "@/i18n/routing";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
@@ -24,13 +24,13 @@ export default function NotFound() {
   const t = useTranslations("NotFoundPage");
 
   return (
-    <MainWrapper>
-      <TopTitle>{t("title")}</TopTitle>
+    <MainWrapper topTitle={t("title")}>
+      <Card border="bl" mainTitle={t("h1")} simpleText={t("description")} />
 
       <div className="w-4/5 flex flex-col gap-12">
         <div className="flex flex-col gap-6">
-          <h2>{t("h1")}</h2>
-          <p>{t("description")}</p>
+          <h2></h2>
+          <p></p>
         </div>
         <Link href="/">Strona Główna</Link>
       </div>
