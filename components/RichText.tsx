@@ -9,7 +9,7 @@ type Props = {
 
 export default function RichText({ children }: Props) {
   return (
-    <div className="prose">
+    <div className="prose flex flex-col gap-7">
       {children({
         p: (chunks: ReactNode) => <p>{chunks}</p>,
         b: (chunks: ReactNode) => <b className="font-semibold">{chunks}</b>,

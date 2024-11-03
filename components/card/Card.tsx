@@ -22,12 +22,13 @@ export default function Card({
   richTextWordsLimit,
   image,
   imageAlt,
+  imageBlock = false,
   customElement,
   customElementIfWordsLimit = false,
   customGradient,
   customInsideBorder,
 }: {
-  mainTitle: string;
+  mainTitle?: string;
   border: "bl" | "br" | "tl" | "tr";
   listObject?: ListObjectItem[];
   simpleText?: string;
@@ -36,6 +37,7 @@ export default function Card({
   richTextWordsLimit?: number;
   image?: string;
   imageAlt?: string;
+  imageBlock?: boolean;
   customElement?: React.ReactNode;
   customElementIfWordsLimit?: boolean;
   customGradient?: `from-${string}`;
@@ -85,7 +87,6 @@ export default function Card({
 
     if (React.isValidElement(node)) {
       return React.cloneElement(node, {
-        className: "flex flex-col gap-4",
         children: React.Children.map(node.props.children, (child) =>
           sliceRichText(child, limit, count)
         ),
@@ -127,7 +128,7 @@ export default function Card({
           )}
         >
           <div className="flex flex-col xl:flex-row gap-12 xl:items-center">
-            {image && imageAlt && (
+            {image && imageAlt && !imageBlock && (
               <div className="relative h-full  w-auto max-w-64 xl:max-w-96 flex items-center justify-center overflow-hidden rounded-lg bg-black">
                 <Image
                   src={image}
@@ -150,6 +151,18 @@ export default function Card({
                 customElementIfWordsLimit &&
                 tooMuchWords &&
                 customElement}
+
+              {image && imageAlt && imageBlock && (
+                <div className="relative h-full   w-auto max-w-64 xl:max-w-2xl flex items-center justify-center overflow-hidden rounded-lg bg-black">
+                  <Image
+                    src={image}
+                    width={2500}
+                    height={1024}
+                    className="object-contain w-auto h-full"
+                    alt={imageAlt}
+                  />
+                </div>
+              )}
 
               {listObject && (
                 <ul className="pt-2 sm:pt-10 flex flex-col lg:flex-row gap-x-24 gap-y-16 sm:gap-y-24 justify-between">

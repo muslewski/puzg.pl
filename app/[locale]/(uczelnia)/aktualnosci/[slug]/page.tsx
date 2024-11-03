@@ -5,6 +5,7 @@ import { newsKeys } from "@/app/[locale]/(uczelnia)/aktualnosci/page";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Metadata } from "next";
 import RichText from "@/components/RichText";
+import Card from "@/components/card/Card";
 
 type Props = {
   params: {
@@ -17,11 +18,6 @@ type NewsKey = (typeof newsKeys)[number];
 
 function isValidSlug(slug: string): slug is NewsKey {
   return newsKeys.includes(slug as NewsKey);
-}
-
-// Utility function to remove HTML tags
-function stripHtml(html: string): string {
-  return html.replace(/<[^>]*>/g, "");
 }
 
 export async function generateMetadata({
@@ -52,10 +48,15 @@ export default function PostPage({ params: { locale, slug } }: Props) {
   if (isValidSlug(slug)) {
     const t = useTranslations(`AktualnosciPage.news.${slug}`);
 
-    console.log(slug);
     return (
       <MainWrapper topTitle={t("title")}>
-        <RichText>{(p) => t.rich(`description`, p)}</RichText>
+        <Card
+          image={t("imageSrc")}
+          imageAlt={t("imageAlt")}
+          imageBlock
+          border="tr"
+          richText={<RichText>{(p) => t.rich(`description`, p)}</RichText>}
+        />
       </MainWrapper>
     );
   } else {
