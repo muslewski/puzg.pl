@@ -6,6 +6,7 @@ import { useLocale } from "next-intl";
 import clsx from "clsx";
 import { useMediaQuery } from "react-responsive";
 import { motion, AnimatePresence } from "framer-motion";
+import { useParams } from "next/navigation";
 
 export function LocaleButtonsLogic() {
   const [isPending, startTransition] = useTransition();
@@ -13,10 +14,18 @@ export function LocaleButtonsLogic() {
   const pathname = usePathname();
   const currentLocale = useLocale();
 
+  const params = useParams();
+
   function changeLanguage(locale: Locale) {
     if (locale === currentLocale) return;
     startTransition(() => {
-      router.replace({ pathname }, { locale });
+      router.replace(
+        // @ts-expect-error -- TypeScript will validate that only known `params`
+        // are used in combination with a given `pathname`. Since the two will
+        // always match for the current route, we can skip runtime checks.
+        { pathname, params },
+        { locale }
+      );
     });
   }
 

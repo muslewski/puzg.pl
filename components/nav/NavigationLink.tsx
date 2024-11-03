@@ -14,7 +14,8 @@ type SubmenuItem = {
 };
 
 // Extend the props to include submenu items
-type NavigationLinkProps = ComponentProps<typeof Link> & {
+type NavigationLinkProps = Omit<ComponentProps<typeof Link>, "href"> & {
+  href?: ComponentProps<typeof Link>["href"];
   submenu?: SubmenuItem[];
   submenuWidth?: number;
   children: React.ReactNode;
