@@ -194,6 +194,7 @@
   "AktualnosciPage": {
     "title": "News",
     "description": "Stay updated with the latest events, announcements, and information related to college life.",
+    "button": "See More",
 
     "news": {
       "0": {
@@ -223,6 +224,20 @@
         "imageSrc": "/images/aktualnosci/post3.0.png",
         "imageAlt": "Photo showing the town square in Grudziądz",
         "description": "<p>On October 18, 2024, the election for the Rector of the Public Vocational University in Grudziądz for the 2024 - 2028 term took place. Dr. Eng. Michał Sójka, University Professor, was elected as the Rector of PUZG.</p><p>Congratulations!</p>"
+      },
+
+      "notFound": {
+        "title": "Post Not Found",
+        "heading": "We're Sorry",
+        "description": "Unfortunately, we can't find the information you're looking for. Please check if the URL is correct or return to the home page.",
+        "imageSrc": "/images/aktualnosci/dog.jpg",
+        "imageAlt": "The image shows the sweet dog",
+        "buttonText": "Homepage",
+        "buttonIconAlt": "Home icon"
+      },
+      "buttons": {
+        "buttonText": "Back",
+        "buttonIconAlt": "Back Arrow"
       }
     }
   },

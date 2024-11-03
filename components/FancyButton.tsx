@@ -11,14 +11,20 @@ export default function FancyButton({
   iconAlt,
   customGradient,
   borderColor,
+  textColor,
+  customClass,
+  small = false,
 }: {
   text: string;
   link?: ComponentProps<typeof Link>["href"];
   outsideLink?: string;
   icon?: string;
   iconAlt?: string;
-  customGradient?: `bg-gradient-${string}`;
+  customGradient?: string;
   borderColor?: `border-${string}`;
+  textColor?: `text-${string}`;
+  customClass?: string;
+  small?: boolean;
 }) {
   if (link && outsideLink) {
     throw new Error("Only one of `link` or `outsideLink` should be provided.");
@@ -33,14 +39,24 @@ export default function FancyButton({
       <>
         <div
           className={clsx(
-            "px-8 sm:px-10 py-3 sm:py-4 w-fit border-l-2 border-b-2 text-white text-lg md:text-xl 3xl:text-2xl font-outfit font-semibold rounded-xl flex gap-5 items-center transition-transform hover:scale-105 active:scale-110 text-center",
+            "px-8 sm:px-10 py-3 sm:py-4 w-fit border-l-2 border-b-2  font-outfit font-semibold rounded-xl flex items-center transition-transform hover:scale-105 active:scale-110 text-center",
+            small
+              ? "text-base md:text-lg 3xl:text-xl gap-4"
+              : "text-lg md:text-xl 3xl:text-2xl gap-5",
+            textColor ?? "text-white",
             borderColor ?? "border-brandDark/50",
             customGradient ??
-              "bg-gradient-to-br from-brandPrimaryBlue to-brandBrightBlue"
+              "bg-gradient-to-br from-brandPrimaryBlue to-brandBrightBlue",
+            customClass
           )}
         >
           {icon && iconAlt && (
-            <div className="relative h-10 w-10">
+            <div
+              className={clsx(
+                "relative h-10 w-10",
+                small ? "h-7 w-7" : "h-10 w-10"
+              )}
+            >
               <Image src={icon} fill className="object-cover" alt={iconAlt} />
             </div>
           )}

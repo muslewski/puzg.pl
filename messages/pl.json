@@ -194,6 +194,7 @@
   "AktualnosciPage": {
     "title": "Aktualności",
     "description": "Bądź na bieżąco z najnowszymi wydarzeniami, ogłoszeniami i informacjami dotyczącymi życia uczelni.",
+    "button": "Zobacz Więcej",
 
     "news": {
       "0": {
@@ -223,6 +224,20 @@
         "imageSrc": "/images/aktualnosci/post3.0.png",
         "imageAlt": "Zdjęcie przedstawia rynek w mieście Grudziądz",
         "description": "<p>Dnia 18 października 2024 r. na Publicznej Uczelni Zawodowej w Grudziądzu odbyły się wybory Rektora na kadencję 2024 - 2028. JM Rektorem PUZG został dr inż. Michał Sójka, prof. Uczelni.</p><p>Serdecznie gratulujemy!</p>"
+      },
+
+      "notFound": {
+        "title": "Post nie został znaleziony",
+        "heading": "Przepraszamy",
+        "description": "Niestety, nie możemy znaleźć informacji, której szukasz. Sprawdź, czy adres URL jest poprawny, lub wróć na stronę główną.",
+        "imageSrc": "/images/aktualnosci/dog.jpg",
+        "imageAlt": "Zdjęcie przedstawia pieska",
+        "buttonText": "Strona Główna",
+        "buttonIconAlt": "Ikona domu"
+      },
+      "buttons": {
+        "buttonText": "Wróć",
+        "buttonIconAlt": "Strzałka powrotu"
       }
     }
   },

@@ -141,6 +141,18 @@ export default function Card({
             )}
 
             <div className="flex flex-col gap-10">
+              {image && imageAlt && imageBlock && (
+                <div className="relative max-h-[64rem] max-w-full w-fit xl:max-w-xl flex items-center justify-center overflow-hidden rounded-lg bg-black">
+                  <Image
+                    src={image}
+                    width={2500}
+                    height={1024}
+                    className="object-contain w-auto h-full"
+                    alt={imageAlt}
+                  />
+                </div>
+              )}
+
               <h2>{mainTitle}</h2>
 
               {simpleText && <p>{simpleText}</p>}
@@ -151,18 +163,6 @@ export default function Card({
                 customElementIfWordsLimit &&
                 tooMuchWords &&
                 customElement}
-
-              {image && imageAlt && imageBlock && (
-                <div className="relative h-full   w-auto max-w-64 xl:max-w-2xl flex items-center justify-center overflow-hidden rounded-lg bg-black">
-                  <Image
-                    src={image}
-                    width={2500}
-                    height={1024}
-                    className="object-contain w-auto h-full"
-                    alt={imageAlt}
-                  />
-                </div>
-              )}
 
               {listObject && (
                 <ul className="pt-2 sm:pt-10 flex flex-col lg:flex-row gap-x-24 gap-y-16 sm:gap-y-24 justify-between">

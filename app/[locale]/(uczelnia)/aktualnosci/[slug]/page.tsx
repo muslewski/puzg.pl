@@ -6,6 +6,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Metadata } from "next";
 import RichText from "@/components/RichText";
 import Card from "@/components/card/Card";
+import FancyButton from "@/components/FancyButton";
 
 type Props = {
   params: {
@@ -47,22 +48,61 @@ export default function PostPage({ params: { locale, slug } }: Props) {
 
   if (isValidSlug(slug)) {
     const t = useTranslations(`AktualnosciPage.news.${slug}`);
+    const t2 = useTranslations(`AktualnosciPage.news.buttons`);
 
     return (
-      <MainWrapper topTitle={t("title")}>
+      <MainWrapper topTitle={t("title")} zeroGap="gap-12 lg:gap-16">
         <Card
           image={t("imageSrc")}
           imageAlt={t("imageAlt")}
           imageBlock
           border="tr"
           richText={<RichText>{(p) => t.rich(`description`, p)}</RichText>}
+          customElement={
+            <FancyButton
+              link="/aktualnosci"
+              icon="/images/icons/left-arrow.png"
+              iconAlt={t2("buttonIconAlt")}
+              text={t2("buttonText")}
+              small
+            />
+          }
         />
       </MainWrapper>
     );
   } else {
     // Handle invalid slug
+    const t = useTranslations(`AktualnosciPage.news.notFound`);
+    const t2 = useTranslations(`AktualnosciPage.news.buttons`);
+
     return (
-      <MainWrapper topTitle="Invalid News Item">Invalid news item</MainWrapper>
+      <MainWrapper topTitle={t("title")} zeroGap="gap-10 lg:gap-16">
+        <Card
+          mainTitle={t("heading")}
+          image={t("imageSrc")}
+          imageAlt={t("imageAlt")}
+          border="tr"
+          simpleText={t("description")}
+          customElement={
+            <div className="flex gap-12 flex-wrap">
+              <FancyButton
+                link="/aktualnosci"
+                icon="/images/icons/left-arrow.png"
+                iconAlt={t2("buttonIconAlt")}
+                text={t2("buttonText")}
+                small
+              />
+              <FancyButton
+                text={t("buttonText")}
+                icon="/images/icons/home.png"
+                iconAlt={t("buttonIconAlt")}
+                link="/"
+                small
+              />
+            </div>
+          }
+        />
+      </MainWrapper>
     );
   }
 }

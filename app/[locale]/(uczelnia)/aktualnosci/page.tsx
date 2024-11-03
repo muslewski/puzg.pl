@@ -68,11 +68,12 @@ export default function AktualnosciPage({ params: { locale } }: Props) {
           imageAlt={post.imageAlt}
           customElement={
             <FancyButton
-              text="Zobacz Więcej"
+              text={t("button")}
               link={{
                 pathname: "/aktualnosci/[slug]",
                 params: { slug: key },
               }}
+              small
             />
           }
         />
