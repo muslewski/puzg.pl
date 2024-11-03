@@ -1,7 +1,9 @@
+"use client";
+
 import ListItem from "@/components/card/ListItem";
 import clsx from "clsx";
-import { button } from "framer-motion/client";
 import Image from "next/image";
+import React from "react";
 
 export type ListObjectItem = {
   title: string;
@@ -15,7 +17,9 @@ export default function Card({
   border,
   listObject,
   simpleText,
+  richText,
   simpleTextWordsLimit,
+  richTextWordsLimit,
   image,
   imageAlt,
   customElement,
@@ -27,7 +31,9 @@ export default function Card({
   border: "bl" | "br" | "tl" | "tr";
   listObject?: ListObjectItem[];
   simpleText?: string;
+  richText?: React.ReactNode;
   simpleTextWordsLimit?: number;
+  richTextWordsLimit?: number;
   image?: string;
   imageAlt?: string;
   customElement?: React.ReactNode;
@@ -53,6 +59,45 @@ export default function Card({
       tooMuchWords = true;
     }
   }
+
+  // Recursive function to slice richText by word limit
+  const sliceRichText = (
+    node: React.ReactNode,
+    limit: number,
+    count: {
+      words: number;
+    } = { words: 0 }
+  ): React.ReactNode | null => {
+    if (count.words >= limit) return null;
+
+    if (typeof node === "string") {
+      const words = node.split(" ");
+      const remainingWords = limit - count.words;
+
+      if (words.length > remainingWords) {
+        count.words += remainingWords;
+        return words.slice(0, remainingWords).join(" ") + "...";
+      } else {
+        count.words += words.length;
+        return node;
+      }
+    }
+
+    if (React.isValidElement(node)) {
+      return React.cloneElement(node, {
+        className: "flex flex-col gap-4",
+        children: React.Children.map(node.props.children, (child) =>
+          sliceRichText(child, limit, count)
+        ),
+      } as React.Attributes);
+    }
+
+    return node;
+  };
+
+  richText = richTextWordsLimit
+    ? sliceRichText(richText, richTextWordsLimit)
+    : richText;
 
   return (
     <div className="w-full 2xl:w-4/5 px-6 lg:px-12 2xl:px-0">
@@ -98,6 +143,8 @@ export default function Card({
               <h2>{mainTitle}</h2>
 
               {simpleText && <p>{simpleText}</p>}
+              {richText && <div>{richText}</div>}
+
               {customElement && !customElementIfWordsLimit && customElement}
               {customElement &&
                 customElementIfWordsLimit &&

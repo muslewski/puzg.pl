@@ -193,7 +193,38 @@
 
   "AktualnosciPage": {
     "title": "News",
-    "description": "Stay updated with the latest events, announcements, and information related to college life."
+    "description": "Stay updated with the latest events, announcements, and information related to college life.",
+
+    "news": {
+      "0": {
+        "title": "New Rector",
+        "metaDescription": "Dr. Michał Sójka, the newly appointed Rector of the Public Vocational University in Grudziądz, begins his term on September 11, 2024. Discover his achievements in the field of tribology.",
+        "imageSrc": "/images/aktualnosci/post0.0.png",
+        "imageAlt": "Photo showing the new Rector of the University",
+        "description": "<p>As of September 11, 2024, the Public Vocational University in Grudziądz has a new Rector.</p> <p>The newly appointed Rector of the Public Vocational University in Grudziądz is Dr. Eng. Michał Sójka, a respected specialist in the field of tribology. His academic career includes years of experience as a lecturer at the Kujawska School of Higher Education in Włocławek in fields such as Machine Construction and Operation, Transport, Technical and IT Engineering, Mechanical Engineering, and Logistics, as well as serving as Dean of the off-campus Faculty of Mechanical Engineering in Grudziądz, Kujawska School of Higher Education in Włocławek.</p> <p>Dr. Eng. Michał Sójka is the author of numerous publications related to his primary scientific discipline, Mechanical Engineering. He is also the founder, owner, and president of an R&D company specializing in engineering innovation implementations and a tribology laboratory.</p> <p>The extensive experience and broad knowledge of the new Rector are valuable assets for our University.</p>"
+      },
+      "1": {
+        "title": "Academic Year Inauguration",
+        "metaDescription": "Join us for the ceremonial inauguration of the 2024/2025 academic year at the Public Vocational University in Grudziądz on October 15, 2024.",
+        "imageSrc": "/images/aktualnosci/post1.0.png",
+        "imageAlt": "Photo showing the town square in Grudziądz",
+        "description": "<p>The ceremonial inauguration of the first academic year at the Public Vocational University in Grudziądz, attended by the University's authorities, students, staff, and invited guests, will take place on October 15, 2024, at 3:00 PM at the Cultural Center Theater in Grudziądz. During the inauguration, students of the Mechatronics program will take an official oath.</p>"
+      },
+      "2": {
+        "title": "Mechatronics Students Take Oath",
+        "metaDescription": "Students of the Mechatronics program at the Public Vocational University in Grudziądz took their solemn oath during the inauguration of the academic year on October 15, 2024.",
+        "imageSrc": "/images/aktualnosci/post2.0.png",
+        "imageAlt": "Photo showing the town square in Grudziądz",
+        "description": "<p>On October 15, 2024, the ceremonial inauguration of the academic year took place. Students of the Mechatronics program took an oath, which reads:</p> <p>”I solemnly swear to strive diligently to acquire knowledge, skills, and personal development, to show respect to the authorities of the Public Vocational University in Grudziądz and all members of its community, to adhere to laws and good academic customs, and to act in a way that honors the dignity and honor of a student of the Public Vocational University in Grudziądz.”</p>"
+      },
+      "3": {
+        "title": "Rector Elections for 2024 - 2028 Term",
+        "metaDescription": "The election of the Rector for the 2024-2028 term is complete! Dr. Michał Sójka has been elected the new Rector of the Public Vocational University in Grudziądz.",
+        "imageSrc": "/images/aktualnosci/post3.0.png",
+        "imageAlt": "Photo showing the town square in Grudziądz",
+        "description": "<p>On October 18, 2024, the election for the Rector of the Public Vocational University in Grudziądz for the 2024 - 2028 term took place. Dr. Eng. Michał Sójka, University Professor, was elected as the Rector of PUZG.</p><p>Congratulations!</p>"
+      }
+    }
   },
   "OUczelniPage": {
     "title": "About College",
