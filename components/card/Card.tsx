@@ -142,12 +142,11 @@ export default function Card({
 
             <div className="flex flex-col gap-10">
               {image && imageAlt && imageBlock && (
-                <div className="relative max-h-[64rem] max-w-full w-fit xl:max-w-xl flex items-center justify-center overflow-hidden rounded-lg bg-black">
+                <div className="relative w-64 h-64 overflow-hidden rounded-lg bg-black">
                   <Image
                     src={image}
-                    width={2500}
-                    height={1024}
-                    className="object-contain w-auto h-full"
+                    fill
+                    className="object-cover w-auto h-full"
                     alt={imageAlt}
                   />
                 </div>

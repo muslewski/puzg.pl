@@ -29,6 +29,7 @@ export type newsProps = {
   description: React.ReactNode;
 };
 
+// Add number of posts
 export const newsKeys = ["0", "1", "2", "3"] as const;
 
 export default function AktualnosciPage({ params: { locale } }: Props) {
