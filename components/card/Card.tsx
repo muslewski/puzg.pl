@@ -2,6 +2,7 @@
 
 import { ImageOrientation } from "@/app/[locale]/(uczelnia)/aktualnosci/page";
 import ListItem from "@/components/card/ListItem";
+import ImageCarousel from "@/components/carousel/ImageCarousel";
 import clsx from "clsx";
 import Image from "next/image";
 import React from "react";
@@ -161,6 +162,7 @@ export default function Card({
                 imagesAlt &&
                 imagesOrientation &&
                 images.length > 0 &&
+                images.length < 3 &&
                 imagesAlt.length > 0 && (
                   <div className="flex gap-4 flex-wrap max-w-full">
                     {" "}
@@ -185,6 +187,14 @@ export default function Card({
                       </div>
                     ))}
                   </div>
+                )}
+
+              {images &&
+                imagesAlt &&
+                imagesOrientation &&
+                images.length >= 3 &&
+                imagesAlt.length >= 3 && (
+                  <ImageCarousel images={images} altImages={imagesAlt} small />
                 )}
 
               {image && imageAlt && imageBlock && (

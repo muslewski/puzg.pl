@@ -38,9 +38,14 @@ export default function OUczelniPage({ params: { locale } }: Props) {
     "/images/o-uczelni/7.jpg",
   ];
 
+  // ! Remember to add alt images
+
   return (
     <MainWrapper topTitle={t("title")}>
-      <ImageCarousel images={images} />
+      <ImageCarousel
+        images={images}
+        altImages={["a", "b", "c", "d", "e", "f", "g"]}
+      />
 
       <Card
         border="tl"

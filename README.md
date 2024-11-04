@@ -50,3 +50,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [ ] Change HeroImage to [obraz](https://stock.adobe.com/pl/search?k=grudziadz&asset_id=65177066)
 - [ ] Change metaDescription of news to something shorter
 - [ ] Add Self-Healing Urls for news
+- [ ] Add alt images to oUczelniPage Carousel

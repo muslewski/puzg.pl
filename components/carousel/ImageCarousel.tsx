@@ -5,6 +5,7 @@ import SlideDot from "@/components/slide/SlideDot";
 import Image from "next/image";
 import { useReducer } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import clsx from "clsx";
 
 export type Action =
   | { type: "NEXT" }
@@ -26,7 +27,15 @@ function createCarouselReducer(totalImages: number) {
   };
 }
 
-export default function ImageCarousel({ images }: { images: string[] }) {
+export default function ImageCarousel({
+  images,
+  altImages,
+  small = false,
+}: {
+  images: string[];
+  altImages: string[];
+  small?: boolean;
+}) {
   const [imageNumber, dispatch] = useReducer(
     createCarouselReducer(images.length),
     0
@@ -40,39 +49,61 @@ export default function ImageCarousel({ images }: { images: string[] }) {
     <div className="flex flex-col gap-8 lg:gap-12 items-center">
       <div className="flex gap-6 md:gap-12 items-center">
         <div
-          className="relative  hidden sm:block w-[500px] h-[300px] rounded-xl overflow-hidden hover:scale-105 transition-transform cursor-pointer"
+          className={clsx(
+            "relative rounded-xl overflow-hidden hover:scale-105 transition-transform cursor-pointer",
+            small
+              ? "w-[150px] 2xl:w-[250px] h-[90px] 2xl:h-[150px] hidden lg:block"
+              : "w-[500px] h-[300px] hidden sm:block"
+          )}
           onClick={() => dispatch({ type: "PREV" })}
         >
           <Image
             className="object-cover "
             fill
             src={images[prevImage]}
-            alt=""
+            alt={altImages[prevImage]}
           />
         </div>
-        <div className="relative w-[500px] lg:w-[700px] h-[300px] lg:h-[500px] rounded-xl overflow-hidden shadow-md">
+        <div
+          className={clsx(
+            "relative rounded-xl overflow-hidden shadow-md",
+            small
+              ? "w-[250px] sm:w-[400px] 2xl:w-[500px] h-[300px] 2xl:h-[350px]"
+              : "w-[500px] lg:w-[700px] h-[300px] lg:h-[500px]"
+          )}
+        >
           <Image
             className="object-cover "
             fill
             src={images[imageNumber]}
-            alt=""
+            alt={altImages[imageNumber]}
           />
         </div>
 
         <div
-          className="relative hidden sm:block w-[500px] h-[300px] rounded-xl overflow-hidden hover:scale-105 transition-transform cursor-pointer"
+          className={clsx(
+            "relative rounded-xl overflow-hidden hover:scale-105 transition-transform cursor-pointer",
+            small
+              ? "w-[150px] 2xl:w-[250px] h-[90px] 2xl:h-[150px] hidden lg:block"
+              : "w-[500px] h-[300px] hidden sm:block"
+          )}
           onClick={() => dispatch({ type: "NEXT" })}
         >
           <Image
             className="object-cover "
             fill
             src={images[nextImage]}
-            alt=""
+            alt={altImages[nextImage]}
           />
         </div>
       </div>
 
-      <div className="sm:px-8 lg:px-4 w-fit flex flex-col -rotate-3 lg:rotate-0 lg:flex-row items-center justify-between gap-6 lg:gap-32">
+      <div
+        className={clsx(
+          "sm:px-8 lg:px-4 w-fit flex flex-col -rotate-3 lg:rotate-0 lg:flex-row items-center justify-between gap-6 lg:gap-32",
+          small ? "w-full" : "w-fit"
+        )}
+      >
         <SlideArrow
           dispatch={dispatch}
           direction="left"
