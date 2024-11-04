@@ -1,5 +1,6 @@
 import Card from "@/components/card/Card";
 import GrayCard from "@/components/card/GrayCard";
+import ImageCarousel from "@/components/carousel/ImageCarousel";
 import MainWrapper from "@/components/MainWrapper";
 
 import { Metadata } from "next";
@@ -27,20 +28,30 @@ export default function OUczelniPage({ params: { locale } }: Props) {
 
   const t = useTranslations("OUczelniPage");
 
+  const images = [
+    "/images/o-uczelni/1.jpg",
+    "/images/o-uczelni/2.jpg",
+    "/images/o-uczelni/3.jpg",
+    "/images/o-uczelni/4.jpg",
+    "/images/o-uczelni/5.jpg",
+    "/images/o-uczelni/6.jpg",
+    "/images/o-uczelni/7.jpg",
+  ];
+
   return (
     <MainWrapper topTitle={t("title")}>
-      <div className="flex flex-col items-center w-full gap-16 lg:gap-24">
-        <Card
-          border="tl"
-          mainTitle="Nasza Misja"
-          simpleText="Misją Publicznej Uczelni Zawodowej w Grudziądzu jest przede wszystkim stworzenie silnego ośrodka edukacyjnego, który nie tylko kształci przyszłych specjalistów, ale również aktywnie uczestniczy w rozwiązywaniu głównych wyzwań społecznych i gospodarczych. Stawiamy na rozwój umiejętności praktycznych, innowacyjność i współpracę z lokalnymi oraz krajowymi instytucjami."
-        />
-        <Card
-          border="br"
-          mainTitle="Realizujemy Wizję"
-          simpleText="Dążymy do kształtowania przyszłości poprzez edukację, innowacje oraz zaangażowanie społeczne. Naszym celem jest nie tylko przygotowanie studentów do rynku pracy, ale także inspirowanie ich do tworzenia nowoczesnych rozwiązań technologicznych, które mogą zmieniać gospodarkę."
-        />
-      </div>
+      <ImageCarousel images={images} />
+
+      <Card
+        border="tl"
+        mainTitle="Nasza misja"
+        simpleText="Misją Publicznej Uczelni Zawodowej w Grudziądzu jest przede wszystkim stworzenie silnego ośrodka edukacyjnego, który nie tylko kształci przyszłych specjalistów, ale również aktywnie uczestniczy w rozwiązywaniu głównych wyzwań społecznych i gospodarczych. Stawiamy na rozwój umiejętności praktycznych, innowacyjność i współpracę z lokalnymi oraz krajowymi instytucjami."
+      />
+      <Card
+        border="br"
+        mainTitle="Realizujemy wizję"
+        simpleText="Dążymy do kształtowania przyszłości poprzez edukację, innowacje oraz zaangażowanie społeczne. Naszym celem jest nie tylko przygotowanie studentów do rynku pracy, ale także inspirowanie ich do tworzenia nowoczesnych rozwiązań technologicznych, które mogą zmieniać gospodarkę."
+      />
 
       <GrayCard
         mainTitle="Mechatronika i Nowoczesne Laboratoria dla Studentów"
@@ -63,6 +74,47 @@ export default function OUczelniPage({ params: { locale } }: Props) {
         Branżowego Centrum Umiejętności będzie można zaoferować studentom całą
         gamę bezpłatnych kursów, m.in. z projektowania robotów czy modelowania
         3D."
+      />
+
+      <Card
+        mainTitle="Nasze mocne strony"
+        border="bl"
+        listObject={[
+          {
+            title: "Nowoczesna infrastruktura",
+            description: "Sale wyposażone w nowoczesny sprzęt.",
+            icon: "/images/icons/Rocket.svg",
+            iconAlt: "s",
+          },
+          {
+            title: "Praktyczne podejście do nauki",
+            description: "Współpraca z Centrum Kształcenia Zawodowego.",
+            icon: "/images/icons/Chart.svg",
+            iconAlt: "s",
+          },
+          {
+            title: "Bezpłatne kursy",
+            description: "Kursy z projektowania robotów i modelowania 3D.",
+            icon: "/images/icons/Users.svg",
+            iconAlt: "s",
+          },
+        ]}
+      />
+
+      <Card
+        mainTitle="Gdzie nas znajdziesz?"
+        simpleText="Znajdziesz nas na ulicy Czarnieckiego 5/7 oraz Hoffmanna 1-7, gdzie mieści się nasza nowoczesna infrastruktura edukacyjna."
+        border="tr"
+        customElement={
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d522.5370547032383!2d18.753977153923262!3d53.479048888948526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4702cfd876a65acb%3A0xe6d78eb49d59c1f1!2sCzarnieckiego%205%2F7%2C%2086-300%20Grudzi%C4%85dz!5e0!3m2!1sen!2spl!4v1730317783353!5m2!1sen!2spl"
+            width="600"
+            height="450"
+            className="border-8 rounded-2xl border-brandPrimaryBlue border-double h-64 sm:h-96 w-full xl:w-3/4 shadow-lg"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        }
       />
     </MainWrapper>
   );

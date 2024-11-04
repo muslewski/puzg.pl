@@ -7,6 +7,7 @@ import { Metadata } from "next";
 import RichText from "@/components/RichText";
 import Card from "@/components/card/Card";
 import FancyButton from "@/components/FancyButton";
+import { newsData } from "@/app/[locale]/(uczelnia)/aktualnosci/page";
 
 type Props = {
   params: {
@@ -45,25 +46,27 @@ export async function generateMetadata({
 export default function PostPage({ params: { locale, slug } }: Props) {
   // Enable static rendering
   setRequestLocale(locale);
+  const tButtons = useTranslations(`AktualnosciPage.news.buttons`);
 
   if (isValidSlug(slug)) {
     const t = useTranslations(`AktualnosciPage.news.${slug}`);
-    const t2 = useTranslations(`AktualnosciPage.news.buttons`);
+
+    const post = newsData[slug];
 
     return (
       <MainWrapper topTitle={t("title")} zeroGap="gap-12 lg:gap-16">
         <Card
-          image={t("imageSrc")}
-          imageAlt={t("imageAlt")}
-          imageBlock
-          border="tr"
+          images={post.imagesSrc}
+          imagesOrientation={post.imagesOrientation}
+          imagesAlt={t("imagesAlt").split("|")}
+          border="bl"
           richText={<RichText>{(p) => t.rich(`description`, p)}</RichText>}
           customElement={
             <FancyButton
               link="/aktualnosci"
               icon="/images/icons/left-arrow.png"
-              iconAlt={t2("buttonIconAlt")}
-              text={t2("buttonText")}
+              iconAlt={tButtons("buttonIconAlt")}
+              text={tButtons("buttonText")}
               small
             />
           }
@@ -73,14 +76,14 @@ export default function PostPage({ params: { locale, slug } }: Props) {
   } else {
     // Handle invalid slug
     const t = useTranslations(`AktualnosciPage.news.notFound`);
-    const t2 = useTranslations(`AktualnosciPage.news.buttons`);
 
     return (
       <MainWrapper topTitle={t("title")} zeroGap="gap-10 lg:gap-16">
         <Card
           mainTitle={t("heading")}
-          image={t("imageSrc")}
-          imageAlt={t("imageAlt")}
+          image="/images/aktualnosci/dog.jpg"
+          imageOrientation="landscape"
+          imageAlt={t("imagesAlt")}
           border="tr"
           simpleText={t("description")}
           customElement={
@@ -88,8 +91,8 @@ export default function PostPage({ params: { locale, slug } }: Props) {
               <FancyButton
                 link="/aktualnosci"
                 icon="/images/icons/left-arrow.png"
-                iconAlt={t2("buttonIconAlt")}
-                text={t2("buttonText")}
+                iconAlt={tButtons("buttonIconAlt")}
+                text={tButtons("buttonText")}
                 small
               />
               <FancyButton

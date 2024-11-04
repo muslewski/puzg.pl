@@ -198,31 +198,33 @@
 
     "news": {
       "0": {
-        "title": "Nowy Rektor",
-        "metaDescription": "Dr inż. Michał Sójka, nowo mianowany Rektor Publicznej Uczelni Zawodowej w Grudziądzu, rozpoczyna swoją kadencję 11 września 2024 roku. Poznaj jego osiągnięcia w dziedzinie tribologii.",
-        "imageSrc": "/images/aktualnosci/post0.0.png",
-        "imageAlt": "Zdjęcie przedstawia nowego Rektora Uczelni",
-        "description": "<p>Od dnia 11 września 2024 roku na Publicznej Uczelni Zawodowej w Grudziądzu mamy nowego Rektora.</p> <p>Nowo mianowanym Rektorem Publicznej Uczelni Zawodowej w Grudziądzu został dr inż. Michał Sójka, ceniony specjalista w zakresie tribologii. Jego akademicka kariera obejmuje wieloletnie doświadczenie jako wykładowcy w Kujawskiej Szkole Wyższej we Włocławku na kierunkach Budowa i Eksploatacja Maszyn, Transport, Inżynieria Techniczno - Informatyczna, Inżynieria Mechaniczna i Logistyka oraz funkcję Dziekana zamiejscowego Wydziału Mechanicznego w Grudziądzu, Kujawskiej Szkoły Wyższej we Włocławku.</p> <p>Dr inż. Michał Sójka jest autorem wielu publikacji związanych z jego wiodącą dyscypliną naukową Inżynierią Mechaniczną. Jest również założycielem, właścicielem oraz prezesem zarządu przedsiębiorstwa badawczo rozwojowego wdrożeń innowacji inżynieryjnych oraz laboratorium tribologicznego.</p> <p>Bogate doświadczenie i wszechstronna wiedza nowego Rektora są dla naszej Uczelni cennym atutem.</p>"
+        "title": "Spotkanie Rektora ze Studentami",
+        "metaDescription": "7 października 2024 r. odbyło się spotkanie Rektora ze studentami kierunku Mechatronika.",
+        "imagesAlt": "Zdjęcie przedstawia nowego Rektora Uczelni w klasie",
+        "description": "<p>7 października 2024 r. odbyło się spotkanie Rektora ze studentami kierunku Mechatronika.</p>"
       },
       "1": {
-        "title": "Inauguracja Roku Akademickiego",
-        "metaDescription": "Dołącz do nas na uroczystą inaugurację roku akademickiego 2024/2025 na Publicznej Uczelni Zawodowej w Grudziądzu 15 października 2024 roku.",
-        "imageSrc": "/images/aktualnosci/post1.0.png",
-        "imageAlt": "Zdjęcie przedstawia rynek w mieście Grudziądz",
-        "description": "<p>Uroczysta Inauguracja pierwszego roku akademickiego na Publicznej Uczelni Zawodowej w Grudziądzu z udziałem Władz naszej Uczelni, studentów, pracowników oraz zaproszonych gości odbędzie się 15 października 2024 roku o godzinie 15:00 w Centrum Kultury Teatr w Grudziądzu”. Podczas inauguracji studenci kierunku Mechatronika złożą uroczyste ślubowanie.</p>"
+        "title": "Nowy Rektor",
+        "metaDescription": "Dr inż. Michał Sójka, nowo mianowany Rektor Publicznej Uczelni Zawodowej w Grudziądzu, rozpoczyna swoją kadencję 11 września 2024 roku. Poznaj jego osiągnięcia w dziedzinie tribologii.",
+        "imagesAlt": "Zdjęcie przedstawia nowego Rektora Uczelni",
+        "description": "<p>Od dnia 11 września 2024 roku na Publicznej Uczelni Zawodowej w Grudziądzu mamy nowego Rektora.</p> <p>Nowo mianowanym Rektorem Publicznej Uczelni Zawodowej w Grudziądzu został dr inż. Michał Sójka, ceniony specjalista w zakresie tribologii. Jego akademicka kariera obejmuje wieloletnie doświadczenie jako wykładowcy w Kujawskiej Szkole Wyższej we Włocławku na kierunkach Budowa i Eksploatacja Maszyn, Transport, Inżynieria Techniczno - Informatyczna, Inżynieria Mechaniczna i Logistyka oraz funkcję Dziekana zamiejscowego Wydziału Mechanicznego w Grudziądzu, Kujawskiej Szkoły Wyższej we Włocławku.</p> <p>Dr inż. Michał Sójka jest autorem wielu publikacji związanych z jego wiodącą dyscypliną naukową Inżynierią Mechaniczną. Jest również założycielem, właścicielem oraz prezesem zarządu przedsiębiorstwa badawczo rozwojowego wdrożeń innowacji inżynieryjnych oraz laboratorium tribologicznego.</p> <p>Bogate doświadczenie i wszechstronna wiedza nowego Rektora są dla naszej Uczelni cennym atutem.</p>"
       },
       "2": {
-        "title": "Studenci kierunku Mechatronika złożyli ślubowanie",
-        "metaDescription": "Studenci kierunku Mechatronika na Publicznej Uczelni Zawodowej w Grudziądzu złożyli uroczyste ślubowanie w dniu inauguracji roku akademickiego 15 października 2024 roku.",
-        "imageSrc": "/images/aktualnosci/post2.0.png",
-        "imageAlt": "Zdjęcie przedstawia rynek w mieście Grudziądz",
-        "description": "<p>Dnia 15 pażdziernika 2024 r. odbyła się Uroczysta Inauguracja roku akademickiego. Studenci kierunku Mechatronika złożyli ślubowanie o treści:</p> <p>”Ślubuję uroczyście, że będę wytrwale dążyć do zdobywania wiedzy, umiejętności i rozwoju własnej osobowości, odnosić się z szacunkiem do władz Publicznej Uczelni Zawodowej w Grudziądzu i wszystkich członków Jej społeczności, stosować prawa i dobre obyczaje akademickie oraz całym postępowaniem dbać o godność i honor studenta Publicznej Uczelni Zawodowej w Grudziądzu.”</p>"
+        "title": "Inauguracja Roku Akademickiego",
+        "metaDescription": "Dołącz do nas na uroczystą inaugurację roku akademickiego 2024/2025 na Publicznej Uczelni Zawodowej w Grudziądzu 15 października 2024 roku.",
+        "imagesAlt": "Zdjęcie przedstawia rynek w mieście Grudziądz",
+        "description": "<p>Uroczysta Inauguracja pierwszego roku akademickiego na Publicznej Uczelni Zawodowej w Grudziądzu z udziałem Władz naszej Uczelni, studentów, pracowników oraz zaproszonych gości odbędzie się 15 października 2024 roku o godzinie 15:00 w Centrum Kultury Teatr w Grudziądzu”. Podczas inauguracji studenci kierunku Mechatronika złożą uroczyste ślubowanie.</p>"
       },
       "3": {
+        "title": "Studenci kierunku Mechatronika złożyli ślubowanie",
+        "metaDescription": "Studenci kierunku Mechatronika na Publicznej Uczelni Zawodowej w Grudziądzu złożyli uroczyste ślubowanie w dniu inauguracji roku akademickiego 15 października 2024 roku.",
+        "imagesAlt": "Zdjęcie przedstawia Uroczystą Inauguracje roku akademickiego",
+        "description": "<p>Dnia 15 pażdziernika 2024 r. odbyła się Uroczysta Inauguracja roku akademickiego. Studenci kierunku Mechatronika złożyli ślubowanie o treści:</p> <p>”Ślubuję uroczyście, że będę wytrwale dążyć do zdobywania wiedzy, umiejętności i rozwoju własnej osobowości, odnosić się z szacunkiem do władz Publicznej Uczelni Zawodowej w Grudziądzu i wszystkich członków Jej społeczności, stosować prawa i dobre obyczaje akademickie oraz całym postępowaniem dbać o godność i honor studenta Publicznej Uczelni Zawodowej w Grudziądzu.”</p>"
+      },
+      "4": {
         "title": "Wybory Rektora na kadencję 2024 - 2028",
         "metaDescription": "Wybory Rektora na kadencję 2024-2028 zakończone! Dr inż. Michał Sójka został nowym JM Rektorem Publicznej Uczelni Zawodowej w Grudziądzu.",
-        "imageSrc": "/images/aktualnosci/post3.0.png",
-        "imageAlt": "Zdjęcie przedstawia rynek w mieście Grudziądz",
+        "imagesAlt": "Zdjęcie przedstawia 3 osoby w tym Rektora|Zdjęcie przedstawia Rektora ubranego w specjalne ubranie",
         "description": "<p>Dnia 18 października 2024 r. na Publicznej Uczelni Zawodowej w Grudziądzu odbyły się wybory Rektora na kadencję 2024 - 2028. JM Rektorem PUZG został dr inż. Michał Sójka, prof. Uczelni.</p><p>Serdecznie gratulujemy!</p>"
       },
 
@@ -230,8 +232,7 @@
         "title": "Post nie został znaleziony",
         "heading": "Przepraszamy",
         "description": "Niestety, nie możemy znaleźć informacji, której szukasz. Sprawdź, czy adres URL jest poprawny, lub wróć na stronę główną.",
-        "imageSrc": "/images/aktualnosci/dog.jpg",
-        "imageAlt": "Zdjęcie przedstawia pieska",
+        "imagesAlt": "Zdjęcie przedstawia pieska",
         "buttonText": "Strona Główna",
         "buttonIconAlt": "Ikona domu"
       },

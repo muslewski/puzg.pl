@@ -1,5 +1,6 @@
 "use client";
 
+import { ImageOrientation } from "@/app/[locale]/(uczelnia)/aktualnosci/page";
 import ListItem from "@/components/card/ListItem";
 import clsx from "clsx";
 import Image from "next/image";
@@ -21,7 +22,11 @@ export default function Card({
   simpleTextWordsLimit,
   richTextWordsLimit,
   image,
+  images,
   imageAlt,
+  imagesAlt,
+  imageOrientation,
+  imagesOrientation,
   imageBlock = false,
   customElement,
   customElementIfWordsLimit = false,
@@ -36,7 +41,11 @@ export default function Card({
   simpleTextWordsLimit?: number;
   richTextWordsLimit?: number;
   image?: string;
+  images?: string[];
   imageAlt?: string;
+  imagesAlt?: string[];
+  imageOrientation?: "portrait" | "landscape";
+  imagesOrientation?: ImageOrientation[];
   imageBlock?: boolean;
   customElement?: React.ReactNode;
   customElementIfWordsLimit?: boolean;
@@ -128,21 +137,58 @@ export default function Card({
           )}
         >
           <div className="flex flex-col xl:flex-row gap-12 xl:items-center">
-            {image && imageAlt && !imageBlock && (
-              <div className="relative h-full  w-auto max-w-64 xl:max-w-96 flex items-center justify-center overflow-hidden rounded-lg bg-black">
+            {image && imageAlt && image && !imageBlock && (
+              <div
+                className={clsx(
+                  "relative overflow-hidden rounded-lg flex-shrink-0",
+                  imageOrientation === "landscape" &&
+                    "w-full max-w-[300px] sm:max-w-none sm:w-[450px] h-[200px] sm:h-[300px]",
+                  imageOrientation === "portrait" &&
+                    "w-[200px] sm:w-[300px] h-[300px] sm:h-[450px]"
+                )}
+              >
                 <Image
                   src={image}
-                  width={2500}
-                  height={1024}
-                  className="object-contain w-auto h-full max-h-[64rem]"
+                  fill
+                  className="object-cover"
                   alt={imageAlt}
                 />
               </div>
             )}
 
             <div className="flex flex-col gap-10">
+              {images &&
+                imagesAlt &&
+                imagesOrientation &&
+                images.length > 0 &&
+                imagesAlt.length > 0 && (
+                  <div className="flex gap-4 flex-wrap max-w-full">
+                    {" "}
+                    {/* Add some space between images */}
+                    {images.map((image, index) => (
+                      <div
+                        key={index}
+                        className={clsx(
+                          "relative overflow-hidden rounded-lg flex-shrink-0",
+                          imagesOrientation[index] === "landscape" &&
+                            "w-full max-w-[300px] sm:max-w-none sm:w-[450px] h-[200px] sm:h-[300px]",
+                          imagesOrientation[index] === "portrait" &&
+                            "w-[200px] sm:w-[300px] h-[300px] sm:h-[450px]"
+                        )}
+                      >
+                        <Image
+                          src={image}
+                          fill
+                          className="object-cover"
+                          alt={imagesAlt[index]} // Use the corresponding alt text
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
+
               {image && imageAlt && imageBlock && (
-                <div className="relative w-64 h-64 overflow-hidden rounded-lg bg-black">
+                <div className="relative w-[500px] lg:max-w-[700px] h-[300px] lg:h-[500px] rounded-xl overflow-hidden shadow-md">
                   <Image
                     src={image}
                     fill
