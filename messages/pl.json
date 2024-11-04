@@ -195,6 +195,8 @@
     "title": "Aktualności",
     "description": "Bądź na bieżąco z najnowszymi wydarzeniami, ogłoszeniami i informacjami dotyczącymi życia uczelni.",
     "button": "Zobacz Więcej",
+    "latest": "Od najnowszych",
+    "oldest": "Od najstarszych",
 
     "news": {
       "0": {
@@ -216,12 +218,18 @@
         "description": "<p>Uroczysta Inauguracja pierwszego roku akademickiego na Publicznej Uczelni Zawodowej w Grudziądzu z udziałem Władz naszej Uczelni, studentów, pracowników oraz zaproszonych gości odbędzie się 15 października 2024 roku o godzinie 15:00 w Centrum Kultury Teatr w Grudziądzu”. Podczas inauguracji studenci kierunku Mechatronika złożą uroczyste ślubowanie.</p>"
       },
       "3": {
+        "title": "Wybory do Senatu Uczelni",
+        "metaDescription": "Studenci kierunku Mechatronika na Publicznej Uczelni Zawodowej w Grudziądzu złożyli uroczyste ślubowanie w dniu inauguracji roku akademickiego 15 października 2024 roku.",
+        "imagesAlt": "Zdjęcie przedstawia Osobę podpisującą dokumenty|Zdjęcie przedstawia osoby siedzące przy stole|Zdjęcie przedstawia osoby jedzące przy stole|Zdjęcie przedstawia osoby przy stole",
+        "description": "<p>Dnia 10 października 2024 r. na Publicznej Uczelni Zawodowej w Grudziądzu odbyły się wybory do Senatu Uczelni. </p> <p>Senatorami na kadencję 2024 - 2028 wybrani zostali:</p><ul><li>dr inż. Paweł Bukowski</li><li>dr Monika Izbaner</li><li>dr inż. Karasiewicz Tomasz</li><li>dr Mikulski Piotr</li><li>dr Szczepańska Magdalena</li><li>mgr inż. Artur Mach</li><li>mgr inż. Jerzy Saja</li><li>mgr Justyna Rubach</li></ul>"
+      },
+      "4": {
         "title": "Studenci kierunku Mechatronika złożyli ślubowanie",
         "metaDescription": "Studenci kierunku Mechatronika na Publicznej Uczelni Zawodowej w Grudziądzu złożyli uroczyste ślubowanie w dniu inauguracji roku akademickiego 15 października 2024 roku.",
         "imagesAlt": "Zdjęcie przedstawia Uroczystą Inauguracje roku akademickiego",
         "description": "<p>Dnia 15 pażdziernika 2024 r. odbyła się Uroczysta Inauguracja roku akademickiego. Studenci kierunku Mechatronika złożyli ślubowanie o treści:</p> <p>”Ślubuję uroczyście, że będę wytrwale dążyć do zdobywania wiedzy, umiejętności i rozwoju własnej osobowości, odnosić się z szacunkiem do władz Publicznej Uczelni Zawodowej w Grudziądzu i wszystkich członków Jej społeczności, stosować prawa i dobre obyczaje akademickie oraz całym postępowaniem dbać o godność i honor studenta Publicznej Uczelni Zawodowej w Grudziądzu.”</p>"
       },
-      "4": {
+      "5": {
         "title": "Wybory Rektora na kadencję 2024 - 2028",
         "metaDescription": "Wybory Rektora na kadencję 2024-2028 zakończone! Dr inż. Michał Sójka został nowym JM Rektorem Publicznej Uczelni Zawodowej w Grudziądzu.",
         "imagesAlt": "Zdjęcie przedstawia 3 osoby w tym Rektora|Zdjęcie przedstawia Rektora ubranego w specjalne ubranie",

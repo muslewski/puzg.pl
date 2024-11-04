@@ -13,7 +13,7 @@ body,
 }
 
 ul {
-  @apply list-disc list-inside;
+  @apply list-disc list-inside text-brandDark text-base md:text-lg 3xl:text-xl font-outfit font-normal pl-4;
 }
 
 h2 {

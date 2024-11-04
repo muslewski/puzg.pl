@@ -195,6 +195,8 @@
     "title": "News",
     "description": "Stay updated with the latest events, announcements, and information related to college life.",
     "button": "See More",
+    "latest": "From the newest",
+    "oldest": "From the oldest",
 
     "news": {
       "0": {
@@ -216,12 +218,18 @@
         "description": "<p>The ceremonial inauguration of the first academic year at the Public Vocational University in Grudziądz, attended by the University's authorities, students, staff, and invited guests, will take place on October 15, 2024, at 3:00 PM at the Cultural Center Theater in Grudziądz. During the inauguration, students of the Mechatronics program will take an official oath.</p>"
       },
       "3": {
+        "title": "Elections to the University Senate",
+        "metaDescription": "Students of the Mechatronics program at the Public Vocational University in Grudziądz took a solemn oath during the inauguration of the academic year on October 15, 2024.",
+        "imagesAlt": "The photo shows a person signing documents|The photo shows people sitting at a table|The photo shows people eating at a table|The photo shows people at a table",
+        "description": "<p>On October 10, 2024, elections to the University Senate were held at the Public Vocational University in Grudziądz.</p> <p>Senators elected for the term 2024 - 2028 are:</p><ul><li>dr inż. Paweł Bukowski</li><li>dr Monika Izbaner</li><li>dr inż. Karasiewicz Tomasz</li><li>dr Mikulski Piotr</li><li>dr Szczepańska Magdalena</li><li>mgr inż. Artur Mach</li><li>mgr inż. Jerzy Saja</li><li>mgr Justyna Rubach</li></ul>"
+      },
+      "4": {
         "title": "Mechatronics Students Take Oath",
         "metaDescription": "Students of the Mechatronics program at the Public Vocational University in Grudziądz took their solemn oath during the inauguration of the academic year on October 15, 2024.",
         "imagesAlt": "The photo shows the ceremonial inauguration of the academic year.",
         "description": "<p>On October 15, 2024, the ceremonial inauguration of the academic year took place. Students of the Mechatronics program took an oath, which reads:</p> <p>”I solemnly swear to strive diligently to acquire knowledge, skills, and personal development, to show respect to the authorities of the Public Vocational University in Grudziądz and all members of its community, to adhere to laws and good academic customs, and to act in a way that honors the dignity and honor of a student of the Public Vocational University in Grudziądz.”</p>"
       },
-      "4": {
+      "5": {
         "title": "Rector Elections for 2024 - 2028 Term",
         "metaDescription": "The election of the Rector for the 2024-2028 term is complete! Dr. Michał Sójka has been elected the new Rector of the Public Vocational University in Grudziądz.",
         "imagesAlt": "The photo shows 3 people including the Rector|The photo shows the Rector dressed in special clothing.",
