@@ -5,6 +5,7 @@ import { CardImage } from "@/components/card/CardImage";
 import { CardImages } from "@/components/card/CardImages";
 import CardList from "@/components/card/CardList";
 import CardWrapper from "@/components/card/CardWrapper";
+import ContactData from "@/components/card/ContactData";
 import PersonalData from "@/components/card/PersonalData";
 import { RichTextSlicer } from "@/components/card/RichTextSlicer";
 import { Link } from "@/i18n/routing";
@@ -42,6 +43,12 @@ type CardProps = {
     title: string;
     fullData: string;
   };
+  contactData?: {
+    mail: string;
+    phone: string;
+  };
+  customWrapperWidth?: string;
+  customImageBorder?: string;
 };
 
 export default function Card({
@@ -62,6 +69,9 @@ export default function Card({
   customGradient,
   customInsideBorder,
   personalData,
+  contactData,
+  customWrapperWidth,
+  customImageBorder,
 }: CardProps) {
   const truncatedRichText = richTextWordsLimit
     ? RichTextSlicer(richText, richTextWordsLimit)
@@ -72,6 +82,7 @@ export default function Card({
       border={border}
       customGradient={customGradient}
       customInsideBorder={customInsideBorder}
+      customWrapperWidth={customWrapperWidth}
     >
       <div className="flex flex-col xl:flex-row gap-12 xl:items-center">
         <CardImage
@@ -79,18 +90,20 @@ export default function Card({
           imageAlt={imageAlt}
           imageOrientation={imageOrientation}
           imageLink={imageLink}
+          customImageBorder={customImageBorder}
         />
 
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-6  sm:gap-10">
           <CardImages
             images={images}
             imagesAlt={imagesAlt}
             imagesOrientation={imagesOrientation}
           />
 
-          <h2>{mainTitle}</h2>
+          {mainTitle && <h2>{mainTitle}</h2>}
 
           {personalData && <PersonalData personalData={personalData} />}
+          {contactData && <ContactData contactData={contactData} />}
 
           {simpleText && <p>{simpleText}</p>}
           {truncatedRichText && <div>{truncatedRichText}</div>}

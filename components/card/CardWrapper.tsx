@@ -5,17 +5,20 @@ export default function CardWrapper({
   children,
   customGradient,
   customInsideBorder,
+  customWrapperWidth,
 }: {
   border: "bl" | "br" | "tl" | "tr";
   children: React.ReactNode;
   customGradient?: `from-${string}`;
   customInsideBorder?: `border-${string}`;
+  customWrapperWidth?: string;
 }) {
   return (
     <div className="w-full 2xl:w-4/5 px-6 lg:px-12 2xl:px-0">
       <div
         className={clsx(
-          "rounded-2xl w-fit",
+          "rounded-2xl",
+          customWrapperWidth ? customWrapperWidth : "w-fit",
           customGradient ??
             "from-brandBrightBlue/55 via-brandWashedBlue/35 to-brandWashedBlue/0",
           border === "bl" && "pb-1 pl-1 bg-gradient-to-tr",

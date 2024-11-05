@@ -11,7 +11,7 @@ export default function CardList({
   }[];
 }) {
   return (
-    <ul className="flex flex-col lg:flex-row gap-24">
+    <ul className="flex flex-col lg:flex-row gap-24 pt-12">
       {listObject?.map((item, index) => (
         <ListItem
           key={index}

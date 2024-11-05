@@ -30,10 +30,36 @@ export default function WladzeUczelniPage({ params: { locale } }: Props) {
     <MainWrapper topTitle={t("title")}>
       <Card
         personalData={{ title: "Rektor", fullData: "dr inż. Michał Sójka" }}
+        contactData={{ mail: "michal.sojka@puzg.pl", phone: "+48 123 456 789" }}
         border="bl"
-        image="/images/aktualnosci/post1.0.png"
-        imageAlt="asd"
+        image="/images/wladze-uczelni/rektor.jpg"
+        imageAlt="Zdjęcie Rektora"
         imageOrientation="portrait"
+        customWrapperWidth="lg:w-3/4"
+        customImageBorder="border-8 border-brandPrimaryBlue border-double"
+      />
+      <Card
+        personalData={{ title: "Kwestor", fullData: "mgr Małgorzata Kosińska" }}
+        contactData={{
+          mail: "malgorzata.kosinska@puzg.pl",
+          phone: "+48 123 456 789",
+        }}
+        border="tr"
+        image="/images/wladze-uczelni/kwestor.jpg"
+        imageAlt="Zdjęcie Kwestora"
+        imageOrientation="portrait"
+        customWrapperWidth="lg:w-3/4"
+        customImageBorder="border-8 border-brandPrimaryBlue border-double"
+      />
+      <Card
+        personalData={{ title: "Kanclerz", fullData: "mgr Artur Mach" }}
+        contactData={{ mail: "artur.mach@puzg.pl", phone: "+48 123 456 789" }}
+        border="tl"
+        image="/images/wladze-uczelni/kanclerz.jpg"
+        imageAlt="Zdjęcie Kanclerza"
+        imageOrientation="portrait"
+        customWrapperWidth="lg:w-3/4"
+        customImageBorder="border-8 border-brandPrimaryBlue border-double"
       />
     </MainWrapper>
   );
