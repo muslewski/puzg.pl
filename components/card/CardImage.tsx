@@ -1,3 +1,4 @@
+import { ImageOrientation } from "@/app/[locale]/(uczelnia)/aktualnosci/page";
 import ImageItem from "@/components/card/ImageItem";
 import { Link } from "@/i18n/routing";
 import { ComponentProps } from "react";
@@ -5,7 +6,7 @@ import { ComponentProps } from "react";
 type CardImageProps = {
   image?: string;
   imageAlt?: string;
-  imageOrientation?: "portrait" | "landscape";
+  imageOrientation?: ImageOrientation;
   imageLink?: ComponentProps<typeof Link>["href"];
   customImageBorder?: string;
 };

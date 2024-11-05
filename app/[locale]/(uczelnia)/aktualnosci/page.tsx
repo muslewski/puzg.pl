@@ -23,7 +23,7 @@ export async function generateMetadata({
   };
 }
 
-export type ImageOrientation = "portrait" | "landscape";
+export type ImageOrientation = "portrait" | "landscape" | "full";
 
 type NewsItem = {
   imagesSrc: string[];

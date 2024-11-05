@@ -30,7 +30,7 @@ export default function CardList({
         {simpleList?.map((item, index) => (
           <li key={index} className="flex flex-col gap-3 sm:gap-3">
             <div className="flex gap-3 sm:gap-6 items-center">
-              <div className="relative h-6 sm:h-8 w-6 sm:w-8">
+              <div className="relative h-8 w-8 flex-shrink-0">
                 <Image
                   src={item.icon}
                   fill

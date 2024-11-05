@@ -34,6 +34,7 @@ type CardProps = {
   listObject?: ListObjectItem[];
   simpleList?: SimpleListItem[];
   simpleText?: string;
+  lastSimpleText?: string;
   richText?: React.ReactNode;
   simpleTextWordsLimit?: number;
   richTextWordsLimit?: number;
@@ -41,10 +42,9 @@ type CardProps = {
   images?: string[];
   imageAlt?: string;
   imagesAlt?: string[];
-  imageOrientation?: "portrait" | "landscape";
+  imageOrientation?: ImageOrientation;
   imagesOrientation?: ImageOrientation[];
   imageLink?: ComponentProps<typeof Link>["href"];
-  imageBlock?: boolean;
   customElement?: React.ReactNode;
   customElementIfWordsLimit?: boolean;
   customGradient?: `from-${string}`;
@@ -67,6 +67,7 @@ export default function Card({
   listObject,
   simpleList,
   simpleText,
+  lastSimpleText,
   richText,
   richTextWordsLimit,
   image,
@@ -123,6 +124,8 @@ export default function Card({
 
           {listObject && <CardList listObject={listObject} />}
           {simpleList && <CardList simpleList={simpleList} />}
+
+          {lastSimpleText && <p>{lastSimpleText}</p>}
         </div>
       </div>
     </CardWrapper>
