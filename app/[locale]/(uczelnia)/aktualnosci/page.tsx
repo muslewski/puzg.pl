@@ -1,4 +1,4 @@
-import Card from "@/components/card/Card";
+import Card, { ImageOrientation } from "@/components/card/Card";
 import FancyButton from "@/components/FancyButton";
 import MainWrapper from "@/components/MainWrapper";
 
@@ -22,8 +22,6 @@ export async function generateMetadata({
     description: t("description"),
   };
 }
-
-export type ImageOrientation = "portrait" | "landscape" | "full";
 
 type NewsItem = {
   imagesSrc: string[];

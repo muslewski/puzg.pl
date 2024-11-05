@@ -1,4 +1,4 @@
-import { ImageOrientation } from "@/app/[locale]/(uczelnia)/aktualnosci/page";
+import { ImageOrientation } from "@/components/card/Card";
 import ImageItem from "@/components/card/ImageItem";
 import { Link } from "@/i18n/routing";
 import { ComponentProps } from "react";

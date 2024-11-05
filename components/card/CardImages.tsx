@@ -1,6 +1,6 @@
 import ImageCarousel from "@/components/carousel/ImageCarousel";
 import ImageItem from "@/components/card/ImageItem";
-import { ImageOrientation } from "@/app/[locale]/(uczelnia)/aktualnosci/page";
+import { ImageOrientation } from "@/components/card/Card";
 
 type CardImagesProps = {
   images?: string[];

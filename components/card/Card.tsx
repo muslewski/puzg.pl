@@ -1,6 +1,5 @@
 "use client";
 
-import { ImageOrientation } from "@/app/[locale]/(uczelnia)/aktualnosci/page";
 import { CardImage } from "@/components/card/CardImage";
 import { CardImages } from "@/components/card/CardImages";
 import CardList from "@/components/card/CardList";
@@ -28,6 +27,8 @@ export type SimpleListItem = {
 
 export type border = "bl" | "br" | "tl" | "tr" | "l";
 
+export type ImageOrientation = "portrait" | "landscape" | "square" | "full";
+
 type CardProps = {
   mainTitle?: string;
   border: border;
@@ -46,6 +47,7 @@ type CardProps = {
   imagesOrientation?: ImageOrientation[];
   imageLink?: ComponentProps<typeof Link>["href"];
   customElement?: React.ReactNode;
+  lastCustomElement?: React.ReactNode;
   customElementIfWordsLimit?: boolean;
   customGradient?: `from-${string}`;
   customInsideBorder?: `border-${string}`;
@@ -59,6 +61,9 @@ type CardProps = {
   };
   customWrapperWidth?: string;
   customImageBorder?: string;
+  simpleListRichTextColor?: string;
+  simpleListIconsSize?: string;
+  simpleListFlexSettings?: string;
 };
 
 export default function Card({
@@ -78,12 +83,16 @@ export default function Card({
   imagesOrientation,
   imageLink,
   customElement,
+  lastCustomElement,
   customGradient,
   customInsideBorder,
   personalData,
   contactData,
   customWrapperWidth,
   customImageBorder,
+  simpleListRichTextColor,
+  simpleListIconsSize,
+  simpleListFlexSettings,
 }: CardProps) {
   const truncatedRichText = richTextWordsLimit
     ? RichTextSlicer(richText, richTextWordsLimit)
@@ -105,7 +114,7 @@ export default function Card({
           customImageBorder={customImageBorder}
         />
 
-        <div className="flex flex-col gap-6  sm:gap-10">
+        <div className="flex flex-col gap-6  sm:gap-10 w-full">
           <CardImages
             images={images}
             imagesAlt={imagesAlt}
@@ -123,8 +132,16 @@ export default function Card({
           {customElement}
 
           {listObject && <CardList listObject={listObject} />}
-          {simpleList && <CardList simpleList={simpleList} />}
+          {simpleList && (
+            <CardList
+              simpleList={simpleList}
+              flexSettings={simpleListFlexSettings}
+              richTextColor={simpleListRichTextColor}
+              iconsSize={simpleListIconsSize}
+            />
+          )}
 
+          {lastCustomElement}
           {lastSimpleText && <p>{lastSimpleText}</p>}
         </div>
       </div>

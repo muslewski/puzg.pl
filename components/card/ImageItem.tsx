@@ -1,4 +1,4 @@
-import { ImageOrientation } from "@/app/[locale]/(uczelnia)/aktualnosci/page";
+import { ImageOrientation } from "@/components/card/Card";
 import clsx from "clsx";
 import Image from "next/image";
 
@@ -22,6 +22,8 @@ export default function ImageItem({
           "w-full max-w-[300px] sm:max-w-none sm:w-[450px] h-[200px] sm:h-[300px]",
         imageOrientation === "portrait" &&
           "w-[200px] sm:w-[300px] h-[300px] sm:h-[450px]",
+        imageOrientation === "square" &&
+          "w-full sm:w-[450px] h-[300px] sm:h-[450px]",
         imageOrientation === "full" && "w-full max-w-5xl h-[200px] sm:h-[450px]"
       )}
     >

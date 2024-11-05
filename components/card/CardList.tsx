@@ -1,13 +1,20 @@
 import { ListObjectItem, SimpleListItem } from "@/components/card/Card";
 import ListItem from "@/components/card/ListItem";
+import clsx from "clsx";
 import Image from "next/image";
 
 export default function CardList({
   listObject,
   simpleList,
+  richTextColor,
+  iconsSize,
+  flexSettings,
 }: {
   listObject?: ListObjectItem[];
   simpleList?: SimpleListItem[];
+  richTextColor?: string;
+  iconsSize?: string;
+  flexSettings?: string;
 }) {
   if (listObject)
     return (
@@ -26,11 +33,21 @@ export default function CardList({
 
   if (simpleList)
     return (
-      <ul className="flex flex-col list-none gap-8">
+      <ul
+        className={clsx(
+          "flex list-none",
+          flexSettings ? flexSettings : "flex-col gap-8"
+        )}
+      >
         {simpleList?.map((item, index) => (
           <li key={index} className="flex flex-col gap-3 sm:gap-3">
             <div className="flex gap-3 sm:gap-6 items-center">
-              <div className="relative h-8 w-8 flex-shrink-0">
+              <div
+                className={clsx(
+                  "relative flex-shrink-0",
+                  iconsSize ? iconsSize : "h-8 w-8"
+                )}
+              >
                 <Image
                   src={item.icon}
                   fill
@@ -38,7 +55,12 @@ export default function CardList({
                   alt={item.iconAlt}
                 />
               </div>
-              <div className="hover:[&_a]:text-brandPrimaryBlue [&_a]:transition-colors">
+              <div
+                className={clsx(
+                  "hover:[&_a]:text-brandPrimaryBlue [&_a]:transition-colors",
+                  richTextColor
+                )}
+              >
                 {item.richText}
               </div>
             </div>
