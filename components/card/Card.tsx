@@ -19,10 +19,20 @@ export type ListObjectItem = {
   iconAlt: string;
 };
 
+export type SimpleListItem = {
+  richText: React.ReactNode;
+  description?: string;
+  icon: string;
+  iconAlt: string;
+};
+
+export type border = "bl" | "br" | "tl" | "tr" | "l";
+
 type CardProps = {
   mainTitle?: string;
-  border: "bl" | "br" | "tl" | "tr";
+  border: border;
   listObject?: ListObjectItem[];
+  simpleList?: SimpleListItem[];
   simpleText?: string;
   richText?: React.ReactNode;
   simpleTextWordsLimit?: number;
@@ -55,6 +65,7 @@ export default function Card({
   mainTitle,
   border,
   listObject,
+  simpleList,
   simpleText,
   richText,
   richTextWordsLimit,
@@ -111,6 +122,7 @@ export default function Card({
           {customElement}
 
           {listObject && <CardList listObject={listObject} />}
+          {simpleList && <CardList simpleList={simpleList} />}
         </div>
       </div>
     </CardWrapper>

@@ -1,3 +1,5 @@
+import Card from "@/components/card/Card";
+import LocalizationIframe from "@/components/LocalizationIframe";
 import MainWrapper from "@/components/MainWrapper";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
@@ -24,5 +26,49 @@ export default function KontaktPage({ params: { locale } }: Props) {
 
   const t = useTranslations("KontaktPage");
 
-  return <MainWrapper topTitle={t("title")}>nothing</MainWrapper>;
+  return (
+    <MainWrapper topTitle={t("title")}>
+      <Card
+        border="l"
+        simpleList={[
+          {
+            icon: "/images/icons/Mail.svg",
+            iconAlt: "a",
+            richText: (
+              <span>
+                <b>Email:</b>{" "}
+                <a href="mailto:sekretariat@puzg.pl">sekretariat@puzg.pl</a>
+              </span>
+            ),
+          },
+          {
+            icon: "/images/icons/Calling.svg",
+            iconAlt: "a",
+            richText: (
+              <span>
+                <b>Telefon 1:</b>{" "}
+                <a href="tel:+48 576-060-123">+48 576-060-123</a>
+              </span>
+            ),
+          },
+          {
+            icon: "/images/icons/Calling.svg",
+            iconAlt: "a",
+            richText: (
+              <span>
+                <b>Telefon 2:</b>{" "}
+                <a href="tel:+48 576-060-124">+48 576-060-124</a>
+              </span>
+            ),
+          },
+        ]}
+      />
+      <Card
+        mainTitle="Gdzie nas znajdziesz?"
+        simpleText="Znajdziesz nas na ulicy Czarnieckiego 5/7 oraz Hoffmanna 1-7, gdzie mieści się nasza nowoczesna infrastruktura edukacyjna."
+        border="tr"
+        customElement={<LocalizationIframe />}
+      />
+    </MainWrapper>
+  );
 }

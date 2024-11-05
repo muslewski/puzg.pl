@@ -1,3 +1,4 @@
+import { border } from "@/components/card/Card";
 import clsx from "clsx";
 
 export default function CardWrapper({
@@ -7,7 +8,7 @@ export default function CardWrapper({
   customInsideBorder,
   customWrapperWidth,
 }: {
-  border: "bl" | "br" | "tl" | "tr";
+  border: border;
   children: React.ReactNode;
   customGradient?: `from-${string}`;
   customInsideBorder?: `border-${string}`;
@@ -24,7 +25,8 @@ export default function CardWrapper({
           border === "bl" && "pb-1 pl-1 bg-gradient-to-tr",
           border === "br" && "pb-1 pr-1 bg-gradient-to-tl",
           border === "tl" && "pt-1 pl-1 bg-gradient-to-br",
-          border === "tr" && "pt-1 pr-1 bg-gradient-to-bl"
+          border === "tr" && "pt-1 pr-1 bg-gradient-to-bl",
+          border === "l" && "pl-1 bg-gradient-to-r"
         )}
       >
         <div
@@ -38,7 +40,9 @@ export default function CardWrapper({
             border === "tl" &&
               "shadow-[inset_15px_15px_12px_-15px_rgba(9,84,124,0.1)] border-t-4 border-l-4",
             border === "tr" &&
-              "shadow-[inset_-15px_15px_12px_-15px_rgba(9,84,124,0.1)] border-t-4 border-r-4"
+              "shadow-[inset_-15px_15px_12px_-15px_rgba(9,84,124,0.1)] border-t-4 border-r-4",
+            border === "l" &&
+              "shadow-[inset_15px_0px_12px_-15px_rgba(9,84,124,0.1)] border-l-4"
           )}
         >
           {children}
