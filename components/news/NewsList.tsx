@@ -45,6 +45,10 @@ export default function NewsList({
             image={post.imagesSrc[0]}
             imageOrientation={post.imagesOrientation[0]}
             imageAlt={post.imagesAlt[0]}
+            imageLink={{
+              pathname: "/aktualnosci/[slug]",
+              params: { slug: key },
+            }}
             customElement={
               <FancyButton
                 text={buttonText}

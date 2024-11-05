@@ -1,3 +1,4 @@
+import Card from "@/components/card/Card";
 import MainWrapper from "@/components/MainWrapper";
 
 import { Metadata } from "next";
@@ -25,5 +26,15 @@ export default function WladzeUczelniPage({ params: { locale } }: Props) {
 
   const t = useTranslations("WladzeUczelniPage");
 
-  return <MainWrapper topTitle={t("title")}>nothing</MainWrapper>;
+  return (
+    <MainWrapper topTitle={t("title")}>
+      <Card
+        personalData={{ title: "Rektor", fullData: "dr inż. Michał Sójka" }}
+        border="bl"
+        image="/images/aktualnosci/post1.0.png"
+        imageAlt="asd"
+        imageOrientation="portrait"
+      />
+    </MainWrapper>
+  );
 }

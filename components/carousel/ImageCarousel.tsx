@@ -53,7 +53,7 @@ export default function ImageCarousel({
             "relative rounded-xl overflow-hidden hover:scale-105 transition-transform cursor-pointer",
             small
               ? "w-[150px] 2xl:w-[250px] h-[90px] 2xl:h-[150px] hidden lg:block"
-              : "w-[500px] h-[300px] hidden sm:block"
+              : "w-[400px] h-[250px] hidden sm:block"
           )}
           onClick={() => dispatch({ type: "PREV" })}
         >
@@ -85,7 +85,7 @@ export default function ImageCarousel({
             "relative rounded-xl overflow-hidden hover:scale-105 transition-transform cursor-pointer",
             small
               ? "w-[150px] 2xl:w-[250px] h-[90px] 2xl:h-[150px] hidden lg:block"
-              : "w-[500px] h-[300px] hidden sm:block"
+              : "w-[400px] h-[250px] hidden sm:block"
           )}
           onClick={() => dispatch({ type: "NEXT" })}
         >
