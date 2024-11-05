@@ -1,3 +1,4 @@
+import Card from "@/components/card/Card";
 import MainWrapper from "@/components/MainWrapper";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
@@ -29,5 +30,12 @@ export default function OrganizacjaRokuAkademickiegoPage({
 
   const t = useTranslations("OrganizacjaRokuAkademickiegoPage");
 
-  return <MainWrapper topTitle={t("title")}>nothing</MainWrapper>;
+  return (
+    <MainWrapper topTitle={t("title")}>
+      <Card
+        border="l"
+        simpleText="Rok akademicki 2024/2025 trwa od 1 października 2024 r. do 14 września 2025 r. i jest podzielony na dwa semestry: zimowy i letni. Uroczysta inauguracja roku akademickiego odbędzie się 4 października 2024 r."
+      />
+    </MainWrapper>
+  );
 }

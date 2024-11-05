@@ -1,5 +1,3 @@
-"use client";
-
 import { CardImage } from "@/components/card/CardImage";
 import { CardImages } from "@/components/card/CardImages";
 import CardList from "@/components/card/CardList";
