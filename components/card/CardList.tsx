@@ -28,18 +28,21 @@ export default function CardList({
     return (
       <ul className="flex flex-col list-none gap-8">
         {simpleList?.map((item, index) => (
-          <li className="flex gap-3 sm:gap-6 items-center">
-            <div className="relative h-6 sm:h-8 w-6 sm:w-8">
-              <Image
-                src={item.icon}
-                fill
-                className="object-cover"
-                alt={item.iconAlt}
-              />
+          <li key={index} className="flex flex-col gap-3 sm:gap-3">
+            <div className="flex gap-3 sm:gap-6 items-center">
+              <div className="relative h-6 sm:h-8 w-6 sm:w-8">
+                <Image
+                  src={item.icon}
+                  fill
+                  className="object-cover"
+                  alt={item.iconAlt}
+                />
+              </div>
+              <div className="hover:[&_a]:text-brandPrimaryBlue [&_a]:transition-colors">
+                {item.richText}
+              </div>
             </div>
-            <div className="hover:[&_a]:text-brandPrimaryBlue [&_a]:transition-colors">
-              {item.richText}
-            </div>
+            {item.description}
           </li>
         ))}
       </ul>

@@ -1,3 +1,4 @@
+import Card from "@/components/card/Card";
 import MainWrapper from "@/components/MainWrapper";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
@@ -24,5 +25,79 @@ export default function DziekanatPage({ params: { locale } }: Props) {
 
   const t = useTranslations("DziekanatPage");
 
-  return <MainWrapper topTitle={t("title")}>nothing</MainWrapper>;
+  return (
+    <MainWrapper topTitle={t("title")}>
+      <Card
+        image="/images/dziekanat/dziekanat.jpg"
+        imageAlt="Zdjęcię dziekanatu"
+        imageOrientation="portrait"
+        border="bl"
+        mainTitle="Dane Kontaktowe"
+        simpleList={[
+          {
+            icon: "/images/icons/User.svg",
+            iconAlt: "a",
+            richText: (
+              <span>
+                <p className="font-semibold bg-gradient-to-br from-brandPrimaryBlue to-[#1099E2] text-transparent bg-clip-text w-fit">
+                  Justyna Rubach
+                </p>
+                specjalista ds. administracyjnych
+              </span>
+            ),
+          },
+          {
+            icon: "/images/icons/Calling.svg",
+            iconAlt: "a",
+            richText: <a href="tel:+48 576-060-124">+48 576-060-124</a>,
+          },
+          {
+            icon: "/images/icons/Mail.svg",
+            iconAlt: "a",
+            richText: (
+              <a href="mailto:justyna.rubach@puzg.pl">justyna.rubach@puzg.pl</a>
+            ),
+          },
+          {
+            icon: "/images/icons/Flag.svg",
+            iconAlt: "a",
+            richText: (
+              <span>
+                ul. Stefana Czarneckiego 5/7
+                <br></br>
+                86-300 Grudziądz
+              </span>
+            ),
+          },
+        ]}
+      />
+
+      <Card
+        border="tr"
+        mainTitle="Godziny przyjęć studentów"
+        simpleList={[
+          {
+            icon: "/images/icons/AlarmClock.svg",
+            iconAlt: "clock",
+            richText: (
+              <p className="font-medium bg-gradient-to-br from-brandPrimaryBlue to-[#1099E2] text-transparent bg-clip-text w-fit">
+                poniedziałek, środa, piątek
+              </p>
+            ),
+            description: "godz. 10:00 - 14:00",
+          },
+          {
+            icon: "/images/icons/AlarmClock.svg",
+            iconAlt: "clock",
+            richText: (
+              <p className="font-medium bg-gradient-to-br from-brandPrimaryBlue to-[#1099E2] text-transparent bg-clip-text w-fit">
+                wtorek, czwartek
+              </p>
+            ),
+            description: "godz. 14:00 - 18:00",
+          },
+        ]}
+      />
+    </MainWrapper>
+  );
 }
