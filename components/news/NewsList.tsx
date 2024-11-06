@@ -48,17 +48,36 @@ export default function NewsList({
                 : "br"
             }
             key={key}
-            leftProps={[
-              <CardImage
-                image={post.imagesSrc[0]}
-                imageAlt={post.imagesAlt[0]}
-                imageOrientation={post.imagesOrientation[0]}
-                imageLink={{
-                  pathname: "/aktualnosci/[slug]",
-                  params: { slug: key },
-                }}
-              />,
-            ]}
+            leftProps={
+              number % 2 !== 0
+                ? [
+                    <CardImage
+                      image={post.imagesSrc[0]}
+                      imageAlt={post.imagesAlt[0]}
+                      imageOrientation={post.imagesOrientation[0]}
+                      imageLink={{
+                        pathname: "/aktualnosci/[slug]",
+                        params: { slug: key },
+                      }}
+                    />,
+                  ]
+                : []
+            }
+            rightProps={
+              number % 2 == 0
+                ? [
+                    <CardImage
+                      image={post.imagesSrc[0]}
+                      imageAlt={post.imagesAlt[0]}
+                      imageOrientation={post.imagesOrientation[0]}
+                      imageLink={{
+                        pathname: "/aktualnosci/[slug]",
+                        params: { slug: key },
+                      }}
+                    />,
+                  ]
+                : []
+            }
           >
             <MainTitle>{post.title}</MainTitle>
             <RichTextSlicer limit={40}>{post.description}</RichTextSlicer>

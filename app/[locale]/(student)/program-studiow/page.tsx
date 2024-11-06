@@ -41,11 +41,15 @@ export default function ProgramStudiowPage({ params: { locale } }: Props) {
             small
             text="specjalność Mechatronika Stosowana"
             outsideLink="/files/program-studiow-MS.pdf"
+            icon="/images/icons/circle.svg"
+            iconAlt="Circle"
           />
           <FancyButton
             small
             text="specjalność Automatyka i Sterowanie Maszyn"
             outsideLink="/files/program-studiow-AiSM.pdf"
+            icon="/images/icons/circle.svg"
+            iconAlt="Circle"
           />
         </div>
 
@@ -59,11 +63,15 @@ export default function ProgramStudiowPage({ params: { locale } }: Props) {
                 small
                 text="specjalność Mechatronika Stosowana"
                 outsideLink="/files/sylabusy-specjalnosc-MS.pdf"
+                icon="/images/icons/circle.svg"
+                iconAlt="Circle"
               />
               <FancyButton
                 small
                 text="specjalność Automatyka i Sterowanie Maszyn"
                 outsideLink="/files/sylabusy-specjalnosc-AiSM.pdf"
+                icon="/images/icons/circle.svg"
+                iconAlt="Circle"
               />
             </div>
           </div>
@@ -74,6 +82,8 @@ export default function ProgramStudiowPage({ params: { locale } }: Props) {
                 small
                 text="Kierunek Mechatronika"
                 outsideLink="/files/efekty-uczenia-mechatronika.pdf"
+                icon="/images/icons/circle.svg"
+                iconAlt="Circle"
               />
             </div>
           </div>

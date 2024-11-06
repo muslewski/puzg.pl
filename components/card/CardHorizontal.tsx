@@ -4,6 +4,8 @@ export default function CardHorizontal({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex gap-12 w-full flex-col lg:flex-row">{children}</div>
+    <div className="flex gap-12 w-full flex-col lg:flex-row flex-wrap">
+      {children}
+    </div>
   );
 }

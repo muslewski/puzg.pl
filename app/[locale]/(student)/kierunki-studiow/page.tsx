@@ -111,7 +111,7 @@ export default function KierunkiStudiowPage({ params: { locale } }: Props) {
         <MainTitle>Realizowane specjalności</MainTitle>
 
         <CardHorizontal>
-          <div className="w-full lg:w-1/2 flex flex-col gap-6 items-center">
+          <div className="w-full lg:w-5/12 flex flex-col gap-6 items-center">
             <div className="relative w-full h-[200px] sm:h-[350px] rounded-xl overflow-hidden">
               <Image
                 src="/images/kierunki-studiow/mechatronika.png"
@@ -122,7 +122,7 @@ export default function KierunkiStudiowPage({ params: { locale } }: Props) {
             </div>
             <h3>Mechatronika stosowana</h3>
           </div>
-          <div className="w-full lg:w-1/2 flex flex-col gap-6 items-center">
+          <div className="w-full lg:w-5/12 flex flex-col gap-6 items-center">
             <div className="relative w-full h-[200px] sm:h-[350px] rounded-xl overflow-hidden">
               <Image
                 src="/images/kierunki-studiow/automatyka.png"
