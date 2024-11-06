@@ -34,11 +34,8 @@ export default function JakoscKsztalceniaPage({ params: { locale } }: Props) {
 
   return (
     <MainWrapper topTitle={t("title")}>
-      <Card border="l">
-        <MainTitle>
-          Publiczna Uczelnia Zawodowa w Grudziądzu - Wspólny Sukces Miasta i
-          Władz
-        </MainTitle>
+      <Card grayCard grayCardPosition="right">
+        <MainTitle>Wspólny Sukces Miasta i Władz</MainTitle>
         <SimpleText>
           Publiczna Uczelnia Zawodowa w Grudziądzu została stworzona po latach
           starań władz Wojskowych Zakładów Uzbrojenia, miasta oraz
@@ -50,12 +47,12 @@ export default function JakoscKsztalceniaPage({ params: { locale } }: Props) {
       </Card>
 
       <Card border="tr">
+        <MainTitle>Cele Wewnętrznego Systemu Jakości Kształcenia</MainTitle>
         <CardImage
           image="/images/jakosc-ksztalcenia/happyStudents.png"
           imageAlt="a"
           imageOrientation="full"
         />
-        <MainTitle>Cele Wewnętrznego Systemu Jakości Kształcenia</MainTitle>
         <CardList
           richTextColor="bg-gradient-to-br from-brandPrimaryBlue via-brandPrimaryBlue/95 to-brandBrightBlue/65 text-transparent bg-clip-text w-fit"
           simpleList={[

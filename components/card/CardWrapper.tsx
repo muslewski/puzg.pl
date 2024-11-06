@@ -28,8 +28,9 @@ export default function CardWrapper({
         className={clsx(
           "rounded-2xl",
           customWrapperWidth ?? "w-fit",
-          customGradient ??
-            "from-brandBrightBlue/55 via-brandWashedBlue/35 to-brandWashedBlue/0",
+          !grayCard &&
+            (customGradient ??
+              "from-brandBrightBlue/55 via-brandWashedBlue/35 to-brandWashedBlue/0"),
           border === "bl" && "pb-1 pl-1 bg-gradient-to-tr",
           border === "br" && "pb-1 pr-1 bg-gradient-to-tl",
           border === "tl" && "pt-1 pl-1 bg-gradient-to-br",
@@ -37,7 +38,7 @@ export default function CardWrapper({
           border === "l" && "pl-1 bg-gradient-to-r",
           grayCard &&
             clsx(
-              "relative from-brandNeutrals-700/55 via-brandNeutrals-300/35 to-brandNeutrals-300/0 before:absolute before:bg-brandNeutrals-200 before:w-[200%] before:top-0 before:h-full",
+              "relative from-brandNeutrals-700/55 via-brandNeutrals-300/35 to-brandNeutrals-300/0 before:absolute before:bg-brandNeutrals-300 before:w-[200%] before:top-0 before:h-full",
               grayCardPosition === "left" &&
                 "before:right-[99%] before:shadow-[inset_4px_2px_4px_0_rgb(0,0,0,0.1)] pr-1 bg-gradient-to-bl",
               grayCardPosition === "right" &&
@@ -48,7 +49,8 @@ export default function CardWrapper({
         <div
           className={clsx(
             "flex flex-col gap-12 sm:gap-20 bg-white p-6 sm:p-12 rounded-xl",
-            customInsideBorder ?? "border-washedBlue-300 border-double",
+            !grayCard &&
+              (customInsideBorder ?? "border-washedBlue-300 border-double"),
             border === "bl" &&
               "shadow-[inset_15px_-15px_12px_-15px_rgba(9,84,124,0.1)] border-b-4 border-l-4",
             border === "br" &&
@@ -61,7 +63,7 @@ export default function CardWrapper({
               "shadow-[inset_15px_0px_12px_-15px_rgba(9,84,124,0.1)] border-l-4",
             grayCard &&
               clsx(
-                "from-brandNeutrals-200 via-brandNeutrals-300 to-brandNeutrals-400 border-brandNeutrals-600",
+                "from-brandNeutrals-300 via-brandNeutrals-300 to-brandNeutrals-400 border-brandNeutrals-600  border-double",
                 grayCardPosition === "left" &&
                   "bg-gradient-to-r rounded-r-2xl rounded-l-none shadow-[inset_-2px_2px_4px_0_rgb(0,0,0,0.1)] border-r-4",
                 grayCardPosition === "right" &&
