@@ -2,8 +2,13 @@
 
 import { newsProps } from "@/app/[locale]/(uczelnia)/aktualnosci/page";
 import Card from "@/components/card/Card";
+import { CardImage } from "@/components/card/CardImage";
+import MainTitle from "@/components/card/MainTitle";
+import { RichTextSlicer } from "@/components/card/RichTextSlicer";
+import SimpleText from "@/components/card/SimpleText";
 import FancyButton from "@/components/FancyButton";
 import SortOptions from "@/components/news/SortOptions";
+import RichText from "@/components/RichText";
 import { useMemo, useState } from "react";
 
 export default function NewsList({
@@ -39,27 +44,29 @@ export default function NewsList({
                 : "br"
             }
             key={key}
-            mainTitle={post.title}
-            richText={post.description}
-            richTextWordsLimit={40}
-            image={post.imagesSrc[0]}
-            imageOrientation={post.imagesOrientation[0]}
-            imageAlt={post.imagesAlt[0]}
-            imageLink={{
-              pathname: "/aktualnosci/[slug]",
-              params: { slug: key },
-            }}
-            customElement={
-              <FancyButton
-                text={buttonText}
-                link={{
+            leftProps={[
+              <CardImage
+                image={post.imagesSrc[0]}
+                imageAlt={post.imagesAlt[0]}
+                imageOrientation={post.imagesOrientation[0]}
+                imageLink={{
                   pathname: "/aktualnosci/[slug]",
                   params: { slug: key },
                 }}
-                small
-              />
-            }
-          />
+              />,
+            ]}
+          >
+            <MainTitle>{post.title}</MainTitle>
+            <RichTextSlicer limit={40}>{post.description}</RichTextSlicer>
+            <FancyButton
+              text={buttonText}
+              link={{
+                pathname: "/aktualnosci/[slug]",
+                params: { slug: key },
+              }}
+              small
+            />
+          </Card>
         );
       })}
     </div>

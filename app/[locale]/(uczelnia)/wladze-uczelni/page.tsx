@@ -1,4 +1,7 @@
 import Card from "@/components/card/Card";
+import { CardImage } from "@/components/card/CardImage";
+import ContactData from "@/components/card/ContactData";
+import PersonalData from "@/components/card/PersonalData";
 import MainWrapper from "@/components/MainWrapper";
 
 import { Metadata } from "next";
@@ -29,38 +32,73 @@ export default function WladzeUczelniPage({ params: { locale } }: Props) {
   return (
     <MainWrapper topTitle={t("title")}>
       <Card
-        personalData={{ title: "Rektor", fullData: "dr inż. Michał Sójka" }}
-        contactData={{ mail: "michal.sojka@puzg.pl", phone: "+48 123 456 789" }}
         border="bl"
-        image="/images/wladze-uczelni/rektor.jpg"
-        imageAlt="Zdjęcie Rektora"
-        imageOrientation="portrait"
+        leftProps={[
+          <CardImage
+            image="/images/wladze-uczelni/rektor.jpg"
+            imageAlt="Zdjęcie Rektora"
+            imageOrientation="portrait"
+            customImageBorder="border-8 border-brandPrimaryBlue border-double"
+          />,
+        ]}
         customWrapperWidth="lg:w-3/4"
-        customImageBorder="border-8 border-brandPrimaryBlue border-double"
-      />
+      >
+        <PersonalData
+          personalData={{ title: "Rektor", fullData: "dr inż. Michał Sójka" }}
+        />
+        <ContactData
+          contactData={{
+            mail: "michal.sojka@puzg.pl",
+            phone: "+48 123 456 789",
+          }}
+        />
+      </Card>
+
       <Card
-        personalData={{ title: "Kwestor", fullData: "mgr Małgorzata Kosińska" }}
-        contactData={{
-          mail: "malgorzata.kosinska@puzg.pl",
-          phone: "+48 123 456 789",
-        }}
         border="tr"
-        image="/images/wladze-uczelni/kwestor.jpg"
-        imageAlt="Zdjęcie Kwestora"
-        imageOrientation="portrait"
+        leftProps={[
+          <CardImage
+            image="/images/wladze-uczelni/kwestor.jpg"
+            imageAlt="Zdjęcie Kwestora"
+            imageOrientation="portrait"
+            customImageBorder="border-8 border-brandPrimaryBlue border-double"
+          />,
+        ]}
         customWrapperWidth="lg:w-3/4"
-        customImageBorder="border-8 border-brandPrimaryBlue border-double"
-      />
+      >
+        <PersonalData
+          personalData={{
+            title: "Kwestor",
+            fullData: "mgr Małgorzata Kosińska",
+          }}
+        />
+        <ContactData
+          contactData={{
+            mail: "malgorzata.kosinska@puzg.pl",
+            phone: "+48 123 456 789",
+          }}
+        />
+      </Card>
+
       <Card
-        personalData={{ title: "Kanclerz", fullData: "mgr Artur Mach" }}
-        contactData={{ mail: "artur.mach@puzg.pl", phone: "+48 123 456 789" }}
         border="tl"
-        image="/images/wladze-uczelni/kanclerz.jpg"
-        imageAlt="Zdjęcie Kanclerza"
-        imageOrientation="portrait"
+        leftProps={[
+          <CardImage
+            image="/images/wladze-uczelni/kanclerz.jpg"
+            imageAlt="Zdjęcie Kanclerza"
+            imageOrientation="portrait"
+            customImageBorder="border-8 border-brandPrimaryBlue border-double"
+          />,
+        ]}
         customWrapperWidth="lg:w-3/4"
-        customImageBorder="border-8 border-brandPrimaryBlue border-double"
-      />
+      >
+        <PersonalData
+          personalData={{ title: "Kanclerz", fullData: "mgr Artur Mach" }}
+        />
+        <ContactData
+          contactData={{ mail: "artur.mach@puzg.pl", phone: "+48 123 456 789" }}
+        />
+      </Card>
     </MainWrapper>
   );
 }

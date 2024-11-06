@@ -1,4 +1,6 @@
 import Card from "@/components/card/Card";
+import MainTitle from "@/components/card/MainTitle";
+import SimpleText from "@/components/card/SimpleText";
 import FancyButton from "@/components/FancyButton";
 import MainWrapper from "@/components/MainWrapper";
 import { Metadata } from "next";
@@ -25,19 +27,16 @@ export default function NotFound() {
 
   return (
     <MainWrapper topTitle={t("title")}>
-      <Card
-        border="bl"
-        mainTitle={t("h1")}
-        simpleText={t("description")}
-        customElement={
-          <FancyButton
-            text={t("buttonText")}
-            icon="/images/icons/home.png"
-            iconAlt={t("buttonIconAlt")}
-            link="/"
-          />
-        }
-      />
+      <Card border="bl">
+        <MainTitle>{t("h1")}</MainTitle>
+        <SimpleText>{t("description")}</SimpleText>
+        <FancyButton
+          text={t("buttonText")}
+          icon="/images/icons/home.png"
+          iconAlt={t("buttonIconAlt")}
+          link="/"
+        />
+      </Card>
     </MainWrapper>
   );
 }

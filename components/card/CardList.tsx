@@ -1,7 +1,20 @@
-import { ListObjectItem, SimpleListItem } from "@/components/card/Card";
 import ListItem from "@/components/card/ListItem";
 import clsx from "clsx";
 import Image from "next/image";
+
+export type ListObjectItem = {
+  title: string;
+  description: string;
+  icon: string;
+  iconAlt: string;
+};
+
+export type SimpleListItem = {
+  richText: React.ReactNode;
+  description?: string;
+  icon: string;
+  iconAlt: string;
+};
 
 export default function CardList({
   listObject,

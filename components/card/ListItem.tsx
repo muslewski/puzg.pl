@@ -1,4 +1,4 @@
-import { ListObjectItem } from "@/components/card/Card";
+import { ListObjectItem } from "@/components/card/CardList";
 import Image from "next/image";
 
 export default function ListItem({

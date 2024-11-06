@@ -1,4 +1,5 @@
 import Card from "@/components/card/Card";
+import MainTitle from "@/components/card/MainTitle";
 import MainWrapper from "@/components/MainWrapper";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
@@ -27,10 +28,12 @@ export default function ProgramStudiowPage({ params: { locale } }: Props) {
 
   return (
     <MainWrapper topTitle={t("title")}>
-      <Card
-        border="bl"
-        mainTitle="Program studiów kierunku Mechatronika obowiązujący od roku akademickiego 2024/2025:"
-      />
+      <Card border="bl">
+        <MainTitle>
+          Program studiów kierunku Mechatronika obowiązujący od roku
+          akademickiego 2024/2025:
+        </MainTitle>
+      </Card>
     </MainWrapper>
   );
 }

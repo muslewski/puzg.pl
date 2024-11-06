@@ -8,6 +8,10 @@ import RichText from "@/components/RichText";
 import Card from "@/components/card/Card";
 import FancyButton from "@/components/FancyButton";
 import { newsData } from "@/app/[locale]/(uczelnia)/aktualnosci/page";
+import { CardImages } from "@/components/card/CardImages";
+import MainTitle from "@/components/card/MainTitle";
+import { CardImage } from "@/components/card/CardImage";
+import SimpleText from "@/components/card/SimpleText";
 
 type Props = {
   params: {
@@ -55,22 +59,21 @@ export default function PostPage({ params: { locale, slug } }: Props) {
 
     return (
       <MainWrapper topTitle={t("title")} zeroGap="gap-12 lg:gap-16">
-        <Card
-          images={post.imagesSrc}
-          imagesOrientation={post.imagesOrientation}
-          imagesAlt={t("imagesAlt").split("|")}
-          border="bl"
-          richText={<RichText>{(p) => t.rich(`description`, p)}</RichText>}
-          customElement={
-            <FancyButton
-              link="/aktualnosci"
-              icon="/images/icons/left-arrow.png"
-              iconAlt={tButtons("buttonIconAlt")}
-              text={tButtons("buttonText")}
-              small
-            />
-          }
-        />
+        <Card border="bl">
+          <CardImages
+            images={post.imagesSrc}
+            imagesAlt={t("imagesAlt").split("|")}
+            imagesOrientation={post.imagesOrientation}
+          />
+          <RichText>{(p) => t.rich(`description`, p)}</RichText>
+          <FancyButton
+            link="/aktualnosci"
+            icon="/images/icons/left-arrow.png"
+            iconAlt={tButtons("buttonIconAlt")}
+            text={tButtons("buttonText")}
+            small
+          />
+        </Card>
       </MainWrapper>
     );
   } else {
@@ -80,31 +83,34 @@ export default function PostPage({ params: { locale, slug } }: Props) {
     return (
       <MainWrapper topTitle={t("title")} zeroGap="gap-10 lg:gap-16">
         <Card
-          mainTitle={t("heading")}
-          image="/images/aktualnosci/dog.jpg"
-          imageOrientation="landscape"
-          imageAlt={t("imagesAlt")}
           border="tr"
-          simpleText={t("description")}
-          customElement={
-            <div className="flex gap-12 flex-wrap">
-              <FancyButton
-                link="/aktualnosci"
-                icon="/images/icons/left-arrow.png"
-                iconAlt={tButtons("buttonIconAlt")}
-                text={tButtons("buttonText")}
-                small
-              />
-              <FancyButton
-                text={t("buttonText")}
-                icon="/images/icons/home.png"
-                iconAlt={t("buttonIconAlt")}
-                link="/"
-                small
-              />
-            </div>
-          }
-        />
+          leftProps={[
+            <CardImage
+              image="/images/aktualnosci/dog.jpg"
+              imageAlt={t("imagesAlt")}
+              imageOrientation="landscape"
+            />,
+          ]}
+        >
+          <MainTitle>{t("heading")}</MainTitle>
+          <SimpleText>{t("description")}</SimpleText>
+          <div className="flex gap-12 flex-wrap">
+            <FancyButton
+              link="/aktualnosci"
+              icon="/images/icons/left-arrow.png"
+              iconAlt={tButtons("buttonIconAlt")}
+              text={tButtons("buttonText")}
+              small
+            />
+            <FancyButton
+              text={t("buttonText")}
+              icon="/images/icons/home.png"
+              iconAlt={t("buttonIconAlt")}
+              link="/"
+              small
+            />
+          </div>
+        </Card>
       </MainWrapper>
     );
   }
