@@ -34,12 +34,16 @@ export default function NewsList({
 
         return (
           <Card
+            grayCard={number % 2 === 0}
+            grayCardPosition={number % 4 ? "left" : "right"}
             border={
-              number % 4 === 0
-                ? "bl"
+              number % 2 === 0 // check if grayCard is true
+                ? undefined // no border when grayCard is true
                 : number % 4 === 1
-                ? "tl"
+                ? "bl"
                 : number % 4 === 2
+                ? "tl"
+                : number % 4 === 3
                 ? "tr"
                 : "br"
             }
@@ -59,6 +63,11 @@ export default function NewsList({
             <MainTitle>{post.title}</MainTitle>
             <RichTextSlicer limit={40}>{post.description}</RichTextSlicer>
             <FancyButton
+              customGradient={
+                number % 2 === 0
+                  ? "bg-gradient-to-br from-brandNeutrals-1000 to-brandNeutrals-800"
+                  : undefined
+              }
               text={buttonText}
               link={{
                 pathname: "/aktualnosci/[slug]",

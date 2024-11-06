@@ -1,6 +1,5 @@
 import Card from "@/components/card/Card";
 import CardList from "@/components/card/CardList";
-import GrayCard from "@/components/card/GrayCard";
 import MainTitle from "@/components/card/MainTitle";
 import SimpleText from "@/components/card/SimpleText";
 import FancyButton from "@/components/FancyButton";
@@ -79,11 +78,11 @@ export default function HomePage({ params: { locale } }: Props) {
           />
         </Card>
 
-        <GrayCard
-          mainTitle={t("grayCard1.mainTitle")}
-          simpleText={t("grayCard1.simpleText")}
-          customElement={<LocalizationIframe />}
-        />
+        <Card grayCard grayCardPosition="left">
+          <MainTitle>{t("grayCard1.mainTitle")}</MainTitle>
+          <SimpleText>{t("grayCard1.simpleText")}</SimpleText>
+          <LocalizationIframe />
+        </Card>
 
         <Card
           border="tr"

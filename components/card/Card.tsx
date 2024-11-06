@@ -4,12 +4,15 @@ import CardWrapper from "@/components/card/CardWrapper";
 
 export type border = "bl" | "br" | "tl" | "tr" | "l";
 export type ImageOrientation = "portrait" | "landscape" | "square" | "full";
+export type grayCardPosition = "left" | "right";
 
 type CardProps = {
-  border: border;
+  border?: border;
   customGradient?: `from-${string}`;
   customInsideBorder?: `border-${string}`;
   customWrapperWidth?: string;
+  grayCard?: boolean;
+  grayCardPosition?: grayCardPosition;
   leftProps?: React.ReactNode[];
   children?: React.ReactNode;
   rightProps?: React.ReactNode[];
@@ -20,6 +23,8 @@ export default function Card({
   customGradient,
   customInsideBorder,
   customWrapperWidth,
+  grayCard,
+  grayCardPosition,
   leftProps,
   children,
   rightProps,
@@ -30,6 +35,8 @@ export default function Card({
       customGradient={customGradient}
       customInsideBorder={customInsideBorder}
       customWrapperWidth={customWrapperWidth}
+      grayCard={grayCard}
+      grayCardPosition={grayCardPosition}
     >
       <div className="flex flex-col xl:flex-row gap-12 xl:items-center">
         {leftProps?.map((element, index) => (
