@@ -1,4 +1,4 @@
-import { Link, Pathnames } from "@/i18n/routing";
+import { Link } from "@/i18n/routing";
 import clsx from "clsx";
 import Image from "next/image";
 import { ComponentProps } from "react";

@@ -1,4 +1,5 @@
 import Card from "@/components/card/Card";
+import CardHorizontal from "@/components/card/CardHorizontal";
 import { CardImage } from "@/components/card/CardImage";
 import CardList from "@/components/card/CardList";
 import MainTitle from "@/components/card/MainTitle";
@@ -109,7 +110,7 @@ export default function KierunkiStudiowPage({ params: { locale } }: Props) {
       <Card border="tr">
         <MainTitle>Realizowane specjalności</MainTitle>
 
-        <div className="flex gap-12 w-full flex-col lg:flex-row">
+        <CardHorizontal>
           <div className="w-full lg:w-1/2 flex flex-col gap-6 items-center">
             <div className="relative w-full h-[200px] sm:h-[350px] rounded-xl overflow-hidden">
               <Image
@@ -132,7 +133,7 @@ export default function KierunkiStudiowPage({ params: { locale } }: Props) {
             </div>
             <h3>Automatyka i sterowanie maszyn</h3>
           </div>
-        </div>
+        </CardHorizontal>
 
         <SimpleText>
           <b>Automatyka i sterowanie maszyn</b> - specjalność przygotowuje
