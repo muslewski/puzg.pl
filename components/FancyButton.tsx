@@ -53,7 +53,7 @@ export default function FancyButton({
           {icon && iconAlt && (
             <div
               className={clsx(
-                "relative h-10 w-10",
+                "relative h-10 w-10 flex-shrink-0",
                 small ? "h-7 w-7" : "h-10 w-10"
               )}
             >

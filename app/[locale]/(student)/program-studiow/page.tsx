@@ -56,7 +56,7 @@ export default function ProgramStudiowPage({ params: { locale } }: Props) {
         <br />
 
         <CardHorizontal>
-          <div className="w-full lg:w-1/2 flex flex-col gap-6">
+          <div className="w-full lg:w-5/12 flex flex-col gap-6">
             <h3>Sylabusy:</h3>
             <div className="flex flex-col gap-6">
               <FancyButton
@@ -75,7 +75,7 @@ export default function ProgramStudiowPage({ params: { locale } }: Props) {
               />
             </div>
           </div>
-          <div className="w-full lg:w-1/2 flex flex-col gap-6">
+          <div className="w-full lg:w-5/12 flex flex-col gap-6">
             <h3>Efekty uczenia:</h3>
             <div className="flex flex-col gap-6">
               <FancyButton

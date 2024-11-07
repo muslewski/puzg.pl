@@ -40,7 +40,7 @@ export default function OfertyPracyPage({ params: { locale } }: Props) {
         </SimpleText>
         <FancyButton
           small
-          outsideLink="/files/Z.19.2024.2025.pdf"
+          outsideLink="/files/19-2024-2025/Z.19.2024.2025.pdf"
           text="Z.19.2024.2025 (przekierowanie do zarządzenia w PDF)"
           icon="/images/icons/circle.svg"
           iconAlt="Circle"
@@ -57,7 +57,7 @@ export default function OfertyPracyPage({ params: { locale } }: Props) {
           <FancyButton
             small
             text="Z.19.2024.2025_zał.2"
-            outsideLink="/files/Z.19.2024.2025_zal.2.docx"
+            outsideLink="/files/19-2024-2025/Z.19.2024.2025_zal.2.docx"
             icon="/images/icons/circle.svg"
             iconAlt="Circle"
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
@@ -65,7 +65,7 @@ export default function OfertyPracyPage({ params: { locale } }: Props) {
           <FancyButton
             small
             text="Z.19.2024.2025_zał.3"
-            outsideLink="/files/Z.19.2024.2025_zal.3.docx"
+            outsideLink="/files/19-2024-2025/Z.19.2024.2025_zal.3.docx"
             icon="/images/icons/circle.svg"
             iconAlt="Circle"
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
@@ -73,7 +73,7 @@ export default function OfertyPracyPage({ params: { locale } }: Props) {
           <FancyButton
             small
             text="Z.19.2024.2025_zał.4"
-            outsideLink="/files/Z.19.2024.2025_zal.4.docx"
+            outsideLink="/files/19-2024-2025/Z.19.2024.2025_zal.4.docx"
             icon="/images/icons/circle.svg"
             iconAlt="Circle"
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
@@ -81,7 +81,7 @@ export default function OfertyPracyPage({ params: { locale } }: Props) {
           <FancyButton
             small
             text="Z.19.2024.2025_zał.5"
-            outsideLink="/files/Z.19.2024.2025_zal.5.docx"
+            outsideLink="/files/19-2024-2025/Z.19.2024.2025_zal.5.docx"
             icon="/images/icons/circle.svg"
             iconAlt="Circle"
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
@@ -89,7 +89,7 @@ export default function OfertyPracyPage({ params: { locale } }: Props) {
           <FancyButton
             small
             text="Z.19.2024.2025_zał.8"
-            outsideLink="/files/Z.19.2024.2025_zal.8.docx"
+            outsideLink="/files/19-2024-2025/Z.19.2024.2025_zal.8.docx"
             icon="/images/icons/circle.svg"
             iconAlt="Circle"
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
@@ -97,7 +97,7 @@ export default function OfertyPracyPage({ params: { locale } }: Props) {
           <FancyButton
             small
             text="Z.19.2024.2025_zał.10"
-            outsideLink="/files/Z.19.2024.2025_zal.10.docx"
+            outsideLink="/files/19-2024-2025/Z.19.2024.2025_zal.10.docx"
             icon="/images/icons/circle.svg"
             iconAlt="Circle"
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
