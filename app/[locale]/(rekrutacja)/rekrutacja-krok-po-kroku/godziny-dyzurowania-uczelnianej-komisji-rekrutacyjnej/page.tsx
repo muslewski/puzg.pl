@@ -40,7 +40,7 @@ export default function GodzinyDyzurowaniaPage({ params: { locale } }: Props) {
             <CardImage
               image="/images/godziny-dyzurowania/godziny-czerwiec.jpg"
               imageAlt="a"
-              imageOrientation="contain"
+              imageOrientation="w-full sm:w-[306px] xl:w-[459px] 3xl:w-[536px] h-[324px] xl:h-[486px] 3xl:h-[567px]"
             />
           </div>
           <div className="lg:w-5/12 flex flex-col gap-6">
@@ -48,7 +48,7 @@ export default function GodzinyDyzurowaniaPage({ params: { locale } }: Props) {
             <CardImage
               image="/images/godziny-dyzurowania/godziny-lipiec.jpg"
               imageAlt="a"
-              imageOrientation="contain"
+              imageOrientation="w-full sm:w-[306px] xl:w-[459px] 3xl:w-[536px] h-[324px] xl:h-[486px] 3xl:h-[567px]"
             />
           </div>
         </CardHorizontal>

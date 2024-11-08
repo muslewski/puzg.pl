@@ -8,7 +8,7 @@ export type ImageOrientation =
   | "landscape"
   | "square"
   | "full"
-  | "contain";
+  | string;
 export type grayCardPosition = "left" | "right";
 
 type CardProps = {
