@@ -34,7 +34,7 @@ export default function UstawyMNiSWPage({ params: { locale } }: Props) {
             simpleList={[
               {
                 richText: (
-                  <h2 className="h2fake">
+                  <h2 className="h3fake">
                     Ustawa z dnia 20 lipca 2018 r. - Prawo o szkolnictwie
                     wyższym i nauce
                   </h2>
@@ -53,7 +53,7 @@ export default function UstawyMNiSWPage({ params: { locale } }: Props) {
             simpleList={[
               {
                 richText: (
-                  <h2 className="h2fake">
+                  <h2 className="h3fake">
                     Ustawa z dnia 22 grudnia 2015 r. o Zintegrowanym Systemie
                     Kwalifikacji
                   </h2>
@@ -72,7 +72,7 @@ export default function UstawyMNiSWPage({ params: { locale } }: Props) {
             simpleList={[
               {
                 richText: (
-                  <h2 className="h2fake">
+                  <h2 className="h3fake">
                     Rozporządzenie Ministra Nauki i Szkolnictwa Wyższego z dnia
                     27 września 2018 r. w sprawie studiów
                   </h2>
@@ -91,7 +91,7 @@ export default function UstawyMNiSWPage({ params: { locale } }: Props) {
             simpleList={[
               {
                 richText: (
-                  <h2 className="h2fake">
+                  <h2 className="h3fake">
                     Rozporządzenie Ministra Nauki i Szkolnictwa Wyższego z dnia
                     12 września 2018 r. w sprawie kryteriów oceny programowej
                   </h2>

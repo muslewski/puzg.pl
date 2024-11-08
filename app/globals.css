@@ -21,8 +21,11 @@ h2 {
 }
 
 h3,
-.h2fake {
+.h3fake {
   @apply bg-gradient-to-br from-brandPrimaryBlue to-brandBrightBlue/65 text-transparent bg-clip-text w-fit text-xl xl:text-2xl 3xl:text-3xl md:leading-snug xl:leading-snug 3xl:leading-snug font-outfit font-semibold;
+}
+.h3fakeLess {
+  @apply bg-gradient-to-br from-brandPrimaryBlue to-brandBrightBlue/65 text-transparent bg-clip-text w-fit font-semibold;
 }
 
 p {
