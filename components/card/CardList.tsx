@@ -4,9 +4,11 @@ import Image from "next/image";
 
 export type ListObjectItem = {
   title: string;
-  description: string;
+  description?: string;
   icon: string;
   iconAlt: string;
+  settings?: string;
+  richDescription?: React.ReactNode;
 };
 
 export type SimpleListItem = {
@@ -22,23 +24,31 @@ export default function CardList({
   richTextColor,
   iconsSize,
   flexSettings,
+  listItemSettings,
 }: {
   listObject?: ListObjectItem[];
   simpleList?: SimpleListItem[];
   richTextColor?: string;
   iconsSize?: string;
   flexSettings?: string;
+  listItemSettings?: string;
 }) {
   if (listObject)
     return (
-      <ul className="flex flex-col lg:flex-row gap-24 pt-12">
+      <ul
+        className={clsx(
+          flexSettings ?? "flex flex-col lg:flex-row gap-24 pt-12"
+        )}
+      >
         {listObject?.map((item, index) => (
           <ListItem
             key={index}
             title={item.title}
             description={item.description}
+            richDescription={item.richDescription}
             icon={item.icon}
             iconAlt={item.iconAlt}
+            settings={listItemSettings}
           />
         ))}
       </ul>
@@ -46,12 +56,7 @@ export default function CardList({
 
   if (simpleList)
     return (
-      <ul
-        className={clsx(
-          "flex list-none",
-          flexSettings ? flexSettings : "flex-col gap-8"
-        )}
-      >
+      <ul className={clsx("flex list-none", flexSettings ?? "flex-col gap-8")}>
         {simpleList?.map((item, index) => (
           <li key={index} className="flex flex-col gap-3 sm:gap-3">
             <div className="flex gap-3 sm:gap-6 items-center">
