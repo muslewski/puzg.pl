@@ -13,7 +13,10 @@ body,
 }
 
 ul {
-  @apply list-disc list-inside text-brandDark text-base md:text-lg 3xl:text-xl font-outfit font-normal pl-4;
+  @apply list-disc list-inside text-brandDark text-base md:text-lg 3xl:text-xl font-outfit font-normal pl-4 flex flex-col gap-3;
+}
+ol {
+  @apply list-decimal list-inside text-brandDark text-base md:text-lg 3xl:text-xl font-outfit font-normal pl-4 flex flex-col gap-3;
 }
 
 h2 {

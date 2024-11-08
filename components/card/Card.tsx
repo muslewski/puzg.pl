@@ -3,7 +3,12 @@ import CardWrapper from "@/components/card/CardWrapper";
 // Types
 
 export type border = "bl" | "br" | "tl" | "tr" | "l";
-export type ImageOrientation = "portrait" | "landscape" | "square" | "full";
+export type ImageOrientation =
+  | "portrait"
+  | "landscape"
+  | "square"
+  | "full"
+  | "contain";
 export type grayCardPosition = "left" | "right";
 
 type CardProps = {

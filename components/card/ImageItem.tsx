@@ -24,10 +24,22 @@ export default function ImageItem({
           "w-[200px] sm:w-[300px] h-[300px] sm:h-[450px]",
         imageOrientation === "square" &&
           "w-full sm:w-[450px] h-[300px] sm:h-[450px]",
-        imageOrientation === "full" && "w-full max-w-5xl h-[200px] sm:h-[450px]"
+        imageOrientation === "full" &&
+          "w-full max-w-5xl h-[200px] sm:h-[450px]",
+        imageOrientation === "contain" &&
+          "w-full h-[24rem] md:h-[32rem] max-h-screen "
       )}
     >
-      <Image src={imageSrc} fill className="object-cover" alt={imageAlt} />
+      <Image
+        src={imageSrc}
+        fill
+        className={clsx(
+          imageOrientation === "contain"
+            ? "object-contain object-left"
+            : "object-cover"
+        )}
+        alt={imageAlt}
+      />
     </div>
   );
 }

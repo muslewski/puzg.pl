@@ -161,6 +161,14 @@
     "title": "Recruitment Step by Step",
     "description": "Learn about the recruitment process and the stages of registering for studies."
   },
+  "DostarczDokumentyPage": {
+    "title": "Deliver Documents",
+    "description": "Congratulations on passing your final exams. Now you need to complete the recruitment process and submit your documents."
+  },
+  "GodzinyDyzurowaniaPage": {
+    "title": "Office Hours of the College Admissions Committee",
+    "description": "Check the office hours of the College Admissions Committee for assistance with the enrollment process."
+  },
   "TerminarzRekrutacjiPage": {
     "title": "Recruitment Schedule",
     "description": "Check key recruitment dates, such as document submission and result announcements."

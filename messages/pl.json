@@ -161,6 +161,14 @@
     "title": "Rekrutacja Krok po Kroku",
     "description": "Zapoznaj się z procesem rekrutacyjnym i poznaj poszczególne etapy rejestracji na studia."
   },
+  "DostarczDokumentyPage": {
+    "title": "Dostarcz Dokumenty",
+    "description": "Gratulujemy zdania matury. Teraz należy dokończyć proces rekrutacyjny i dostarczyć dokumenty."
+  },
+  "GodzinyDyzurowaniaPage": {
+    "title": "Godziny Dyżurowania Uczelnianej Komisji Rekrutacyjnej",
+    "description": "Sprawdź godziny dyżurów Uczelnianej Komisji Rekrutacyjnej, aby uzyskać pomoc w procesie rekrutacji na studia."
+  },
   "TerminarzRekrutacjiPage": {
     "title": "Terminarz Rekrutacji",
     "description": "Sprawdź kluczowe terminy rekrutacyjne na studia, takie jak składanie dokumentów i ogłoszenie wyników."

@@ -94,6 +94,15 @@ export const routing = defineRouting({
       pl: "/rekrutacja-krok-po-kroku",
       en: "/recruitment-step-by-step",
     },
+    "/rekrutacja-krok-po-kroku/dostarcz-dokumenty": {
+      pl: "/rekrutacja-krok-po-kroku/dostarcz-dokumenty",
+      en: "/recruitment-step-by-step/deliver-documents",
+    },
+    "/rekrutacja-krok-po-kroku/godziny-dyzurowania-uczelnianej-komisji-rekrutacyjnej":
+      {
+        pl: "/rekrutacja-krok-po-kroku/godziny-dyzurowania-uczelnianej-komisji-rekrutacyjnej",
+        en: "/recruitment-step-by-step/office-hours-of-the-college-admissions-committee",
+      },
     "/terminarz-rekrutacji": {
       pl: "/terminarz-rekrutacji",
       en: "/recruitment-schedule",

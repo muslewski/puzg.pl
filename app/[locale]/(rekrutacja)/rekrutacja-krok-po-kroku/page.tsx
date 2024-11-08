@@ -65,7 +65,7 @@ export default function RekrutacjaKrokPoKrokuPage({
       <Card border="tr">
         <MainTitle>Lista kroków:</MainTitle>
         <CardList
-          flexSettings="flex flex-col flex-wrap lg:flex-row gap-24 pt-12 justify-center"
+          flexSettings="flex flex-col flex-wrap lg:flex-row gap-24 pt-12 justify-around"
           listItemSettings="max-w-xl"
           listObject={[
             {
@@ -83,7 +83,7 @@ export default function RekrutacjaKrokPoKrokuPage({
             {
               title: "Krok 2 - Uzupełnij i załącz wymagane pliki",
               richDescription: (
-                <ul className="">
+                <ol>
                   <li>
                     zdjęcie w postaci elektronicznej (jak do dowodu osobistego)
                     o rozdzielczości co najmniej 492 x 610 pikseli i wielkości
@@ -95,7 +95,7 @@ export default function RekrutacjaKrokPoKrokuPage({
                     studia w formacie PDF,
                   </li>
                   <li>potwierdzenie wniesienia opłaty rekrutacyjnej.</li>
-                </ul>
+                </ol>
               ),
               icon: "/images/rekrutacja-krok-po-kroku/attached-file.png",
               iconAlt: "a",
@@ -145,6 +145,7 @@ export default function RekrutacjaKrokPoKrokuPage({
                   <br></br>
                   <FancyButton
                     small
+                    link={"/rekrutacja-krok-po-kroku/dostarcz-dokumenty"}
                     text="Sprawdź co powinien zawierać komplet dokumentów"
                   />
                 </>
