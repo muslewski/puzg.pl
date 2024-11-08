@@ -16,7 +16,7 @@ export default function ImageItem({
   return (
     <div
       className={clsx(
-        "relative overflow-hidden rounded-lg flex-shrink-0",
+        "relative overflow-hidden rounded-lg flex-shrink-0 shadow-md",
         customImageBorder,
         imageOrientation === "landscape" &&
           "w-full max-w-[300px] sm:max-w-none sm:w-[450px] h-[200px] sm:h-[300px]",

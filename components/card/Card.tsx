@@ -2,7 +2,7 @@ import CardWrapper from "@/components/card/CardWrapper";
 
 // Types
 
-export type border = "bl" | "br" | "tl" | "tr" | "l";
+export type border = "bl" | "br" | "tl" | "tr" | "l" | "btlr";
 export type ImageOrientation =
   | "portrait"
   | "landscape"

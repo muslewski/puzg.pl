@@ -36,6 +36,7 @@ export default function CardWrapper({
           border === "tl" && "pt-1 pl-1 bg-gradient-to-br",
           border === "tr" && "pt-1 pr-1 bg-gradient-to-bl",
           border === "l" && "pl-1 bg-gradient-to-r",
+          border === "btlr" && "p-1 bg-gradient-to-br",
           grayCard &&
             clsx(
               "relative from-brandNeutrals-700/55 via-brandNeutrals-300/35 to-brandNeutrals-300/0 before:absolute before:bg-brandNeutrals-300 before:w-[200%] before:top-0 before:h-full",
@@ -61,6 +62,8 @@ export default function CardWrapper({
               "shadow-[inset_-15px_15px_12px_-15px_rgba(9,84,124,0.1)] border-t-4 border-r-4",
             border === "l" &&
               "shadow-[inset_15px_0px_12px_-15px_rgba(9,84,124,0.1)] border-l-4",
+            border === "btlr" &&
+              "shadow-[inset_0px_0px_12px_-8px_rgba(9,84,124,0.1)] border-4",
             grayCard &&
               clsx(
                 "from-brandNeutrals-300 via-brandNeutrals-300 to-brandNeutrals-400 border-brandNeutrals-600  border-double",
