@@ -27,14 +27,14 @@ export default function FooterContent({
 
         <div>
           Email:
-          <ul>
+          <ul className="text-white pt-2 gap-2">
             <li>rekrutacja@puzg.pl</li>
           </ul>
         </div>
 
         <div>
           {contact}
-          <ul>
+          <ul className="text-white pt-2 gap-2">
             <li>576-060-123</li>
             <li>576-060-124</li>
           </ul>
