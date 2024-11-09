@@ -2,6 +2,7 @@ import Card from "@/components/card/Card";
 import CardList from "@/components/card/CardList";
 import MainTitle from "@/components/card/MainTitle";
 import SimpleText from "@/components/card/SimpleText";
+import Contact from "@/components/form/Contact";
 import LocalizationIframe from "@/components/LocalizationIframe";
 import MainWrapper from "@/components/MainWrapper";
 import { Metadata } from "next";
@@ -31,6 +32,8 @@ export default function KontaktPage({ params: { locale } }: Props) {
 
   return (
     <MainWrapper topTitle={t("title")}>
+      <Contact />
+
       <Card border="l">
         <CardList
           simpleList={[
