@@ -43,7 +43,10 @@ export default function FooterContent({
 
       <div className="flex flex-col lg:flex-row gap-x-10 gap-y-16 justify-between">
         <div className="flex flex-col gap-4">
-          <Link href="/" className="flex items-center gap-3">
+          <Link
+            href="/biuletyn-informacji-publicznej"
+            className="flex items-center gap-3"
+          >
             {bip}
             <div className="relative w-[48px] h-[20px]">
               <Image
@@ -55,8 +58,8 @@ export default function FooterContent({
               />
             </div>
           </Link>
-          <Link href="/">{accessibilityDeclaration}</Link>
-          <Link href="/">{privacyPolicy}</Link>
+          <Link href="/deklaracja-dostepnosci">{accessibilityDeclaration}</Link>
+          <Link href="/polityka-prywatnosci">{privacyPolicy}</Link>
         </div>
 
         <FooterSocialMedia findUs={findUs} />

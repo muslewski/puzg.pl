@@ -14,6 +14,7 @@ export type ListObjectItem = {
 export type SimpleListItem = {
   richText: React.ReactNode;
   description?: string;
+  richDescription?: React.ReactNode;
   icon: string;
   iconAlt: string;
 };
@@ -82,7 +83,8 @@ export default function CardList({
                 {item.richText}
               </div>
             </div>
-            {item.description}
+            <p>{item.description}</p>
+            {item.richDescription}
           </li>
         ))}
       </ul>

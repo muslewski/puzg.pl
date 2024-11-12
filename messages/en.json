@@ -305,5 +305,17 @@
   "WspolpracaPage": {
     "title": "Collaboration",
     "description": "Discover collaboration opportunities with our university in the fields of scientific projects, teaching, and professional development."
+  },
+  "PolitykaPrywatnosciPage": {
+    "title": "Privacy Policy",
+    "description": "Learn how we protect your personal data and what your privacy rights are on our website."
+  },
+  "DeklaracjaDostepnosciPage": {
+    "title": "Accessibility Declaration",
+    "description": "Learn about the accessibility features of our website and the steps we take to ensure it is usable for all visitors."
+  },
+  "BipPage": {
+    "title": "Public Information Bulletin",
+    "description": "Browse public information about our university's activities, including documents, announcements, and other data in accordance with the Public Information Access Act."
   }
 }

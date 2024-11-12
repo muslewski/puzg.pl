@@ -305,5 +305,17 @@
   "WspolpracaPage": {
     "title": "Współpraca",
     "description": "Odkryj możliwości współpracy z naszą uczelnią w zakresie projektów naukowych, dydaktyki oraz rozwoju zawodowego."
+  },
+  "PolitykaPrywatnosciPage": {
+    "title": "Polityka Prywatności",
+    "description": "Dowiedz się, jak chronimy Twoje dane osobowe i jakie masz prawa dotyczące prywatności na naszej stronie."
+  },
+  "DeklaracjaDostepnosciPage": {
+    "title": "Deklaracja Dostępności",
+    "description": "Zapoznaj się z informacjami na temat dostępności naszej strony internetowej oraz działaniami, które podejmujemy, aby zapewnić dostępność dla wszystkich użytkowników."
+  },
+  "BipPage": {
+    "title": "Biuletyn Informacji Publicznej",
+    "description": "Przeglądaj publiczne informacje o działalności naszej uczelni, w tym dokumenty, ogłoszenia oraz inne dane zgodnie z ustawą o dostępie do informacji publicznej."
   }
 }

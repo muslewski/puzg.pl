@@ -120,6 +120,18 @@ export const routing = defineRouting({
       pl: "/kontakt",
       en: "/contact",
     },
+    "/polityka-prywatnosci": {
+      pl: "/polityka-prywatnosci",
+      en: "/privacy-policy",
+    },
+    "/deklaracja-dostepnosci": {
+      pl: "/deklaracja-dostepnosci",
+      en: "/accessibility-declaration",
+    },
+    "/biuletyn-informacji-publicznej": {
+      pl: "/biuletyn-informacji-publicznej",
+      en: "/public-information-bulletin",
+    },
   },
 });
 
