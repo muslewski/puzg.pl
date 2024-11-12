@@ -32,7 +32,7 @@ export default function KontaktPage({ params: { locale } }: Props) {
 
   return (
     <MainWrapper topTitle={t("title")}>
-      <Contact />
+      <Contact locale={locale} />
 
       <Card border="l">
         <CardList

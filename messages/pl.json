@@ -273,7 +273,34 @@
   },
   "KontaktPage": {
     "title": "Kontakt",
-    "description": "Skontaktuj się z nami poprzez e-mail, telefon lub odwiedź nas osobiście. Sprawdź szczegóły kontaktowe."
+    "description": "Skontaktuj się z nami poprzez e-mail, telefon lub odwiedź nas osobiście. Sprawdź szczegóły kontaktowe.",
+
+    "labelMessage": "Wiadomość",
+    "labelTitle": "Tytuł",
+    "labelName": "Imię i Nazwisko",
+    "labelEmail": "Email",
+    "send": "Wyślij",
+    "emailSent": "Email został wysłany pomyślnie!",
+    "emailError": "Wystąpił błąd podczas wysyłania emaila. Spróbuj ponownie później.",
+
+    "Email": {
+      "sender": "Publiczna Uczelnia Zawodowa w Grudziądzu",
+      "thanksForMessage": "Dziękujemy za Twoją wiadomość!",
+      "greeting": "Witaj",
+      "weReceived": "Otrzymaliśmy Twoją wiadomość. Odpowiemy na nią tak szybko, jak to możliwe.",
+      "detailsOfMessage": "Szczegóły Twojej wiadomości:",
+      "ifQuestions": "Jeśli masz jakiekolwiek pytania, prosimy o kontakt z nami pod adresem",
+      "buttonVisitPage": "Odwiedź naszą stronę",
+      "copyright": "Wszelkie prawa zastrzeżone.",
+      "privacyPolicy": "Polityka prywatności",
+      "Bip": "Biuletyn Informacji Publicznej",
+
+      "subject": "Nowa wiadomość z formularza kontaktowego",
+      "title": "Tytuł",
+      "message": "Wiadomość",
+      "success": "Email został wysłany pomyślnie",
+      "error": "Wystąpił błąd podczas wysyłania emaila"
+    }
   },
   "WspolpracaPage": {
     "title": "Współpraca",

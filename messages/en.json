@@ -273,7 +273,34 @@
   },
   "KontaktPage": {
     "title": "Contact",
-    "description": "Reach out to us via email, phone, or visit us in person. Check contact details."
+    "description": "Reach out to us via email, phone, or visit us in person. Check contact details.",
+
+    "labelMessage": "Message",
+    "labelTitle": "Title",
+    "labelName": "Name and Surname",
+    "labelEmail": "Email",
+    "send": "Send",
+    "emailSent": "The email has been sent successfully!",
+    "emailError": "An error occurred while sending the email. Please try again later.",
+
+    "Email": {
+      "sender": "Public Vocational College in Grudziądz",
+      "thanksForMessage": "Thank you for your message!",
+      "greeting": "Hello",
+      "weReceived": "We have received your message. We will respond as soon as possible.",
+      "detailsOfMessage": "Details of your message:",
+      "ifQuestions": "If you have any questions, please contact us at",
+      "buttonVisitPage": "Visit our website",
+      "copyright": "All rights reserved.",
+      "privacyPolicy": "Privacy Policy",
+      "Bip": "Public Information Bulletin",
+
+      "subject": "New message from the contact form",
+      "title": "Title",
+      "message": "Message",
+      "success": "Email has been sent successfully",
+      "error": "An error occurred while sending the email"
+    }
   },
   "WspolpracaPage": {
     "title": "Collaboration",

@@ -63,7 +63,7 @@ const config: Config = {
       },
       boxShadow: {
         inner2: "inset 0 2px 4px 0 rgb(0 0 0 / 0.05)",
-        inner3: "inset 0 12px 14px 0 rgb(0 0 0 / 0.9)",
+        inner3: "inset -2px 3px 3px 0 rgb(0 0 0 / 0.1)",
       },
       dropShadow: {
         white: "0 2px 18px rgba(235, 255, 255, 0.6)",

@@ -7,6 +7,7 @@ export default function FancyButton({
   text,
   link,
   outsideLink,
+  buttonType,
   icon,
   iconAlt,
   customGradient,
@@ -18,6 +19,7 @@ export default function FancyButton({
   text: string;
   link?: ComponentProps<typeof Link>["href"];
   outsideLink?: string;
+  buttonType?: React.ButtonHTMLAttributes<HTMLButtonElement>["type"];
   icon?: string;
   iconAlt?: string;
   customGradient?: string;
@@ -83,7 +85,7 @@ export default function FancyButton({
   }
 
   return (
-    <button type="button">
+    <button type={buttonType ?? "button"}>
       <ButtonContent />
     </button>
   );
