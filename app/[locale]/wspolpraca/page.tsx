@@ -64,7 +64,7 @@ export default function WspolpracaPage({ params: { locale } }: Props) {
               icon: "/images/wspolpraca/electrical-panel.png",
               iconAlt: "a",
               richText: (
-                <h2 className="h3fake">
+                <h2 className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
                   Bydgoskie Zakłady Elektromechaniczne BELMA S. A.
                 </h2>
               ),
@@ -73,7 +73,7 @@ export default function WspolpracaPage({ params: { locale } }: Props) {
               icon: "/images/wspolpraca/sonar.png",
               iconAlt: "a",
               richText: (
-                <h2 className="h3fake">
+                <h2 className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
                   Ośrodek Badawczo-Rozwojowy Centrum Techniki Morskiej S. A.
                 </h2>
               ),
@@ -82,37 +82,55 @@ export default function WspolpracaPage({ params: { locale } }: Props) {
               icon: "/images/wspolpraca/test.png",
               iconAlt: "a",
               richText: (
-                <h2 className="h3fake">Zakłady Chemiczne NITRO-CHEM S. A.</h2>
+                <h2 className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
+                  Zakłady Chemiczne NITRO-CHEM S. A.
+                </h2>
               ),
             },
             {
               icon: "/images/wspolpraca/fighter-jet.png",
               iconAlt: "a",
               richText: (
-                <h2 className="h3fake">Wojskowe Zakłady Lotnicze nr 2 S. A.</h2>
+                <h2 className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
+                  Wojskowe Zakłady Lotnicze nr 2 S. A.
+                </h2>
               ),
             },
             {
               icon: "/images/wspolpraca/missiles.png",
               iconAlt: "a",
               richText: (
-                <h2 className="h3fake">Wojskowe Zakłady Uzbrojenia S. A.</h2>
+                <h2 className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
+                  Wojskowe Zakłady Uzbrojenia S. A.
+                </h2>
               ),
             },
             {
               icon: "/images/wspolpraca/production.png",
               iconAlt: "a",
-              richText: <h2 className="h3fake">Rychiger Poland Sp. z o.o.</h2>,
+              richText: (
+                <h2 className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
+                  Rychiger Poland Sp. z o.o.
+                </h2>
+              ),
             },
             {
               icon: "/images/wspolpraca/manufacturing.png",
               iconAlt: "a",
-              richText: <h2 className="h3fake">Jabil Poland Sp. z o.o.</h2>,
+              richText: (
+                <h2 className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
+                  Jabil Poland Sp. z o.o.
+                </h2>
+              ),
             },
             {
               icon: "/images/wspolpraca/processor.png",
               iconAlt: "a",
-              richText: <h2 className="h3fake">Kitron Sp. z o.o.</h2>,
+              richText: (
+                <h2 className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
+                  Kitron Sp. z o.o.
+                </h2>
+              ),
             },
           ]}
         />

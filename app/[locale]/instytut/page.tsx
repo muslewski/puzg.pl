@@ -66,22 +66,38 @@ export default function InstytutPage({ params: { locale } }: Props) {
         <CardList
           simpleList={[
             {
-              richText: <h3>Dr inż. Michał Sójka</h3>,
+              richText: (
+                <h3 className="text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit ">
+                  Dr inż. Michał Sójka
+                </h3>
+              ),
               icon: "/images/icons/User.svg",
               iconAlt: "a",
             },
             {
-              richText: <h3>Dr inż. Paweł Bukowski</h3>,
+              richText: (
+                <h3 className="text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit">
+                  Dr inż. Paweł Bukowski
+                </h3>
+              ),
               icon: "/images/icons/User.svg",
               iconAlt: "a",
             },
             {
-              richText: <h3>Mgr inż. Artur Mach</h3>,
+              richText: (
+                <h3 className="text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit">
+                  Mgr inż. Artur Mach
+                </h3>
+              ),
               icon: "/images/icons/User.svg",
               iconAlt: "a",
             },
             {
-              richText: <h3>Mgr inż. Andrzej Poślednik</h3>,
+              richText: (
+                <h3 className="text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit">
+                  Mgr inż. Andrzej Poślednik
+                </h3>
+              ),
               icon: "/images/icons/User.svg",
               iconAlt: "a",
             },
