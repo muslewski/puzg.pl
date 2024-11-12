@@ -5,21 +5,25 @@ interface EmailTemplateProps {
   title: string;
   name: string;
   email: string;
+  locale?: string;
   translations: {
-    titleLabel: string;
-    messageLabel: string;
-    emailLabel: string;
+    titleLabel?: string;
+    messageLabel?: string;
+    nameLabel?: string;
+    emailLabel?: string;
+    localeLabel?: string;
 
-    sender: string;
-    thanksForMessage: string;
-    greeting: string;
-    weReceived: string;
-    detailsOfMessage: string;
-    ifQuestions: string;
-    buttonVisitPage: string;
-    copyright: string;
-    privacyPolicy: string;
-    Bip: string;
+    sender?: string;
+    heading?: string;
+    greeting?: string;
+    weReceived?: string;
+    detailsOfMessage?: string;
+    ifQuestions?: string;
+    buttonVisitPage?: string;
+    buttonReply?: string;
+    copyright?: string;
+    privacyPolicy?: string;
+    Bip?: string;
   };
 }
 
@@ -28,6 +32,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
   title,
   name,
   email,
+  locale,
   translations: t,
 }) => (
   <div
@@ -84,13 +89,19 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
                 paddingBottom: "10px",
               }}
             >
-              {t.thanksForMessage}
+              {t.heading}
             </h2>
-            <p
-              style={{ fontSize: "16px", lineHeight: "1.5", margin: "10px 0" }}
-            >
-              {t.greeting} <strong>{name}</strong>,
-            </p>
+            {t.greeting && (
+              <p
+                style={{
+                  fontSize: "16px",
+                  lineHeight: "1.5",
+                  margin: "10px 0",
+                }}
+              >
+                {t.greeting} <strong>{name}</strong>,
+              </p>
+            )}
             <p
               style={{ fontSize: "16px", lineHeight: "1.5", margin: "10px 0" }}
             >
@@ -127,53 +138,97 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
                     <strong>{t.titleLabel}:</strong> {title}
                   </td>
                 </tr>
-                <tr>
-                  <td style={{ paddingBottom: "10px" }}>
-                    <strong>{t.emailLabel}:</strong> {email}
-                  </td>
-                </tr>
+
                 <tr>
                   <td style={{ paddingBottom: "10px" }}>
                     <strong>{t.messageLabel}:</strong> {message}
                   </td>
                 </tr>
+
+                {t.nameLabel && (
+                  <tr>
+                    <td style={{ paddingBottom: "10px" }}>
+                      <strong>{t.nameLabel}:</strong> {name}
+                    </td>
+                  </tr>
+                )}
+
+                <tr>
+                  <td style={{ paddingBottom: "10px" }}>
+                    <strong>{t.emailLabel}:</strong> {email}
+                  </td>
+                </tr>
+
+                {t.localeLabel && locale && (
+                  <tr>
+                    <td style={{ paddingBottom: "10px" }}>
+                      <strong>{t.localeLabel}:</strong>{" "}
+                      {locale === "en"
+                        ? "Angielski"
+                        : locale === "pl"
+                        ? "Polski"
+                        : locale}
+                    </td>
+                  </tr>
+                )}
               </tbody>
             </table>
 
-            <p
-              style={{
-                fontSize: "16px",
-                lineHeight: "1.5",
-                marginTop: "20px",
-              }}
-            >
-              {t.ifQuestions}{" "}
-              <a
-                href="mailto:sekretariat@puzg.pl"
-                style={{ color: "#1F85B1", textDecoration: "none" }}
-              >
-                sekretariat@puzg.pl
-              </a>
-              .
-            </p>
-
-            {/* Button */}
-            <div style={{ textAlign: "center", marginTop: "30px" }}>
-              <a
-                href="https://www.puzg.pl"
+            {t.ifQuestions && (
+              <p
                 style={{
-                  display: "inline-block",
-                  backgroundColor: "#09547C",
-                  color: "#FFFFFF",
-                  padding: "12px 25px",
-                  borderRadius: "25px",
-                  textDecoration: "none",
-                  fontWeight: "bold",
                   fontSize: "16px",
+                  lineHeight: "1.5",
+                  marginTop: "20px",
                 }}
               >
-                {t.buttonVisitPage}
-              </a>
+                {t.ifQuestions}{" "}
+                <a
+                  href="mailto:sekretariat@puzg.pl"
+                  style={{ color: "#1F85B1", textDecoration: "none" }}
+                >
+                  sekretariat@puzg.pl
+                </a>
+                .
+              </p>
+            )}
+
+            {/* Button */}
+            <div style={{ marginTop: "30px" }}>
+              {t.buttonVisitPage && (
+                <a
+                  href="https://www.puzg.pl"
+                  style={{
+                    display: "inline-block",
+                    backgroundColor: "#09547C",
+                    color: "#FFFFFF",
+                    padding: "12px 25px",
+                    borderRadius: "25px",
+                    textDecoration: "none",
+                    fontWeight: "bold",
+                    fontSize: "16px",
+                  }}
+                >
+                  {t.buttonVisitPage}
+                </a>
+              )}
+              {t.buttonReply && (
+                <a
+                  href={`mailto:${email}`}
+                  style={{
+                    display: "inline-block",
+                    backgroundColor: "#09547C",
+                    color: "#FFFFFF",
+                    padding: "12px 25px",
+                    borderRadius: "25px",
+                    textDecoration: "none",
+                    fontWeight: "bold",
+                    fontSize: "16px",
+                  }}
+                >
+                  {t.buttonReply}
+                </a>
+              )}
             </div>
           </td>
         </tr>

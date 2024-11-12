@@ -32,9 +32,17 @@ export default function KontaktPage({ params: { locale } }: Props) {
 
   return (
     <MainWrapper topTitle={t("title")}>
-      <Contact locale={locale} />
+      <Card customWrapperWidth="w-full" border="l">
+        <MainTitle>Formularz kontaktowy</MainTitle>
+        <SimpleText>
+          Jesteśmy tutaj, aby Ci pomóc. Masz pytania dotyczące naszej oferty lub
+          rekrutacji? Skontaktuj się z nami, a z przyjemnością udzielimy
+          odpowiedzi na wszystkie Twoje wątpliwości!
+        </SimpleText>
+        <Contact />
+      </Card>
 
-      <Card border="l">
+      <Card border="bl">
         <CardList
           simpleList={[
             {

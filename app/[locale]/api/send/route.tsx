@@ -1,4 +1,4 @@
-import { EmailTemplate } from "@/components/email-template";
+import { EmailTemplate } from "@/components/form/email-template";
 import { getTranslations } from "next-intl/server";
 import { NextRequest } from "next/server";
 import { Resend } from "resend";
@@ -21,13 +21,13 @@ export async function POST(
 
     const t = await getTranslations({ locale, namespace: "KontaktPage" });
 
-    const translations = {
+    const userEmailTranslations = {
       titleLabel: t("labelTitle"),
       messageLabel: t("labelMessage"),
       emailLabel: t("labelEmail"),
 
       sender: t("Email.sender"),
-      thanksForMessage: t("Email.thanksForMessage"),
+      heading: t("Email.thanksForMessage"),
       greeting: t("Email.greeting"),
       weReceived: t("Email.weReceived"),
       detailsOfMessage: t("Email.detailsOfMessage"),
@@ -38,21 +38,61 @@ export async function POST(
       Bip: t("Email.Bip"),
     };
 
+    // Email to the user
     const { data, error } = await resend.emails.send({
       from: `${t("Email.sender")} <onboarding@resend.dev>`,
       to: [email],
-      subject: t("Email.subject"),
+      subject: t("Email.subjectClient"),
       react: EmailTemplate({
         message,
         title,
         name,
         email,
-        translations,
+        translations: userEmailTranslations,
       }),
     });
 
-    if (error) {
-      return Response.json({ error }, { status: 500 });
+    const sekretariatEmailTranslations = {
+      titleLabel: "Tytuł",
+      messageLabel: "Wiadomość",
+      nameLabel: "Imię i Nazwisko",
+      emailLabel: "Email",
+      localeLabel: "Język",
+
+      sender: "Publiczna Uczelnia Zawodowa w Grudziądzu",
+      heading: "Nowa wiadomość!",
+      greeting: "Witaj, masz nową wiadomość od",
+      weReceived:
+        'Odpowiedz na wiadomość, klikając guzik "Odpowiedź" lub tworząc odpowiedź do tej wiadomości.',
+      detailsOfMessage: "Szczegóły wiadomości:",
+      buttonReply: "Odpowiedź",
+      copyright: "Wszelkie prawa zastrzeżone.",
+      privacyPolicy: "Polityka Prywatności",
+      Bip: "Biuletyn Informacji Publicznej",
+    };
+
+    // Email to the sekretariat
+    const { data: sekretariatData, error: sekretariatError } =
+      await resend.emails.send({
+        from: `${name} <onboarding@resend.dev>`,
+        to: ["mateusz.mus@proton.me"],
+        subject: `${title} - Wiadomość z formularza kontaktowego - puzg.pl`,
+        replyTo: email,
+        react: EmailTemplate({
+          message,
+          title,
+          name,
+          email,
+          locale,
+          translations: sekretariatEmailTranslations,
+        }),
+      });
+
+    if (error || sekretariatError) {
+      return Response.json(
+        { error: error || sekretariatError },
+        { status: 500 }
+      );
     }
 
     return Response.json(data);

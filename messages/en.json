@@ -295,7 +295,7 @@
       "privacyPolicy": "Privacy Policy",
       "Bip": "Public Information Bulletin",
 
-      "subject": "New message from the contact form",
+      "subjectClient": "Thank you for your message - our team will get in touch with you!",
       "title": "Title",
       "message": "Message",
       "success": "Email has been sent successfully",

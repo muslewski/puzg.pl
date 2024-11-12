@@ -295,7 +295,7 @@
       "privacyPolicy": "Polityka prywatności",
       "Bip": "Biuletyn Informacji Publicznej",
 
-      "subject": "Nowa wiadomość z formularza kontaktowego",
+      "subjectClient": "Dziękujemy za wiadomość - nasz zespół się z Tobą skontaktuje!",
       "title": "Tytuł",
       "message": "Wiadomość",
       "success": "Email został wysłany pomyślnie",

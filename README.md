@@ -53,3 +53,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [ ] Add alt images to oUczelniPage Carousel
 - [ ] Add pagination to News when the news will be stored in database
 - [ ] Add PDF Reader https://react-pdf-viewer.dev/
+- [ ] Replace my email to sekretariat in contact form route.tsx
