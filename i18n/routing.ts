@@ -46,9 +46,17 @@ export const routing = defineRouting({
       pl: "/kierunki-studiow",
       en: "/fields-of-study",
     },
+    "/legitymacja-studencka": {
+      pl: "/legitymacja-studencka",
+      en: "/student-id-card",
+    },
     "/organizacja-roku-akademickiego": {
       pl: "/organizacja-roku-akademickiego",
       en: "/academic-year-organization",
+    },
+    "/plan-zajec": {
+      pl: "/plan-zajec",
+      en: "/class-schedule",
     },
     "/program-studiow": {
       pl: "/program-studiow",
@@ -57,6 +65,10 @@ export const routing = defineRouting({
     "/regulamin-studiow": {
       pl: "/regulamin-studiow",
       en: "/study-regulations",
+    },
+    "/stypendia": {
+      pl: "/stypendia",
+      en: "/scholarships",
     },
 
     // Pracownik
@@ -108,6 +120,24 @@ export const routing = defineRouting({
       en: "/recruitment-schedule",
     },
 
+    // Wybory 2024
+    "/dokumenty-do-pobrania": {
+      pl: "/dokumenty-do-pobrania",
+      en: "/downloadable-documents",
+    },
+    "/komunikaty": {
+      pl: "/komunikaty",
+      en: "/announcements",
+    },
+    "/uchwaly-ukw": {
+      pl: "/uchwaly-ukw",
+      en: "/resolutions-ukw",
+    },
+    "/uczelniana-komisja-wyborcza": {
+      pl: "/uczelniana-komisja-wyborcza",
+      en: "/college-election",
+    },
+
     "/instytut": {
       pl: "/instytut",
       en: "/institute",
@@ -120,6 +150,8 @@ export const routing = defineRouting({
       pl: "/kontakt",
       en: "/contact",
     },
+
+    // Footer
     "/polityka-prywatnosci": {
       pl: "/polityka-prywatnosci",
       en: "/privacy-policy",

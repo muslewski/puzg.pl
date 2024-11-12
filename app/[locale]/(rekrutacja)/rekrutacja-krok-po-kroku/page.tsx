@@ -59,6 +59,7 @@ export default function RekrutacjaKrokPoKrokuPage({
           iconAlt="Mail"
           text="Aplikuj do nas"
           customGradient="bg-gradient-to-br from-brandBrightBlue to-brandNavyBlue"
+          link="/elektroniczna-rejestracja-kandydata"
         />
       </Card>
 

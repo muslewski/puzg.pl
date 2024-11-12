@@ -46,9 +46,9 @@ export default function PolitykaPrywatnosciPage({ params: { locale } }: Props) {
                 richDescription: (
                   <>
                     <SimpleText>
-                      Niejsza Polityka Prywatności określa zasady przetwarzania
-                      i ochrony danych osobowych przekazywanych przez
-                      użytkowników w związku z korzystaniem z serwisu
+                      Niniejsza Polityka Prywatności określa zasady
+                      przetwarzania i ochrony danych osobowych przekazywanych
+                      przez użytkowników w związku z korzystaniem z serwisu
                       internetowego{" "}
                       <a
                         href="https://puzg.pl"

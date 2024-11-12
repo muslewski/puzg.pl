@@ -20,9 +20,12 @@
     "deanery": "Deanery",
     "educationQuality": "Education Quality",
     "fieldsOfStudy": "Fields of Study",
+    "studentIDCard": "Student ID Card",
     "academicYearOrganization": "Academic Year Organization",
+    "classSchedule": "Class Schedule",
     "studyProgram": "Study Program",
     "studyRegulations": "Study Regulations",
+    "scholarships": "Scholarships",
 
     "employee": "Employee",
     "jobOffers": "Job Offers",
@@ -36,6 +39,12 @@
     "recruitmentFee": "Recruitment Fee",
     "recruitmentStepByStep": "Recruitment Step by Step",
     "recruitmentSchedule": "Recruitment Schedule",
+
+    "elections": "Elections 2024",
+    "collegeElectionCommittee": "College Election Committee",
+    "announcements": "Announcements",
+    "downloadableDocuments": "Downloadable Documents",
+    "resolutionsUKW": "UKW Resolutions",
 
     "institute": "Institute",
     "collaboration": "Collaboration",
@@ -186,9 +195,17 @@
     "title": "Fields of Study",
     "description": "Explore the available fields of study at our college and find the right program for you."
   },
+  "LegitymacjaStudenckaPage": {
+    "title": "Student ID Card",
+    "description": "Learn how to obtain a student ID card, what benefits it provides, and where to collect it."
+  },
   "OrganizacjaRokuAkademickiegoPage": {
     "title": "Academic Year Organization",
     "description": "Check the academic calendar, including semester start and end dates and holiday breaks."
+  },
+  "PlanZajecPage": {
+    "title": "Class Schedule",
+    "description": "Check the class schedule for the current semester to find out when lectures, exercises, and seminars take place."
   },
   "ProgramStudiowPage": {
     "title": "Study Program",
@@ -197,6 +214,10 @@
   "RegulaminStudiowPage": {
     "title": "Study Regulations",
     "description": "Read the study regulations in force at our college, including student rights and obligations."
+  },
+  "StypendiaPage": {
+    "title": "Social Scholarship for the 2024/2025 Academic Year",
+    "description": "Find out if you're eligible for a social scholarship and learn about the required documentation to apply for financial assistance in the 2024/2025 academic year."
   },
 
   "AktualnosciPage": {
@@ -267,6 +288,23 @@
     "description": "Meet the college authorities and find out who is responsible for various fields of its functioning."
   },
 
+  "DokumentyDoPobraniaPage": {
+    "title": "Downloadable Documents",
+    "description": "Find essential documents, including application forms, ballot templates, and information clauses related to the election process."
+  },
+  "KomunikatyPage": {
+    "title": "Announcements",
+    "description": "Current announcements and information about the election schedule, candidate submissions, and voting results."
+  },
+  "UchwalyUKWPage": {
+    "title": "UKW Resolutions",
+    "description": "Browse the latest UKW senate resolutions regarding key decisions and organizational changes at the university."
+  },
+  "UczelnianaKomisjaWyborczaPage": {
+    "title": "College Election Committee",
+    "description": "Learn more about the activities and composition of the University Electoral Committee, as well as the electoral rules."
+  },
+
   "InstytutPage": {
     "title": "Institute of Applied Mechatronics",
     "description": "Get acquainted with the activities of our institutes, ongoing research, and educational offerings."
@@ -306,6 +344,7 @@
     "title": "Collaboration",
     "description": "Discover collaboration opportunities with our university in the fields of scientific projects, teaching, and professional development."
   },
+
   "PolitykaPrywatnosciPage": {
     "title": "Privacy Policy",
     "description": "Learn how we protect your personal data and what your privacy rights are on our website."

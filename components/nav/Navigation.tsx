@@ -48,7 +48,7 @@ export default function Navigation() {
     <div className="w-screen flex justify-center fixed z-30 pointer-events-none">
       <motion.nav
         ref={navRef}
-        className="flex flex-col items-center gap-5 w-screen 2xl:w-10/12 3xl:w-4/5 max-w-[2000px] py-6 lg:py-12 px-8 lg:px-24 3xl:px-36 bg-brandPrimaryBlue lg:bg-transparent border-[#1B7CB0] border-b-[5px] lg:border-b-0 rounded-b-2xl pointer-events-auto lg:pointer-events-none"
+        className="flex flex-col items-center gap-5 w-screen 3xl:w-10/12  max-w-[2000px] py-6 lg:py-12 px-8 lg:px-24 3xl:px-36 bg-brandPrimaryBlue lg:bg-transparent border-[#1B7CB0] border-b-[5px] lg:border-b-0 rounded-b-2xl pointer-events-auto lg:pointer-events-none"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{

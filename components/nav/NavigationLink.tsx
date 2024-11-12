@@ -84,7 +84,7 @@ export default function NavigationLink({
               onMouseLeave={() => setIsOpen(false)}
             >
               <div
-                className="w-full flex flex-row flex-wrap lg:flex-col gap-6"
+                className="w-full flex flex-row flex-wrap lg:flex-col gap-y-4 gap-x-6"
                 style={{
                   width: isTabletOrMobile ? "100%" : `${submenuWidth}rem`,
                 }}

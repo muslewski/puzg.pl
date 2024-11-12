@@ -26,7 +26,7 @@ export default function TopBar({
   }, []);
 
   return (
-    <div className="w-full flex gap-5 flex-col lg:flex-row justify-between items-end lg:items-center pointer-events-auto">
+    <div className="w-full flex gap-5 flex-col lg:flex-row justify-between items-end lg:items-center pointer-events-auto z-30">
       <div className="flex justify-between items-center w-full lg:w-fit gap-6 rounded-md ">
         <Link
           href="/"

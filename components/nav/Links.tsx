@@ -27,14 +27,17 @@ export function ListOfLinks() {
           { label: t("deanery"), href: "/dziekanat" },
           { label: t("educationQuality"), href: "/jakosc-ksztalcenia" },
           { label: t("fieldsOfStudy"), href: "/kierunki-studiow" },
+          { label: t("studentIDCard"), href: "/legitymacja-studencka" },
           {
             label: t("academicYearOrganization"),
             href: "/organizacja-roku-akademickiego",
           },
+          { label: t("classSchedule"), href: "/plan-zajec" },
           { label: t("studyProgram"), href: "/program-studiow" },
           { label: t("studyRegulations"), href: "/regulamin-studiow" },
+          { label: t("scholarships"), href: "/stypendia" },
         ]}
-        submenuWidth={9}
+        submenuWidth={11}
       >
         {t("student")}
       </NavigationLink>
@@ -78,6 +81,26 @@ export function ListOfLinks() {
         submenuWidth={10}
       >
         {t("recruitment")}
+      </NavigationLink>
+      <NavigationLink
+        submenu={[
+          { label: t("downloadableDocuments"), href: "/dokumenty-do-pobrania" },
+          {
+            label: t("announcements"),
+            href: "/komunikaty",
+          },
+          {
+            label: t("resolutionsUKW"),
+            href: "/uchwaly-ukw",
+          },
+          {
+            label: t("collegeElectionCommittee"),
+            href: "/uczelniana-komisja-wyborcza",
+          },
+        ]}
+        submenuWidth={9}
+      >
+        {t("elections")}
       </NavigationLink>
       <NavigationLink href="/instytut">{t("institute")}</NavigationLink>
       <NavigationLink href="/wspolpraca">{t("collaboration")}</NavigationLink>

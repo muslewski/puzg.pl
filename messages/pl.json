@@ -20,9 +20,12 @@
     "deanery": "Dziekanat",
     "educationQuality": "Jakość Kształcenia",
     "fieldsOfStudy": "Kierunki Studiów",
+    "studentIDCard": "Legitymacja Studencka",
     "academicYearOrganization": "Organizacja Roku Akademickiego",
+    "classSchedule": "Plan Zajęć",
     "studyProgram": "Program Studiów",
     "studyRegulations": "Regulamin Studiów",
+    "scholarships": "Stypendia",
 
     "employee": "Pracownik",
     "jobOffers": "Oferty Pracy",
@@ -36,6 +39,12 @@
     "recruitmentFee": "Opłata Rekrutacyjna",
     "recruitmentStepByStep": "Rekrutacja Krok po Kroku",
     "recruitmentSchedule": "Terminarz Rekrutacji",
+
+    "elections": "Wybory 2024",
+    "collegeElectionCommittee": "Uczelniana Komisja Wyborcza",
+    "announcements": "Komunikaty",
+    "downloadableDocuments": "Dokumenty do pobrania",
+    "resolutionsUKW": "Uchwały UKW",
 
     "institute": "Instytut",
     "collaboration": "Współpraca",
@@ -186,9 +195,17 @@
     "title": "Kierunki Studiów",
     "description": "Poznaj dostępne kierunki studiów na naszej uczelni i znajdź odpowiedni program edukacyjny dla siebie."
   },
+  "LegitymacjaStudenckaPage": {
+    "title": "Legitymacja studencka",
+    "description": "Dowiedz się, jak uzyskać legitymację studencką, jakie uprawnienia daje oraz gdzie można ją odebrać."
+  },
   "OrganizacjaRokuAkademickiegoPage": {
     "title": "Organizacja Roku Akademickiego",
     "description": "Sprawdź kalendarz roku akademickiego, w tym daty rozpoczęcia i zakończenia semestrów oraz przerwy świąteczne."
+  },
+  "PlanZajecPage": {
+    "title": "Plan Zajęć",
+    "description": "Sprawdź plan zajęć na dany semestr, aby dowiedzieć się, kiedy odbywają się wykłady, ćwiczenia i seminaria."
   },
   "ProgramStudiowPage": {
     "title": "Program Studiów",
@@ -197,6 +214,10 @@
   "RegulaminStudiowPage": {
     "title": "Regulamin Studiów",
     "description": "Przeczytaj regulamin studiów obowiązujący na naszej uczelni, w tym prawa i obowiązki studentów."
+  },
+  "StypendiaPage": {
+    "title": "Stypendium socjalne na rok akademicki 2024/2025",
+    "description": "Sprawdź, czy kwalifikujesz się do stypendium socjalnego i jakie dokumenty są wymagane do aplikacji na rok akademicki 2024/2025."
   },
 
   "AktualnosciPage": {
@@ -267,6 +288,23 @@
     "description": "Poznaj skład władz uczelni oraz dowiedz się, kto odpowiada za poszczególne dziedziny jej funkcjonowania."
   },
 
+  "DokumentyDoPobraniaPage": {
+    "title": "Dokumenty do Pobrania",
+    "description": "Znajdź niezbędne dokumenty, w tym formularze zgłoszeniowe, wzory kart do głosowania oraz klauzule informacyjne związane z procesem wyborczym."
+  },
+  "KomunikatyPage": {
+    "title": "Komunikaty",
+    "description": "Aktualne ogłoszenia i informacje dotyczące harmonogramu wyborów, zgłoszeń kandydatów oraz wyników głosowań."
+  },
+  "UchwalyUKWPage": {
+    "title": "Uchwały UKW",
+    "description": "Przeglądaj najnowsze uchwały senatu UKW dotyczące kluczowych decyzji i zmian organizacyjnych na uczelni."
+  },
+  "UczelnianaKomisjaWyborczaPage": {
+    "title": "Uczelniana Komisja Wyborcza",
+    "description": "Dowiedz się więcej o działalności i składzie Uczelnianej Komisji Wyborczej oraz zasadach wyborczych."
+  },
+
   "InstytutPage": {
     "title": "Instytut Mechatroniki Stosowanej",
     "description": "Zapoznaj się z działalnością naszych instytutów, prowadzonymi badaniami oraz ofertą edukacyjną."
@@ -306,6 +344,7 @@
     "title": "Współpraca",
     "description": "Odkryj możliwości współpracy z naszą uczelnią w zakresie projektów naukowych, dydaktyki oraz rozwoju zawodowego."
   },
+
   "PolitykaPrywatnosciPage": {
     "title": "Polityka Prywatności",
     "description": "Dowiedz się, jak chronimy Twoje dane osobowe i jakie masz prawa dotyczące prywatności na naszej stronie."
