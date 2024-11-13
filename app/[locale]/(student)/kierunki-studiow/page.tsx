@@ -34,151 +34,93 @@ export default function KierunkiStudiowPage({ params: { locale } }: Props) {
   return (
     <MainWrapper topTitle={t("title")}>
       <Card border="bl">
-        <MainTitle>Mechatronika</MainTitle>
+        <MainTitle>{t("mainTitle")}</MainTitle>
         <CardList
-          iconsSize="h-8 w-8 sm:h-14 sm:w-14"
+          iconsSize="h-8 w-8 sm:h-12 sm:w-12"
           flexSettings="flex-row gap-x-32 gap-y-16 flex-wrap lg:justify-around"
           simpleList={[
             {
               icon: "/images/kierunki-studiow/certificateIcon.png",
-              iconAlt: "a",
-              richText: <h3 className="font-medium">Poziom studiów</h3>,
-              description: "Pierwszego stopnia",
+              iconAlt: t("listItemAlt-1"),
+              richText: <h3 className="font-medium">{t("listItemTitle-1")}</h3>,
+              description: t("listItemDescription-1"),
             },
             {
               icon: "/images/kierunki-studiow/checklistIcon.png",
-              iconAlt: "a",
-              richText: <h3 className="font-medium">Profil kształcenia</h3>,
-              description: "Praktyczny",
+              iconAlt: t("listItemAlt-2"),
+              richText: <h3 className="font-medium">{t("listItemTitle-2")}</h3>,
+              description: t("listItemDescription-2"),
             },
             {
               icon: "/images/kierunki-studiow/learningIcon.png",
-              iconAlt: "a",
-              richText: <h3 className="font-medium">Forma studiów</h3>,
-              description: "Stacjonarne",
+              iconAlt: t("listItemAlt-3"),
+              richText: <h3 className="font-medium">{t("listItemTitle-3")}</h3>,
+              description: t("listItemDescription-3"),
             },
             {
               icon: "/images/kierunki-studiow/number-blockIcon.png",
-              iconAlt: "a",
-              richText: <h3 className="font-medium">Liczba semestrów</h3>,
-              description: "7",
+              iconAlt: t("listItemAlt-4"),
+              richText: <h3 className="font-medium">{t("listItemTitle-4")}</h3>,
+              description: t("listItemDescription-4"),
             },
             {
               icon: "/images/kierunki-studiow/workerIcon.png",
-              iconAlt: "a",
-              richText: <h3 className="font-medium">Tytuł zawodowy</h3>,
-              description: "Inżynier",
+              iconAlt: t("listItemAlt-5"),
+              richText: <h3 className="font-medium">{t("listItemTitle-5")}</h3>,
+              description: t("listItemDescription-5"),
             },
             {
               icon: "/images/kierunki-studiow/languageIcon.png",
-              iconAlt: "a",
-              richText: <h3 className="font-medium">Język kształcenia</h3>,
-              description: "Polski",
+              iconAlt: t("listItemAlt-6"),
+              richText: <h3 className="font-medium">{t("listItemTitle-6")}</h3>,
+              description: t("listItemDescription-6"),
             },
           ]}
         />
-        <p>
-          Mechatronika to nauka łącząca wiedzę z zakresu mechaniki, elektroniki,
-          informatyki, automatyki i robotyki. Jest to nowoczesny kierunek i
-          zarazem jedna z najszybciej rozwijających się gałęzi przemysłu. Wiedza
-          z tej dziedziny jest specjalistyczna i specyficzna, ale ze względu na
-          duże zapotrzebowanie rynku pracy stwarza bardzo dobre perspektywy dla
-          absolwentów. Mechatronika daje studentom wszechstronne wykształcenie w
-          zakresie projektowania, wytwarzania oraz eksploatacji nowoczesnych
-          urządzeń.
-        </p>
-        <p>
-          Na mechatronice będziesz studiował podstawowe przedmioty nauk
-          ścisłych, tj. matematykę, fizykę i chemię oraz przedmioty ogólne, tj.
-          podstawy konstrukcji urządzeń specjalnych, teoria mechanizmów i
-          maszyn, materiały inżynierskie, przedmioty kierunkowe, m.in. napędy
-          maszyn i urządzeń, podstawy robotyki, mechatronika w systemach
-          technicznych, technika mikroprocesorowa, układy i zespoły
-          elektroniczne w mechatronice oraz języki programowania. Ponadto na
-          poszczególnych specjalnościach prowadzone będą zajęcia z przedmiotów,
-          tj. projektowanie i programowanie układów sterowania, automatyzacja
-          procesów przemysłowych, panele i interfejsy komunikacyjne oraz
-          mechatroniczne układy sterowania napędem.
-        </p>
-        <p>
-          Studia trwają 3,5 roku, czyli 7 semestrów. W celu uzyskania tytułu
-          zawodowego inżyniera student powinien zdobyć co najmniej 210 punktów
-          ECTS (minimum po 30 punktów ECTS w każdym semestrze).
-        </p>
+        <SimpleText>{t("simpleText-1")}</SimpleText>
+        <SimpleText>{t("simpleText-2")}</SimpleText>
+        <SimpleText>{t("simpleText-3")}</SimpleText>
       </Card>
 
       <Card border="tr">
-        <MainTitle>Realizowane specjalności</MainTitle>
+        <MainTitle>{t("mainTitle-2")}</MainTitle>
 
         <CardHorizontal>
           <div className="w-full lg:w-5/12 flex flex-col gap-6 items-center">
             <div className="relative w-full h-[200px] sm:h-[350px] rounded-xl overflow-hidden">
               <Image
                 src="/images/kierunki-studiow/mechatronika.png"
-                alt="Mechatronika"
+                alt={t("imageAlt-1")}
                 fill
                 className="object-cover"
               />
             </div>
-            <h3>Mechatronika stosowana</h3>
+            <h3>{t("h3-1")}</h3>
           </div>
           <div className="w-full lg:w-5/12 flex flex-col gap-6 items-center">
             <div className="relative w-full h-[200px] sm:h-[350px] rounded-xl overflow-hidden">
               <Image
                 src="/images/kierunki-studiow/automatyka.png"
-                alt="Mechatronika"
+                alt={t("imageAlt-2")}
                 fill
                 className="object-cover"
               />
             </div>
-            <h3>Automatyka i sterowanie maszyn</h3>
+            <h3>{t("h3-2")}</h3>
           </div>
         </CardHorizontal>
 
         <SimpleText>
-          <b>Automatyka i sterowanie maszyn</b> - specjalność przygotowuje
-          specjalistów, którzy będą posiadali wiedzę oraz umiejętności z zakresu
-          projektowania, konstruowania i badań systemów sterowania, kreowania
-          zachowań inteligentnych oraz zarządzania procesami produkcji,
-          automatyzacji i robotyzacji. Studenci tej specjalności zostaną
-          zapoznani z podstawami robotyki, programowaniem robotów, algorytmami
-          sterowania, programowaniem mikrokontrolerów i sterowników swobodnie
-          programowalnych oraz komputerów przemysłowych, budową układów
-          sensorycznych i napędowych. Wykształcenie takich kwalifikacji będzie
-          możliwe dzięki poznaniu metod programowania układów i urządzeń
-          mechatronicznych, modelowania i symulacji komputerowej, programowania
-          regulatorów wielofunkcyjnych.
+          <b>{t("h3-2")}</b> - {t("text-1")}
         </SimpleText>
         <SimpleText>
-          <b>Mechatronika stosowana</b> - specjalność ukierunkowana jest na
-          przekazywanie wiedzy i umiejętności z zakresu: projektowania,
-          eksploatacji, obsługi i diagnostyki urządzeń mechatronicznych
-          stosowanych w przemyśle. Wprowadzone są przedmioty, w których student
-          zdobywa wiedzę i umiejętności dotyczące z jednej strony samych
-          procesów, a z drugiej, metod sterowania tymi procesami, zarówno w
-          sensie logicznym jak i wykonawczym, od idei programowania poprzez
-          elektronikę i mechaniczne elementy wykonawcze. Zna podstawowe języki
-          programowania i rozwijane są praktycznie umiejętności w tym zakresie.
-          Uzyskają wiedzę związaną z nowoczesnymi metodami pomiaru wielkości
-          mechanicznych i elektrycznych, którą następnie wykorzystają do opisu
-          działania urządzenia mechatronicznego. Opracowane metody opisu zostaną
-          wykorzystane do symulacji działania oraz projektowania. Poznają metody
-          komputerowego wspomagania prac inżynierskich, od obrabiarek
-          sterowanych numerycznie do symulacji układów mechanicznych,
-          elektronicznych i wizualizacji zjawisk zachodzących w urządzeniach
-          mechatronicznych.
+          <b>{t("h3-1")}</b> - {t("text-2")}
         </SimpleText>
       </Card>
 
       <Card border="tl">
-        <MainTitle>Mechatronika i co dalej?</MainTitle>
-        <SimpleText>
-          Absolwent kierunku Mechatronika przygotowany będzie do pracy w
-          nowoczesnych przedsiębiorstwach wymagających łączenia wiedzy z wielu
-          dyscyplin naukowych. Absolwent tego kierunku będzie potrafił
-          projektować, programować oraz obsługiwać nowoczesne urządzenia
-          mechatroniczne.
-        </SimpleText>
+        <MainTitle>{t("mainTitle-3")}</MainTitle>
+        <SimpleText>{t("simpleText-4")}</SimpleText>
 
         <CardList
           richTextColor="bg-gradient-to-br from-brandPrimaryBlue via-brandPrimaryBlue/95 to-brandBrightBlue/65 text-transparent bg-clip-text w-fit"

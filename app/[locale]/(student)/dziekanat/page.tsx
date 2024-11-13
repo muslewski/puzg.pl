@@ -107,7 +107,7 @@ export default function DziekanatPage({ params: { locale } }: Props) {
                   {t("week-2")}
                 </p>
               ),
-              description: `${t("hour")} godz. 14:00 - 18:00`,
+              description: `${t("hour")} 14:00 - 18:00`,
             },
           ]}
         />
