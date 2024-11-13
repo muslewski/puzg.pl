@@ -1,5 +1,6 @@
 import Card from "@/components/card/Card";
 import CardList from "@/components/card/CardList";
+import CardVertical from "@/components/card/CardVertical";
 import MainWrapper from "@/components/MainWrapper";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
@@ -28,7 +29,7 @@ export default function UstawyMNiSWPage({ params: { locale } }: Props) {
 
   return (
     <MainWrapper topTitle={t("title")}>
-      <div className="flex flex-col gap-12 lg:gap-24 w-full 2xl:w-4/5 px-6 lg:px-12 2xl:px-0">
+      <CardVertical>
         <Card grayCard grayCardPosition="left">
           <CardList
             simpleList={[
@@ -104,7 +105,7 @@ export default function UstawyMNiSWPage({ params: { locale } }: Props) {
             ]}
           />
         </Card>
-      </div>
+      </CardVertical>
     </MainWrapper>
   );
 }

@@ -1,5 +1,8 @@
 import Card from "@/components/card/Card";
+import CardVertical from "@/components/card/CardVertical";
 import MainTitle from "@/components/card/MainTitle";
+import SimpleText from "@/components/card/SimpleText";
+import LocalizationIframe from "@/components/LocalizationIframe";
 import MainWrapper from "@/components/MainWrapper";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
@@ -31,22 +34,35 @@ export default function PlanZajecPage({ params: { locale } }: Props) {
 
   return (
     <MainWrapper topTitle={t("title")}>
-      <Card border="bl">
-        <MainTitle>Skład Uczelnianej Komisji Wyborczej</MainTitle>
-        <ol>
-          <li>Jacek Nalaskowski - przewodniczący</li>
-          <li>Andrzej Neubauer</li>
-          <li>Andrzej Michalak</li>
-        </ol>
-      </Card>
-      <Card border="tr">
-        <MainTitle>Siedziba Uczelnianej Komisji Wyborczej</MainTitle>
-        <ul>
-          <li>Biuro Rektora</li>
-          <li>ul. Czarnieckiego 5/7</li>
-          <li>86-300 Grudziądz</li>
-        </ul>
-      </Card>
+      <CardVertical>
+        <Card border="bl">
+          <MainTitle>Skład Uczelnianej Komisji Wyborczej</MainTitle>
+          <ol>
+            <li className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal text-nowrap">
+              <h3 className="h3fakeLess text-wrap">
+                Jacek Nalaskowski - przewodniczący
+              </h3>
+            </li>
+            <li className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
+              <h3 className="h3fakeLess">Andrzej Neubauer</h3>
+            </li>
+            <li className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
+              <h3 className="h3fakeLess">Andrzej Michalak</h3>
+            </li>
+          </ol>
+        </Card>
+        <Card border="tl">
+          <MainTitle>Siedziba Uczelnianej Komisji Wyborczej</MainTitle>
+
+          <SimpleText>
+            Biuro Rektora <br />
+            ul. Czarnieckiego 5/7
+            <br />
+            86-300 Grudziądz
+          </SimpleText>
+          <LocalizationIframe />
+        </Card>
+      </CardVertical>
     </MainWrapper>
   );
 }
