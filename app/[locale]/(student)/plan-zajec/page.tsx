@@ -1,4 +1,7 @@
 import Card from "@/components/card/Card";
+import { CardImage } from "@/components/card/CardImage";
+import MainTitle from "@/components/card/MainTitle";
+import SimpleText from "@/components/card/SimpleText";
 import FancyButton from "@/components/FancyButton";
 import MainWrapper from "@/components/MainWrapper";
 import { Metadata } from "next";
@@ -28,10 +31,25 @@ export default function PlanZajecPage({ params: { locale } }: Props) {
 
   return (
     <MainWrapper topTitle={t("title")}>
-      <Card>
+      <Card
+        grayCard
+        grayCardPosition="left"
+        leftProps={[
+          <CardImage
+            image="/images/plan-zajec/plan.jpg"
+            imageAlt="a"
+            imageOrientation="landscape"
+          />,
+        ]}
+      >
+        <MainTitle>Plan semestralny - semestr I Mechatronika</MainTitle>
+        <SimpleText>
+          Poniżej znajdziesz plan zajęć na I semestr Mechatroniki. Sprawdź, co
+          czeka Cię w tym roku!
+        </SimpleText>
         <FancyButton
           text="Pobierz"
-          outsideLink="/files/plan_tygodniowy_sem.-zimowy.xlsx"
+          outsideLink="/files/plan/plan_tygodniowy_sem.-zimowy.xlsx"
           icon="/images/icons/circle.svg"
           iconAlt="Circle"
         />

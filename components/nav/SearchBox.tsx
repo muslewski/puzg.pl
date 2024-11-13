@@ -34,7 +34,7 @@ export default function SearchBox({
       return title.includes(query) || description.includes(query);
     });
 
-    setResults(filtered.slice(0, 8)); // Limit to 8 results for better UX
+    setResults(filtered.slice(0, 5)); // Limit to x results for better UX
   }, [searchQuery, t]);
 
   useEffect(() => {
