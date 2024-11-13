@@ -29,7 +29,7 @@ h3,
 }
 .h3fakeLess {
   font-size: inherit;
-  @apply bg-gradient-to-br from-brandPrimaryBlue to-brandBrightBlue/65 text-inherit bg-clip-text w-fit font-semibold inline-block;
+  @apply bg-gradient-to-br from-brandPrimaryBlue to-brandBrightBlue/65 text-transparent bg-clip-text w-fit font-semibold inline-block;
 }
 
 p {
