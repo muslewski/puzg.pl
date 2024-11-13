@@ -235,6 +235,7 @@ export default function KierunkiStudiowPage({ params: { locale } }: Props) {
         grayCardPosition="left"
         leftProps={[
           <CardImage
+            key={0}
             image="/images/kierunki-studiow/blueInformatic.jpg"
             imageOrientation="square"
             imageAlt="a"

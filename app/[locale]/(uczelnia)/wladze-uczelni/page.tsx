@@ -35,6 +35,7 @@ export default function WladzeUczelniPage({ params: { locale } }: Props) {
         border="bl"
         leftProps={[
           <CardImage
+            key={0}
             image="/images/wladze-uczelni/rektor.jpg"
             imageAlt="Zdjęcie Rektora"
             imageOrientation="portrait"
@@ -58,6 +59,7 @@ export default function WladzeUczelniPage({ params: { locale } }: Props) {
         border="tr"
         leftProps={[
           <CardImage
+            key={0}
             image="/images/wladze-uczelni/kwestor.jpg"
             imageAlt="Zdjęcie Kwestora"
             imageOrientation="portrait"
@@ -84,6 +86,7 @@ export default function WladzeUczelniPage({ params: { locale } }: Props) {
         border="tl"
         leftProps={[
           <CardImage
+            key={0}
             image="/images/wladze-uczelni/kanclerz.jpg"
             imageAlt="Zdjęcie Kanclerza"
             imageOrientation="portrait"

@@ -56,6 +56,7 @@ export default function OUczelniPage({ params: { locale } }: Props) {
         grayCardPosition="left"
         leftProps={[
           <CardImage
+            key={0}
             image="/images/o-uczelni/engineer.jpg"
             imageAlt="Studenci pracujący w laboratorium"
             imageOrientation="landscape"
@@ -77,6 +78,7 @@ export default function OUczelniPage({ params: { locale } }: Props) {
         border="bl"
         rightProps={[
           <CardImage
+            key={0}
             image="/images/o-uczelni/engineer2.jpg"
             imageAlt="Studenci stoją przy tablicy"
             imageOrientation="landscape"

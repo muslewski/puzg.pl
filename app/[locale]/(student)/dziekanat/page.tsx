@@ -34,6 +34,7 @@ export default function DziekanatPage({ params: { locale } }: Props) {
         border="bl"
         leftProps={[
           <CardImage
+            key={0}
             image="/images/dziekanat/dziekanat.jpg"
             imageAlt={t("cardImageAlt")}
             imageOrientation="portrait"

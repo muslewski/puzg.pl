@@ -1,12 +1,11 @@
-import Card, { ImageOrientation } from "@/components/card/Card";
-import FancyButton from "@/components/FancyButton";
 import MainWrapper from "@/components/MainWrapper";
-
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import RichText from "@/components/RichText";
 import NewsList from "@/components/news/NewsList";
+import { newsData, newsKeys } from "@/data/newsItems";
+import { ImageOrientation } from "@/components/card/Card";
 
 type Props = {
   params: { locale: string };
@@ -23,46 +22,6 @@ export async function generateMetadata({
   };
 }
 
-type NewsItem = {
-  imagesSrc: string[];
-  imagesOrientation: ImageOrientation[];
-};
-
-export const newsData: NewsItem[] = [
-  {
-    imagesSrc: ["/images/aktualnosci/post0.0.jpg"],
-    imagesOrientation: ["landscape"],
-  },
-  {
-    imagesSrc: ["/images/aktualnosci/post1.0.png"],
-    imagesOrientation: ["portrait"],
-  },
-  {
-    imagesSrc: ["/images/aktualnosci/post2.0.png"],
-    imagesOrientation: ["landscape"],
-  },
-  {
-    imagesSrc: [
-      "/images/aktualnosci/post3.0.jpg",
-      "/images/aktualnosci/post3.1.jpg",
-      "/images/aktualnosci/post3.2.jpg",
-      "/images/aktualnosci/post3.3.jpg",
-    ],
-    imagesOrientation: ["landscape", "portrait", "landscape", "portrait"],
-  },
-  {
-    imagesSrc: ["/images/aktualnosci/post4.0.png"],
-    imagesOrientation: ["landscape"],
-  },
-  {
-    imagesSrc: [
-      "/images/aktualnosci/post5.0.png",
-      "/images/aktualnosci/post5.1.png",
-    ],
-    imagesOrientation: ["portrait", "portrait"],
-  },
-];
-
 export type newsProps = {
   title: string;
   imagesSrc: string[];
@@ -70,9 +29,6 @@ export type newsProps = {
   imagesAlt: string[];
   description: React.ReactNode;
 };
-
-// Add number of posts
-export const newsKeys = ["0", "1", "2", "3", "4", "5"] as const;
 
 export default function AktualnosciPage({ params: { locale } }: Props) {
   // Enable static rendering

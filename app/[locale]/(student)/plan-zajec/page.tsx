@@ -36,6 +36,7 @@ export default function PlanZajecPage({ params: { locale } }: Props) {
         grayCardPosition="left"
         leftProps={[
           <CardImage
+            key={0}
             image="/images/plan-zajec/plan.jpg"
             imageAlt="a"
             imageOrientation="landscape"

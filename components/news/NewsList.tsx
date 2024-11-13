@@ -52,6 +52,7 @@ export default function NewsList({
               number % 2 !== 0
                 ? [
                     <CardImage
+                      key={0}
                       image={post.imagesSrc[0]}
                       imageAlt={post.imagesAlt[0]}
                       imageOrientation={post.imagesOrientation[0]}
@@ -67,6 +68,7 @@ export default function NewsList({
               number % 2 == 0
                 ? [
                     <CardImage
+                      key={0}
                       image={post.imagesSrc[0]}
                       imageAlt={post.imagesAlt[0]}
                       imageOrientation={post.imagesOrientation[0]}
