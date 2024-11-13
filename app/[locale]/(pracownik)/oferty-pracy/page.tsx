@@ -32,74 +32,59 @@ export default function OfertyPracyPage({ params: { locale } }: Props) {
   return (
     <MainWrapper topTitle={t("title")}>
       <Card border="bl">
-        <MainTitle>Akty prawne</MainTitle>
-        <SimpleText>
-          Akt prawny dotyczący zasad zatrudniania pracowników na stanowiskach
-          dydaktycznych oraz badawczo - dydaktycznych na Publicznej Uczelni
-          Zawodowej w Grudziądzu
-        </SimpleText>
+        <MainTitle>{t("mainTitle")}</MainTitle>
+        <SimpleText>{t("simpleText")}</SimpleText>
         <FancyButton
           small
+          circle
           outsideLink="/files/19-2024-2025/Z.19.2024.2025.pdf"
-          text="Z.19.2024.2025 (przekierowanie do zarządzenia w PDF)"
-          icon="/images/icons/circle.svg"
-          iconAlt="Circle"
+          text={t("fancyButton")}
         />
       </Card>
       <Card border="tr">
-        <MainTitle>Dokumenty do pobrania</MainTitle>
-        <SimpleText>
-          Pobierz kluczowe dokumenty związane z zatrudnieniem na stanowiskach
-          dydaktycznych oraz badawczo-dydaktycznych w Publicznej Uczelni
-          Zawodowej w Grudziądzu.
-        </SimpleText>
+        <MainTitle>{t("mainTitle-2")}</MainTitle>
+        <SimpleText>{t("simpleText-2")}</SimpleText>
         <CardHorizontal>
           <FancyButton
             small
-            text="Z.19.2024.2025_zał.2"
+            text={t("fancyButton-2")}
             outsideLink="/files/19-2024-2025/Z.19.2024.2025_zal.2.docx"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Z.19.2024.2025_zał.3"
+            text={t("fancyButton-3")}
             outsideLink="/files/19-2024-2025/Z.19.2024.2025_zal.3.docx"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Z.19.2024.2025_zał.4"
+            text={t("fancyButton-4")}
             outsideLink="/files/19-2024-2025/Z.19.2024.2025_zal.4.docx"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Z.19.2024.2025_zał.5"
+            text={t("fancyButton-5")}
             outsideLink="/files/19-2024-2025/Z.19.2024.2025_zal.5.docx"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Z.19.2024.2025_zał.8"
+            text={t("fancyButton-6")}
             outsideLink="/files/19-2024-2025/Z.19.2024.2025_zal.8.docx"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Z.19.2024.2025_zał.10"
+            text={t("fancyButton-7")}
             outsideLink="/files/19-2024-2025/Z.19.2024.2025_zal.10.docx"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
         </CardHorizontal>

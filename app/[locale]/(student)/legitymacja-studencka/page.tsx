@@ -1,4 +1,8 @@
 import Card from "@/components/card/Card";
+import CardHorizontal from "@/components/card/CardHorizontal";
+import MainTitle from "@/components/card/MainTitle";
+import SimpleText from "@/components/card/SimpleText";
+import FancyButton from "@/components/FancyButton";
 import MainWrapper from "@/components/MainWrapper";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
@@ -30,7 +34,40 @@ export default function PlanZajecPage({ params: { locale } }: Props) {
 
   return (
     <MainWrapper topTitle={t("title")}>
-      <Card>aa</Card>
+      <Card border="bl">
+        <MainTitle>załączniki do pobrania:</MainTitle>
+        <SimpleText>
+          W tej sekcji znajdziesz wszystkie niezbędne dokumenty związane z
+          legitymacją studencką. Prosimy o pobranie i zapoznanie się z
+          zawartością przed złożeniem wniosku o legitymację studencką.
+        </SimpleText>
+        <CardHorizontal>
+          <FancyButton
+            small
+            text="Z.52.2024.2025_zał.1"
+            outsideLink="/files/legitymacja-studencka/Z.52.2024.2025_zał.1.docx"
+            icon="/images/icons/circle.svg"
+            iconAlt="Circle"
+            customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
+          />
+          <FancyButton
+            small
+            text="Z.52.2024.2025_zał.2"
+            outsideLink="/files/legitymacja-studencka/Z.52.2024.2025_zał.2.docx"
+            icon="/images/icons/circle.svg"
+            iconAlt="Circle"
+            customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
+          />
+          <FancyButton
+            small
+            text="Z.52.2024.2025"
+            outsideLink="/files/legitymacja-studencka/Z.52.2024.2025.pdf"
+            icon="/images/icons/circle.svg"
+            iconAlt="Circle"
+            customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
+          />
+        </CardHorizontal>
+      </Card>
     </MainWrapper>
   );
 }

@@ -34,16 +34,11 @@ export default function UstawyMNiSWPage({ params: { locale } }: Props) {
           <CardList
             simpleList={[
               {
-                richText: (
-                  <h2 className="h3fake">
-                    Ustawa z dnia 20 lipca 2018 r. - Prawo o szkolnictwie
-                    wyższym i nauce
-                  </h2>
-                ),
+                richText: <h2 className="h3fake">{t("h2-1")}</h2>,
                 description:
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                 icon: "/images/icons/Book.svg",
-                iconAlt: "a",
+                iconAlt: t("bookIconAlt"),
               },
             ]}
           />
@@ -53,16 +48,11 @@ export default function UstawyMNiSWPage({ params: { locale } }: Props) {
           <CardList
             simpleList={[
               {
-                richText: (
-                  <h2 className="h3fake">
-                    Ustawa z dnia 22 grudnia 2015 r. o Zintegrowanym Systemie
-                    Kwalifikacji
-                  </h2>
-                ),
+                richText: <h2 className="h3fake">{t("h2-2")}</h2>,
                 description:
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                 icon: "/images/icons/Book.svg",
-                iconAlt: "a",
+                iconAlt: t("bookIconAlt"),
               },
             ]}
           />
@@ -72,16 +62,11 @@ export default function UstawyMNiSWPage({ params: { locale } }: Props) {
           <CardList
             simpleList={[
               {
-                richText: (
-                  <h2 className="h3fake">
-                    Rozporządzenie Ministra Nauki i Szkolnictwa Wyższego z dnia
-                    27 września 2018 r. w sprawie studiów
-                  </h2>
-                ),
+                richText: <h2 className="h3fake">{t("h2-3")}</h2>,
                 description:
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                 icon: "/images/icons/Book.svg",
-                iconAlt: "a",
+                iconAlt: t("bookIconAlt"),
               },
             ]}
           />
@@ -91,16 +76,11 @@ export default function UstawyMNiSWPage({ params: { locale } }: Props) {
           <CardList
             simpleList={[
               {
-                richText: (
-                  <h2 className="h3fake">
-                    Rozporządzenie Ministra Nauki i Szkolnictwa Wyższego z dnia
-                    12 września 2018 r. w sprawie kryteriów oceny programowej
-                  </h2>
-                ),
+                richText: <h2 className="h3fake">{t("h2-4")}</h2>,
                 description:
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                 icon: "/images/icons/Book.svg",
-                iconAlt: "a",
+                iconAlt: t("bookIconAlt"),
               },
             ]}
           />

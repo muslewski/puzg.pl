@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/routing";
 import clsx from "clsx";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { ComponentProps } from "react";
 
@@ -17,6 +18,7 @@ export default function FancyButton({
   small = false,
   disabled,
   style,
+  circle,
 }: {
   text: string;
   link?: ComponentProps<typeof Link>["href"];
@@ -31,11 +33,18 @@ export default function FancyButton({
   small?: boolean;
   disabled?: boolean;
   style?: React.CSSProperties;
+  circle?: boolean;
 }) {
+  const t = useTranslations("Helper");
+
   if (link && outsideLink) {
     throw new Error("Only one of `link` or `outsideLink` should be provided.");
   }
 
+  if (circle) {
+    icon = "/images/icons/circle.svg";
+    iconAlt = t("circleIconAlt");
+  }
   if ((icon && !iconAlt) || (!icon && iconAlt)) {
     throw new Error("You need to provide icon path and alt for an icon.");
   }

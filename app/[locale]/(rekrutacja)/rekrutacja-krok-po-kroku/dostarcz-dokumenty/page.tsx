@@ -5,6 +5,7 @@ import MainTitle from "@/components/card/MainTitle";
 import SimpleText from "@/components/card/SimpleText";
 import FancyButton from "@/components/FancyButton";
 import MainWrapper from "@/components/MainWrapper";
+import RichText from "@/components/RichText";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -36,25 +37,18 @@ export default function DostarczDokumentyPage({ params: { locale } }: Props) {
   return (
     <MainWrapper topTitle={t("title")}>
       <Card border="bl">
-        <MainTitle>Gratulujemy zdania matury.</MainTitle>
+        <MainTitle>{t("mainTitle")}</MainTitle>
         <CardImage
           image="/images/dostarcz-dokumenty/graduation.jpg"
-          imageAlt="a"
+          imageAlt={t("cardImageAlt")}
           imageOrientation="full"
         />
-        <SimpleText>
-          Teraz należy dokończyć proces rekrutacyjny i dostarczyć dokumenty.
-        </SimpleText>
-        <SimpleText>
-          Dokumenty należy złożyć osobiście w białej nieopisanej teczce.
-        </SimpleText>
-        <SimpleText>
-          Przed przyjazdem na uczelnię należy sprawdzić godziny dyżurowania
-          Uczelnianej Komisji Rekrutacyjnej, która przyjmuje dokumenty.
-        </SimpleText>
+        <SimpleText>{t("simpleText-1")}</SimpleText>
+        <SimpleText>{t("simpleText-2")}</SimpleText>
+        <SimpleText>{t("simpleText-3")}</SimpleText>
 
         <FancyButton
-          text="Sprawdź dyżury"
+          text={t("fancyButton")}
           link={
             "/rekrutacja-krok-po-kroku/godziny-dyzurowania-uczelnianej-komisji-rekrutacyjnej"
           }
@@ -63,71 +57,23 @@ export default function DostarczDokumentyPage({ params: { locale } }: Props) {
 
       <Card border="tr">
         <MainTitle>Komplet dokumentów powinien zawierać:</MainTitle>
-        <ol>
-          <li>
-            oryginał podania na studia załączany podczas rekrutacji
-            elektronicznej,
-          </li>
-          <li>
-            oryginał świadectwa dojrzałości wraz z ewentualnym aneksem do
-            świadectwa (do wglądu),
-          </li>
-          <li>
-            kserokopię świadectwa dojrzałości wraz z ewentualnym aneksem do
-            świadectwa oryginał dyplomu potwierdzającego kwalifikacje
-            zawodowe/dyplomu zawodowego, jeśli ukończyłeś/aś Technikum (do
-            wglądu),
-          </li>
-          <li>
-            kserokopię dyplomu potwierdzającego kwalifikacje zawodowe/dyplomu
-            zawodowego, jeśli ukończyłeś/aś Technikum,
-          </li>
-          <li>
-            kolorowe zdjęcie na papierze w formacie 35 x 45 mm (zgodne z
-            formatem wymaganym podczas składania dokumentów o wydanie dowodu
-            osobistego).
-          </li>
-        </ol>
 
-        <h3>Dodatkowo, od wybranych kandydatów mogą być wymagane również:</h3>
-        <ol>
-          <li>
-            kserokopia dokumentu potwierdzającego uzyskanie tytułu laureata lub
-            finalistyolimpiady lub konkursu jeżeli było brane pod uwagę w
-            rekrutacji na dane studia wraz z jego oryginałem do wglądu,
-          </li>
-          <li>
-            kserokopia dokumentu potwierdzającego osiągnięcia sportowe uzyskane
-            w dyscyplinach olimpijskich lub ujętych w programie Akademickich
-            Mistrzostw Polski,
-          </li>
-          <li>
-            zgoda rodzica na podjęcie studiów przez osobę niepełnoletnią (WZÓR).
-          </li>
-        </ol>
-        <SimpleText>
-          Podczas wpisu na studia kandydat musi potwierdzić swoją tożsamość i
-          okazać dowód osobisty bądź paszport. W szczególnych przypadkach
-          kandydata może reprezentować pełnomocnik, który podczas składnia
-          dokumentów w imieniu kandydata okaże pełnomocnictwo z podpisem oraz
-          legitymuje się swoim dowodem osobistym lub paszportem (zgodnie z
-          treścią pełnomocnictwa).
-        </SimpleText>
+        <RichText gap="1.75rem">{(tags) => t.rich("richText", tags)}</RichText>
 
-        <h3>Do pobrania:</h3>
+        <SimpleText>{t("simpleText-4")}</SimpleText>
+
+        <h3>{t("h3")}</h3>
         <CardHorizontal>
           <FancyButton
-            icon="/images/icons/circle.svg"
-            iconAlt="a"
+            circle
             small
-            text="Pełnomocnictwo"
+            text={t("fancyButton-2")}
             outsideLink="/files/rekrutacja/dostarcz-dokumenty/pelnomocnictwo-do-zlozenia-dokumentow-w-procesie-rekrutacji.docx"
           />
           <FancyButton
-            icon="/images/icons/circle.svg"
-            iconAlt="a"
+            circle
             small
-            text="Zgoda rodziców"
+            text={t("fancyButton-3")}
             outsideLink="/files/rekrutacja/dostarcz-dokumenty/zgoda-rodzicow-na-podjecie-studiow.docx"
           />
         </CardHorizontal>

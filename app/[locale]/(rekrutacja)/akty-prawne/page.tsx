@@ -33,48 +33,36 @@ export default function AktyPrawnePage({ params: { locale } }: Props) {
   return (
     <MainWrapper topTitle={t("title")}>
       <Card border="bl">
-        <MainTitle>
-          Akty prawne dotyczące procesu rekrutacji w Publicznej Uczelni
-          Zawodowej w Grudziądzu:
-        </MainTitle>
-
-        <SimpleText>
-          Przegląd aktów prawnych związanych z rekrutacją na rok akademicki
-          2024/2025 w Publicznej Uczelni Zawodowej w Grudziądzu. Kliknij
-          poniżej, aby zobaczyć wybrane dokumenty.
-        </SimpleText>
+        <MainTitle>{t("mainTitle")}</MainTitle>
+        <SimpleText>{t("simpleText")}</SimpleText>
 
         <CardHorizontal>
           <FancyButton
             small
+            circle
             text="Z.11.2024.2025"
             outsideLink="/files/akty-prawne/Z.11.2024.2025.pdf"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
             text="Z.12.2024.2025"
             outsideLink="/files/akty-prawne/Z.12.2024.2025.pdf"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
             text="Z.13.2024.2025"
             outsideLink="/files/akty-prawne/Z.13.2024.2025.pdf"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
             text="Z.14.2024.2025"
             outsideLink="/files/akty-prawne/Z.14.2024.2025.pdf"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
@@ -82,14 +70,14 @@ export default function AktyPrawnePage({ params: { locale } }: Props) {
             text="Z.15.2024.2025"
             outsideLink="/files/akty-prawne/Z.15.2024.2025.pdf"
             icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
         </CardHorizontal>
 
         <CardImage
           image="/images/akty-prawne/podpis.png"
-          imageAlt="a"
+          imageAlt={t("CardImageAlt")}
           imageOrientation="full"
         />
       </Card>

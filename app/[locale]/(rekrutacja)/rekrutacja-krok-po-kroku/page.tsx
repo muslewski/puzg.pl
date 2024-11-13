@@ -5,6 +5,7 @@ import MainTitle from "@/components/card/MainTitle";
 import SimpleText from "@/components/card/SimpleText";
 import FancyButton from "@/components/FancyButton";
 import MainWrapper from "@/components/MainWrapper";
+import RichText from "@/components/RichText";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -38,146 +39,106 @@ export default function RekrutacjaKrokPoKrokuPage({
   return (
     <MainWrapper topTitle={t("title")}>
       <Card border="bl">
-        <MainTitle>
-          Rozpocznij studia w Publicznej Uczelni Zawodowej w Grudziądzu
-        </MainTitle>
+        <MainTitle>{t("mainTitle")}</MainTitle>
         <CardImage
           image="/images/rekrutacja-krok-po-kroku/grudziadz2.jpg"
-          imageAlt="a"
+          imageAlt={t("cardImageAlt")}
           imageOrientation="full"
         />
-        <SimpleText>
-          Publiczna Uczelnia Zawodowa w Grudziądzu to miejsce, w którym możesz
-          rozwijać swoje umiejętności i zainteresowania. Uczelnia zlokalizowana
-          jest w centrum Grudziądza, posiada przestrzeń do pozyskania
-          teoretycznej wiedzy i praktycznych kompetencji, rozwoju kreatywności,
-          budowania kariery oraz realizowania projektów.
-        </SimpleText>
-        <SimpleText>Zapraszamy do przesyłania zgłoszeń.</SimpleText>
+        <SimpleText>{t("simpleText")}</SimpleText>
+        <SimpleText>{t("simpleText-2")}</SimpleText>
         <FancyButton
           icon="/images/icons/MailWhite.svg"
-          iconAlt="Mail"
-          text="Aplikuj do nas"
+          iconAlt={t("fancyButtonAlt")}
+          text={t("fancyButton")}
           customGradient="bg-gradient-to-br from-brandBrightBlue to-brandNavyBlue"
           link="/elektroniczna-rejestracja-kandydata"
         />
       </Card>
 
       <Card border="tr">
-        <MainTitle>Lista kroków:</MainTitle>
+        <MainTitle>{t("mainTitle-2")}</MainTitle>
         <CardList
           flexSettings="flex flex-col flex-wrap lg:flex-row gap-24 pt-12 justify-around"
           listItemSettings="max-w-xl"
           listObject={[
             {
-              title: "Krok 1 - Wypełnij formularz rekrutacyjny",
+              title: t("listTitle-1"),
               richDescription: (
-                <p>
-                  Postępowanie kwalifikacyjne na studia pierwszego stopnia na
-                  kierunku Mechatronika wymaga wypełnienia formularza
-                  rekrutacyjnego.
-                </p>
+                <RichText gap="0rem">
+                  {(tags) => t.rich("listDesc-1", tags)}
+                </RichText>
               ),
               icon: "/images/rekrutacja-krok-po-kroku/form.png",
-              iconAlt: "a",
+              iconAlt: t("listAlt-1"),
             },
             {
-              title: "Krok 2 - Uzupełnij i załącz wymagane pliki",
+              title: t("listTitle-2"),
               richDescription: (
-                <ol>
-                  <li>
-                    zdjęcie w postaci elektronicznej (jak do dowodu osobistego)
-                    o rozdzielczości co najmniej 492 x 610 pikseli i wielkości
-                    maksymalnie 2,5 MB, przesłane jako osobny plik JPG,
-                  </li>
-                  <li>skan podpisanych oświadczeń kandydata w formacie PDF,</li>
-                  <li>
-                    skan uzupełnionego i podpisanego podania o przyjęcie na
-                    studia w formacie PDF,
-                  </li>
-                  <li>potwierdzenie wniesienia opłaty rekrutacyjnej.</li>
-                </ol>
+                <RichText gap="0rem">
+                  {(tags) => t.rich("listDesc-2", tags)}
+                </RichText>
               ),
               icon: "/images/rekrutacja-krok-po-kroku/attached-file.png",
-              iconAlt: "a",
+              iconAlt: t("listAlt-2"),
             },
             {
-              title: "Krok 3 - Dokonaj opłaty rekrutacyjnej",
+              title: t("listTitle-3"),
               richDescription: (
-                <>
-                  <p>
-                    Kandydat powinien dokonać wpłaty na konto Publicznej Uczelni
-                    Zawodowej w Grudziądzu w kwocie 85 zł.
-                  </p>
-                  <br></br>
-                  <p>
-                    konto PKO BP<br></br>numer rachunku bankowego:<br></br> 75
-                    1020 1462 0000 7902 0441 6327
-                  </p>
-                </>
+                <RichText gap="0rem">
+                  {(tags) => t.rich("listDesc-3", tags)}
+                </RichText>
               ),
               icon: "/images/rekrutacja-krok-po-kroku/payment-method.png",
-              iconAlt: "a",
+              iconAlt: t("listAlt-3"),
             },
             {
-              title: "Krok 4 - Prześlij formularz",
+              title: t("listTitle-4"),
               richDescription: (
-                <p>
-                  Ostatni krok do zakończenia postępowania kwalifikacyjnego.
-                  Uzupełniony formularz wraz z załączonymi dokumentami (podanie
-                  na studia, zdjęcie, oświadczenia i potwierdzenie opłaty)
-                  należy przesłać do Uczelnianej Komisji Rekrutacyjnej poprzez
-                  opcję „wyślij”. Przed wysłaniem sprawdź dokładnie dane oraz
-                  załączone pliki. Kopia wiadomości zostanie również przesłana
-                  na adres e-mail, który podany został w formularzu.
-                </p>
+                <RichText gap="0rem">
+                  {(tags) => t.rich("listDesc-4", tags)}
+                </RichText>
               ),
               icon: "/images/rekrutacja-krok-po-kroku/submit.png",
-              iconAlt: "a",
+              iconAlt: t("listAlt-4"),
             },
             {
-              title: "Krok 5 - Dostarcz dokumenty",
+              title: t("listTitle-5"),
               richDescription: (
                 <>
-                  <p>
-                    Gratulujemy zdania matury. Teraz należy dokończyć proces
-                    rekrutacyjny i dostarczyć dokumenty.
-                  </p>
+                  <RichText gap="0rem">
+                    {(tags) => t.rich("listDesc-5", tags)}
+                  </RichText>
                   <br></br>
                   <FancyButton
                     small
                     link={"/rekrutacja-krok-po-kroku/dostarcz-dokumenty"}
-                    text="Sprawdź co powinien zawierać komplet dokumentów"
+                    text={t("listDesc-5-fancyButton")}
                   />
                 </>
               ),
               icon: "/images/rekrutacja-krok-po-kroku/handover.png",
-              iconAlt: "a",
+              iconAlt: t("listAlt-5"),
             },
             {
-              title: "Krok 6 - Wyniki rekrutacji",
+              title: t("listTitle-6"),
               richDescription: (
-                <p>
-                  Po zakończonej rekrutacji na adres e-mail podany w formularzu
-                  kandydat otrzyma informacje o przyjęciu/nieprzyjęciu na studia
-                  oraz ilości zdobytych punktów.
-                </p>
+                <RichText gap="0rem">
+                  {(tags) => t.rich("listDesc-6", tags)}
+                </RichText>
               ),
               icon: "/images/rekrutacja-krok-po-kroku/evaluation.png",
-              iconAlt: "a",
+              iconAlt: t("listAlt-6"),
             },
             {
-              title: "Krok 7 - Widzimy się w październiku na uczelni",
+              title: t("listTitle-7"),
               richDescription: (
-                <p>
-                  Gratulacje!
-                  <br></br>Rekrutacja zakończona została pomyślnie, widzimy się
-                  w Październiku na I roku studiów.<br></br>Życzymy udanych
-                  wakacji.
-                </p>
+                <RichText gap="0rem">
+                  {(tags) => t.rich("listDesc-7", tags)}
+                </RichText>
               ),
               icon: "/images/rekrutacja-krok-po-kroku/happy-face.png",
-              iconAlt: "aa",
+              iconAlt: t("listAlt-7"),
             },
           ]}
         />

@@ -37,44 +37,30 @@ export default function LimitPrzyjecNaStudiaPage({
   return (
     <MainWrapper topTitle={t("title")}>
       <Card border="bl">
-        <MainTitle>
-          Limit przyjęć na stacjonarne studia pierwszego stopnia dla kierunku
-          Mechatronika określony został w Zarządzeniu Rektora.
-        </MainTitle>
+        <MainTitle>{t("mainTitle")}</MainTitle>
 
-        <SimpleText>Kształcenie prowadzone będzie w dwóch trybach:</SimpleText>
+        <SimpleText>{t("simpleText")}</SimpleText>
         <CardList
           iconsSize="h-8 w-8 sm:h-10 sm:w-10"
           simpleList={[
             {
-              richText: (
-                <p className="h3fakeLess">stacjonarny w trybie standardowym</p>
-              ),
+              richText: <p className="h3fakeLess">{t("richText-1")}</p>,
               icon: "/images/icons/training.png",
-              iconAlt: "a",
+              iconAlt: t("iconAlt-1"),
             },
             {
-              richText: (
-                <p className="h3fakeLess">
-                  stacjonarny w trybie popołudniowym (dla osób pracujących)
-                </p>
-              ),
+              richText: <p className="h3fakeLess">{t("richText-2")}</p>,
               icon: "/images/icons/sunset.png",
-              iconAlt: "a",
+              iconAlt: t("iconAlt-2"),
             },
           ]}
         />
 
-        <SimpleText>
-          Uruchomienie kierunku studiów nastąpi pod warunkiem zakwalifikowania
-          się przynajmniej 25 kandydatów. W przypadku formy studiów w trybie dla
-          osób pracujących otwarcie nastąpi przy utworzeniu grupy składającej
-          się co najmniej z 18 kandydatów.
-        </SimpleText>
+        <SimpleText>{t("simpleText-2")}</SimpleText>
 
         <CardImage
           image="/images/limit-przyjec-na-studia/students-happy.jpg"
-          imageAlt="a"
+          imageAlt={t("cardImageAlt")}
           imageOrientation="full"
         />
       </Card>

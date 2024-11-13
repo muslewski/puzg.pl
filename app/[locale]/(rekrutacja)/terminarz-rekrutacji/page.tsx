@@ -34,35 +34,31 @@ export default function TerminarzRekrutacjiPage({ params: { locale } }: Props) {
   return (
     <MainWrapper topTitle={t("title")}>
       <Card border="bl">
-        <MainTitle>
-          Terminarz rekrutacji na rok akademicki 2024/2025 na stacjonarne studia
-          pierwszego stopnia - Kierunek Mechatronika
-        </MainTitle>
+        <MainTitle>{t("mainTitle")}</MainTitle>
         <Card border="btlr">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex-1 text-sm sm:text-base max-w-md">
-              rejestracja w ERK (elektronicznej rejestracji kandydata) oraz
-              wniesienie opłaty rekrutacyjnej
+              {t("text-1")}
             </div>
             <div className="rounded-[20px] bg-[#1B4754] px-4 py-2 text-right text-sm text-white sm:text-base">
-              <div>od 03.06.2024r.</div>
-              <div>do 18.08.2024r.</div>
+              <div>{t("from")} 03.06.2024r.</div>
+              <div>{t("to")} 18.08.2024r.</div>
             </div>
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex-1 text-sm sm:text-base max-w-md">
-              składanie dokumentów
+              {t("text-2")}
             </div>
             <div className="rounded-[20px] bg-[#1B4754] px-4 py-2 text-right text-sm text-white sm:text-base">
-              <div>od 01.07.2024r.</div>
-              <div>do 18.08.2024r.</div>
+              <div>{t("from")} 01.07.2024r.</div>
+              <div>{t("to")} 18.08.2024r.</div>
             </div>
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex-1 text-sm sm:text-base max-w-md">
-              ogłoszenie wyników rekrutacji
+              {t("text-3")}
             </div>
             <div className="rounded-[20px] bg-[#1B4754] px-4 py-2 text-right text-sm text-white sm:text-base">
               <div>19-20.08.2024r.</div>
@@ -71,17 +67,17 @@ export default function TerminarzRekrutacjiPage({ params: { locale } }: Props) {
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex-1 text-sm sm:text-base max-w-md">
-              rekrutacja uzupełniająca
+              {t("text-4")}
             </div>
             <div className="rounded-[20px] bg-[#1B4754] px-4 py-2 text-right text-sm text-white sm:text-base">
-              <div>od 21.08.2024r.</div>
-              <div>do 20.09.2024r.</div>
+              <div>{t("from")} 21.08.2024r.</div>
+              <div>{t("to")} 20.09.2024r.</div>
             </div>
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex-1 text-sm sm:text-base max-w-md">
-              ogłoszenie wyników rekrutacji uzupełniającej
+              {t("text-5")}
             </div>
             <div className="rounded-[20px] bg-[#1B4754] px-4 py-2 text-right text-sm text-white sm:text-base">
               <div>26.09.2024r.</div>
@@ -89,31 +85,14 @@ export default function TerminarzRekrutacjiPage({ params: { locale } }: Props) {
           </div>
         </Card>
 
-        <SimpleText>
-          Ogłoszenie wyników klasyfikacji nastąpi w formie elektronicznej na
-          adres e-mail podany przez kandydata w formularzu, niezwłocznie po
-          weryfikacji przez Uczelnianą Komisję Rekrutacyjną. Prawidłowo
-          przesłany formularz rekrutacyjny uzyska status „zakwalifikowany”.
-        </SimpleText>
-
-        <SimpleText>
-          Forma oraz miejsce składania dokumentów opublikowane zostaną na
-          stronie internetowej Publicznej Uczelni Zawodowej w Grudziądzu
-          (https://puzg.pl).
-        </SimpleText>
-
-        <SimpleText>
-          Rekrutacja uzupełniająca odbędzie się w przypadku nie wypełnienia
-          limitu miejsc.
-        </SimpleText>
-
-        <SimpleText>
-          Uczelnia zastrzega sobie prawo do zmiany terminów.
-        </SimpleText>
+        <SimpleText>{t("simpleText-1")}</SimpleText>
+        <SimpleText>{t("simpleText-2")}</SimpleText>
+        <SimpleText>{t("simpleText-3")}</SimpleText>
+        <SimpleText>{t("simpleText-4")}</SimpleText>
 
         <CardImage
           image="/images/terminarz-rekrutacji/calendar.jpg"
-          imageAlt="a"
+          imageAlt={t("cardImageAlt")}
           imageOrientation="full"
         />
       </Card>

@@ -35,34 +35,34 @@ export default function DziekanatPage({ params: { locale } }: Props) {
         leftProps={[
           <CardImage
             image="/images/dziekanat/dziekanat.jpg"
-            imageAlt="Zdjęcię dziekanatu"
+            imageAlt={t("cardImageAlt")}
             imageOrientation="portrait"
           />,
         ]}
       >
-        <MainTitle>Dane Kontaktowe</MainTitle>
+        <MainTitle>{t("mainTitle")}</MainTitle>
         <CardList
           simpleList={[
             {
               icon: "/images/icons/User.svg",
-              iconAlt: "a",
+              iconAlt: t("cardAlt-1"),
               richText: (
                 <span>
                   <p className="font-semibold bg-gradient-to-br from-brandPrimaryBlue to-[#1099E2] text-transparent bg-clip-text w-fit">
                     Justyna Rubach
                   </p>
-                  specjalista ds. administracyjnych
+                  {t("specialist")}
                 </span>
               ),
             },
             {
               icon: "/images/icons/Calling.svg",
-              iconAlt: "a",
+              iconAlt: t("cardAlt-2"),
               richText: <a href="tel:+48 576-060-124">+48 576-060-124</a>,
             },
             {
               icon: "/images/icons/Mail.svg",
-              iconAlt: "a",
+              iconAlt: t("cardAlt-3"),
               richText: (
                 <a href="mailto:justyna.rubach@puzg.pl">
                   justyna.rubach@puzg.pl
@@ -71,10 +71,10 @@ export default function DziekanatPage({ params: { locale } }: Props) {
             },
             {
               icon: "/images/icons/Flag.svg",
-              iconAlt: "a",
+              iconAlt: t("cardAlt-4"),
               richText: (
                 <span>
-                  ul. Stefana Czarneckiego 5/7
+                  {t("street")} Stefana Czarneckiego 5/7
                   <br></br>
                   86-300 Grudziądz
                 </span>
@@ -85,28 +85,28 @@ export default function DziekanatPage({ params: { locale } }: Props) {
       </Card>
 
       <Card border="tr">
-        <MainTitle>Godziny przyjęć studentów</MainTitle>
+        <MainTitle>{t("mainTitle-2")}</MainTitle>
         <CardList
           simpleList={[
             {
               icon: "/images/icons/AlarmClock.svg",
-              iconAlt: "clock",
+              iconAlt: t("cardAlt-5"),
               richText: (
                 <p className="font-medium bg-gradient-to-br from-brandPrimaryBlue to-[#1099E2] text-transparent bg-clip-text w-fit">
-                  poniedziałek, środa, piątek
+                  {t("week-1")}
                 </p>
               ),
-              description: "godz. 10:00 - 14:00",
+              description: `${t("hour")} 10:00 - 14:00`,
             },
             {
               icon: "/images/icons/AlarmClock.svg",
-              iconAlt: "clock",
+              iconAlt: t("cardAlt-5"),
               richText: (
                 <p className="font-medium bg-gradient-to-br from-brandPrimaryBlue to-[#1099E2] text-transparent bg-clip-text w-fit">
-                  wtorek, czwartek
+                  {t("week-2")}
                 </p>
               ),
-              description: "godz. 14:00 - 18:00",
+              description: `${t("hour")} godz. 14:00 - 18:00`,
             },
           ]}
         />

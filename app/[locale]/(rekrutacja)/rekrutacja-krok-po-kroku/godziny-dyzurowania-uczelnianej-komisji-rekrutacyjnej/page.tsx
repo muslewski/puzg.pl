@@ -36,18 +36,18 @@ export default function GodzinyDyzurowaniaPage({ params: { locale } }: Props) {
       <Card grayCard grayCardPosition="left" customWrapperWidth="w-full">
         <CardHorizontal>
           <div className="lg:w-5/12  flex flex-col gap-6">
-            <MainTitle>Czerwiec 2024</MainTitle>
+            <MainTitle>{t("month-1")}</MainTitle>
             <CardImage
               image="/images/godziny-dyzurowania/godziny-czerwiec.jpg"
-              imageAlt="a"
+              imageAlt={t("cardImage-1")}
               imageOrientation="w-full sm:w-[306px] xl:w-[459px] 3xl:w-[536px] h-[324px] xl:h-[486px] 3xl:h-[567px]"
             />
           </div>
           <div className="lg:w-5/12 flex flex-col gap-6">
-            <MainTitle>Lipiec 2024</MainTitle>
+            <MainTitle>{t("month-2")}</MainTitle>
             <CardImage
               image="/images/godziny-dyzurowania/godziny-lipiec.jpg"
-              imageAlt="a"
+              imageAlt={t("cardImage-2")}
               imageOrientation="w-full sm:w-[306px] xl:w-[459px] 3xl:w-[536px] h-[324px] xl:h-[486px] 3xl:h-[567px]"
             />
           </div>
