@@ -34,6 +34,7 @@ export default function NewsList({
 
         return (
           <Card
+            key={key}
             grayCard={number % 2 === 0}
             grayCardPosition={
               number % 2 === 0
@@ -53,7 +54,6 @@ export default function NewsList({
                 ? "tr"
                 : "br"
             }
-            key={key}
             leftProps={
               number % 2 !== 0
                 ? [

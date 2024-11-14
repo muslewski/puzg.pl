@@ -1,8 +1,11 @@
+"use client";
+
 import { Link } from "@/i18n/routing";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { ComponentProps } from "react";
+import { motion } from "framer-motion";
 
 export default function FancyButton({
   text,
@@ -49,9 +52,24 @@ export default function FancyButton({
     throw new Error("You need to provide icon path and alt for an icon.");
   }
 
+  const animationVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
+  };
+
   function ButtonContent() {
     return (
-      <>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.8 }}
+        variants={animationVariants}
+        className="w-fit"
+      >
         <div
           className={clsx(
             "px-8 sm:px-10 py-3 sm:py-4 w-fit border-l-2 border-b-2  font-outfit font-semibold rounded-xl flex items-center transition-transform hover:scale-105 hover:disabled:scale-95 disabled:scale-95 active:disabled:scale-95 active:scale-110 text-center",
@@ -77,13 +95,13 @@ export default function FancyButton({
           )}
           {text}
         </div>
-      </>
+      </motion.div>
     );
   }
 
   if (link) {
     return (
-      <Link href={link}>
+      <Link href={link} className="w-fit">
         <ButtonContent />
       </Link>
     );
@@ -91,7 +109,12 @@ export default function FancyButton({
 
   if (outsideLink) {
     return (
-      <a href={outsideLink} target="_blank" rel="noopener noreferrer">
+      <a
+        href={outsideLink}
+        className="w-fit"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <ButtonContent />
       </a>
     );
