@@ -9,6 +9,7 @@ body,
   padding: 0;
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   @apply font-outfit text-brandDark;
 }
 

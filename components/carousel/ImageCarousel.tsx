@@ -45,17 +45,40 @@ export default function ImageCarousel({
   const prevImage = (imageNumber - 1 + images.length) % images.length;
   const nextImage = (imageNumber + 1) % images.length;
 
+  const variants = {
+    enter: (direction: number) => {
+      return {
+        x: direction > 0 ? 1000 : -1000,
+        opacity: 0,
+      };
+    },
+    center: {
+      zIndex: 1,
+      x: 0,
+      opacity: 1,
+    },
+    exit: (direction: number) => {
+      return {
+        zIndex: 0,
+        x: direction < 0 ? 1000 : -1000,
+        opacity: 0,
+      };
+    },
+  };
+
   return (
     <div className="flex flex-col gap-8 lg:gap-12 items-center">
       <div className="flex gap-6 md:gap-12 items-center">
-        <div
+        <motion.div
           className={clsx(
-            "relative rounded-xl overflow-hidden hover:scale-105 transition-transform cursor-pointer",
+            "relative rounded-xl overflow-hidden transition-transform cursor-pointer",
             small
               ? "w-[150px] 2xl:w-[250px] h-[90px] 2xl:h-[150px] hidden lg:block"
               : "w-[400px] h-[250px] hidden sm:block"
           )}
           onClick={() => dispatch({ type: "PREV" })}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
         >
           <Image
             className="object-cover "
@@ -63,7 +86,7 @@ export default function ImageCarousel({
             src={images[prevImage]}
             alt={altImages[prevImage]}
           />
-        </div>
+        </motion.div>
         <div
           className={clsx(
             "relative rounded-xl overflow-hidden shadow-md",
@@ -72,22 +95,40 @@ export default function ImageCarousel({
               : "w-[500px] lg:w-[700px] h-[300px] lg:h-[500px]"
           )}
         >
-          <Image
-            className="object-cover "
-            fill
-            src={images[imageNumber]}
-            alt={altImages[imageNumber]}
-          />
+          <AnimatePresence initial={false} custom={imageNumber}>
+            <motion.div
+              key={imageNumber}
+              custom={imageNumber}
+              variants={variants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{
+                x: { type: "spring", stiffness: 300, damping: 30 },
+                opacity: { duration: 0.2 },
+              }}
+              className="absolute w-full h-full"
+            >
+              <Image
+                className="object-cover "
+                fill
+                src={images[imageNumber]}
+                alt={altImages[imageNumber]}
+              />
+            </motion.div>
+          </AnimatePresence>
         </div>
 
-        <div
+        <motion.div
           className={clsx(
-            "relative rounded-xl overflow-hidden hover:scale-105 transition-transform cursor-pointer",
+            "relative rounded-xl overflow-hidden transition-transform cursor-pointer",
             small
               ? "w-[150px] 2xl:w-[250px] h-[90px] 2xl:h-[150px] hidden lg:block"
               : "w-[400px] h-[250px] hidden sm:block"
           )}
           onClick={() => dispatch({ type: "NEXT" })}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
         >
           <Image
             className="object-cover "
@@ -95,7 +136,7 @@ export default function ImageCarousel({
             src={images[nextImage]}
             alt={altImages[nextImage]}
           />
-        </div>
+        </motion.div>
       </div>
 
       <div
