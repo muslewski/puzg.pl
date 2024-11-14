@@ -1,5 +1,9 @@
+"use client";
+
 import { border, grayCardPosition } from "@/components/card/Card";
 import clsx from "clsx";
+import { useRef } from "react";
+import { useInView, motion } from "framer-motion";
 
 export default function CardWrapper({
   border,
@@ -18,12 +22,40 @@ export default function CardWrapper({
   grayCard?: boolean;
   grayCardPosition?: grayCardPosition;
 }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   if (grayCard && !grayCardPosition) {
     throw new Error("grayCardPosition is required when grayCard is true.");
   }
 
+  const animationVariants = {
+    hidden: {
+      opacity: 0,
+      x:
+        grayCardPosition === "left"
+          ? -75
+          : grayCardPosition === "right"
+          ? 75
+          : 0,
+      y: !grayCardPosition && border ? 50 : 0,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
   return (
-    <div className="w-full 2xl:w-4/5 px-6 lg:px-12 2xl:px-0">
+    <motion.div
+      ref={ref}
+      className="w-full 2xl:w-4/5 px-6 lg:px-12 2xl:px-0"
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      variants={animationVariants}
+    >
       <div
         className={clsx(
           "rounded-2xl",
@@ -77,6 +109,6 @@ export default function CardWrapper({
           {children}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

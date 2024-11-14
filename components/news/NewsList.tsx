@@ -35,7 +35,13 @@ export default function NewsList({
         return (
           <Card
             grayCard={number % 2 === 0}
-            grayCardPosition={number % 4 ? "left" : "right"}
+            grayCardPosition={
+              number % 2 === 0
+                ? number % 4 === 0
+                  ? "left"
+                  : "right"
+                : undefined
+            }
             border={
               number % 2 === 0 // check if grayCard is true
                 ? undefined // no border when grayCard is true
