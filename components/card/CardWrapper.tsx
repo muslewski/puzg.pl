@@ -49,7 +49,7 @@ export default function CardWrapper({
       className="w-full 2xl:w-4/5 px-6 lg:px-12 2xl:px-0"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.1 }}
       variants={animationVariants}
     >
       <div

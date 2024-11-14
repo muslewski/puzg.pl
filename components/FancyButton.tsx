@@ -53,11 +53,11 @@ export default function FancyButton({
   }
 
   const animationVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
+    hidden: { opacity: 0.5, scale: 0.8 },
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.5, ease: "easeOut" },
+      transition: { duration: 0.8, ease: "easeOut" },
     },
   };
 
@@ -72,7 +72,7 @@ export default function FancyButton({
       >
         <div
           className={clsx(
-            "px-8 sm:px-10 py-3 sm:py-4 w-fit border-l-2 border-b-2  font-outfit font-semibold rounded-xl flex items-center transition-transform hover:scale-105 hover:disabled:scale-95 disabled:scale-95 active:disabled:scale-95 active:scale-110 text-center",
+            "px-8 sm:px-10 py-3 sm:py-4 w-fit border-l-2 border-b-2  font-outfit font-semibold rounded-xl flex items-center transition-transform hover:scale-105 hover:disabled:scale-95 disabled:scale-95 active:disabled:scale-95 active:scale-[107%] text-center",
             small
               ? "text-base md:text-lg 3xl:text-xl gap-4"
               : "text-lg md:text-xl 3xl:text-2xl gap-5",
