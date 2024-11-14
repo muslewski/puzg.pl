@@ -3,6 +3,7 @@ import MainTitle from "@/components/card/MainTitle";
 import SimpleText from "@/components/card/SimpleText";
 import MainWrapper from "@/components/MainWrapper";
 import RichText from "@/components/RichText";
+import SubtleHr from "@/components/SubtleHr";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -56,6 +57,8 @@ export default function PolitykaPrywatnosciPage({ params: { locale } }: Props) {
         <MainTitle>{t("mainTitle-2")}</MainTitle>
         <RichText gap="0rem">{(tags) => t.rich("list-2", tags)}</RichText>
 
+        <SubtleHr />
+
         <MainTitle>{t("mainTitle-3")}</MainTitle>
         <RichText gap="0rem">{(tags) => t.rich("list-3", tags)}</RichText>
       </Card>
@@ -90,6 +93,7 @@ export default function PolitykaPrywatnosciPage({ params: { locale } }: Props) {
           </li>
         </ul>
         <SimpleText>{t("simpleText-3")}</SimpleText>
+        <SubtleHr />
 
         <MainTitle>{t("mainTitle-6")}</MainTitle>
         <SimpleText>{t("simpleText-4")}</SimpleText>

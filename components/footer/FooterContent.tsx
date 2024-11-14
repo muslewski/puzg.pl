@@ -45,7 +45,7 @@ export default function FooterContent({
         <div className="flex flex-col gap-4">
           <Link
             href="/biuletyn-informacji-publicznej"
-            className="flex items-center gap-3"
+            className="flex items-center gap-3 transition-transform hover:scale-[102%]"
           >
             {bip}
             <div className="relative w-[48px] h-[20px]">
@@ -58,8 +58,18 @@ export default function FooterContent({
               />
             </div>
           </Link>
-          <Link href="/deklaracja-dostepnosci">{accessibilityDeclaration}</Link>
-          <Link href="/polityka-prywatnosci">{privacyPolicy}</Link>
+          <Link
+            className="transition-transform hover:scale-[102%]"
+            href="/deklaracja-dostepnosci"
+          >
+            {accessibilityDeclaration}
+          </Link>
+          <Link
+            className="transition-transform hover:scale-[102%]"
+            href="/polityka-prywatnosci"
+          >
+            {privacyPolicy}
+          </Link>
         </div>
 
         <FooterSocialMedia findUs={findUs} />
