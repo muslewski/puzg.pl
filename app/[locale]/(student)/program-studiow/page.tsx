@@ -32,24 +32,19 @@ export default function ProgramStudiowPage({ params: { locale } }: Props) {
   return (
     <MainWrapper topTitle={t("title")}>
       <Card border="bl">
-        <MainTitle>
-          Program studiów kierunku Mechatronika obowiązujący od roku
-          akademickiego 2024/2025:
-        </MainTitle>
+        <MainTitle>{t("mainTitle")}</MainTitle>
         <div className="flex flex-col gap-6">
           <FancyButton
             small
-            text="specjalność Mechatronika Stosowana"
+            text={t("button-1")}
             outsideLink="/files/program-studiow-MS.pdf"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
           />
           <FancyButton
             small
-            text="specjalność Automatyka i Sterowanie Maszyn"
+            text={t("button-2")}
             outsideLink="/files/program-studiow-AiSM.pdf"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
           />
         </div>
 
@@ -57,33 +52,30 @@ export default function ProgramStudiowPage({ params: { locale } }: Props) {
 
         <CardHorizontal>
           <div className="w-full lg:w-5/12 flex flex-col gap-6">
-            <h3>Sylabusy:</h3>
+            <h3>{t("h3-1")}</h3>
             <div className="flex flex-col gap-6">
               <FancyButton
                 small
-                text="specjalność Mechatronika Stosowana"
+                text={t("button-1")}
                 outsideLink="/files/sylabusy-specjalnosc-MS.pdf"
-                icon="/images/icons/circle.svg"
-                iconAlt="Circle"
+                circle
               />
               <FancyButton
                 small
-                text="specjalność Automatyka i Sterowanie Maszyn"
+                text={t("button-2")}
                 outsideLink="/files/sylabusy-specjalnosc-AiSM.pdf"
-                icon="/images/icons/circle.svg"
-                iconAlt="Circle"
+                circle
               />
             </div>
           </div>
           <div className="w-full lg:w-5/12 flex flex-col gap-6">
-            <h3>Efekty uczenia:</h3>
+            <h3>{t("h3-2")}</h3>
             <div className="flex flex-col gap-6">
               <FancyButton
                 small
-                text="Kierunek Mechatronika"
+                text={t("button-3")}
                 outsideLink="/files/efekty-uczenia-mechatronika.pdf"
-                icon="/images/icons/circle.svg"
-                iconAlt="Circle"
+                circle
               />
             </div>
           </div>
@@ -93,7 +85,7 @@ export default function ProgramStudiowPage({ params: { locale } }: Props) {
 
         <CardImage
           image="/images/program-studiow/plan.jpg"
-          imageAlt="a"
+          imageAlt={t("imageAlt")}
           imageOrientation="full"
         />
       </Card>

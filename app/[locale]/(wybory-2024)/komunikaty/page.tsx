@@ -35,109 +35,88 @@ export default function KomunikatyPage({ params: { locale } }: Props) {
   return (
     <MainWrapper topTitle={t("title")}>
       <Card border="bl">
-        <MainTitle>Komunikat 1 - Kalendarz wyborczy</MainTitle>
-        <SimpleText>
-          Zapoznaj się z kalendarzem wyborczym, który zawiera kluczowe daty i
-          terminy związane z nadchodzącymi wyborami.
-        </SimpleText>
+        <MainTitle>{t("mainTitle")}</MainTitle>
+        <SimpleText>{t("simpleText")}</SimpleText>
         <CardHorizontal>
           <FancyButton
             small
-            text="Komunikat"
+            text={t("button-1")}
             outsideLink="/files/wybory/komunikaty/komunikat-1_UKW_kalendarz-wyborczy.docx"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
         </CardHorizontal>
       </Card>
       <Card border="tl">
-        <MainTitle>Komunikat 2 - Wybory do Senatu</MainTitle>
-        <SimpleText>
-          Znajdziesz tutaj dokumenty dotyczące zgłoszonych kandydatów oraz skład
-          nowo wybranego Senatu.
-        </SimpleText>
+        <MainTitle>{t("mainTitle-2")}</MainTitle>
+        <SimpleText>{t("simpleText-2")}</SimpleText>
         <CardHorizontal>
           <FancyButton
             small
-            text="Komunikat"
+            text={t("button-2")}
             outsideLink="/files/wybory/komunikaty/komunikat-2_UKW.docx"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Zgłoszeni kandydaci do Senatu"
+            text={t("button-3")}
             outsideLink="/files/wybory/komunikaty/komunikat-2_Zgloszeni-kandydaci-do-Senatu.pdf"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Skład Senatu"
+            text={t("button-4")}
             outsideLink="/files/wybory/komunikaty/komunikat-2_sklad-Senatu.pdf"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
         </CardHorizontal>
       </Card>
       <Card border="bl">
-        <MainTitle>Komunikat 3 - Wybory do Kolegium Elektorów</MainTitle>
-        <SimpleText>
-          Dokumenty dotyczące wyborów do Kolegium Elektorów, w tym lista
-          zgłoszonych kandydatów oraz skład nowo wybranego Kolegium.
-        </SimpleText>
+        <MainTitle>{t("mainTitle-3")}</MainTitle>
+        <SimpleText>{t("simpleText-3")}</SimpleText>
         <CardHorizontal>
           <FancyButton
             small
-            text="Komunikat"
+            text={t("button-5")}
             outsideLink="/files/wybory/komunikaty/komunikat-3_UKW.docx"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Zgłoszeni kandydaci do Kolegium Elektorów"
+            text={t("button-6")}
             outsideLink="/files/wybory/komunikaty/komunikat-3_Zgloszeni-kandydaci-do-Kolegium-Elektorow.pdf"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Skład Kolegium Elektorów"
+            text={t("button-7")}
             outsideLink="/files/wybory/komunikaty/komunikat-3_sklad-Kolegium-Elektorow.pdf"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
         </CardHorizontal>
       </Card>
       <Card border="tl">
-        <MainTitle>Komunikat 4 - Wybory na Rektora</MainTitle>
-        <SimpleText>
-          Zapoznaj się z listą kandydatów oraz wynikami wyborów na stanowisko
-          Rektora uczelni.
-        </SimpleText>
+        <MainTitle>{t("mainTitle-4")}</MainTitle>
+        <SimpleText>{t("simpleText-4")}</SimpleText>
         <CardHorizontal>
           <FancyButton
             small
-            text="Lista kandydatów"
+            text={t("button-8")}
             outsideLink="/files/wybory/komunikaty/lista-kandydatow-na-Rektora.docx"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Wyniki wyborów"
+            text={t("button-9")}
             outsideLink="/files/wybory/komunikaty/wyniki-wyborow_Rektor.docx"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
         </CardHorizontal>

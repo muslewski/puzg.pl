@@ -48,7 +48,15 @@ export default function OUczelniPage({ params: { locale } }: Props) {
     <MainWrapper topTitle={t("title")}>
       <ImageCarousel
         images={images}
-        altImages={["a", "b", "c", "d", "e", "f", "g"]}
+        altImages={[
+          t("carouselAlts.1"),
+          t("carouselAlts.2"),
+          t("carouselAlts.3"),
+          t("carouselAlts.4"),
+          t("carouselAlts.5"),
+          t("carouselAlts.6"),
+          t("carouselAlts.7"),
+        ]}
       />
 
       <Card
@@ -58,20 +66,13 @@ export default function OUczelniPage({ params: { locale } }: Props) {
           <CardImage
             key={0}
             image="/images/o-uczelni/engineer.jpg"
-            imageAlt="Studenci pracujący w laboratorium"
+            imageAlt={t("imageAlt-1")}
             imageOrientation="landscape"
           />,
         ]}
       >
-        <MainTitle>Nasza misja</MainTitle>
-        <SimpleText>
-          Misją Publicznej Uczelni Zawodowej w Grudziądzu jest przede wszystkim
-          stworzenie silnego ośrodka edukacyjnego, który nie tylko kształci
-          przyszłych specjalistów, ale również aktywnie uczestniczy w
-          rozwiązywaniu głównych wyzwań społecznych i gospodarczych. Stawiamy na
-          rozwój umiejętności praktycznych, innowacyjność i współpracę z
-          lokalnymi oraz krajowymi instytucjami.
-        </SimpleText>
+        <MainTitle>{t("mainTitle")}</MainTitle>
+        <SimpleText>{t("simpleText")}</SimpleText>
       </Card>
 
       <Card
@@ -80,82 +81,50 @@ export default function OUczelniPage({ params: { locale } }: Props) {
           <CardImage
             key={0}
             image="/images/o-uczelni/engineer2.jpg"
-            imageAlt="Studenci stoją przy tablicy"
+            imageAlt={t("imageAlt-2")}
             imageOrientation="landscape"
           />,
         ]}
       >
-        <MainTitle>Realizujemy wizję</MainTitle>
-        <SimpleText>
-          Dążymy do kształtowania przyszłości poprzez edukację, innowacje oraz
-          zaangażowanie społeczne. Naszym celem jest nie tylko przygotowanie
-          studentów do rynku pracy, ale także inspirowanie ich do tworzenia
-          nowoczesnych rozwiązań technologicznych, które mogą zmieniać
-          gospodarkę.
-        </SimpleText>
+        <MainTitle>{t("mainTitle-2")}</MainTitle>
+        <SimpleText>{t("simpleText-2")}</SimpleText>
       </Card>
 
       <Card>
-        <MainTitle>
-          Mechatronika i Nowoczesne Laboratoria dla Studentów
-        </MainTitle>
-        <SimpleText>
-          Od 1 października 2024 roku na Uczelni rozpocznie się kształcenie
-          studentów na kierunku mechatronika, a w przyszłości planowane jest
-          poszerzenie oferty o kolejne kierunki studiów. Koncepcja kształcenia
-          zakłada wprowadzenie do tradycyjnych elementów kształcenia,
-          nowatorskie przedmioty i wynikające z nich efekty uczenia się, które
-          uwzględniają postęp w obszarze stosunków gospodarczych, ekonomicznych
-          i społecznych. Zakładane efekty uczenia się powinny być uzyskane
-          również w oparciu o elektroniczne źródła wiedzy i umiejętności -
-          programy i aplikacje umożliwiające wyszukiwanie najnowszych
-          publikacji, studiów przypadków i literatury w obszarze kształconego
-          kierunku.
-        </SimpleText>
-        <SimpleText>
-          Nauka w PUZ będzie się odbywać z wykorzystaniem pomieszczeń i
-          wyposażenia Centrum Kształcenia Zawodowego przy ul. Czarnieckiego 5/7
-          oraz Zespołu Szkół Technicznych im. Jana i Jędrzeja Śniadeckich przy
-          ul. Hoffmanna 1-7. Z myślą o studentach, którzy już wkrótce rozpoczną
-          tam rok akademicki wyposażono sale w nowoczesny sprzęt dydaktyczny, a
-          ponadto dzięki zapleczu Branżowego Centrum Umiejętności będzie można
-          zaoferować studentom całą gamę bezpłatnych kursów, m.in. z
-          projektowania robotów czy modelowania 3D.
-        </SimpleText>
+        <MainTitle>{t("mainTitle-3")}</MainTitle>
+        <SimpleText>{t("simpleText-3")}</SimpleText>
+        <SimpleText>{t("simpleText-4")}</SimpleText>
       </Card>
 
       <Card border="bl">
-        <MainTitle>Nasze mocne strony</MainTitle>,
+        <MainTitle>{t("mainTitle-4")}</MainTitle>,
         <CardList
           listObject={[
             {
-              title: "Nowoczesna infrastruktura",
-              description: "Sale wyposażone w nowoczesny sprzęt.",
+              title: t("listTitle-1"),
+              description: t("listDesc-1"),
               icon: "/images/icons/Rocket.svg",
-              iconAlt: "s",
+              iconAlt: t("listAlt-1"),
             },
             {
-              title: "Praktyczne podejście do nauki",
-              description: "Współpraca z Centrum Kształcenia Zawodowego.",
+              title: t("listTitle-2"),
+              description: t("listDesc-2"),
               icon: "/images/icons/Chart.svg",
-              iconAlt: "s",
+              iconAlt: t("listAlt-2"),
             },
             {
-              title: "Bezpłatne kursy",
-              description: "Kursy z projektowania robotów i modelowania 3D.",
+              title: t("listTitle-3"),
+              description: t("listDesc-3"),
               icon: "/images/icons/Users.svg",
-              iconAlt: "s",
+              iconAlt: t("listAlt-3"),
             },
           ]}
         />
       </Card>
 
       <Card grayCard grayCardPosition="left">
-        <MainTitle>Gdzie nas znajdziesz?</MainTitle>
-        <SimpleText>
-          Znajdziesz nas na ulicy Czarnieckiego 5/7 oraz Hoffmanna 1-7, gdzie
-          mieści się nasza nowoczesna infrastruktura edukacyjna.
-        </SimpleText>
+        <MainTitle>{t("mainTitle-5")}</MainTitle>
+        <SimpleText>{t("simpleText-5")}</SimpleText>
         <LocalizationIframe />
       </Card>
     </MainWrapper>

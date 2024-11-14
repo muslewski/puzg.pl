@@ -36,11 +36,11 @@ export default function PlanZajecPage({ params: { locale } }: Props) {
     <MainWrapper topTitle={t("title")}>
       <CardVertical>
         <Card border="bl">
-          <MainTitle>Skład Uczelnianej Komisji Wyborczej</MainTitle>
+          <MainTitle>{t("mainTitle")}</MainTitle>
           <ol>
             <li className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal text-nowrap">
               <h3 className="h3fakeLess text-wrap">
-                Jacek Nalaskowski - przewodniczący
+                Jacek Nalaskowski - {t("text-1")}
               </h3>
             </li>
             <li className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
@@ -52,11 +52,11 @@ export default function PlanZajecPage({ params: { locale } }: Props) {
           </ol>
         </Card>
         <Card border="tl">
-          <MainTitle>Siedziba Uczelnianej Komisji Wyborczej</MainTitle>
+          <MainTitle>{t("mainTitle2")}</MainTitle>
 
           <SimpleText>
-            Biuro Rektora <br />
-            ul. Czarnieckiego 5/7
+            {t("text-2")} <br />
+            {t("street")} Czarnieckiego 5/7
             <br />
             86-300 Grudziądz
           </SimpleText>

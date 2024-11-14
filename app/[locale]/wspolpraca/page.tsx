@@ -32,37 +32,20 @@ export default function WspolpracaPage({ params: { locale } }: Props) {
   return (
     <MainWrapper topTitle={t("title")}>
       <Card border="bl">
-        <MainTitle>Inicjatywa Współpracy z Przemysłem</MainTitle>
-        <SimpleText>
-          Działalność Publicznej Uczelni Zawodowej w Grudziądzu zainicjowana
-          została przez Wojskowe Zakłady Uzbrojenia S.A w Grudziądzu, co stanowi
-          silne podłoże do ścisłej współpracy pomiędzy uczelnią a przemysłem. W
-          regionie, w którym zlokalizowana jest uczelnia, funkcjonuje wiele
-          przedsiębiorstw, które poszukują wykwalifikowanej kadry w zakresie
-          mechatroniki, robotyki, automatyzacji, logistyki, zarządzania, obsługi
-          urządzeń medycznych oraz bezpieczeństwa i obronności kraju. Współpraca
-          uczelni z otoczeniem gospodarczym jest istotnym elementem w procesie
-          kształcenia, dlatego dokładane są wszelkie starania aby otoczenie
-          reprezentujące lokalny przemysł było zintegrowane z prowadzonymi
-          kierunkami studiów.
-        </SimpleText>
+        <MainTitle>{t("mainTitle-1")}</MainTitle>
+        <SimpleText>{t("simpleText-1")}</SimpleText>
       </Card>
 
       <Card border="tr">
-        <MainTitle>Umowy o Współpracy z Przedsiębiorstwami</MainTitle>
-        <SimpleText>
-          Publiczna Uczelnia Zawodowa w Grudziądzu podpisała umowy o współpracę
-          z kilkunastoma zakładami pracy z Grudziądza i okolic, które
-          zatrudniają inżynierów mechatroniki. Aktualnie uczelnia posiada
-          deklaracje współpracy z ośmioma przedsiębiorstwami:
-        </SimpleText>
+        <MainTitle>{t("mainTitle-2")}</MainTitle>
+        <SimpleText>{t("simpleText-2")}</SimpleText>
 
         <CardList
           iconsSize="h-8 w-8 sm:h-14 sm:w-14"
           simpleList={[
             {
               icon: "/images/wspolpraca/electrical-panel.png",
-              iconAlt: "a",
+              iconAlt: t("iconAlt-1"),
               richText: (
                 <h2 className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
                   Bydgoskie Zakłady Elektromechaniczne BELMA S. A.
@@ -71,7 +54,7 @@ export default function WspolpracaPage({ params: { locale } }: Props) {
             },
             {
               icon: "/images/wspolpraca/sonar.png",
-              iconAlt: "a",
+              iconAlt: t("iconAlt-2"),
               richText: (
                 <h2 className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
                   Ośrodek Badawczo-Rozwojowy Centrum Techniki Morskiej S. A.
@@ -80,7 +63,7 @@ export default function WspolpracaPage({ params: { locale } }: Props) {
             },
             {
               icon: "/images/wspolpraca/test.png",
-              iconAlt: "a",
+              iconAlt: t("iconAlt-3"),
               richText: (
                 <h2 className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
                   Zakłady Chemiczne NITRO-CHEM S. A.
@@ -89,7 +72,7 @@ export default function WspolpracaPage({ params: { locale } }: Props) {
             },
             {
               icon: "/images/wspolpraca/fighter-jet.png",
-              iconAlt: "a",
+              iconAlt: t("iconAlt-4"),
               richText: (
                 <h2 className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
                   Wojskowe Zakłady Lotnicze nr 2 S. A.
@@ -98,7 +81,7 @@ export default function WspolpracaPage({ params: { locale } }: Props) {
             },
             {
               icon: "/images/wspolpraca/missiles.png",
-              iconAlt: "a",
+              iconAlt: t("iconAlt-5"),
               richText: (
                 <h2 className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
                   Wojskowe Zakłady Uzbrojenia S. A.
@@ -107,7 +90,7 @@ export default function WspolpracaPage({ params: { locale } }: Props) {
             },
             {
               icon: "/images/wspolpraca/production.png",
-              iconAlt: "a",
+              iconAlt: t("iconAlt-6"),
               richText: (
                 <h2 className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
                   Rychiger Poland Sp. z o.o.
@@ -116,7 +99,7 @@ export default function WspolpracaPage({ params: { locale } }: Props) {
             },
             {
               icon: "/images/wspolpraca/manufacturing.png",
-              iconAlt: "a",
+              iconAlt: t("iconAlt-7"),
               richText: (
                 <h2 className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
                   Jabil Poland Sp. z o.o.
@@ -125,7 +108,7 @@ export default function WspolpracaPage({ params: { locale } }: Props) {
             },
             {
               icon: "/images/wspolpraca/processor.png",
-              iconAlt: "a",
+              iconAlt: t("iconAlt-8"),
               richText: (
                 <h2 className="h3fake text-base sm:text-lg md:text-xl 3xl:text-2xl font-outfit font-normal">
                   Kitron Sp. z o.o.
@@ -138,29 +121,14 @@ export default function WspolpracaPage({ params: { locale } }: Props) {
         <CardImage
           image="/images/wspolpraca/wspolpraca.jpg"
           imageOrientation="full"
-          imageAlt="a"
+          imageAlt={t("imageAlt-1")}
         />
       </Card>
 
       <Card border="tl">
-        <MainTitle>Wsparcie Przemysłu w Kształceniu Inżynierów</MainTitle>
-        <SimpleText>
-          Realizacja potrzeb gospodarczych w zakresie kształcenia inżynierów
-          związana jest bezpośrednio ze wsparciem działań dydaktycznych przez
-          przemysł. Władze uczelni prowadzą rozmowy oraz podpisują porozumienia
-          z kolejnymi przedsiębiorstwami, które stworzą w przyszłości miejsca
-          pracy dla absolwentów Publicznej Uczelni Zawodowej w Grudziądzu.
-        </SimpleText>
-
-        <SimpleText>
-          Współpraca z interesariuszami zewnętrznymi opiera się na kształceniu
-          wysoko wykwalifikowanych absolwentów, którzy przygotowani będą do
-          wymagań rynku pracy. Aktualnie na PUZ kształcenie odbywa się na
-          kierunku Mechatronika, ma ono charakter praktyczny. Program
-          proponowanych studiów jest odpowiedzią na potrzeby przemysłu
-          zbrojeniowego, samorządu lokalnego oraz przedsiębiorców z Pomorskiej
-          Specjalnej Strefy Ekonomicznej.
-        </SimpleText>
+        <MainTitle>{t("mainTitle-3")}</MainTitle>
+        <SimpleText>{t("simpleText-3")}</SimpleText>
+        <SimpleText>{t("simpleText-4")}</SimpleText>
       </Card>
     </MainWrapper>
   );

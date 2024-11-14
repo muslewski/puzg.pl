@@ -49,9 +49,21 @@ export const searchItems: SearchItem[] = [
     category: "student",
   },
   {
+    titleKey: "LegitymacjaStudenckaPage.title",
+    descriptionKey: "LegitymacjaStudenckaPage.description",
+    href: "/legitymacja-studencka",
+    category: "student",
+  },
+  {
     titleKey: "OrganizacjaRokuAkademickiegoPage.title",
     descriptionKey: "OrganizacjaRokuAkademickiegoPage.description",
     href: "/organizacja-roku-akademickiego",
+    category: "student",
+  },
+  {
+    titleKey: "PlanZajecPage.title",
+    descriptionKey: "PlanZajecPage.description",
+    href: "/plan-zajec",
     category: "student",
   },
   {
@@ -64,6 +76,12 @@ export const searchItems: SearchItem[] = [
     titleKey: "RegulaminStudiowPage.title",
     descriptionKey: "RegulaminStudiowPage.description",
     href: "/regulamin-studiow",
+    category: "student",
+  },
+  {
+    titleKey: "StypendiaPage.title",
+    descriptionKey: "StypendiaPage.description",
+    href: "/stypendia",
     category: "student",
   },
   {

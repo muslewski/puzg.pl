@@ -139,20 +139,63 @@
 
   "OfertyPracyPage": {
     "title": "Job Offers",
-    "description": "Find current competitions for teaching and research-teaching positions. Check legal acts and download necessary documents."
+    "description": "Find current competitions for teaching and research-teaching positions. Check legal acts and download necessary documents.",
+
+    "mainTitle": "Legal Acts",
+    "simpleText": "Legal act concerning the rules of employing staff in teaching and research-teaching positions at the Public Vocational University in Grudziądz",
+    "fancyButton": "Z.19.2024.2025 (redirect to ordinance in PDF)",
+
+    "mainTitle-2": "Documents to Download",
+    "simpleText-2": "Download key documents related to employment in teaching and research-teaching positions at the Public Vocational University in Grudziądz.",
+    "fancyButton-2": "Z.19.2024.2025_att.2",
+    "fancyButton-3": "Z.19.2024.2025_att.3",
+    "fancyButton-4": "Z.19.2024.2025_att.4",
+    "fancyButton-5": "Z.19.2024.2025_att.5",
+    "fancyButton-6": "Z.19.2024.2025_att.8",
+    "fancyButton-7": "Z.19.2024.2025_att.10"
   },
   "UstawyMNiSWPage": {
     "title": "Laws and Regulations MNiSW",
-    "description": "Get acquainted with the current laws and regulations of the Ministry of Science and Higher Education related to higher education."
+    "description": "Get acquainted with the current laws and regulations of the Ministry of Science and Higher Education related to higher education.",
+
+    "h2-1": "Act of July 20, 2018 - Law on Higher Education and Science",
+    "h2-2": "Act of December 22, 2015 on the Integrated Qualifications System",
+    "h2-3": "Regulation of the Minister of Science and Higher Education of September 27, 2018 on studies",
+    "h2-4": "Regulation of the Minister of Science and Higher Education of September 12, 2018 on program evaluation criteria",
+
+    "bookIconAlt": "Book Icon"
   },
   "ZasadyTworzeniaKierunkowStudiowPage": {
     "title": "Rules for Creating, Conducting, and Closing Study Programs",
-    "description": "Learn about the rules for creating, running, and closing study programs at our college."
+    "description": "Learn about the rules for creating, running, and closing study programs at our college.",
+
+    "simpleText": "Ordinance No. Z.28.2024.2025 of the Rector of the Public Vocational University in Grudziądz of August 6, 2024, regarding the establishment of rules for creating, conducting and closing fields of study",
+    "fancyButton": "Click here to display",
+
+    "mainTitle": "Attachments to download:",
+    "simpleText-2": "Find all necessary documents and attachments related to creating and managing fields of study.",
+
+    "button-2": "Application for establishing a field of study",
+    "button-3": "List of academic teachers proposed to conduct classes in the field of study",
+    "button-4": "Information about competencies and experience of academic teachers enabling proper implementation of classes within the study program",
+    "button-5": "Declaration of academic teachers",
+    "button-6": "Declaration of person conducting classes with students",
+    "button-7": "Intended learning outcomes for the field of study",
+    "button-8": "Learning outcomes matrix for the field of study",
+    "button-9": "Course card / syllabus",
+    "button-10": "Application for field modification",
+    "button-11": "Application for establishing a specialization",
+    "button-12": "Application for closing a field of study / specialization"
   },
 
   "AktyPrawnePage": {
     "title": "Legal Acts",
-    "description": "Overview of legal acts concerning the functioning of our college and higher education in Poland."
+    "description": "Overview of legal acts concerning the functioning of our college and higher education in Poland.",
+
+    "mainTitle": "Legal acts concerning the recruitment process at the Public Vocational University in Grudziądz:",
+    "simpleText": "Overview of legal acts related to recruitment for the 2024/2025 academic year at the Public Vocational University in Grudziądz. Click below to view selected documents.",
+
+    "CardImageAlt": "Image shows a person signing a document"
   },
   "ElektronicznaRejestracjaPage": {
     "title": "Electronic Candidate Registration",
@@ -160,64 +203,291 @@
   },
   "LimitPrzyjecNaStudiaPage": {
     "title": "Admission Limits",
-    "description": "Check the limits for available study programs in the current recruitment process."
+    "description": "Check the limits for available study programs in the current recruitment process.",
+
+    "mainTitle": "The admission limit for full-time first-cycle studies in Mechatronics has been specified in the Rector's Ordinance.",
+    "simpleText": "Education will be conducted in two modes:",
+    "richText-1": "full-time in standard mode",
+    "richText-2": "full-time in afternoon mode (for working professionals)",
+    "iconAlt-1": "Icon of a lecturer explaining a concept to students",
+    "iconAlt-2": "Sunset icon",
+
+    "simpleText-2": "The field of study will be launched provided that at least 25 candidates qualify. For the study mode designed for working professionals, the program will open when a group of at least 18 candidates is formed.",
+    "cardImageAlt": "Students sitting on steps, talking to each other"
   },
   "OplataRekrutacyjnaPage": {
     "title": "Recruitment Fee",
-    "description": "Find out the amount of the recruitment fee and how it can be paid."
+    "description": "Find out the amount of the recruitment fee and how it can be paid.",
+
+    "simpleText": "Excerpt from the Regulation of the Minister of Science and Higher Education of September 27, 2018, on studies (consolidated text, Journal of Laws of 2023, item 2787), regarding the recruitment fee for the first year of studies from the academic year 2024/2025",
+    "mainTitle": "Chapter 10",
+    "simpleText-2": "<b>Recruitment fee amount:</b><br></br>§ 38. The fee for conducting recruitment for studies is 85 PLN, with the following exceptions:",
+
+    "li-1": "1) in case of the need to verify artistic abilities - the fee is 150 PLN;",
+    "li-2": "2) in case of conducting an entrance examination, including physical fitness test - the fee is 100 PLN.",
+
+    "simpleText-3": "<b>Bank transfer details:</b><br></br>PKO BP account<br></br>bank account number: 75 1020 1462 0000 7902 0441 6327",
+    "cardImageAlt": "Person holding a credit card and making an online payment"
   },
   "RekrutacjaKrokPoKrokuPage": {
     "title": "Recruitment Step by Step",
-    "description": "Learn about the recruitment process and the stages of registering for studies."
+    "description": "Learn about the recruitment process and the stages of registering for studies.",
+
+    "mainTitle": "Start your studies at the Public Vocational University in Grudziądz",
+    "cardImageAlt": "Panorama of Grudziądz city",
+    "simpleText": "The Public Vocational University in Grudziądz is a place where you can develop your skills and interests. The university is located in the center of Grudziądz, offering space for gaining theoretical knowledge and practical competencies, developing creativity, building careers, and implementing projects.",
+    "simpleText-2": "We invite you to submit your applications.",
+
+    "fancyButton": "Apply now",
+    "fancyButtonAlt": "Email icon",
+
+    "mainTitle-2": "List of steps:",
+
+    "listTitle-1": "Step 1 - Fill out the recruitment form",
+    "listTitle-2": "Step 2 - Complete and attach required files",
+    "listTitle-3": "Step 3 - Pay the recruitment fee",
+    "listTitle-4": "Step 4 - Submit the form",
+    "listTitle-5": "Step 5 - Deliver documents",
+    "listTitle-6": "Step 6 - Recruitment results",
+    "listTitle-7": "Step 7 - See you in October at the university",
+
+    "listDesc-1": "<p>The qualification process for first-cycle studies in Mechatronics requires completing a recruitment form.</p>",
+    "listDesc-2": "<ol><li>digital photo (ID photo format) with a resolution of at least 492 x 610 pixels and maximum size of 2.5 MB, sent as a separate JPG file,</li><li>scan of signed candidate declarations in PDF format,</li><li>scan of completed and signed application for admission in PDF format,</li><li>confirmation of recruitment fee payment.</li></ol>",
+    "listDesc-3": "<p>The candidate should make a payment of 85 PLN to the account of the Public Vocational University in Grudziądz.</p><br></br><p>PKO BP account<br></br>bank account number:<br></br> 75 1020 1462 0000 7902 0441 6327</p>",
+    "listDesc-4": "<p>The final step to complete the qualification process. The completed form along with attached documents (study application, photo, declarations, and payment confirmation) should be sent to the University Recruitment Committee using the „send” option. Before sending, carefully check the data and attached files. A copy of the message will also be sent to the email address provided in the form.</p>",
+    "listDesc-5": "<p>Congratulations on passing your high school final exams. Now you need to complete the recruitment process and deliver the documents.</p>",
+    "listDesc-5-fancyButton": "Check what should be included in the complete set of documents",
+    "listDesc-6": "<p>After recruitment is completed, the candidate will receive information about acceptance/rejection and the number of points scored via the email address provided in the form.</p>",
+    "listDesc-7": "<p>Congratulations!<br></br>Recruitment has been successfully completed, see you in October in the first year of studies.<br></br>Have a great summer break.</p>",
+
+    "listAlt-1": "Contact form icon",
+    "listAlt-2": "Document in mail envelope icon",
+    "listAlt-3": "Online payment icon with phone or card",
+    "listAlt-4": "Send button icon",
+    "listAlt-5": "Document handover icon",
+    "listAlt-6": "Results and statistics icon",
+    "listAlt-7": "Smiling emoji icon"
   },
   "DostarczDokumentyPage": {
     "title": "Deliver Documents",
-    "description": "Congratulations on passing your final exams. Now you need to complete the recruitment process and submit your documents."
+    "description": "Congratulations on passing your final exams. Now you need to complete the recruitment process and submit your documents.",
+
+    "mainTitle": "Congratulations on passing your high school final exams.",
+    "cardImageAlt": "Students throwing caps in the air",
+    "simpleText-1": "Now you need to complete the recruitment process and deliver the documents.",
+    "simpleText-2": "Documents must be submitted personally in a white unmarked folder.",
+    "simpleText-3": "Before coming to the university, please check the office hours of the University Recruitment Committee that accepts documents.",
+
+    "fancyButton": "Check office hours",
+
+    "mainTitle-2": "The complete set of documents should include:",
+    "richText": "<ol><li>original study application submitted during electronic recruitment,</li><li>original high school diploma with possible diploma supplement (for verification),</li><li>photocopy of high school diploma with possible diploma supplement original vocational qualification diploma/vocational diploma if you graduated from Technical School (for verification),</li><li>photocopy of vocational qualification diploma/vocational diploma if you graduated from Technical School,</li><li>color photo on paper in 35 x 45 mm format (compliant with the format required when applying for an ID card).</li></ol><h3>Additionally, selected candidates may also be required to provide:</h3><ol><li>photocopy of document confirming the title of laureate or finalist of an olympiad or competition if it was considered in recruitment for given studies, along with its original for verification,</li><li>photocopy of document confirming sports achievements in Olympic disciplines or those included in the Polish Academic Championships program,</li><li>parental consent for undertaking studies by a minor (TEMPLATE).</li></ol>",
+    "simpleText-4": "During enrollment, the candidate must confirm their identity and present an ID card or passport. In special cases, the candidate may be represented by a proxy who will present a power of attorney with signature and their own ID card or passport (according to the content of the power of attorney) when submitting documents on behalf of the candidate.",
+
+    "h3": "Downloads:",
+    "fancyButton-2": "Power of Attorney",
+    "fancyButton-3": "Parental Consent"
   },
   "GodzinyDyzurowaniaPage": {
     "title": "Office Hours of the College Admissions Committee",
-    "description": "Check the office hours of the College Admissions Committee for assistance with the enrollment process."
+    "description": "Check the office hours of the College Admissions Committee for assistance with the enrollment process.",
+
+    "month-1": "June 2024",
+    "month-2": "July 2024",
+    "cardImage-1": "Office hours of the University Recruitment Committee in June",
+    "cardImage-2": "Office hours of the University Recruitment Committee in July"
   },
   "TerminarzRekrutacjiPage": {
     "title": "Recruitment Schedule",
-    "description": "Check key recruitment dates, such as document submission and result announcements."
+    "description": "Check key recruitment dates, such as document submission and result announcements.",
+
+    "mainTitle": "Recruitment Schedule for the Academic Year 2024/2025 for Full-time First-cycle Studies - Mechatronics Program",
+    "text-1": "Registration in ERK (Electronic Candidate Registration) and payment of the recruitment fee",
+    "text-2": "Submission of documents",
+    "text-3": "Announcement of recruitment results",
+    "text-4": "Supplementary recruitment",
+    "text-5": "Announcement of supplementary recruitment results",
+    "from": "from",
+    "to": "to",
+
+    "simpleText-1": "The announcement of the classification results will be sent electronically to the email address provided by the candidate in the form, immediately after verification by the University Recruitment Committee. A correctly submitted application form will receive the status 'qualified'.",
+    "simpleText-2": "The form and place for submitting documents will be published on the website of the Public Vocational University in Grudziądz (https://puzg.pl).",
+    "simpleText-3": "Supplementary recruitment will take place if the seat limit is not filled.",
+    "simpleText-4": "The university reserves the right to change the dates.",
+    "cardImageAlt": "Calendar displayed on a screen next to a keyboard"
   },
 
   "DziekanatPage": {
     "title": "Deanery",
-    "description": "Contact the deanery and get information on academic progress and administrative matters."
+    "description": "Contact the deanery and get information on academic progress and administrative matters.",
+
+    "cardImageAlt": "Photo of the dean's office",
+    "mainTitle": "Contact Information",
+    "specialist": "administrative specialist",
+    "street": "Street",
+
+    "cardAlt-1": "User icon",
+    "cardAlt-2": "Phone icon",
+    "cardAlt-3": "Email icon",
+    "cardAlt-4": "Address icon",
+    "cardAlt-5": "Clock icon",
+
+    "mainTitle-2": "Student Office Hours",
+    "week-1": "Monday, Wednesday, Friday",
+    "week-2": "Tuesday, Thursday",
+    "hour": "hours:"
   },
   "JakoscKsztalceniaPage": {
     "title": "Education Quality",
-    "description": "Learn how we ensure high-quality education at our college and what initiatives we undertake in this regard."
+    "description": "Learn how we ensure high-quality education at our college and what initiatives we undertake in this regard.",
+
+    "mainTitle-1": "A Joint Success of the City and Authorities",
+    "simpleText-1": "The Public Vocational University in Grudziądz was established after years of efforts by the authorities of the Military Armament Plant, the city, and local government officials. These efforts led to the Minister of Education and Science signing a regulation on September 15, 2023, sanctioning the establishment of the Public Vocational University in Grudziądz. The ceremony took place at the premises of the Military Armament Plant S.A.",
+
+    "mainTitle-2": "Goals of the Internal Quality Assurance System",
+    "cardImageAlt": "Happy students posing for a photo",
+
+    "text-1": "promoting a pro-quality attitude and building a culture of quality,",
+    "text-2": "ensuring consistency in education,",
+    "text-3": "enabling students to achieve the intended learning outcomes,",
+    "text-4": "improving the quality of teaching, technical, and administrative staff,",
+    "text-5": "utilizing the potential of the socio-economic environment to enhance the quality of education,",
+    "text-6": "providing information on actions taken to improve quality and the achieved learning outcomes,",
+    "text-7": "improving the quality and development of infrastructure, as well as increasing the number of laboratories and specialized workshops available for students.",
+
+    "listAlt-1": "Icon of a hand with a check mark pointing up",
+    "listAlt-2": "Icon of a continuity cycle",
+    "listAlt-3": "Graduation cap icon",
+    "listAlt-4": "Human skills icon",
+    "listAlt-5": "Handshake icon",
+    "listAlt-6": "Report icon",
+    "listAlt-7": "Chemical test tubes icon",
+
+    "mainTitle-3": "The Primary Procedures in Quality Assurance of Education Are",
+    "text-2-1": "evaluation of classes conducted by academic teachers,",
+    "text-2-2": "class observations,",
+    "text-2-3": "student satisfaction assessment.",
+
+    "listAlt-2-1": "Icon of a filled comment box",
+    "listAlt-2-2": "Icon of research on a computer with a magnifying glass",
+    "listAlt-2-3": "Thumbs up icon with three stars",
+
+    "cardImageAlt-2": "People with masks ranging from sad to happy",
+    "simpleText-2": "The quality of education also includes diploma procedures and monitoring the career paths of graduates. Information about the quality of education is compiled in the Quality Assurance Book, an internal document functioning at the Public Vocational University in Grudziądz."
   },
   "KierunkiStudiowPage": {
     "title": "Fields of Study",
-    "description": "Explore the available fields of study at our college and find the right program for you."
+    "description": "Explore the available fields of study at our college and find the right program for you.",
+
+    "mainTitle": "Mechatronics",
+    "listItemTitle-1": "Level of Studies",
+    "listItemTitle-2": "Educational Profile",
+    "listItemTitle-3": "Form of Studies",
+    "listItemTitle-4": "Number of Semesters",
+    "listItemTitle-5": "Degree Title",
+    "listItemTitle-6": "Language of Instruction",
+
+    "listItemDescription-1": "First Degree",
+    "listItemDescription-2": "Practical",
+    "listItemDescription-3": "Full-time",
+    "listItemDescription-4": "7",
+    "listItemDescription-5": "Engineer",
+    "listItemDescription-6": "Polish",
+
+    "listItemAlt-1": "Certificate Icon",
+    "listItemAlt-2": "Profile List Icon",
+    "listItemAlt-3": "Curved Learning Path Icon",
+    "listItemAlt-4": "Numeric Blocks Icon",
+    "listItemAlt-5": "Engineer Icon",
+    "listItemAlt-6": "Translation Cloud Icon",
+
+    "simpleText-1": "Mechatronics is a field combining knowledge from mechanics, electronics, computer science, automation, and robotics. It is a modern discipline and one of the fastest-growing industries. The knowledge in this field is specialized and unique, but due to high market demand, it offers excellent job prospects for graduates. Mechatronics provides students with versatile education in designing, manufacturing, and operating modern devices.",
+    "simpleText-2": "In Mechatronics, you will study basic science subjects such as mathematics, physics, and chemistry, as well as general subjects like the basics of special device construction, theory of mechanisms and machines, engineering materials, and specialized courses like machine drives, basics of robotics, mechatronics in technical systems, microprocessor technology, electronic systems in mechatronics, and programming languages. Additionally, depending on the specialization, there will be courses in control system design and programming, industrial process automation, communication panels and interfaces, and mechatronic drive control systems.",
+    "simpleText-3": "The studies last 3.5 years, i.e., 7 semesters. To obtain the engineering degree, a student must earn at least 210 ECTS credits (minimum 30 ECTS credits per semester).",
+
+    "mainTitle-2": "Specializations Offered",
+    "h3-1": "Applied Mechatronics",
+    "h3-2": "Automation and Machine Control",
+    "imageAlt-1": "Person soldering cables",
+    "imageAlt-2": "Person operating automated machines",
+
+    "text-1": "This specialization prepares experts with knowledge and skills in designing, constructing, and testing control systems, creating intelligent behaviors, and managing production processes, automation, and robotics. Students will learn the basics of robotics, robot programming, control algorithms, microcontroller and PLC programming, and industrial computers, as well as building sensory and drive systems. Acquiring such qualifications is possible through learning methods of programming mechatronic systems, computer modeling, and simulation, as well as programming multifunctional controllers.",
+    "text-2": "This specialization focuses on imparting knowledge and skills in the design, operation, maintenance, and diagnostics of mechatronic devices used in industry. Courses include topics where students learn about processes and control methods, from programming concepts to electronics and mechanical actuators. Students will know basic programming languages and develop practical skills in this area. They will gain knowledge of modern methods for measuring mechanical and electrical quantities, which they will use to describe the operation of mechatronic devices. Developed methods will be used for simulation and design, as well as computer-aided engineering from CNC machines to simulations of mechanical, electronic systems, and visualization of phenomena in mechatronic devices.",
+
+    "mainTitle-3": "What’s Next After Mechatronics?",
+    "simpleText-4": "Graduates of Mechatronics will be prepared to work in modern enterprises that require combining knowledge from multiple scientific disciplines. Graduates will be able to design, program, and operate modern mechatronic devices.",
+
+    "text-2-1": "Electromechanical industry,",
+    "text-2-2": "Automotive and aerospace industries,",
+    "text-2-3": "Manufacturing enterprises,",
+    "text-2-4": "Companies specializing in the operation of modern, automated, and robotic industrial processes,",
+    "text-2-5": "Companies engaged in the sale and diagnostics of mechatronic systems.",
+
+    "listItemAlt-2-1": "Production Line Icon",
+    "listItemAlt-2-2": "Motorcycle Icon",
+    "listItemAlt-2-3": "Factory Icon",
+    "listItemAlt-2-4": "Robot with Keyboard Icon",
+    "listItemAlt-2-5": "Analysis Icon",
+
+    "simpleText-5": "The knowledge and skills acquired during studies will enable graduates to work on building new and modernizing existing machines and mechatronic systems, particularly with the transition to digital control and the implementation of modern interfaces.",
+
+    "cardImageAlt": "Engineer working with a computer, dressed in blue",
+    "mainTitle-4": "Why Study Mechatronics in Grudziądz?",
+    "simpleText-6": "The Mechatronics program will be conducted according to modern educational standards with the participation of experienced experts (both theorists and practitioners) to develop a modern individual open to new technical experiences, mobile in the job market, creative, and effective in pursuing intellectual and professional aspirations. The study program emphasizes feedback from regional employers (external stakeholders) who also commit to helping implement the curriculum, for instance, by offering lab sessions and internships in their facilities. The Mechatronics program at the Public Vocational University in Grudziądz also prepares young individuals for active and conscious participation in civil society."
   },
   "LegitymacjaStudenckaPage": {
     "title": "Student ID Card",
-    "description": "Learn how to obtain a student ID card, what benefits it provides, and where to collect it."
+    "description": "Learn how to obtain a student ID card, what benefits it provides, and where to collect it.",
+
+    "mainTitle": "Attachments for Download:",
+    "simpleText": "In this section, you will find all the necessary documents related to the student ID card. Please download and review the contents before submitting your student ID card application."
   },
   "OrganizacjaRokuAkademickiegoPage": {
     "title": "Academic Year Organization",
-    "description": "Check the academic calendar, including semester start and end dates and holiday breaks."
+    "description": "Check the academic calendar, including semester start and end dates and holiday breaks.",
+
+    "simpleText": "The academic year 2024/2025 runs from October 1, 2024, to September 14, 2025, and is divided into two semesters: winter and summer. <br></br> The official inauguration of the academic year will take place on October 4, 2024."
   },
   "PlanZajecPage": {
     "title": "Class Schedule",
-    "description": "Check the class schedule for the current semester to find out when lectures, exercises, and seminars take place."
+    "description": "Check the class schedule for the current semester to find out when lectures, exercises, and seminars take place.",
+
+    "cardImageAlt": "Class schedule",
+    "mainTitle": "Semester Plan - Mechatronics Semester I",
+    "simpleText": "Below you will find the class schedule for the first semester of Mechatronics. Check out what's in store for you this year!",
+    "buttonText": "Download"
   },
   "ProgramStudiowPage": {
     "title": "Study Program",
-    "description": "Familiarize yourself with study programs, required subjects, and the curriculum for different fields."
+    "description": "Familiarize yourself with study programs, required subjects, and the curriculum for different fields.",
+
+    "mainTitle": "Mechatronics Program Effective from the Academic Year 2024/2025:",
+    "button-1": "Applied Mechatronics Specialization",
+    "button-2": "Automation and Machine Control Specialization",
+    "h3-1": "Syllabi:",
+    "h3-2": "Learning Outcomes:",
+    "button-3": "Mechatronics Major",
+    "imageAlt": "Statistics displayed on a laptop screen"
   },
   "RegulaminStudiowPage": {
     "title": "Study Regulations",
-    "description": "Read the study regulations in force at our college, including student rights and obligations."
+    "description": "Read the study regulations in force at our college, including student rights and obligations.",
+
+    "simpleText": "Study Regulations at the Public Vocational University in Grudziądz for the Academic Year 2024/2025.",
+    "button-1": "Click here to view",
+    "imageAlt-1": "Regulations on a desk"
   },
   "StypendiaPage": {
     "title": "Social Scholarship for the 2024/2025 Academic Year",
-    "description": "Find out if you're eligible for a social scholarship and learn about the required documentation to apply for financial assistance in the 2024/2025 academic year."
+    "description": "Find out if you're eligible for a social scholarship and learn about the required documentation to apply for financial assistance in the 2024/2025 academic year.",
+
+    "mainTitle-1": "Conditions for Applying for Social Scholarship",
+    "mainTitle-2": "List of Required Documents for Applying for a Social Scholarship:",
+    "richText-1": "<p>A social scholarship may be granted to a student who is in a difficult financial situation upon their request. In order to obtain the scholarship, the student must document their financial situation.</p><ul><li><strong>Income limit:</strong> Students may apply for the scholarship if the net income per person in the family does not exceed 1,570.50 PLN per month.</li><li><strong>Certificate from the social assistance center:</strong> If the monthly income per person in the family does not exceed 600.00 PLN, the student must provide a certificate confirming the use of social assistance benefits by themselves or their family members in 2024. If such benefits were not used, the source of the family's income must be documented.</li><li><strong>Application:</strong> Students applying for the scholarship must submit an application.</li></ul>",
+    "richText-2": "<ol><li>Certificates from the Tax Office regarding the income earned by family members in the previous calendar year that are subject to personal income tax under general principles.</li><li>Certificates from the Tax Office about the lump-sum income tax for the previous year for family members who file taxes under a flat-rate or lump-sum taxation system.</li><li>Declarations from family members about the amount of other income earned in the previous calendar year that is not subject to tax (Annex 7).</li><li>Certificate from the relevant local government office about the size of the agricultural farm in the previous calendar year.</li><li>Copy of the payment order.</li><li>Certificates from siblings who are enrolled in education.</li><li>Applicant's declaration.</li><li>Declaration from the applicant stating they do not live in a shared household with any parents, legal guardians, or factual guardians – applies to students applying for the scholarship without declaring family income.</li><li>Certificate issued by the social assistance center or social services center confirming the use of social assistance benefits by the student or family members in the year the scholarship application is submitted (applies to students whose monthly income per person in the family does not exceed 600.00 PLN).</li><li>Applicant's declaration (Annex 15).</li><li>Declaration about the family and financial situation of a student who is a Ukrainian citizen.</li><li>Certificates containing information about health insurance contributions for the previous calendar year preceding the year in which the student submits the application (certificate from ZUS or pension and disability insurance institution MSW), applicable to family members or the student who earned income reported in the Tax Office certificate subject to personal income tax under general principles.</li></ol>",
+
+    "mainTitle-3": "Regulations",
+    "simpleText": "Rector's Order No. Z.22.2024.2025 regarding the introduction of the regulations for student benefits at the Public Vocational University in Grudziądz:"
   },
 
   "AktualnosciPage": {
@@ -281,43 +551,170 @@
   },
   "OUczelniPage": {
     "title": "About College",
-    "description": "Learn more about our college's history, mission, values, and available study programs."
+    "description": "Learn more about our college's history, mission, values, and available study programs.",
+
+    "carouselAlts": {
+      "1": "Specially built computers with modern features",
+      "2": "Car on a lift",
+      "3": "Man using a learning tool",
+      "4": "Students during practical classes",
+      "5": "Advanced machine used by students",
+      "6": "Advanced CTX 310 ecaline machine",
+      "7": "Person using a special keyboard for a computer"
+    },
+
+    "imageAlt-1": "Students working in the laboratory",
+    "mainTitle": "Our Mission",
+    "simpleText": "The mission of the Public Vocational University in Grudziądz is primarily to create a strong educational center that not only trains future specialists but also actively participates in addressing key social and economic challenges. We focus on developing practical skills, innovation, and collaboration with local and national institutions.",
+
+    "imageAlt-2": "Students standing by the board",
+
+    "mainTitle-2": "We Realize the Vision",
+    "simpleText-2": "We strive to shape the future through education, innovation, and social engagement. Our goal is not only to prepare students for the job market but also to inspire them to create modern technological solutions that can transform the economy.",
+    "mainTitle-3": "Mechatronics and Modern Laboratories for Students",
+    "simpleText-3": "Starting from October 1, 2024, the university will begin training students in the field of mechatronics, with plans to expand the program with additional study fields in the future. The educational concept involves integrating innovative courses into traditional teaching elements, resulting in learning outcomes that reflect advances in economic, social, and business relations. These learning outcomes will also be achieved by utilizing electronic sources of knowledge and skills - programs and applications that enable access to the latest publications, case studies, and literature in the studied field.",
+    "simpleText-4": "Education at PUZ will take place using the facilities and equipment of the Vocational Education Center at Czarnieckiego 5/7 and the Technical School Complex at Hoffmanna 1-7. With the upcoming academic year in mind, classrooms have been equipped with modern teaching equipment. Additionally, thanks to the support of the Sector Skills Center, students will have access to a range of free courses, such as robot design and 3D modeling.",
+
+    "mainTitle-4": "Our Strengths",
+
+    "listTitle-1": "Modern Infrastructure",
+    "listTitle-2": "Practical Approach to Learning",
+    "listTitle-3": "Free Courses",
+    "listDesc-1": "Classrooms equipped with modern equipment.",
+    "listDesc-2": "Collaboration with the Vocational Education Center.",
+    "listDesc-3": "Courses in robot design and 3D modeling.",
+    "listAlt-1": "Rocket icon",
+    "listAlt-2": "Analytics icon",
+    "listAlt-3": "People icon",
+
+    "mainTitle-5": "Where to Find Us?",
+    "simpleText-5": "You can find us at Czarnieckiego 5/7 and Hoffmanna 1-7, where our modern educational infrastructure is located."
   },
   "WladzeUczelniPage": {
     "title": "College Authorities",
-    "description": "Meet the college authorities and find out who is responsible for various fields of its functioning."
+    "description": "Meet the college authorities and find out who is responsible for various fields of its functioning.",
+
+    "imageAlt-1": "Picture of the Rector",
+    "imageAlt-2": "Picture of the Bursar",
+    "imageAlt-3": "Picture of the Chancellor",
+
+    "dataTitle-1": "Rector",
+    "dataTitle-2": "Bursar",
+    "dataTitle-3": "Chancellor",
+    "dataDesc-1": "PhD, Eng. Michał Sójka",
+    "dataDesc-2": "M.A. Małgorzata Kosińska",
+    "dataDesc-3": "M.A. Artur Mach"
   },
 
   "DokumentyDoPobraniaPage": {
     "title": "Downloadable Documents",
-    "description": "Find essential documents, including application forms, ballot templates, and information clauses related to the election process."
+    "description": "Find essential documents, including application forms, ballot templates, and information clauses related to the election process.",
+
+    "mainTitle": "Documents Required in the Electoral Process",
+    "simpleText": "Use the links below to download the documents required for candidate nominations and the conduct of elections.",
+    "button-1": "Candidate Nomination to the Electors' College",
+    "button-2": "Voting Ballot Templates",
+    "button-3": "Candidate's Consent and Statement",
+    "button-4": "Lustration Statement",
+    "button-5": "Information Clause Regarding the Processing of Personal Data for the Electoral Process of Public Vocational University in Grudziądz",
+    "button-6": "Candidate Nomination to the Senate"
   },
   "KomunikatyPage": {
     "title": "Announcements",
-    "description": "Current announcements and information about the election schedule, candidate submissions, and voting results."
+    "description": "Current announcements and information about the election schedule, candidate submissions, and voting results.",
+
+    "mainTitle": "Announcement 1 - Electoral Calendar",
+    "simpleText": "Review the electoral calendar, which contains key dates and deadlines related to the upcoming elections.",
+    "button-1": "Announcement",
+
+    "mainTitle-2": "Announcement 2 - Senate Elections",
+    "simpleText-2": "Here you will find documents regarding the nominated candidates and the composition of the newly elected Senate.",
+
+    "button-2": "Announcement",
+    "button-3": "Nominated Candidates for Senate",
+    "button-4": "Composition of the Senate",
+
+    "mainTitle-3": "Announcement 3 - Electors' College Elections",
+    "simpleText-3": "Documents related to the Electors' College elections, including a list of nominated candidates and the composition of the newly elected College.",
+
+    "button-5": "Announcement",
+    "button-6": "Nominated Candidates for Electors' College",
+    "button-7": "Composition of the Electors' College",
+
+    "mainTitle-4": "Announcement 4 - Rector Elections",
+    "simpleText-4": "Review the list of candidates and the results of the Rector elections.",
+
+    "button-8": "List of Candidates",
+    "button-9": "Election Results"
   },
   "UchwalyUKWPage": {
     "title": "UKW Resolutions",
-    "description": "Browse the latest UKW senate resolutions regarding key decisions and organizational changes at the university."
+    "description": "Browse the latest UKW senate resolutions regarding key decisions and organizational changes at the university.",
+
+    "mainTitle": "Resolutions and Electoral Orders",
+    "simpleText": "Here is the list of orders related to the 2024 electoral process, which regulate key aspects of the elections at our university.",
+
+    "button-1": "Order 1/UKW/2024",
+    "button-2": "Order 2/UKW/2024",
+    "button-3": "Order 3/UKW/2024",
+    "button-4": "Order 4/UKW/2024",
+    "button-5": "Order 5/UKW/2024",
+
+    "imageAlt": "A person holding a binder with documents"
   },
   "UczelnianaKomisjaWyborczaPage": {
     "title": "College Election Committee",
-    "description": "Learn more about the activities and composition of the University Electoral Committee, as well as the electoral rules."
+    "description": "Learn more about the activities and composition of the University Electoral Committee, as well as the electoral rules.",
+
+    "mainTitle": "Composition of the University Electoral Committee",
+    "text-1": "Chairperson",
+    "mainTitle2": "Office of the University Electoral Committee",
+    "text-2": "Rector's Office",
+    "street": "st."
   },
 
   "InstytutPage": {
     "title": "Institute of Applied Mechatronics",
-    "description": "Get acquainted with the activities of our institutes, ongoing research, and educational offerings."
+    "description": "Get acquainted with the activities of our institutes, ongoing research, and educational offerings.",
+
+    "iconAlt": "Icon of a person",
+
+    "carouselAlts": {
+      "1": "Special-purpose machines",
+      "2": "Student learning in the laboratory",
+      "3": "Photo of a group of students with a lecturer",
+      "4": "Photo of a student working",
+      "5": "Lecturer and students in a computer lab"
+    },
+
+    "mainTitle": "Main Goal",
+    "simpleText-1": "The main goal of the Institute is to conduct the educational process in the field of Mechatronics. The activities of the Mechatronics Institute cover issues related to the design of mechatronic systems, programming of logic controllers, building computer and industrial networks, operation systems of automation systems, control systems, and decision support systems, as well as acquiring skills in the construction, technology, and operation of mechatronically controlled machines and vehicles, the design of mechatronic technological processes for machining and assembly using CAD/CAM programs.",
+    "simpleText-2": "The institute employs academic staff who carry out the education process for students in the field of Mechatronics. In the academic year 2024/2025, the establishment of the Mechatronics Student Scientific Club is planned, which will be supervised by the Institute staff. Scientific Council of the Institute:",
+
+    "imageAlt": "Person wearing gloves working on an engine",
+    "jobTitle-1": "PhD, Eng.",
+    "jobTitle-2": "MSc, Eng."
   },
   "KontaktPage": {
     "title": "Contact",
     "description": "Reach out to us via email, phone, or visit us in person. Check contact details.",
+
+    "mainTitle": "Contact Form",
+    "simpleText": "We are here to help. Do you have questions about our offer or recruitment? Get in touch with us, and we will gladly answer all your concerns!",
+
+    "phone": "Phone",
+
+    "iconAlt-1": "Envelope icon for mail",
+    "iconAlt-2": "Phone icon",
+    "mainTitle-2": "Where to Find Us?",
+    "simpleText-2": "You can find us at Czarnieckiego 5/7 and Hoffmanna 1-7, where our modern educational infrastructure is located.",
 
     "labelMessage": "Message",
     "labelTitle": "Title",
     "labelName": "Name and Surname",
     "labelEmail": "Email",
     "send": "Send",
+    "sendIconAlt": "Send letter icon",
     "emailSent": "The email has been sent successfully!",
     "emailError": "An error occurred while sending the email. Please try again later.",
 
@@ -342,19 +739,104 @@
   },
   "WspolpracaPage": {
     "title": "Collaboration",
-    "description": "Discover collaboration opportunities with our university in the fields of scientific projects, teaching, and professional development."
+    "description": "Discover collaboration opportunities with our university in the fields of scientific projects, teaching, and professional development.",
+
+    "mainTitle-1": "Industry Collaboration Initiative",
+    "simpleText-1": "The activity of the Public Vocational University in Grudziądz was initiated by the Military Armament Works S.A. in Grudziądz, which provides a solid foundation for close cooperation between the university and the industry. The region where the university is located is home to many companies seeking qualified personnel in mechatronics, robotics, automation, logistics, management, medical equipment servicing, as well as national security and defense. The cooperation between the university and the business environment is a key element of the educational process, and efforts are made to integrate the local industry with the study programs offered.",
+
+    "mainTitle-2": "Cooperation Agreements with Companies",
+    "simpleText-2": "The Public Vocational University in Grudziądz has signed cooperation agreements with several local companies that employ mechatronics engineers. Currently, the university has cooperation declarations with eight companies:",
+
+    "mainTitle-3": "Industry Support in Engineering Education",
+    "simpleText-3": "Addressing the economic needs in engineering education is directly supported by the industry. The university administration holds talks and signs agreements with additional companies that will create future job opportunities for graduates of the Public Vocational University in Grudziądz.",
+    "simpleText-4": "Cooperation with external stakeholders is based on educating highly qualified graduates who will be prepared for labor market demands. Currently, the university offers practical education in Mechatronics, with the curriculum designed to meet the needs of the defense industry, local government, and entrepreneurs in the Pomeranian Special Economic Zone.",
+
+    "iconAlt-1": "Electric panel icon",
+    "iconAlt-2": "Ship icon",
+    "iconAlt-3": "Chemical mixture icon",
+    "iconAlt-4": "Military jet icon",
+    "iconAlt-5": "Military vehicle icon",
+    "iconAlt-6": "Production line icon",
+    "iconAlt-7": "Gear wheel icon",
+    "iconAlt-8": "Processor icon",
+
+    "imageAlt-1": "Two people sitting on a couch, looking at a laptop"
   },
 
   "PolitykaPrywatnosciPage": {
     "title": "Privacy Policy",
-    "description": "Learn how we protect your personal data and what your privacy rights are on our website."
+    "description": "Learn how we protect your personal data and what your privacy rights are on our website.",
+
+    "iconAlt": "Book icon",
+
+    "itemTitle-1": "1. Information about the Personal Data Administrator",
+    "itemTitle-2": "2. Personal Data",
+    "itemTitle-3": "3. Purpose and Scope of Personal Data Processing",
+    "itemTitle-4": "4. Data Analysis and Statistics",
+    "itemTitle-5": "5. Website Maintenance",
+    "itemTitle-6": "6. Users' Rights",
+    "itemTitle-7": "7. Changes to Privacy Policy",
+
+    "text-1": "This Privacy Policy defines the principles of processing and protecting personal data provided by users in connection with the use of the website.",
+    "text-2": "The personal data administrator is:",
+    "text-3": "Public Vocational University in Grudziądz",
+    "text-4": "The collection and processing of users' personal data is conducted in accordance with applicable law, particularly the Regulation (EU) 2016/679 of the European Parliament and the Council of April 27, 2016, on the protection of individuals with regard to the processing of personal data and on the free movement of such data (GDPR).",
+    "text-5": "We do not collect any personal data provided on the website:",
+    "text-6": "without the user's explicit consent.",
+    "text-7": "Our website is equipped with an SSL certificate, which means that all transmitted information is encrypted and protected from unauthorized access.",
+    "text-8": "If the user voluntarily provides us with their personal data (e.g., in a contact form or for newsletter subscription), we will process this data solely for the specified purpose, which will be communicated at the time of collection. The personal data provided will not be shared with third parties or used for marketing purposes without the user's explicit consent.",
+    "text-9": "Our website may use traffic analysis tools, such as Google Analytics, to collect anonymous information about website traffic. This data is used exclusively for statistical purposes and to improve the quality of our service. It does not allow the identification of specific users.",
+    "text-10": "The website",
+    "text-11": "is hosted using Vercel Hosting, ensuring a high level of data security and protection. Vercel offers advanced monitoring and version control systems that facilitate tracking changes and preventing potential security incidents. Additionally, the website's source code is public and available at:",
+    "text-12": "Public access to the code promotes transparency and supports continuous improvement of the website.",
+    "text-13": "In accordance with the GDPR, users have the right to access their personal data, correct it, delete it, or restrict its processing, as well as the right to data portability and to object to the processing of personal data. Any questions or requests regarding personal data should be sent to the following email address:",
+    "text-14": "We reserve the right to change the Privacy Policy in order to adapt it to changing needs and legal regulations. The current version of the Privacy Policy will always be available on the website:"
   },
   "DeklaracjaDostepnosciPage": {
     "title": "Accessibility Declaration",
-    "description": "Learn about the accessibility features of our website and the steps we take to ensure it is usable for all visitors."
+    "description": "Learn about the accessibility features of our website and the steps we take to ensure it is usable for all visitors.",
+
+    "simpleText": "Publiczna Uczelnia Zawodowa w Grudziądzu is committed to ensuring the accessibility of its website in accordance with the provisions of the Act of April 4, 2019, on the Digital Accessibility of Websites and Mobile Applications of Public Sector Bodies.",
+
+    "text-1": "The accessibility statement applies to the website:",
+    "mainTitle-1": "Dates and Status",
+    "mainTitle-2": "Inaccessible Content",
+    "mainTitle-3": "Exemptions",
+    "mainTitle-4": "Preparation of the Accessibility Statement",
+
+    "list-1": "<ul><li>Website publication date: 2015</li><li>Date of last significant update: 2024-11-17</li><li>Status regarding compliance with the Act: The website is partially compliant with the Act on the Digital Accessibility of Websites and Mobile Applications of Public Sector Bodies due to non-compliance or exemptions listed below.</li></ul>",
+    "list-2": "<ul><li>Some images do not have alternative texts</li><li>Some PDF documents are not digitally accessible</li><li>Some forms lack appropriate labels and field descriptions</li></ul>",
+    "list-3": "<ul><li>Maps are exempt from the accessibility requirement</li><li>Archival documents published before September 23, 2018, are not digitally accessible</li><li>Multimedia published before September 23, 2020, do not have subtitles for deaf and hard of hearing individuals</li></ul>",
+    "list-4": "<ul><li>Date of the statement creation: 2024-11-12</li><li>Date of the last review of the statement: 2024-11-12</li><li>The statement was created based on a self-assessment conducted by the public sector entity</li></ul>",
+
+    "mainTitle-5": "Feedback and Contact Information",
+    "simpleText-2": "In case of problems with website accessibility, please contact the IT Department of PUZG in Grudziądzu:",
+    "phone": "phone:",
+
+    "simpleText-3": "You can also submit requests for inaccessible information or file complaints about the lack of accessibility via the same contact.",
+    "mainTitle-6": "Request and Complaint Procedure",
+    "simpleText-4": "Anyone has the right to request the digital accessibility of a website, mobile application, or any of its elements. One can also request the provision of information in an alternative format, such as reading a digitally inaccessible document, describing a video without audio description, etc.",
+    "simpleText-5": "The request should contain:",
+
+    "list-5": "<ul><li>Details of the person submitting the request</li><li>Indication of the page or page element concerned</li><li>Contact method</li><li>Preferred method of providing information, if applicable</li></ul>",
+
+    "simpleText-6": "The university will fulfill the request promptly and no later than within 7 days. If it is not possible to meet this deadline, we will immediately inform when the request can be fulfilled, and this deadline will not exceed 2 months. If accessibility cannot be ensured, we will propose an alternative method of access to the information.",
+    "simpleText-7": "In case of refusal to provide digital accessibility as requested, a complaint can be filed. After exhausting the complaint procedure, a request can also be submitted to the Commissioner for Human Rights.",
+
+    "mainTitle-7": "Architectural Accessibility",
+    "simpleText-8": "The main headquarters of PUZ in Grudziądzu is located at ul.",
+
+    "list-6": "<ul><li>The building is equipped with a wheelchair ramp at the main entrance</li><li>There is an information point on the ground floor</li><li>An elevator is available serving all floors</li><li>There are accessible toilets for people with disabilities</li><li>Designated parking spaces for people with disabilities are available in front of the building</li><li>The building and all its rooms are accessible with an assistance dog or guide dog</li></ul>",
+
+    "mainTitle-8": "Communication and Information Accessibility",
+    "list-7": "<ul><li>The university offers an online Polish Sign Language (PJM) interpreter service</li><li>The interpreter service is available during the university's working hours</li><li>The building has induction loops in selected lecture halls</li><li>It is possible to handle matters by phone, email, or in-person contact with an administrative employee</li></ul>"
   },
   "BipPage": {
     "title": "Public Information Bulletin",
     "description": "Browse public information about our university's activities, including documents, announcements, and other data in accordance with the Public Information Access Act."
+  },
+
+  "Helper": {
+    "circleIconAlt": "Circle Icon"
   }
 }

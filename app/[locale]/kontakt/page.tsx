@@ -33,12 +33,8 @@ export default function KontaktPage({ params: { locale } }: Props) {
   return (
     <MainWrapper topTitle={t("title")}>
       <Card customWrapperWidth="w-full" border="l">
-        <MainTitle>Formularz kontaktowy</MainTitle>
-        <SimpleText>
-          Jesteśmy tutaj, aby Ci pomóc. Masz pytania dotyczące naszej oferty lub
-          rekrutacji? Skontaktuj się z nami, a z przyjemnością udzielimy
-          odpowiedzi na wszystkie Twoje wątpliwości!
-        </SimpleText>
+        <MainTitle>{t("mainTitle")}</MainTitle>
+        <SimpleText>{t("simpleText")}</SimpleText>
         <Contact />
       </Card>
 
@@ -47,7 +43,7 @@ export default function KontaktPage({ params: { locale } }: Props) {
           simpleList={[
             {
               icon: "/images/icons/Mail.svg",
-              iconAlt: "a",
+              iconAlt: t("iconAlt-1"),
               richText: (
                 <span>
                   <b>Email:</b>{" "}
@@ -57,20 +53,20 @@ export default function KontaktPage({ params: { locale } }: Props) {
             },
             {
               icon: "/images/icons/Calling.svg",
-              iconAlt: "a",
+              iconAlt: t("iconAlt-2"),
               richText: (
                 <span>
-                  <b>Telefon 1:</b>{" "}
+                  <b>{t("phone")} 1:</b>{" "}
                   <a href="tel:+48 576-060-123">+48 576-060-123</a>
                 </span>
               ),
             },
             {
               icon: "/images/icons/Calling.svg",
-              iconAlt: "a",
+              iconAlt: t("iconAlt-2"),
               richText: (
                 <span>
-                  <b>Telefon 2:</b>{" "}
+                  <b>{t("phone")} 2:</b>{" "}
                   <a href="tel:+48 576-060-124">+48 576-060-124</a>
                 </span>
               ),
@@ -80,11 +76,8 @@ export default function KontaktPage({ params: { locale } }: Props) {
       </Card>
 
       <Card border="tr">
-        <MainTitle>Gdzie nas znajdziesz?</MainTitle>
-        <SimpleText>
-          Znajdziesz nas na ulicy Czarnieckiego 5/7 oraz Hoffmanna 1-7, gdzie
-          mieści się nasza nowoczesna infrastruktura edukacyjna.
-        </SimpleText>
+        <MainTitle>{t("mainTitle-2")}</MainTitle>
+        <SimpleText>{t("simpleText-2")}</SimpleText>
         <LocalizationIframe />
       </Card>
     </MainWrapper>

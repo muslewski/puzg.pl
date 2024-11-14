@@ -36,59 +36,50 @@ export default function UchwalyUKWPage({ params: { locale } }: Props) {
   return (
     <MainWrapper topTitle={t("title")}>
       <Card border="bl">
-        <MainTitle>Uchwały i zarządzenia wyborcze</MainTitle>
-
-        <SimpleText>
-          Przedstawiamy listę zarządzeń związanych z procesem wyborczym na rok
-          2024, które regulują kluczowe aspekty wyborów w naszej uczelni.
-        </SimpleText>
+        <MainTitle>{t("mainTitle")}</MainTitle>
+        <SimpleText>{t("simpleText")}</SimpleText>
 
         <CardHorizontal>
           <FancyButton
             small
-            text="Zarządzenie 1/UKW/2024"
+            text={t("button-1")}
             outsideLink="/files/wybory/uchwaly-ukw/UKW.1.2024.pdf"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Zarządzenie 2/UKW/2024"
+            text={t("button-2")}
             outsideLink="/files/wybory/uchwaly-ukw/UKW.2.2024.pdf"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Zarządzenie 3/UKW/2024"
+            text={t("button-3")}
             outsideLink="/files/wybory/uchwaly-ukw/UKW.3.2024.pdf"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Zarządzenie 4/UKW/2024"
+            text={t("button-4")}
             outsideLink="/files/wybory/uchwaly-ukw/UKW.4.2024.pdf"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Zarządzenie 5/UKW/2024"
+            text={t("button-5")}
             outsideLink="/files/wybory/uchwaly-ukw/UKW.5.2024.pdf"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
         </CardHorizontal>
 
         <CardImage
           image="/images/uchwaly-ukw/documents.jpg"
-          imageAlt="a"
+          imageAlt={t("imageAlt")}
           imageOrientation="full"
         />
       </Card>

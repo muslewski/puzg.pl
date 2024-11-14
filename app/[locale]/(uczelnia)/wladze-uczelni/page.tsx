@@ -37,7 +37,7 @@ export default function WladzeUczelniPage({ params: { locale } }: Props) {
           <CardImage
             key={0}
             image="/images/wladze-uczelni/rektor.jpg"
-            imageAlt="Zdjęcie Rektora"
+            imageAlt={t("imageAlt-1")}
             imageOrientation="portrait"
             customImageBorder="border-8 border-brandPrimaryBlue border-double"
           />,
@@ -45,7 +45,10 @@ export default function WladzeUczelniPage({ params: { locale } }: Props) {
         customWrapperWidth="lg:w-3/4"
       >
         <PersonalData
-          personalData={{ title: "Rektor", fullData: "dr inż. Michał Sójka" }}
+          personalData={{
+            title: t("dataTitle-1"),
+            fullData: t("dataDesc-1"),
+          }}
         />
         <ContactData
           contactData={{
@@ -61,7 +64,7 @@ export default function WladzeUczelniPage({ params: { locale } }: Props) {
           <CardImage
             key={0}
             image="/images/wladze-uczelni/kwestor.jpg"
-            imageAlt="Zdjęcie Kwestora"
+            imageAlt={t("imageAlt-2")}
             imageOrientation="portrait"
             customImageBorder="border-8 border-brandPrimaryBlue border-double"
           />,
@@ -70,8 +73,8 @@ export default function WladzeUczelniPage({ params: { locale } }: Props) {
       >
         <PersonalData
           personalData={{
-            title: "Kwestor",
-            fullData: "mgr Małgorzata Kosińska",
+            title: t("dataTitle-2"),
+            fullData: t("dataDesc-2"),
           }}
         />
         <ContactData
@@ -88,7 +91,7 @@ export default function WladzeUczelniPage({ params: { locale } }: Props) {
           <CardImage
             key={0}
             image="/images/wladze-uczelni/kanclerz.jpg"
-            imageAlt="Zdjęcie Kanclerza"
+            imageAlt={t("imageAlt-3")}
             imageOrientation="portrait"
             customImageBorder="border-8 border-brandPrimaryBlue border-double"
           />,
@@ -96,7 +99,7 @@ export default function WladzeUczelniPage({ params: { locale } }: Props) {
         customWrapperWidth="lg:w-3/4"
       >
         <PersonalData
-          personalData={{ title: "Kanclerz", fullData: "mgr Artur Mach" }}
+          personalData={{ title: t("dataTitle-3"), fullData: t("dataDesc-3") }}
         />
         <ContactData
           contactData={{ mail: "artur.mach@puzg.pl", phone: "+48 123 456 789" }}

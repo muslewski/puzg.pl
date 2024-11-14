@@ -38,21 +38,17 @@ export default function PlanZajecPage({ params: { locale } }: Props) {
           <CardImage
             key={0}
             image="/images/plan-zajec/plan.jpg"
-            imageAlt="a"
+            imageAlt={t("cardImageAlt")}
             imageOrientation="landscape"
           />,
         ]}
       >
-        <MainTitle>Plan semestralny - semestr I Mechatronika</MainTitle>
-        <SimpleText>
-          Poniżej znajdziesz plan zajęć na I semestr Mechatroniki. Sprawdź, co
-          czeka Cię w tym roku!
-        </SimpleText>
+        <MainTitle>{t("mainTitle")}</MainTitle>
+        <SimpleText>{t("simpleText")}</SimpleText>
         <FancyButton
-          text="Pobierz"
+          text={t("buttonText")}
           outsideLink="/files/plan/plan_tygodniowy_sem.-zimowy.xlsx"
-          icon="/images/icons/circle.svg"
-          iconAlt="Circle"
+          circle
         />
       </Card>
     </MainWrapper>

@@ -128,48 +128,33 @@ export default function KierunkiStudiowPage({ params: { locale } }: Props) {
           simpleList={[
             {
               icon: "/images/kierunki-studiow/factory2Icon.png",
-              iconAlt: "a",
-              richText: <p>przemysł elektromaszynowy,</p>,
+              iconAlt: t("listItemAlt-2-1"),
+              richText: <p>{t("text-2-1")}</p>,
             },
             {
               icon: "/images/kierunki-studiow/motorcycleIcon.png",
-              iconAlt: "a",
-              richText: <p>przemysł motoryzacyjny i lotniczy,</p>,
+              iconAlt: t("listItemAlt-2-2"),
+              richText: <p>{t("text-2-2")}</p>,
             },
             {
               icon: "/images/kierunki-studiow/factoryIcon.png",
-              iconAlt: "a",
-              richText: <p>przedsiębiorstwa produkcyjne,</p>,
+              iconAlt: t("listItemAlt-2-3"),
+              richText: <p>{t("text-2-3")}</p>,
             },
             {
               icon: "/images/kierunki-studiow/robotIcon.png",
-              iconAlt: "a",
-              richText: (
-                <p>
-                  przedsiębiorstwa zajmujące się eksploatacją nowoczesnych,
-                  zautomatyzowanych i zrobotyzowanych procesów przemysłowych,
-                </p>
-              ),
+              iconAlt: t("listItemAlt-2-4"),
+              richText: <p>{t("text-2-4")}</p>,
             },
             {
               icon: "/images/kierunki-studiow/analyticIcon.png",
-              iconAlt: "a",
-              richText: (
-                <p>
-                  przedsiębiorstwa zajmujące się sprzedażą oraz diagnozowaniem
-                  układów mechatronicznych.
-                </p>
-              ),
+              iconAlt: t("listItemAlt-2-5"),
+              richText: <p>{t("text-2-5")}</p>,
             },
           ]}
         />
 
-        <SimpleText>
-          Wiedza i umiejętności zdobyte na studiach pozwolą na podjęcie pracy
-          przy budowie nowych, ale także modernizacji istniejących już maszyn i
-          układów mechatronicznych w związku z przechodzeniem na sterowanie
-          cyfrowe i implementacje nowoczesnych interfejsów.
-        </SimpleText>
+        <SimpleText>{t("simpleText-5")}</SimpleText>
       </Card>
 
       <Card
@@ -180,26 +165,12 @@ export default function KierunkiStudiowPage({ params: { locale } }: Props) {
             key={0}
             image="/images/kierunki-studiow/blueInformatic.jpg"
             imageOrientation="square"
-            imageAlt="a"
+            imageAlt={t("cardImageAlt")}
           />,
         ]}
       >
-        <MainTitle>Dlaczego mechatronika w Grudziądzu?</MainTitle>
-        <SimpleText>
-          Na kierunku Mechatronika kształcenie będzie realizowane według
-          nowoczesnych standardów edukacyjnych przy udziale doświadczonych
-          fachowców (teoretyków i praktyków) w celu kształtowania nowoczesnego
-          człowieka otwartego na nowe doświadczenia techniczne, mobilnego na
-          rynku pracy, kreatywnego i skutecznego w realizacji aspiracji
-          intelektualnych i zawodowych. Program studiów dużą wagę przywiązuje do
-          opinii i uwag przedstawicieli pracodawców z regionu (interesariuszy
-          zewnętrznych), którzy również zobowiązują się do pomocy w realizacji
-          programu studiów chociażby poprzez ofertę realizacji laboratoriów i
-          praktyk w ich instytucjach. Kierunek Mechatronika realizowany na
-          Publicznej Uczelni Zawodowej w Grudziądzu przygotowuje także młodego
-          człowieka do aktywnego i świadomego uczestnictwa w społeczeństwie
-          obywatelskim.
-        </SimpleText>
+        <MainTitle>{t("mainTitle-4")}</MainTitle>
+        <SimpleText>{t("simpleText-6")}</SimpleText>
       </Card>
     </MainWrapper>
   );

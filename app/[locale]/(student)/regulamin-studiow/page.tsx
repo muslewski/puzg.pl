@@ -34,15 +34,11 @@ export default function RegulaminStudiowPage({ params: { locale } }: Props) {
   return (
     <MainWrapper topTitle={t("title")}>
       <Card grayCard grayCardPosition="right">
-        <SimpleText>
-          Regulamin studiów na Publicznej Uczelni Zawodowej w Grudziądzu
-          obowiązujący w roku akademickim 2024/2025.
-        </SimpleText>
+        <SimpleText>{t("simpleText")}</SimpleText>
         <FancyButton
-          text="Kliknij tutaj aby wyświetlić"
+          text={t("button-1")}
           outsideLink="/files/regulamin-studiow-PUZG.pdf"
-          icon="/images/icons/circle.svg"
-          iconAlt="Circle"
+          circle
           customGradient="bg-gradient-to-br from-brandBrightBlue to-brandNavyBlue"
         />
 
@@ -50,7 +46,7 @@ export default function RegulaminStudiowPage({ params: { locale } }: Props) {
 
         <CardImage
           image="/images/regulamin-studiow/regulation.png"
-          imageAlt="a"
+          imageAlt={t("imageAlt-1")}
           imageOrientation="full"
         />
       </Card>

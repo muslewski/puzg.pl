@@ -56,7 +56,7 @@ export default function DostarczDokumentyPage({ params: { locale } }: Props) {
       </Card>
 
       <Card border="tr">
-        <MainTitle>Komplet dokumentów powinien zawierać:</MainTitle>
+        <MainTitle>{t("mainTitle-2")}</MainTitle>
 
         <RichText gap="1.75rem">{(tags) => t.rich("richText", tags)}</RichText>
 

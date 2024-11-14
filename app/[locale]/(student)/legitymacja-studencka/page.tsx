@@ -35,35 +35,28 @@ export default function PlanZajecPage({ params: { locale } }: Props) {
   return (
     <MainWrapper topTitle={t("title")}>
       <Card border="bl">
-        <MainTitle>załączniki do pobrania:</MainTitle>
-        <SimpleText>
-          W tej sekcji znajdziesz wszystkie niezbędne dokumenty związane z
-          legitymacją studencką. Prosimy o pobranie i zapoznanie się z
-          zawartością przed złożeniem wniosku o legitymację studencką.
-        </SimpleText>
+        <MainTitle>{t("mainTitle")}</MainTitle>
+        <SimpleText>{t("simpleText")}</SimpleText>
         <CardHorizontal>
           <FancyButton
             small
             text="Z.52.2024.2025_zał.1"
             outsideLink="/files/legitymacja-studencka/Z.52.2024.2025_zał.1.docx"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
             text="Z.52.2024.2025_zał.2"
             outsideLink="/files/legitymacja-studencka/Z.52.2024.2025_zał.2.docx"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
             text="Z.52.2024.2025"
             outsideLink="/files/legitymacja-studencka/Z.52.2024.2025.pdf"
-            icon="/images/icons/circle.svg"
-            iconAlt="Circle"
+            circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
         </CardHorizontal>

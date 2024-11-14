@@ -91,7 +91,7 @@ export default function Contact() {
         text={t("send")}
         buttonType="submit"
         icon="/images/icons/Send.svg"
-        iconAlt="a"
+        iconAlt={t("sendIconAlt")}
         disabled={isSubmitting}
         style={{
           opacity: isSubmitting ? "0.8" : "1",

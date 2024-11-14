@@ -47,22 +47,19 @@ export default function ZasadyTworzeniaKierunkowStudiowPage({
       </Card>
 
       <Card border="tr">
-        <MainTitle>Załączniki do pobrania</MainTitle>
-        <SimpleText>
-          Znajdź wszystkie potrzebne dokumenty i załączniki związane z
-          tworzeniem i zarządzaniem kierunkami studiów.
-        </SimpleText>
+        <MainTitle>{t("mainTitle")}</MainTitle>
+        <SimpleText>{t("simpleText-2")}</SimpleText>
         <CardHorizontal>
           <FancyButton
             small
-            text="Wniosek o utworzenie studiów"
+            text={t("button-2")}
             outsideLink="/files/zasady/Wniosek-o-utworzenie-studiow.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Wykaz nauczycieli akademickich proponowanych do realizacji zajęć na kierunku studiów"
+            text={t("button-3")}
             customClass="max-w-2xl"
             outsideLink="/files/zasady/Wykaz-nauczycieli-akademickich-proponowanych-do-realizacji-zajec-na-kierunku-studiow.docx"
             circle
@@ -70,7 +67,7 @@ export default function ZasadyTworzeniaKierunkowStudiowPage({
           />
           <FancyButton
             small
-            text="Informacje o kompetencjach i doświadczeniu nauczycieli akademickich pozwalających na prawidłową realizację zajęć w ramach programu studiów"
+            text={t("button-4")}
             outsideLink="/files/zasady/Informacje-o-kompetencjach-i-doswiadczeniu-nauczycieli-akademickich-pozwalajacych-na-prawidlowa-realizacje-zajec-w-ramach-programu-studiow.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
@@ -78,56 +75,56 @@ export default function ZasadyTworzeniaKierunkowStudiowPage({
           />
           <FancyButton
             small
-            text="Deklaracja nauczycieli akademickich"
+            text={t("button-5")}
             outsideLink="/files/zasady/Deklaracja-nauczycieli-akademickich.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Deklaracja osoby prowadzącej zajęia ze studentami"
+            text={t("button-6")}
             outsideLink="/files/zasady/Deklaracja-osoby-prowadzacej-zajecia-ze-studentami.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Zakładane efekty uczenia się dla kierunku"
+            text={t("button-7")}
             outsideLink="/files/zasady/Zakladane-efekty-uczenia-sie-dla-kierunku.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Matryca efektów uczenia się dla kierunku"
+            text={t("button-8")}
             outsideLink="/files/zasady/Matryca-efektow-uczenia-sie-dla-kierunku.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Karta przedmiotu / sylabus"
+            text={t("button-9")}
             outsideLink="/files/zasady/Karta-przedmiotu-sylabus.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Wniosek dotyczący modyfikacji kierunku"
+            text={t("button-10")}
             outsideLink="/files/zasady/Wniosek-dotyczacy-modyfikacji-kierunku.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Wniosek dotyczący utworzenia specjalności"
+            text={t("button-11")}
             outsideLink="/files/zasady/Wniosek-dotyczacy-utworzenia-specjalnosci.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
-            text="Wniosek o likwidację kierunku / specjalności"
+            text={t("button-12")}
             outsideLink="/files/zasady/Wniosek-o-likwidacje-kierunku-specjalnosci.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
