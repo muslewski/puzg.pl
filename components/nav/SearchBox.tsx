@@ -2,7 +2,7 @@
 
 import { SearchItem, searchItems } from "@/data/searchItems";
 import { useRouter } from "@/i18n/routing";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, easeIn, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useCallback, useEffect, useState } from "react";
 import { CiSearch } from "react-icons/ci";
@@ -58,6 +58,30 @@ export default function SearchBox({
     return () => document.removeEventListener("click", handleClickOutside);
   }, []);
 
+  const containerVariants = {
+    hidden: { opacity: 0, y: -10 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.1,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: -5 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
     <div className="relative w-full max-w-2xl search-container z-50">
       <div className="h-12 w-fit border-2 rounded-2xl border-brandDark/25 overflow-hidden relative flex items-center font-outfit">
@@ -81,18 +105,16 @@ export default function SearchBox({
       <AnimatePresence>
         {isSearching && results.length > 0 && (
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
             className="absolute w-full mt-2 bg-white rounded-xl shadow-lg border border-gray-200 max-h-[60vh] overflow-y-auto z-50"
           >
             {results.map((item, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: -5 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -5 }}
-                transition={{ duration: 0.2 }}
+                variants={itemVariants}
                 className="p-4 hover:bg-gray-50 cursor-pointer border-b last:border-b-0 transition-colors"
                 onClick={() => {
                   router.push(item.href as any);
