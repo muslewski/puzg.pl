@@ -19,11 +19,13 @@ import {
   FaSearch,
   FaFileDownload,
   FaCalendarAlt,
+  FaUser,
+  FaEnvelope,
+  FaPhone,
 } from "react-icons/fa";
 import { IoMdDocument } from "react-icons/io";
 import { BsFileEarmarkText, BsBuilding, BsInfoCircle } from "react-icons/bs";
 import { MdOutlineAccessibility } from "react-icons/md";
-import CardHorizontal from "@/components/card/CardHorizontal";
 
 type Props = {
   params: { locale: string };
@@ -231,6 +233,7 @@ export default function PolitykaPrywatnosciPage({ params: { locale } }: Props) {
             ))}
           </div>
         </Card>
+
         <Card grayCard grayCardPosition="right">
           <div className="flex items-center gap-4 mb-6">
             <MdOutlineAccessibility className="w-8 h-8 text-brandPrimaryBlue" />
@@ -256,6 +259,44 @@ export default function PolitykaPrywatnosciPage({ params: { locale } }: Props) {
             >
               Zgłoś problem z dostępnością →
             </a>
+          </div>
+        </Card>
+
+        <Card border="tl" customWrapperWidth="w-full">
+          <div className="flex items-center gap-4 mb-6">
+            <FaUser className="w-6 h-6 text-brandPrimaryBlue" />
+            <h3>Redaktor Biuletynu Informacji Publicznej</h3>
+          </div>
+          <div className="space-y-6">
+            <div className="flex flex-col space-y-4 p-6 bg-brandWashedBlue/10 rounded-lg">
+              <div className="flex items-center gap-3">
+                <FaUser className="w-5 h-5 text-brandPrimaryBlue" />
+                <span className="font-medium">mgr Jan Kowalski</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <FaEnvelope className="w-5 h-5 text-brandPrimaryBlue" />
+                <a
+                  href="mailto:bip@uczelnia.edu.pl"
+                  className="text-brandPrimaryBlue hover:text-brandBrightBlue"
+                >
+                  bip@puzg.pl
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <FaPhone className="w-5 h-5 text-brandPrimaryBlue" />
+                <a
+                  href="tel:+48123456789"
+                  className="text-brandPrimaryBlue hover:text-brandBrightBlue"
+                >
+                  +48 123 456 789
+                </a>
+              </div>
+            </div>
+            <SimpleText>
+              Redaktor BIP odpowiada za prowadzenie i aktualizację Biuletynu
+              Informacji Publicznej zgodnie z wymogami ustawy o dostępie do
+              informacji publicznej.
+            </SimpleText>
           </div>
         </Card>
       </CardVertical>
