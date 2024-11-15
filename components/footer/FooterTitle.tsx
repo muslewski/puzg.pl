@@ -8,7 +8,7 @@ export default function FooterTitle({
   iconAlt: string;
 }) {
   return (
-    <div className="text-xl sm:text-2xl font-semibold flex items-center gap-6">
+    <div className="text-xl sm:text-2xl font-semibold flex items-center gap-6 ">
       <div className="relative w-[48px] h-[50px] sm:w-[72px] sm:h-[74px] min-w-[48px] min-h-[50px]">
         <Image
           src="/images/Logo.svg"

@@ -54,14 +54,14 @@ export default function FooterContent({
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.1 }}
       variants={containerVariants}
       className="flex flex-col gap-10 gap-y-24"
     >
       <div className="flex flex-col lg:flex-row gap-x-10 gap-y-16 justify-between bg-gradient-to-tr from-gray-800/20 p-6 rounded-3xl backdrop-blur-sm">
         <motion.div
           variants={itemVariants}
-          className="bg-gray-800/30 p-6 rounded-lg backdrop-blur-sm"
+          className="bg-gray-800/30 p-6 lg:px-10 rounded-lg backdrop-blur-sm"
         >
           <motion.div
             className="flex items-center gap-2 mb-2"
@@ -89,14 +89,14 @@ export default function FooterContent({
             </svg>
             <span className="font-semibold">{localization}</span>
           </motion.div>
-          <p className="text-gray-300 text-lg">
+          <p className="text-gray-300 text-lg  pt-2">
             Czarnieckiego 5/7, <br /> 86-300 Grudziądz
           </p>
         </motion.div>
 
         <motion.div
           variants={itemVariants}
-          className="bg-gray-800/30 p-6 rounded-lg backdrop-blur-sm"
+          className="bg-gray-800/30 p-6 lg:px-10 rounded-lg backdrop-blur-sm"
         >
           <motion.div
             className="flex items-center gap-2 mb-2"
@@ -118,7 +118,7 @@ export default function FooterContent({
             </svg>
             <span className="font-semibold">Email:</span>
           </motion.div>
-          <ul className="text-gray-300 pt-2 space-y-2">
+          <ul className="text-gray-300 text-lg pt-2">
             <motion.li whileHover="hover" variants={hoverVariants}>
               rekrutacja@puzg.pl
             </motion.li>
@@ -127,7 +127,7 @@ export default function FooterContent({
 
         <motion.div
           variants={itemVariants}
-          className="bg-gray-800/30 p-6 rounded-lg backdrop-blur-sm"
+          className="bg-gray-800/30 p-6 lg:px-10 rounded-lg backdrop-blur-sm"
         >
           <motion.div
             className="flex items-center gap-2 mb-2"
@@ -149,7 +149,7 @@ export default function FooterContent({
             </svg>
             <span className="font-semibold">{contact}</span>
           </motion.div>
-          <ul className="text-gray-300 pt-2 space-y-2">
+          <ul className="text-gray-300 text-lg pt-2">
             <motion.li whileHover="hover" variants={hoverVariants}>
               576-060-123
             </motion.li>
@@ -160,11 +160,11 @@ export default function FooterContent({
         </motion.div>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-x-10 gap-y-16 justify-between">
-        <div className="flex flex-col gap-5">
+      <div className="flex flex-col lg:flex-row gap-32 2xl:gap-x-64 gap-y-16 justify-start">
+        <div className="flex flex-col gap-5 bg-gradient-to-br from-gray-800/20 p-6 rounded-3xl backdrop-blur-sm">
           <Link
             href="/biuletyn-informacji-publicznej"
-            className="flex items-center gap-3 transition-transform hover:scale-[102%] p-3 bg-gray-800/30 rounded-lg"
+            className="flex items-center gap-3 transition-transform hover:scale-[102%] px-6 py-3 bg-gray-800/30 rounded-lg"
           >
             {bip}
             <div className="relative w-[48px] h-[20px]">
@@ -178,13 +178,13 @@ export default function FooterContent({
             </div>
           </Link>
           <Link
-            className="transition-transform hover:scale-[102%] p-3 bg-gray-800/30 rounded-lg"
+            className="transition-transform hover:scale-[102%] px-6 py-3 bg-gray-800/30 rounded-lg"
             href="/deklaracja-dostepnosci"
           >
             {accessibilityDeclaration}
           </Link>
           <Link
-            className="transition-transform hover:scale-[102%] p-3 bg-gray-800/30 rounded-lg"
+            className="transition-transform hover:scale-[102%] px-6 py-3 bg-gray-800/30 rounded-lg"
             href="/polityka-prywatnosci"
           >
             {privacyPolicy}
