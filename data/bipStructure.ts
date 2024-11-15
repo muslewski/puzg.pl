@@ -1,6 +1,10 @@
+import { Link } from "@/i18n/routing";
+import { ComponentProps } from "react";
+
 export interface MenuItem {
   title: string;
-  href?: string;
+  // href?: ComponentProps<typeof Link>["href"];
+  href?: any;
   items?: MenuItem[];
 }
 

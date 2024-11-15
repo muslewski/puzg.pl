@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link"; //! Change to next-intl
+import { Link } from "@/i18n/routing"; //! Change to next-intl
 import { MenuItem as MenuItemType } from "@/data/bipStructure";
 import clsx from "clsx";
 import { usePathname } from "@/i18n/routing";
