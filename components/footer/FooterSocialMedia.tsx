@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function FooterSocialMedia({ findUs }: { findUs: string }) {
   return (
     <div className="flex flex-col gap-6">
-      {findUs}
+      <span className="font-semibold">{findUs}</span>
       <div className="flex flex-wrap gap-8 text-white">
         <a
           href=""
