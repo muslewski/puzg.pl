@@ -22,6 +22,7 @@ export default function FancyButton({
   disabled,
   style,
   circle,
+  stopAnimation,
 }: {
   text: string;
   link?: ComponentProps<typeof Link>["href"];
@@ -37,6 +38,7 @@ export default function FancyButton({
   disabled?: boolean;
   style?: React.CSSProperties;
   circle?: boolean;
+  stopAnimation?: boolean;
 }) {
   const t = useTranslations("Helper");
 
@@ -64,10 +66,12 @@ export default function FancyButton({
   function ButtonContent() {
     return (
       <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.8 }}
-        variants={animationVariants}
+        {...(!stopAnimation && {
+          initial: "hidden",
+          whileInView: "visible",
+          viewport: { once: true, amount: 0.8 },
+          variants: animationVariants,
+        })}
         className="w-fit"
       >
         <div

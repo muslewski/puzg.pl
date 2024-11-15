@@ -93,6 +93,7 @@ export default function Contact() {
         icon="/images/icons/Send.svg"
         iconAlt={t("sendIconAlt")}
         disabled={isSubmitting}
+        stopAnimation
         style={{
           opacity: isSubmitting ? "0.8" : "1",
           transition: "opacity 0.3s ease",
