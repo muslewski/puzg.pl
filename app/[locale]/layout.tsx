@@ -9,6 +9,7 @@ import { routing } from "@/i18n/routing";
 import Navigation from "@/components/nav/Navigation";
 import { notFound } from "next/navigation";
 import Footer from "@/components/footer/Footer";
+import { ToastContainer } from "react-toastify";
 
 type Props = {
   children: React.ReactNode;
@@ -71,6 +72,7 @@ export default async function LocaleLayout({
         className={`${montserrat.variable} ${outfit.variable} ${rubik_vinyl.variable} ${galindo.variable}`}
       >
         <NextIntlClientProvider messages={messages}>
+          <ToastContainer position="top-right" autoClose={3000} />
           <Navigation />
           {children}
           <Footer />

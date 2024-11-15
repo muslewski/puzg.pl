@@ -3,7 +3,10 @@
 import FancyButton from "@/components/FancyButton";
 import Input from "@/components/form/Input";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useCallback, useMemo, useState } from "react";
+
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   const t = useTranslations("KontaktPage");
@@ -17,11 +20,15 @@ export default function Contact() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({ ...formData, [e.target.id]: e.target.value });
-  };
+  const handleChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      setFormData((prevData) => ({
+        ...prevData,
+        [e.target.id]: e.target.value,
+      }));
+    },
+    []
+  );
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -35,18 +42,34 @@ export default function Contact() {
         body: JSON.stringify(formData),
       });
       if (response.ok) {
-        alert(t("emailSent"));
+        toast.success(t("emailSent"));
         setFormData({ message: "", title: "", name: "", email: "" });
       } else {
-        alert(t("emailError"));
+        toast.error(t("emailError"));
       }
     } catch (error) {
       console.error("Error:", error);
-      alert(t("emailError"));
+      toast.error(t("emailError"));
     } finally {
       setIsSubmitting(false); // Re-enable the button after the request completes
     }
   };
+
+  const fancyButtonProps = useMemo(
+    () => ({
+      text: t("send"),
+      buttonType:
+        "submit" as React.ButtonHTMLAttributes<HTMLButtonElement>["type"],
+      icon: "/images/icons/Send.svg",
+      iconAlt: t("sendIconAlt"),
+      disabled: isSubmitting,
+      style: {
+        opacity: isSubmitting ? "0.8" : "1",
+        transition: "opacity 0.3s ease",
+      },
+    }),
+    [t, isSubmitting]
+  );
 
   return (
     <form className="flex flex-col gap-12" onSubmit={handleSubmit}>
@@ -87,18 +110,8 @@ export default function Contact() {
         </div>
       </div>
 
-      <FancyButton
-        text={t("send")}
-        buttonType="submit"
-        icon="/images/icons/Send.svg"
-        iconAlt={t("sendIconAlt")}
-        disabled={isSubmitting}
-        stopAnimation
-        style={{
-          opacity: isSubmitting ? "0.8" : "1",
-          transition: "opacity 0.3s ease",
-        }}
-      />
+      {/* Render memoized FancyButton */}
+      <FancyButton {...fancyButtonProps} />
     </form>
   );
 }

@@ -4,10 +4,10 @@ import { Link } from "@/i18n/routing";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { ComponentProps } from "react";
+import { ComponentProps, memo } from "react";
 import { motion } from "framer-motion";
 
-export default function FancyButton({
+function FancyButton({
   text,
   link,
   outsideLink,
@@ -135,3 +135,6 @@ export default function FancyButton({
     </button>
   );
 }
+
+// Export FancyButton as a memoized component
+export default memo(FancyButton);
