@@ -14,7 +14,7 @@ export type grayCardPosition = "left" | "right";
 type CardProps = {
   border?: border;
   customGradient?: `from-${string}`;
-  customInsideBorder?: `border-${string}`;
+  customInsideBorder?: string;
   customWrapperWidth?: string;
   grayCard?: boolean;
   grayCardPosition?: grayCardPosition;

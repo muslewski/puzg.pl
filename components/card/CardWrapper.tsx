@@ -16,7 +16,7 @@ export default function CardWrapper({
   border?: border;
   children: React.ReactNode;
   customGradient?: `from-${string}`;
-  customInsideBorder?: `border-${string}`;
+  customInsideBorder?: string;
   customWrapperWidth?: string;
   grayCard?: boolean;
   grayCardPosition?: grayCardPosition;

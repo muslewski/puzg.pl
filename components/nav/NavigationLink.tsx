@@ -1,6 +1,6 @@
 "use client";
 
-import { Link, Pathnames, usePathname } from "@/i18n/routing";
+import { Link, usePathname } from "@/i18n/routing";
 import clsx from "clsx";
 import { ComponentProps, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";

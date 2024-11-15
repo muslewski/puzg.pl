@@ -56,4 +56,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [ ] Repair SearchBox Errors
 - [ ] Make the pages inside brackets subpages of subpages like /student/dziekanat
 - [ ] Replace my email to sekretariat in contact form route.tsx
-- [ ] Add Custom PopUp that the email was sent
+- [x] Add Custom PopUp that the email was sent

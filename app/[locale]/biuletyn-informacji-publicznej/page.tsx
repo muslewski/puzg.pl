@@ -1,7 +1,29 @@
+import Card from "@/components/card/Card";
+import MainTitle from "@/components/card/MainTitle";
+import SimpleText from "@/components/card/SimpleText";
 import MainWrapper from "@/components/MainWrapper";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+
+// import { FaUniversity, FaBookOpen, FaGavel } from "react-icons/fa";
+// import { IoMdDocument } from "react-icons/io";
+// import { BsFileEarmarkText, BsBuilding } from "react-icons/bs";
+// import { MdOutlineAccessibility } from "react-icons/md";
+import CardVertical from "@/components/card/CardVertical";
+
+import {
+  FaUniversity,
+  FaBookOpen,
+  FaGavel,
+  FaSearch,
+  FaFileDownload,
+  FaCalendarAlt,
+} from "react-icons/fa";
+import { IoMdDocument } from "react-icons/io";
+import { BsFileEarmarkText, BsBuilding, BsInfoCircle } from "react-icons/bs";
+import { MdOutlineAccessibility } from "react-icons/md";
+import CardHorizontal from "@/components/card/CardHorizontal";
 
 type Props = {
   params: { locale: string };
@@ -27,5 +49,216 @@ export default function PolitykaPrywatnosciPage({ params: { locale } }: Props) {
 
   const t = useTranslations("BipPage");
 
-  return <MainWrapper topTitle={t("title")}>nothing</MainWrapper>;
+  const quickAccessItems = [
+    {
+      icon: <FaUniversity className="w-8 h-8 text-brandPrimaryBlue" />,
+      title: "Struktura organizacyjna",
+      href: "/biuletyn-informacji-publicznej/uczelnia/struktura",
+      description:
+        "Poznaj schemat organizacyjny uczelni, wydziały oraz jednostki",
+    },
+    {
+      icon: <FaBookOpen className="w-8 h-8 text-brandPrimaryBlue" />,
+      title: "Studia i rekrutacja",
+      href: "/biuletyn-informacji-publicznej/studia",
+      description: "Informacje o rekrutacji, opłatach i regulaminach",
+    },
+    {
+      icon: <FaGavel className="w-8 h-8 text-brandPrimaryBlue" />,
+      title: "Prawo i dokumenty",
+      href: "/biuletyn-informacji-publicznej/prawo",
+      description: "Statut, uchwały, zarządzenia i regulaminy",
+    },
+  ];
+
+  const importantDocuments = [
+    {
+      icon: <BsFileEarmarkText className="w-6 h-6" />,
+      title: "Statut Uczelni",
+      href: "/biuletyn-informacji-publicznej/prawo/statut",
+      date: "Aktualizacja: 15.03.2024",
+    },
+    {
+      icon: <IoMdDocument className="w-6 h-6" />,
+      title: "Regulamin studiów",
+      href: "/biuletyn-informacji-publicznej/studia/regulamin",
+      date: "Aktualizacja: 01.04.2024",
+    },
+    {
+      icon: <BsBuilding className="w-6 h-6" />,
+      title: "Władze uczelni",
+      href: "/biuletyn-informacji-publicznej/uczelnia/wladze",
+      date: "Aktualizacja: 10.04.2024",
+    },
+  ];
+
+  const recentUpdates = [
+    {
+      title: "Nowe zarządzenie rektora",
+      date: "15.04.2024",
+      category: "Zarządzenia",
+      href: "#",
+    },
+    {
+      title: "Aktualizacja regulaminu rekrutacji",
+      date: "12.04.2024",
+      category: "Rekrutacja",
+      href: "#",
+    },
+    {
+      title: "Sprawozdanie finansowe za 2023",
+      date: "10.04.2024",
+      category: "Finanse",
+      href: "#",
+    },
+  ];
+
+  return (
+    <MainWrapper topTitle={t("title")}>
+      <CardVertical customGap="gap-24 lg:gap-32">
+        <Card border="bl">
+          <MainTitle>Witamy w Biuletynie Informacji Publicznej</MainTitle>
+
+          <SimpleText>
+            Biuletyn Informacji Publicznej (BIP) Publicznej Uczelni Zawodowej w
+            Grudziądzu to urzędowy publikator zapewniający dostęp do informacji
+            publicznej. Strona działa w oparciu o ustawę o dostępie do
+            informacji publicznej.
+          </SimpleText>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            {quickAccessItems.map((item, index) => (
+              <a
+                key={index}
+                href={item.href}
+                className="group p-6 rounded-lg border border-brandWashedBlue/20 
+                  hover:border-brandPrimaryBlue/30 transition-all 
+                  hover:shadow-lg hover:shadow-brandWashedBlue/10 bg-white"
+              >
+                <div className="flex flex-col items-center text-center gap-4">
+                  {item.icon}
+                  <h3
+                    className="text-lg font-semibold text-brandDark 
+                    group-hover:text-brandPrimaryBlue transition-colors"
+                  >
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-gray-600">{item.description}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+          <div className="mb-6">
+            <div className="relative">
+              <input
+                type="search"
+                placeholder="Szukaj w BIP..."
+                className="w-full p-4 pl-12 rounded-lg border border-brandWashedBlue/20 focus:border-brandPrimaryBlue/30 focus:ring-2 focus:ring-brandPrimaryBlue/20 transition-all"
+              />
+              <FaSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" />
+            </div>
+          </div>
+        </Card>
+        <Card
+          border="tr"
+          customInsideBorder="bg-gradient-to-br from-brandWashedBlue/10"
+          customWrapperWidth="w-full"
+        >
+          <div className="flex items-center justify-between mb-6 gap-12">
+            <h3>Najważniejsze dokumenty</h3>
+            <a
+              href="/dokumenty"
+              className="text-sm text-brandPrimaryBlue hover:text-brandBrightBlue"
+            >
+              Zobacz wszystkie →
+            </a>
+          </div>
+          <div className="space-y-4">
+            {importantDocuments.map((doc, index) => (
+              <a
+                key={index}
+                href={doc.href}
+                className="flex items-center justify-between p-4 rounded-md 
+                    hover:bg-brandWashedBlue/20 transition-all group"
+              >
+                <div className="flex items-center gap-3">
+                  <span className="text-brandPrimaryBlue">{doc.icon}</span>
+                  <span
+                    className="text-brandDark group-hover:text-brandPrimaryBlue 
+                      transition-colors"
+                  >
+                    {doc.title}
+                  </span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <span className="text-sm text-gray-500">{doc.date}</span>
+                  <FaFileDownload className="text-brandPrimaryBlue" />
+                </div>
+              </a>
+            ))}
+          </div>
+        </Card>
+
+        <Card border="bl" customWrapperWidth="w-full">
+          <div className="flex items-center justify-between mb-6">
+            <h3>Ostatnie aktualizacje</h3>
+            <FaCalendarAlt className="w-5 h-5 text-brandPrimaryBlue" />
+          </div>
+          <div className="space-y-4">
+            {recentUpdates.map((update, index) => (
+              <a
+                key={index}
+                href={update.href}
+                className="block p-4 rounded-md hover:bg-brandWashedBlue/20 
+                    transition-all group"
+              >
+                <div className="flex justify-between items-start mb-2 gap-12">
+                  <h4
+                    className="font-medium group-hover:text-brandPrimaryBlue 
+                      transition-colors"
+                  >
+                    {update.title}
+                  </h4>
+                  <span className="text-sm text-gray-500">{update.date}</span>
+                </div>
+                <span
+                  className="text-sm text-brandPrimaryBlue bg-brandWashedBlue/20 
+                    px-2 py-1 rounded"
+                >
+                  {update.category}
+                </span>
+              </a>
+            ))}
+          </div>
+        </Card>
+        <Card grayCard grayCardPosition="right">
+          <div className="flex items-center gap-4 mb-6">
+            <MdOutlineAccessibility className="w-8 h-8 text-brandPrimaryBlue" />
+            <MainTitle>Dostępność</MainTitle>
+          </div>
+          <SimpleText>
+            Dokładamy wszelkich starań, aby nasza strona BIP była dostępna dla
+            wszystkich użytkowników. Strona spełnia wymogi WCAG 2.1 i jest
+            dostosowana do potrzeb osób z niepełnosprawnościami.
+          </SimpleText>
+          <div className="flex gap-4 mt-6">
+            <a
+              href="/biuletyn-informacji-publicznej/dostepnosc"
+              className="inline-block text-brandPrimaryBlue hover:text-brandBrightBlue
+                transition-colors"
+            >
+              Deklaracja dostępności →
+            </a>
+            <a
+              href="/kontakt"
+              className="inline-block text-brandPrimaryBlue hover:text-brandBrightBlue
+                transition-colors"
+            >
+              Zgłoś problem z dostępnością →
+            </a>
+          </div>
+        </Card>
+      </CardVertical>
+    </MainWrapper>
+  );
 }
