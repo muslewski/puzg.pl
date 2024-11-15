@@ -3,6 +3,7 @@ import clsx from "clsx";
 import Image from "next/image";
 
 export type ListObjectItem = {
+  index: number;
   title: string;
   description?: string;
   icon: string;
@@ -44,6 +45,7 @@ export default function CardList({
         {listObject?.map((item, index) => (
           <ListItem
             key={index}
+            index={index}
             title={item.title}
             description={item.description}
             richDescription={item.richDescription}

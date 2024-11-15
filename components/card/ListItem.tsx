@@ -1,8 +1,12 @@
+"use client";
+
 import { ListObjectItem } from "@/components/card/CardList";
 import clsx from "clsx";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function ListItem({
+  index,
   title,
   description,
   icon,
@@ -17,9 +21,20 @@ export default function ListItem({
         settings
       )}
     >
-      <div className="relative h-16 sm:h-24 w-16 sm:w-24">
+      <motion.div
+        className="relative h-16 sm:h-24 w-16 sm:w-24"
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{
+          type: "spring",
+          stiffness: 200,
+          damping: 7,
+          delay: 0.3 + index * 0.2,
+        }}
+      >
         <Image src={icon} fill className="object-cover" alt={iconAlt} />
-      </div>
+      </motion.div>
       <div className="flex flex-col gap-2">
         <h3>{title}</h3>
         <p>{description}</p>
