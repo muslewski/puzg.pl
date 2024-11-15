@@ -13,7 +13,8 @@ export default function ListItem({
   iconAlt,
   settings,
   richDescription,
-}: ListObjectItem) {
+  multiplyNumber = 0.1,
+}: ListObjectItem & { index: number }) {
   return (
     <li
       className={clsx(
@@ -30,10 +31,16 @@ export default function ListItem({
           type: "spring",
           stiffness: 200,
           damping: 7,
-          delay: 0.3 + index * 0.2,
+          delay: 0.3 + index * multiplyNumber,
         }}
       >
-        <Image src={icon} fill className="object-cover" alt={iconAlt} />
+        <Image
+          src={icon}
+          fill
+          sizes="16"
+          className="object-cover"
+          alt={iconAlt}
+        />
       </motion.div>
       <div className="flex flex-col gap-2">
         <h3>{title}</h3>

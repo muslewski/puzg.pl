@@ -23,7 +23,9 @@ export default function FooterSocialMedia({ findUs }: { findUs: string }) {
       opacity: 1,
       transition: {
         duration: 0.3,
-        ease: "easeOut",
+        type: "spring",
+        stifness: 100,
+        damping: 10,
       },
     },
   };

@@ -35,7 +35,13 @@ export default function ImageItem({
       {zoom ? (
         <ImageZoom src={imageSrc} alt={imageAlt} className="object-cover" />
       ) : (
-        <Image src={imageSrc} fill className="object-cover" alt={imageAlt} />
+        <Image
+          src={imageSrc}
+          fill
+          sizes="1250px"
+          className="object-cover"
+          alt={imageAlt}
+        />
       )}
     </div>
   );

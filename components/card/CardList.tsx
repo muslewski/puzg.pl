@@ -3,13 +3,13 @@ import clsx from "clsx";
 import Image from "next/image";
 
 export type ListObjectItem = {
-  index: number;
   title: string;
   description?: string;
   icon: string;
   iconAlt: string;
   settings?: string;
   richDescription?: React.ReactNode;
+  multiplyNumber?: number;
 };
 
 export type SimpleListItem = {
@@ -27,6 +27,7 @@ export default function CardList({
   iconsSize,
   flexSettings,
   listItemSettings,
+  multiplyNumber,
 }: {
   listObject?: ListObjectItem[];
   simpleList?: SimpleListItem[];
@@ -34,6 +35,7 @@ export default function CardList({
   iconsSize?: string;
   flexSettings?: string;
   listItemSettings?: string;
+  multiplyNumber?: number;
 }) {
   if (listObject)
     return (
@@ -44,6 +46,7 @@ export default function CardList({
       >
         {listObject?.map((item, index) => (
           <ListItem
+            multiplyNumber={multiplyNumber}
             key={index}
             index={index}
             title={item.title}
@@ -72,6 +75,7 @@ export default function CardList({
                 <Image
                   src={item.icon}
                   fill
+                  sizes="260px"
                   className="object-cover"
                   alt={item.iconAlt}
                 />

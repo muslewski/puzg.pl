@@ -92,6 +92,7 @@ export default function KierunkiStudiowPage({ params: { locale } }: Props) {
                 src="/images/kierunki-studiow/mechatronika.png"
                 alt={t("imageAlt-1")}
                 fill
+                sizes="1261px"
                 className="object-cover"
               />
             </div>
@@ -103,6 +104,7 @@ export default function KierunkiStudiowPage({ params: { locale } }: Props) {
                 src="/images/kierunki-studiow/automatyka.png"
                 alt={t("imageAlt-2")}
                 fill
+                sizes="1261px"
                 className="object-cover"
               />
             </div>

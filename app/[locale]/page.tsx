@@ -55,6 +55,7 @@ export default function HomePage({ params: { locale } }: Props) {
         <Card border="bl">
           <MainTitle>{t("card1.mainTitle")}</MainTitle>
           <CardList
+            multiplyNumber={0.2}
             listObject={[
               {
                 title: t("card1.0.title"),

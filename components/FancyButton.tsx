@@ -94,7 +94,13 @@ function FancyButton({
                 small ? "h-7 w-7" : "h-10 w-10"
               )}
             >
-              <Image src={icon} fill className="object-cover" alt={iconAlt} />
+              <Image
+                src={icon}
+                fill
+                sizes="72px"
+                className="object-cover"
+                alt={iconAlt}
+              />
             </div>
           )}
           {text}
