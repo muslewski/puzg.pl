@@ -63,6 +63,7 @@ export default function PostPage({ params: { locale, slug } }: Props) {
             images={post.imagesSrc}
             imagesAlt={t("imagesAlt").split("|")}
             imagesOrientation={post.imagesOrientation}
+            zoom
           />
           <RichText>{(p) => t.rich(`description`, p)}</RichText>
           <FancyButton

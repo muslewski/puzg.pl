@@ -1,4 +1,5 @@
 import { ImageOrientation } from "@/components/card/Card";
+import ImageZoom from "@/components/ImageZoom";
 import clsx from "clsx";
 import Image from "next/image";
 
@@ -7,11 +8,13 @@ export default function ImageItem({
   imageAlt,
   imageOrientation,
   customImageBorder,
+  zoom,
 }: {
   imageSrc: string;
   imageAlt: string;
   imageOrientation: ImageOrientation;
   customImageBorder?: string;
+  zoom?: boolean;
 }) {
   return (
     <div
@@ -29,7 +32,11 @@ export default function ImageItem({
         imageOrientation
       )}
     >
-      <Image src={imageSrc} fill className="object-cover" alt={imageAlt} />
+      {zoom ? (
+        <ImageZoom src={imageSrc} alt={imageAlt} className="object-cover" />
+      ) : (
+        <Image src={imageSrc} fill className="object-cover" alt={imageAlt} />
+      )}
     </div>
   );
 }

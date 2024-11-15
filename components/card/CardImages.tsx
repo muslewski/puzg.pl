@@ -6,12 +6,14 @@ type CardImagesProps = {
   images?: string[];
   imagesAlt?: string[];
   imagesOrientation?: ImageOrientation[];
+  zoom?: boolean;
 };
 
 export function CardImages({
   images,
   imagesAlt,
   imagesOrientation,
+  zoom,
 }: CardImagesProps) {
   if (!images || !imagesAlt || !imagesOrientation) return null;
 
@@ -23,6 +25,7 @@ export function CardImages({
           imageSrc={image}
           imageAlt={imagesAlt[index]}
           imageOrientation={imagesOrientation[index]}
+          zoom={zoom}
         />
       ))}
     </div>

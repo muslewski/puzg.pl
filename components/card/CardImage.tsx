@@ -9,6 +9,7 @@ type CardImageProps = {
   imageOrientation?: ImageOrientation;
   imageLink?: ComponentProps<typeof Link>["href"];
   customImageBorder?: string;
+  zoom?: boolean;
 };
 
 export function CardImage({
@@ -17,6 +18,7 @@ export function CardImage({
   imageOrientation,
   imageLink,
   customImageBorder,
+  zoom,
 }: CardImageProps) {
   if (!image || !imageAlt || !imageOrientation) return null;
 
@@ -38,6 +40,7 @@ export function CardImage({
       imageAlt={imageAlt}
       imageOrientation={imageOrientation}
       customImageBorder={customImageBorder}
+      zoom={zoom}
     />
   );
 }

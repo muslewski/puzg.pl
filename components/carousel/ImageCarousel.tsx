@@ -1,19 +1,21 @@
 "use client";
 
+import { useReducer, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+import clsx from "clsx";
 import SlideArrow from "@/components/slide/SlideArrow";
 import SlideDot from "@/components/slide/SlideDot";
-import Image from "next/image";
-import { useReducer } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import clsx from "clsx";
+import SideImage from "@/components/carousel/SideImage";
+import ImageZoom from "@/components/ImageZoom";
 
-export type Action =
+type Action =
   | { type: "NEXT" }
   | { type: "PREV" }
   | { type: "GO_TO"; index: number };
 
 function createCarouselReducer(totalImages: number) {
-  return function slideReducer(state: number, action: Action) {
+  return function slideReducer(state: number, action: Action): number {
     switch (action.type) {
       case "NEXT":
         return (state + 1) % totalImages;
@@ -26,6 +28,23 @@ function createCarouselReducer(totalImages: number) {
     }
   };
 }
+
+const variants = {
+  enter: (direction: number) => ({
+    x: direction > 0 ? "50%" : "-50%",
+    opacity: 0,
+  }),
+  center: {
+    zIndex: 1,
+    x: 0,
+    opacity: 1,
+  },
+  exit: (direction: number) => ({
+    zIndex: 0,
+    x: direction < 0 ? "100%" : "-100%",
+    opacity: 0,
+  }),
+};
 
 export default function ImageCarousel({
   images,
@@ -40,53 +59,31 @@ export default function ImageCarousel({
     createCarouselReducer(images.length),
     0
   );
+  const [direction, setDirection] = useState(0);
 
-  // Helper functions to get the correct previous, current, and next images
-  const prevImage = (imageNumber - 1 + images.length) % images.length;
-  const nextImage = (imageNumber + 1) % images.length;
-
-  const variants = {
-    enter: (direction: number) => {
-      return {
-        x: direction > 0 ? 1000 : -1000,
-        opacity: 0,
-      };
-    },
-    center: {
-      zIndex: 1,
-      x: 0,
-      opacity: 1,
-    },
-    exit: (direction: number) => {
-      return {
-        zIndex: 0,
-        x: direction < 0 ? 1000 : -1000,
-        opacity: 0,
-      };
-    },
+  const handleNavigation = (action: Action) => {
+    if (action.type === "NEXT") {
+      setDirection(1);
+    } else if (action.type === "PREV") {
+      setDirection(-1);
+    } else if (action.type === "GO_TO") {
+      setDirection(action.index > imageNumber ? 1 : -1);
+    }
+    dispatch(action);
   };
 
   return (
     <div className="flex flex-col gap-8 lg:gap-12 items-center">
       <div className="flex gap-6 md:gap-12 items-center">
-        <motion.div
-          className={clsx(
-            "relative rounded-xl overflow-hidden transition-transform cursor-pointer",
-            small
-              ? "w-[150px] 2xl:w-[250px] h-[90px] 2xl:h-[150px] hidden lg:block"
-              : "w-[400px] h-[250px] hidden sm:block"
-          )}
-          onClick={() => dispatch({ type: "PREV" })}
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-        >
-          <Image
-            className="object-cover "
-            fill
-            src={images[prevImage]}
-            alt={altImages[prevImage]}
-          />
-        </motion.div>
+        <SideImage
+          image={images[(imageNumber - 1 + images.length) % images.length]}
+          altImage={
+            altImages[(imageNumber - 1 + images.length) % images.length]
+          }
+          onClick={() => handleNavigation({ type: "PREV" })}
+          small={small}
+          direction={direction}
+        />
         <div
           className={clsx(
             "relative rounded-xl overflow-hidden shadow-md",
@@ -95,48 +92,35 @@ export default function ImageCarousel({
               : "w-[500px] lg:w-[700px] h-[300px] lg:h-[500px]"
           )}
         >
-          <AnimatePresence initial={false} custom={imageNumber}>
+          <AnimatePresence initial={false} custom={direction}>
             <motion.div
               key={imageNumber}
-              custom={imageNumber}
+              custom={direction}
               variants={variants}
               initial="enter"
               animate="center"
               exit="exit"
               transition={{
                 x: { type: "spring", stiffness: 300, damping: 30 },
-                opacity: { duration: 0.2 },
+                opacity: { duration: 0.5 },
               }}
               className="absolute w-full h-full"
             >
-              <Image
-                className="object-cover "
-                fill
+              <ImageZoom
                 src={images[imageNumber]}
                 alt={altImages[imageNumber]}
+                className="object-cover"
               />
             </motion.div>
           </AnimatePresence>
         </div>
-
-        <motion.div
-          className={clsx(
-            "relative rounded-xl overflow-hidden transition-transform cursor-pointer",
-            small
-              ? "w-[150px] 2xl:w-[250px] h-[90px] 2xl:h-[150px] hidden lg:block"
-              : "w-[400px] h-[250px] hidden sm:block"
-          )}
-          onClick={() => dispatch({ type: "NEXT" })}
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-        >
-          <Image
-            className="object-cover "
-            fill
-            src={images[nextImage]}
-            alt={altImages[nextImage]}
-          />
-        </motion.div>
+        <SideImage
+          image={images[(imageNumber + 1) % images.length]}
+          altImage={altImages[(imageNumber + 1) % images.length]}
+          onClick={() => handleNavigation({ type: "NEXT" })}
+          small={small}
+          direction={direction}
+        />
       </div>
 
       <div
@@ -146,7 +130,7 @@ export default function ImageCarousel({
         )}
       >
         <SlideArrow
-          dispatch={dispatch}
+          dispatch={() => handleNavigation({ type: "PREV" })}
           direction="left"
           customClassName="self-start"
         />
@@ -155,12 +139,12 @@ export default function ImageCarousel({
             <SlideDot
               key={index}
               isOpen={index === imageNumber}
-              onClick={() => dispatch({ type: "GO_TO", index })}
+              onClick={() => handleNavigation({ type: "GO_TO", index })}
             />
           ))}
         </div>
         <SlideArrow
-          dispatch={dispatch}
+          dispatch={() => handleNavigation({ type: "NEXT" })}
           direction="right"
           customClassName="self-end"
         />
