@@ -86,7 +86,12 @@ export default function ImageZoom({
                     width: "90vw",
                     height: "90vh",
                   }}
-                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 190,
+                    damping: 30,
+                    mass: 1.5,
+                  }}
                   className="absolute overflow-hidden drop-shadow-2xl"
                 >
                   <div className="relative w-full h-full p-4">

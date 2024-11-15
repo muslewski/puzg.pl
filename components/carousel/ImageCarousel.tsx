@@ -101,7 +101,7 @@ export default function ImageCarousel({
               animate="center"
               exit="exit"
               transition={{
-                x: { type: "spring", stiffness: 300, damping: 30 },
+                x: { type: "spring", stiffness: 300, damping: 30, mass: 0.8 },
                 opacity: { duration: 0.5 },
               }}
               className="absolute w-full h-full"
