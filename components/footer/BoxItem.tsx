@@ -23,7 +23,7 @@ export default function BoxItem({ icon, title, children }: BoxItemProps) {
   return (
     <motion.div
       variants={itemVariants}
-      className="bg-gray-800/30 p-6 lg:px-10 rounded-lg backdrop-blur-sm"
+      className="bg-gray-800/30 p-6 lg:px-10 rounded-lg backdrop-blur-sm shadow-lg"
     >
       <motion.div
         className="flex items-center gap-2 mb-2"

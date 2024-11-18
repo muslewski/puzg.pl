@@ -17,7 +17,7 @@ export default function FooterLink({
     <Link
       href={href}
       className={clsx(
-        "transition-transform hover:scale-[102%] px-6 py-3 bg-gray-800/30 rounded-lg",
+        "transition-transform hover:scale-[102%] px-6 py-3 bg-gray-800/30 rounded-lg shadow-lg",
         className
       )}
     >
