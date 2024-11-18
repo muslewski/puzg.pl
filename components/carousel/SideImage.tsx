@@ -27,12 +27,14 @@ export default function SideImage({
   small,
   onClick,
   direction,
+  isLoaded,
 }: {
   image: string;
   altImage: string;
   onClick: () => void;
   small?: boolean;
   direction: number;
+  isLoaded: boolean;
 }) {
   return (
     <motion.div
@@ -60,7 +62,11 @@ export default function SideImage({
           }}
           className="absolute w-full h-full"
         >
-          <Image className="object-cover" fill src={image} alt={altImage} />
+          {isLoaded ? (
+            <Image className="object-cover" fill src={image} alt={altImage} />
+          ) : (
+            <div className="w-full h-full bg-gray-200 animate-pulse" />
+          )}
         </motion.div>
       </AnimatePresence>
     </motion.div>

@@ -34,13 +34,25 @@ export default function ListItem({
           delay: 0.3 + index * multiplyNumber,
         }}
       >
-        <Image
-          src={icon}
-          fill
-          sizes="16"
-          className="object-cover"
-          alt={iconAlt}
-        />
+        <motion.div
+          className="h-full w-full"
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 5,
+            mass: 1,
+          }}
+        >
+          <Image
+            src={icon}
+            fill
+            sizes="16"
+            className="object-cover"
+            alt={iconAlt}
+          />
+        </motion.div>
       </motion.div>
       <div className="flex flex-col gap-2">
         <h3>{title}</h3>

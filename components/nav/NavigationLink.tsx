@@ -49,7 +49,7 @@ export default function NavigationLink({
         <button
           onMouseEnter={() => setIsOpen(true)}
           onMouseLeave={() => setIsOpen(false)}
-          className="inline-flex items-center gap-2 p-2 transition-colors duration-500 font-outfit text-lg text-brandDark lg:text-white hover:text-brandPrimaryBlue lg:hover:text-brandWashedBlue  font-medium"
+          className="inline-flex items-center gap-2 p-2 transition-colors duration-500 font-outfit text-lg text-brandDark lg:text-white hover:text-brandPrimaryBlue lg:hover:text-brandWashedBlue"
           aria-expanded={isOpen}
           aria-haspopup="true"
         >
@@ -138,7 +138,7 @@ export default function NavigationLink({
   return (
     <Link
       aria-current={path === href ? "page" : undefined}
-      className={clsx("p-2 text-lg  font-medium", linkStyle)}
+      className={clsx("p-2 text-lg", linkStyle)}
       style={{ opacity: path === href ? "70%" : "" }}
       href={href}
       {...rest}

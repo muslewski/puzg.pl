@@ -1,8 +1,7 @@
 "use client";
 
-import { useReducer, useState } from "react";
+import { useEffect, useReducer, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 import clsx from "clsx";
 import SlideArrow from "@/components/slide/SlideArrow";
 import SlideDot from "@/components/slide/SlideDot";
@@ -61,6 +60,25 @@ export default function ImageCarousel({
   );
   const [direction, setDirection] = useState(0);
 
+  const [imagesLoaded, setImagesLoaded] = useState<boolean[]>(
+    new Array(images.length).fill(false)
+  );
+
+  useEffect(() => {
+    // Preload all images
+    images.forEach((image, index) => {
+      const img = new Image();
+      img.src = image;
+      img.onload = () => {
+        setImagesLoaded((prev) => {
+          const newState = [...prev];
+          newState[index] = true;
+          return newState;
+        });
+      };
+    });
+  }, [images]);
+
   const handleNavigation = (action: Action) => {
     if (action.type === "NEXT") {
       setDirection(1);
@@ -72,17 +90,19 @@ export default function ImageCarousel({
     dispatch(action);
   };
 
+  const getAdjacentIndex = (offset: number) =>
+    (imageNumber + offset + images.length) % images.length;
+
   return (
     <div className="flex flex-col gap-8 lg:gap-12 items-center">
       <div className="flex gap-6 md:gap-12 items-center">
         <SideImage
-          image={images[(imageNumber - 1 + images.length) % images.length]}
-          altImage={
-            altImages[(imageNumber - 1 + images.length) % images.length]
-          }
+          image={images[getAdjacentIndex(-1)]}
+          altImage={altImages[getAdjacentIndex(-1)]}
           onClick={() => handleNavigation({ type: "PREV" })}
           small={small}
           direction={direction}
+          isLoaded={imagesLoaded[getAdjacentIndex(-1)]}
         />
         <div
           className={clsx(
@@ -106,20 +126,27 @@ export default function ImageCarousel({
               }}
               className="absolute w-full h-full"
             >
-              <ImageZoom
-                src={images[imageNumber]}
-                alt={altImages[imageNumber]}
-                className="object-cover"
-              />
+              {imagesLoaded[imageNumber] ? (
+                <ImageZoom
+                  src={images[imageNumber]}
+                  alt={altImages[imageNumber]}
+                  className="object-cover"
+                />
+              ) : (
+                <div className="w-full h-full bg-gray-200 animate-pulse flex items-center justify-center">
+                  <span className="text-gray-400">Loading...</span>
+                </div>
+              )}
             </motion.div>
           </AnimatePresence>
         </div>
         <SideImage
-          image={images[(imageNumber + 1) % images.length]}
-          altImage={altImages[(imageNumber + 1) % images.length]}
+          image={images[getAdjacentIndex(1)]}
+          altImage={altImages[getAdjacentIndex(1)]}
           onClick={() => handleNavigation({ type: "NEXT" })}
           small={small}
           direction={direction}
+          isLoaded={imagesLoaded[getAdjacentIndex(1)]}
         />
       </div>
 

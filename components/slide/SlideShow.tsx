@@ -3,7 +3,7 @@
 import Slide from "@/components/slide/Slide";
 import SlideArrow from "@/components/slide/SlideArrow";
 import SlideDot from "@/components/slide/SlideDot";
-import { useReducer } from "react";
+import { useEffect, useReducer, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 
 export type slideProps = {
@@ -39,10 +39,33 @@ export default function SlideShow({ slides }: { slides: slideProps[] }) {
     0
   );
 
+  const [imagesLoaded, setImagesLoaded] = useState<boolean[]>(
+    new Array(slides.length).fill(false)
+  );
+
+  useEffect(() => {
+    // Preload all images
+    slides.forEach((slide, index) => {
+      const img = new Image();
+      img.src = slide.imageSrc;
+      img.onload = () => {
+        setImagesLoaded((prev) => {
+          const newState = [...prev];
+          newState[index] = true;
+          return newState;
+        });
+      };
+    });
+  }, [slides]);
+
   return (
     <div className="flex flex-col items-center lg:items-start gap-12 w-full 2xl:w-4/5 lg:px-12 2xl:px-0">
       <AnimatePresence mode="wait">
-        <Slide data={slides[slideNumber]} key={slideNumber} />
+        {imagesLoaded[slideNumber] ? (
+          <Slide data={slides[slideNumber]} key={slideNumber} />
+        ) : (
+          <div className="w-full h-full bg-gray-200 animate-pulse" />
+        )}
       </AnimatePresence>
 
       <div className="w-full px-4 sm:px-8 lg:w-fit flex items-center justify-between lg:gap-32">

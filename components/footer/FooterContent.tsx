@@ -4,6 +4,7 @@ import FooterSocialMedia from "@/components/footer/FooterSocialMedia";
 import { motion } from "framer-motion";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
+import BoxItem from "@/components/footer/BoxItem";
 
 export default function FooterContent({
   localization,
@@ -31,25 +32,6 @@ export default function FooterContent({
     },
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    },
-  };
-
-  const hoverVariants = {
-    hover: {
-      scale: 1.02,
-      transition: { duration: 0.3 },
-    },
-  };
-
   return (
     <motion.div
       initial="hidden"
@@ -59,15 +41,8 @@ export default function FooterContent({
       className="flex flex-col gap-10 gap-y-24"
     >
       <div className="flex flex-col lg:flex-row gap-x-10 gap-y-16 justify-between bg-gradient-to-tr from-gray-800/20 p-6 rounded-3xl backdrop-blur-sm">
-        <motion.div
-          variants={itemVariants}
-          className="bg-gray-800/30 p-6 lg:px-10 rounded-lg backdrop-blur-sm"
-        >
-          <motion.div
-            className="flex items-center gap-2 mb-2"
-            whileHover="hover"
-            variants={hoverVariants}
-          >
+        <BoxItem
+          icon={
             <svg
               className="w-5 h-5 text-blue-400"
               fill="none"
@@ -87,22 +62,16 @@ export default function FooterContent({
                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
               />
             </svg>
-            <span className="font-semibold">{localization}</span>
-          </motion.div>
-          <p className="text-gray-300 text-lg  pt-2">
+          }
+          title={localization}
+        >
+          <p className="text-gray-300 text-lg">
             Czarnieckiego 5/7, <br /> 86-300 Grudziądz
           </p>
-        </motion.div>
+        </BoxItem>
 
-        <motion.div
-          variants={itemVariants}
-          className="bg-gray-800/30 p-6 lg:px-10 rounded-lg backdrop-blur-sm"
-        >
-          <motion.div
-            className="flex items-center gap-2 mb-2"
-            whileHover="hover"
-            variants={hoverVariants}
-          >
+        <BoxItem
+          icon={
             <svg
               className="w-5 h-5 text-blue-400"
               fill="none"
@@ -116,24 +85,16 @@ export default function FooterContent({
                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
               />
             </svg>
-            <span className="font-semibold">Email:</span>
-          </motion.div>
-          <ul className="text-gray-300 text-lg pt-2">
-            <motion.li whileHover="hover" variants={hoverVariants}>
-              rekrutacja@puzg.pl
-            </motion.li>
-          </ul>
-        </motion.div>
-
-        <motion.div
-          variants={itemVariants}
-          className="bg-gray-800/30 p-6 lg:px-10 rounded-lg backdrop-blur-sm"
+          }
+          title="Email:"
         >
-          <motion.div
-            className="flex items-center gap-2 mb-2"
-            whileHover="hover"
-            variants={hoverVariants}
-          >
+          <ul>
+            <li className="text-gray-300 text-lg">rekrutacja@puzg.pl</li>
+          </ul>
+        </BoxItem>
+
+        <BoxItem
+          icon={
             <svg
               className="w-5 h-5 text-blue-400"
               fill="none"
@@ -147,17 +108,14 @@ export default function FooterContent({
                 d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
               />
             </svg>
-            <span className="font-semibold">{contact}</span>
-          </motion.div>
-          <ul className="text-gray-300 text-lg pt-2">
-            <motion.li whileHover="hover" variants={hoverVariants}>
-              576-060-123
-            </motion.li>
-            <motion.li whileHover="hover" variants={hoverVariants}>
-              576-060-124
-            </motion.li>
+          }
+          title={contact}
+        >
+          <ul>
+            <li className="text-gray-300 text-lg">576-060-123</li>
+            <li className="text-gray-300 text-lg">576-060-124</li>
           </ul>
-        </motion.div>
+        </BoxItem>
       </div>
 
       <div className="flex flex-col lg:flex-row gap-32 2xl:gap-x-64 gap-y-16 justify-start">
