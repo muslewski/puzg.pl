@@ -54,7 +54,7 @@ const CookieAlert = () => {
           }}
         >
           <span className="text-sm">
-            Używamy plików cookie dla lepszej nawigacji.
+            Używamy pliki cookie dla lepszej nawigacji.
           </span>
           <div className="flex ml-4 space-x-4">
             <button
