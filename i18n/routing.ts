@@ -164,6 +164,10 @@ export const routing = defineRouting({
       pl: "/biuletyn-informacji-publicznej",
       en: "/public-information-bulletin",
     },
+    "/prawa-autorskie": {
+      pl: "/prawa-autorskie",
+      en: "/copyright",
+    },
   },
 });
 
