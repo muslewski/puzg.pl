@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import BoxItem from "@/components/footer/BoxItem";
+import FooterLink from "@/components/footer/FooterLink";
 
 export default function FooterContent({
   localization,
@@ -120,9 +121,9 @@ export default function FooterContent({
 
       <div className="flex flex-col lg:flex-row gap-32 2xl:gap-x-64 gap-y-16 justify-start">
         <div className="flex flex-col gap-5 bg-gradient-to-br from-gray-800/20 p-6 rounded-3xl backdrop-blur-sm">
-          <Link
+          <FooterLink
             href="/biuletyn-informacji-publicznej"
-            className="flex items-center gap-3 transition-transform hover:scale-[102%] px-6 py-3 bg-gray-800/30 rounded-lg"
+            className="flex items-center gap-3"
           >
             {bip}
             <div className="relative w-[48px] h-[20px]">
@@ -134,19 +135,12 @@ export default function FooterContent({
                 alt="bip logo"
               />
             </div>
-          </Link>
-          <Link
-            className="transition-transform hover:scale-[102%] px-6 py-3 bg-gray-800/30 rounded-lg"
-            href="/deklaracja-dostepnosci"
-          >
+          </FooterLink>
+          <FooterLink href="/deklaracja-dostepnosci">
             {accessibilityDeclaration}
-          </Link>
-          <Link
-            className="transition-transform hover:scale-[102%] px-6 py-3 bg-gray-800/30 rounded-lg"
-            href="/polityka-prywatnosci"
-          >
-            {privacyPolicy}
-          </Link>
+          </FooterLink>
+          <FooterLink href="/polityka-prywatnosci">{privacyPolicy}</FooterLink>
+          <FooterLink href="/prawa-autorskie">Prawa Autorskie</FooterLink>
         </div>
 
         <FooterSocialMedia findUs={findUs} />
