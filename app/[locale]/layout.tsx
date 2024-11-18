@@ -10,6 +10,7 @@ import Navigation from "@/components/nav/Navigation";
 import { notFound } from "next/navigation";
 import Footer from "@/components/footer/Footer";
 import { ToastContainer } from "react-toastify";
+import CookieAlert from "@/components/cookie/CookieAlert";
 
 type Props = {
   children: React.ReactNode;
@@ -73,6 +74,7 @@ export default async function LocaleLayout({
       >
         <NextIntlClientProvider messages={messages}>
           <ToastContainer position="top-right" autoClose={3000} />
+          <CookieAlert />
           <Navigation />
           {children}
           <Footer />

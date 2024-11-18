@@ -51,37 +51,42 @@ export default function FooterSocialMedia({ findUs }: { findUs: string }) {
       <motion.span className="font-semibold" variants={item}>
         {findUs}
       </motion.span>
-      <div className="flex flex-wrap gap-8 text-white">
+      <div className="flex flex-wrap gap-10 text-white">
         {[
           {
             href: "",
             icon: <FaFacebook size="42" />,
             color: "hover:text-blue-600",
-            shadow: "drop-shadow-[0_15px_25px_rgba(59,130,246,0.5)]",
+            shadow:
+              "drop-shadow-[0_15px_25px_rgba(59,130,246,0.5)] hover:drop-shadow-[0_5px_15px_rgba(59,130,246,0.6)]",
           },
           {
             href: "",
             icon: <FaInstagram size="42" />,
             color: "hover:text-pink-500",
-            shadow: "drop-shadow-[0_15px_25px_rgba(236,72,153,0.5)]",
+            shadow:
+              "drop-shadow-[0_15px_25px_rgba(236,72,153,0.5)] hover:drop-shadow-[0_5px_15px_rgba(236,72,153,0.6)]",
           },
           {
             href: "",
             icon: <FaYoutube size="42" />,
             color: "hover:text-red-600",
-            shadow: "drop-shadow-[0_15px_25px_rgba(220,38,38,0.5)]",
+            shadow:
+              "drop-shadow-[0_15px_25px_rgba(220,38,38,0.5)] hover:drop-shadow-[0_5px_15px_rgba(220,38,38,0.6)]",
           },
           {
             href: "",
             icon: <FaLinkedin size="42" />,
             color: "hover:text-[#0e76a8]",
-            shadow: "drop-shadow-[0_15px_25px_rgba(14,118,168,0.5)]",
+            shadow:
+              "drop-shadow-[0_15px_25px_rgba(14,118,168,0.5)] hover:drop-shadow-[0_5px_15px_rgba(14,118,168,0.6)]",
           },
           {
             href: "",
             icon: <FaXTwitter size="42" />,
             color: "hover:text-[#657786]",
-            shadow: "drop-shadow-[0_15px_25px_rgba(101,119,134,0.5)]",
+            shadow:
+              "drop-shadow-[0_15px_25px_rgba(101,119,134,0.5)] hover:drop-shadow-[0_5px_15px_rgba(101,119,134,0.6)]",
           },
         ].map(({ href, icon, color, shadow }, index) => (
           <motion.a
