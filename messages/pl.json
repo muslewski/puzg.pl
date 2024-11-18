@@ -836,6 +836,22 @@
     "description": "Przeglądaj publiczne informacje o działalności naszej uczelni, w tym dokumenty, ogłoszenia oraz inne dane zgodnie z ustawą o dostępie do informacji publicznej."
   },
 
+  "Cookie": {
+    "text-1": "Używamy pliki cookies dla lepszej nawigacji.",
+    "buttonAccept": "Akceptuj",
+    "buttonCustomize": "Dostosuj",
+    "h3": "Dostosuj preferencje dotyczące zgody",
+    "p-1": "Używamy plików cookie, aby pomóc użytkownikom w sprawnej nawigacji i wykonywaniu określonych funkcji. Szczegółowe informacje na temat wszystkich plików cookie odpowiadających poszczególnym kategoriom zgody znajdują się poniżej.",
+    "label-1": "Niezbędne - Zawsze aktywne",
+    "p-2": "Niezbędne pliki cookie mają kluczowe znaczenie dla podstawowych funkcji witryny i witryna nie będzie działać w zamierzony sposób bez nich.",
+    "label-2": "Funkcjonalne",
+    "label-3": "Analityka",
+    "label-4": "Wydajność",
+    "label-5": "Reklama",
+
+    "buttonSave": "Zapisz preferencje",
+    "buttonCancel": "Anuluj"
+  },
   "Helper": {
     "circleIconAlt": "Ikona Kółka"
   }

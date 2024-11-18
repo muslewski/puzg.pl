@@ -2,8 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const CookieAlert = () => {
+  const t = useTranslations("Cookie");
+
   const [isVisible, setIsVisible] = useState(false);
   const [isCustomizing, setIsCustomizing] = useState(false);
 
@@ -53,21 +56,19 @@ const CookieAlert = () => {
             stiffness: 100,
           }}
         >
-          <span className="text-sm">
-            Używamy pliki cookie dla lepszej nawigacji.
-          </span>
+          <span className="text-sm">{t("text-1")}</span>
           <div className="flex ml-4 space-x-4">
             <button
               onClick={handleAcceptAll}
               className="px-4 py-2 bg-primaryBlue-500 text-white rounded-md text-sm"
             >
-              Akceptuję
+              {t("buttonAccept")}
             </button>
             <button
               onClick={handleCustomize}
               className="px-4 py-2 bg-brandNeutrals-1100 text-white rounded-md text-sm"
             >
-              Dostosuj
+              {t("buttonCustomize")}
             </button>
           </div>
         </motion.div>
@@ -81,51 +82,40 @@ const CookieAlert = () => {
           exit={{ opacity: 0 }}
         >
           <div className="bg-white p-6 rounded-lg w-96">
-            <h3 className="text-lg font-bold mb-4">
-              Dostosuj preferencje dotyczące zgody
-            </h3>
-            <p className="text-sm mb-4">
-              Używamy plików cookie, aby pomóc użytkownikom w sprawnej nawigacji
-              i wykonywaniu określonych funkcji. Szczegółowe informacje na temat
-              wszystkich plików cookie odpowiadających poszczególnym kategoriom
-              zgody znajdują się poniżej.
-            </p>
+            <h3 className="text-lg font-bold mb-4">{t("h3")}</h3>
+            <p className="text-sm mb-4">{t("p-1")}</p>
 
             {/* Cookie Categories */}
             <div className="space-y-4">
               <div>
                 <label className="text-sm">
                   <input type="checkbox" className="mr-2" defaultChecked />
-                  Niezbędne - Zawsze aktywne
+                  {t("label-1")}
                 </label>
-                <p className="text-xs text-gray-500">
-                  Niezbędne pliki cookie mają kluczowe znaczenie dla
-                  podstawowych funkcji witryny i witryna nie będzie działać w
-                  zamierzony sposób bez nich.
-                </p>
+                <p className="text-xs text-gray-500">{t("p-2")}</p>
               </div>
               <div>
                 <label className="text-sm">
                   <input type="checkbox" className="mr-2" />
-                  Funkcjonalne
+                  {t("label-2")}
                 </label>
               </div>
               <div>
                 <label className="text-sm">
                   <input type="checkbox" className="mr-2" />
-                  Analityka
+                  {t("label-3")}
                 </label>
               </div>
               <div>
                 <label className="text-sm">
                   <input type="checkbox" className="mr-2" />
-                  Wydajność
+                  {t("label-4")}
                 </label>
               </div>
               <div>
                 <label className="text-sm">
                   <input type="checkbox" className="mr-2" />
-                  Reklama
+                  {t("label-5")}
                 </label>
               </div>
             </div>
@@ -135,13 +125,13 @@ const CookieAlert = () => {
                 onClick={handleSavePreferences}
                 className="px-4 py-2 bg-primaryBlue-500 text-white rounded-md"
               >
-                Zapisz preferencje
+                {t("buttonSave")}
               </button>
               <button
                 onClick={() => setIsCustomizing(false)}
                 className="px-4 py-2 bg-gray-300 text-black rounded-md"
               >
-                Anuluj
+                {t("buttonCancel")}
               </button>
             </div>
           </div>

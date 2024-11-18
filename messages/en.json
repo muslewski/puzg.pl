@@ -836,6 +836,22 @@
     "description": "Browse public information about our university's activities, including documents, announcements, and other data in accordance with the Public Information Access Act."
   },
 
+  "Cookie": {
+    "text-1": "We use cookies for better navigation.",
+    "buttonAccept": "Accept",
+    "buttonCustomize": "Customize",
+    "h3": "Customize your consent preferences",
+    "p-1": "We use cookies to help users navigate efficiently and perform specific functions. Detailed information about all cookies corresponding to each consent category can be found below.",
+    "label-1": "Necessary - Always active",
+    "p-2": "Necessary cookies are essential for the basic functionality of the site, and the site will not function as intended without them.",
+    "label-2": "Functional",
+    "label-3": "Analytics",
+    "label-4": "Performance",
+    "label-5": "Advertising",
+
+    "buttonSave": "Save preferences",
+    "buttonCancel": "Cancel"
+  },
   "Helper": {
     "circleIconAlt": "Circle Icon"
   }
