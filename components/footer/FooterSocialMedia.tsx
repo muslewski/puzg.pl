@@ -28,6 +28,15 @@ export default function FooterSocialMedia({ findUs }: { findUs: string }) {
         damping: 10,
       },
     },
+    hover: {
+      scale: 1.1,
+      transition: {
+        duration: 0.3,
+        type: "spring",
+        stifness: 100,
+        damping: 10,
+      },
+    },
   };
 
   return (
@@ -35,6 +44,7 @@ export default function FooterSocialMedia({ findUs }: { findUs: string }) {
       className="flex flex-col gap-6"
       initial="hidden"
       whileInView="show"
+      whileHover="hover"
       viewport={{ once: true, amount: 0.5 }} // Animates once when 50% is in view
       variants={container}
     >
@@ -47,31 +57,31 @@ export default function FooterSocialMedia({ findUs }: { findUs: string }) {
             href: "",
             icon: <FaFacebook size="42" />,
             color: "hover:text-blue-600",
-            shadow: "hover:drop-shadow-[0_15px_25px_rgba(59,130,246,0.5)]",
+            shadow: "drop-shadow-[0_15px_25px_rgba(59,130,246,0.5)]",
           },
           {
             href: "",
             icon: <FaInstagram size="42" />,
             color: "hover:text-pink-500",
-            shadow: "hover:drop-shadow-[0_15px_25px_rgba(236,72,153,0.5)]",
+            shadow: "drop-shadow-[0_15px_25px_rgba(236,72,153,0.5)]",
           },
           {
             href: "",
             icon: <FaYoutube size="42" />,
             color: "hover:text-red-600",
-            shadow: "hover:drop-shadow-[0_15px_25px_rgba(220,38,38,0.5)]",
+            shadow: "drop-shadow-[0_15px_25px_rgba(220,38,38,0.5)]",
           },
           {
             href: "",
             icon: <FaLinkedin size="42" />,
             color: "hover:text-[#0e76a8]",
-            shadow: "hover:drop-shadow-[0_15px_25px_rgba(14,118,168,0.5)]",
+            shadow: "drop-shadow-[0_15px_25px_rgba(14,118,168,0.5)]",
           },
           {
             href: "",
             icon: <FaXTwitter size="42" />,
             color: "hover:text-[#657786]",
-            shadow: "hover:drop-shadow-[0_15px_25px_rgba(101,119,134,0.5)]",
+            shadow: "drop-shadow-[0_15px_25px_rgba(101,119,134,0.5)]",
           },
         ].map(({ href, icon, color, shadow }, index) => (
           <motion.a
