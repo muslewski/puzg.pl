@@ -46,7 +46,7 @@ const CookieAlert = () => {
     <>
       {isVisible && !isCustomizing && (
         <motion.div
-          className="fixed z-40 bottom-0 sm:bottom-4 w-full sm:w-fit sm:left-10 bg-brandNeutrals-1000/90 text-white p-4 rounded-lg shadow-lg flex flex-col gap-y-4 sm:flex-row items-center justify-between"
+          className="fixed z-40 bottom-0 sm:bottom-4 w-full sm:w-fit sm:left-4 bg-brandNeutrals-1000/90 text-white p-4 rounded-lg shadow-lg flex flex-col gap-y-4 sm:flex-row items-center justify-between"
           initial={{ opacity: 0, x: -120 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -120 }}

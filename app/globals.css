@@ -20,6 +20,10 @@ ol {
   @apply list-decimal list-inside text-brandDark text-base md:text-lg 3xl:text-xl font-outfit font-normal pl-4 flex flex-col gap-3;
 }
 
+li {
+  @apply flex flex-col gap-2;
+}
+
 h2 {
   @apply text-brandDark text-xl md:text-2xl xl:text-3xl 3xl:text-4xl md:leading-snug xl:leading-snug 3xl:leading-snug font-montserrat font-bold;
 }
