@@ -76,21 +76,22 @@ export default function PolitykaPrywatnosciPage({ params: { locale } }: Props) {
   const importantDocuments = [
     {
       icon: <BsFileEarmarkText className="w-6 h-6" />,
-      title: "Statut Uczelni",
-      href: "/biuletyn-informacji-publicznej/prawo/statut",
-      date: "Aktualizacja: 15.03.2024",
+      title: "klauzula informacyjna PUZG dla kontrahentów, interesantów.docx",
+      href: "/files/klauzula/klauzula informacyjna PUZG do maili.docx",
+      date: "Aktualizacja: 15.11.2024",
     },
+    {
+      icon: <BsFileEarmarkText className="w-6 h-6" />,
+      title: "klauzula informacyjna PUZG do maili.docx",
+      href: "/files/klauzula/klauzula informacyjna PUZG do maili.docx",
+      date: "Aktualizacja: 15.11.2024",
+    },
+
     {
       icon: <IoMdDocument className="w-6 h-6" />,
       title: "Regulamin studiów",
-      href: "/biuletyn-informacji-publicznej/studia/regulamin",
+      href: "/files/regulamin-studiow-PUZG.pdf",
       date: "Aktualizacja: 01.04.2024",
-    },
-    {
-      icon: <BsBuilding className="w-6 h-6" />,
-      title: "Władze uczelni",
-      href: "/biuletyn-informacji-publicznej/uczelnia/wladze",
-      date: "Aktualizacja: 10.04.2024",
     },
   ];
 
@@ -133,6 +134,7 @@ export default function PolitykaPrywatnosciPage({ params: { locale } }: Props) {
               <a
                 key={index}
                 href={item.href}
+                target="_blank"
                 className="group p-6 rounded-lg border border-brandWashedBlue/20 
                   hover:border-brandPrimaryBlue/30 transition-all 
                   hover:shadow-lg hover:shadow-brandWashedBlue/10 bg-white"
@@ -167,7 +169,7 @@ export default function PolitykaPrywatnosciPage({ params: { locale } }: Props) {
           customWrapperWidth="w-full"
         >
           <div className="flex items-center justify-between mb-6 gap-12">
-            <h3>Najważniejsze dokumenty</h3>
+            <h3>Dokumenty</h3>
             <a
               href="/dokumenty"
               className="text-sm text-brandPrimaryBlue hover:text-brandBrightBlue"
@@ -180,6 +182,7 @@ export default function PolitykaPrywatnosciPage({ params: { locale } }: Props) {
               <a
                 key={index}
                 href={doc.href}
+                target="_blank"
                 className="flex items-center justify-between p-4 rounded-md 
                     hover:bg-brandWashedBlue/20 transition-all group"
               >
