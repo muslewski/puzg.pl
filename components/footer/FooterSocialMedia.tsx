@@ -2,10 +2,55 @@
 
 import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
+
+interface SocialMediaLink {
+  href: string;
+  icon: JSX.Element;
+  color: string;
+  shadow: string;
+  label: string;
+}
+
+const socialMediaLinks: SocialMediaLink[] = [
+  {
+    href: "",
+    icon: <FaFacebook size="42" />,
+    color: "#3b82f6",
+    shadow: "rgba(59,130,246,0.5)",
+    label: "Facebook",
+  },
+  {
+    href: "",
+    icon: <FaInstagram size="42" />,
+    color: "#e85ea3",
+    shadow: "rgba(236,72,153,0.5)",
+    label: "Instagram",
+  },
+  {
+    href: "",
+    icon: <FaYoutube size="42" />,
+    color: "#df4242",
+    shadow: "rgba(219, 53, 53, 0.5)",
+    label: "YouTube",
+  },
+  {
+    href: "",
+    icon: <FaLinkedin size="42" />,
+    color: "#2187b6",
+    shadow: "rgba(14,118,168,0.5)",
+    label: "LinkedIn",
+  },
+  {
+    href: "",
+    icon: <FaXTwitter size="42" />,
+    color: "#657786",
+    shadow: "rgba(101,119,134,0.5)",
+    label: "Twitter",
+  },
+];
 
 export default function FooterSocialMedia({ findUs }: { findUs: string }) {
-  // Animation variants for staggering effect
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -17,83 +62,44 @@ export default function FooterSocialMedia({ findUs }: { findUs: string }) {
   };
 
   const item = {
-    hidden: { scale: 0.9, opacity: 0 },
-    show: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.3,
-        type: "spring",
-        stifness: 100,
-        damping: 10,
-      },
-    },
-    hover: {
-      scale: 1.1,
-      transition: {
-        duration: 0.3,
-        type: "spring",
-        stifness: 100,
-        damping: 10,
-      },
-    },
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
+
+  const hoverEffect = (color: string, shadow: string) => ({
+    scale: 1.2,
+    rotate: 3,
+    color: color,
+    filter: `drop-shadow(0 10px 20px ${shadow})`,
+    transition: {
+      duration: 0.3,
+      type: "spring",
+      stiffness: 100,
+      damping: 10,
+    },
+  });
 
   return (
     <motion.div
       className="flex flex-col gap-6"
       initial="hidden"
       whileInView="show"
-      whileHover="hover"
-      viewport={{ once: true, amount: 0.5 }} // Animates once when 50% is in view
+      viewport={{ once: true, amount: 0.5 }}
       variants={container}
     >
       <motion.span className="font-semibold" variants={item}>
         {findUs}
       </motion.span>
       <div className="flex flex-wrap gap-10 text-white">
-        {[
-          {
-            href: "",
-            icon: <FaFacebook size="42" />,
-            color: "hover:text-blue-600",
-            shadow:
-              "drop-shadow-[0_15px_25px_rgba(59,130,246,0.5)] hover:drop-shadow-[0_5px_15px_rgba(59,130,246,0.6)]",
-          },
-          {
-            href: "",
-            icon: <FaInstagram size="42" />,
-            color: "hover:text-pink-500",
-            shadow:
-              "drop-shadow-[0_15px_25px_rgba(236,72,153,0.5)] hover:drop-shadow-[0_5px_15px_rgba(236,72,153,0.6)]",
-          },
-          {
-            href: "",
-            icon: <FaYoutube size="42" />,
-            color: "hover:text-red-600",
-            shadow:
-              "drop-shadow-[0_15px_25px_rgba(220,38,38,0.5)] hover:drop-shadow-[0_5px_15px_rgba(220,38,38,0.6)]",
-          },
-          {
-            href: "",
-            icon: <FaLinkedin size="42" />,
-            color: "hover:text-[#0e76a8]",
-            shadow:
-              "drop-shadow-[0_15px_25px_rgba(14,118,168,0.5)] hover:drop-shadow-[0_5px_15px_rgba(14,118,168,0.6)]",
-          },
-          {
-            href: "",
-            icon: <FaXTwitter size="42" />,
-            color: "hover:text-[#657786]",
-            shadow:
-              "drop-shadow-[0_15px_25px_rgba(101,119,134,0.5)] hover:drop-shadow-[0_5px_15px_rgba(101,119,134,0.6)]",
-          },
-        ].map(({ href, icon, color, shadow }, index) => (
+        {socialMediaLinks.map(({ href, icon, color, shadow, label }, index) => (
           <motion.a
             key={index}
             href={href}
-            className={`${color} transition-all hover:scale-105 ${shadow}`}
+            whileHover={hoverEffect(color, shadow)}
+            custom={color}
             variants={item}
+            style={{ color: "#ffffff" }}
+            aria-label={label}
           >
             {icon}
           </motion.a>
