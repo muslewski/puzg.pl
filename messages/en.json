@@ -835,6 +835,13 @@
     "title": "Public Information Bulletin",
     "description": "Browse public information about our university's activities, including documents, announcements, and other data in accordance with the Public Information Access Act."
   },
+  "PrawaAutorskiePage": {
+    "title": "Copyright",
+    "description": "Learn about copyright information on the website of the public vocational university in Grudziądz. Read about the rules for using graphics, icons, and other materials published on the site.",
+
+    "mainTitle": "Icons",
+    "simpleText": "Below you will find icons with links to their sources:"
+  },
 
   "Cookie": {
     "text-1": "We use cookies for better navigation.",

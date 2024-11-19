@@ -835,6 +835,13 @@
     "title": "Biuletyn Informacji Publicznej",
     "description": "Przeglądaj publiczne informacje o działalności naszej uczelni, w tym dokumenty, ogłoszenia oraz inne dane zgodnie z ustawą o dostępie do informacji publicznej."
   },
+  "PrawaAutorskiePage": {
+    "title": "Prawa autorskie",
+    "description": "Zapoznaj się z informacjami dotyczącymi praw autorskich na stronie publicznej uczelni zawodowej w Grudziądzu. Przeczytaj o zasadach wykorzystywania grafik, ikon i innych materiałów zamieszczonych na stronie.",
+
+    "mainTitle": "Ikony",
+    "simpleText": "Poniżej znajdziesz ikony z odnośnikami do ich źródeł:"
+  },
 
   "Cookie": {
     "text-1": "Używamy pliki cookies dla lepszej nawigacji.",

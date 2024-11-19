@@ -23,6 +23,7 @@ function FancyButton({
   style,
   circle,
   stopAnimation,
+  iconBg,
 }: {
   text: string;
   link?: ComponentProps<typeof Link>["href"];
@@ -39,6 +40,7 @@ function FancyButton({
   style?: React.CSSProperties;
   circle?: boolean;
   stopAnimation?: boolean;
+  iconBg?: string;
 }) {
   const t = useTranslations("Helper");
 
@@ -90,17 +92,24 @@ function FancyButton({
           {icon && iconAlt && (
             <div
               className={clsx(
-                "relative h-10 w-10 flex-shrink-0",
-                small ? "h-7 w-7" : "h-10 w-10"
+                "w-fit h-fit rounded-lg",
+                iconBg ?? "bg-transparent"
               )}
             >
-              <Image
-                src={icon}
-                fill
-                sizes="72px"
-                className="object-cover"
-                alt={iconAlt}
-              />
+              <div
+                className={clsx(
+                  "relative h-10 w-10 flex-shrink-0",
+                  small ? "h-7 w-7" : "h-10 w-10"
+                )}
+              >
+                <Image
+                  src={icon}
+                  fill
+                  sizes="72px"
+                  className="object-cover"
+                  alt={iconAlt}
+                />
+              </div>
             </div>
           )}
           {text}
