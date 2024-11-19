@@ -201,7 +201,7 @@ export default function PolitykaPrywatnosciPage({ params: { locale } }: Props) {
           </div>
         </Card>
 
-        <Card border="bl" customWrapperWidth="w-full">
+        {/* <Card border="bl" customWrapperWidth="w-full">
           <div className="flex items-center justify-between mb-6">
             <h3>Ostatnie aktualizacje</h3>
             <FaCalendarAlt className="w-5 h-5 text-brandPrimaryBlue" />
@@ -232,7 +232,7 @@ export default function PolitykaPrywatnosciPage({ params: { locale } }: Props) {
               </a>
             ))}
           </div>
-        </Card>
+        </Card> */}
 
         <Card grayCard grayCardPosition="right">
           <div className="flex items-center gap-4 mb-6">

@@ -6,22 +6,10 @@ import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import BoxItem from "@/components/footer/BoxItem";
 import FooterLink from "@/components/footer/FooterLink";
+import { use } from "react";
+import { useTranslations } from "next-intl";
 
-export default function FooterContent({
-  localization,
-  contact,
-  bip,
-  accessibilityDeclaration,
-  privacyPolicy,
-  findUs,
-}: {
-  localization: string;
-  contact: string;
-  bip: string;
-  accessibilityDeclaration: string;
-  privacyPolicy: string;
-  findUs: string;
-}) {
+export default function FooterContent() {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -32,6 +20,8 @@ export default function FooterContent({
       },
     },
   };
+
+  const t = useTranslations("Footer");
 
   return (
     <motion.div
@@ -64,7 +54,7 @@ export default function FooterContent({
               />
             </svg>
           }
-          title={localization}
+          title={t("localization")}
         >
           <p className="text-gray-300 text-lg">
             Czarnieckiego 5/7, <br /> 86-300 Grudziądz
@@ -110,7 +100,7 @@ export default function FooterContent({
               />
             </svg>
           }
-          title={contact}
+          title={t("contact")}
         >
           <ul>
             <li className="text-gray-300 text-lg">576-060-123</li>
@@ -125,7 +115,7 @@ export default function FooterContent({
             href="/biuletyn-informacji-publicznej"
             className="flex items-center gap-3"
           >
-            {bip}
+            {t("bip")}
             <div className="relative w-[48px] h-[20px]">
               <Image
                 src="/images/bip.png"
@@ -137,13 +127,15 @@ export default function FooterContent({
             </div>
           </FooterLink>
           <FooterLink href="/deklaracja-dostepnosci">
-            {accessibilityDeclaration}
+            {t("accessibilityDeclaration")}
           </FooterLink>
-          <FooterLink href="/polityka-prywatnosci">{privacyPolicy}</FooterLink>
-          <FooterLink href="/prawa-autorskie">Prawa Autorskie</FooterLink>
+          <FooterLink href="/polityka-prywatnosci">
+            {t("privacyPolicy")}
+          </FooterLink>
+          <FooterLink href="/prawa-autorskie">{t("copyright")}</FooterLink>
         </div>
 
-        <FooterSocialMedia findUs={findUs} />
+        <FooterSocialMedia findUs={t("findUs")} />
       </div>
     </motion.div>
   );
