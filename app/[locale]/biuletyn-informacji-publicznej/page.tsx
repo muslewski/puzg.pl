@@ -147,6 +147,7 @@ export default function PolitykaPrywatnosciPage({ params: { locale } }: Props) {
         <Card
           border="tr"
           customInsideBorder="bg-gradient-to-br from-brandWashedBlue/10"
+          blueGradient
           customWrapperWidth="w-full"
         >
           <div className="flex items-center justify-between mb-6 gap-12">

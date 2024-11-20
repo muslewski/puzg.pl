@@ -34,11 +34,7 @@ export default function BipDokumentyPage({ params: { locale } }: Props) {
 
   return (
     <MainWrapper topTitle="Dokumenty">
-      <Card
-        border="tr"
-        customInsideBorder="bg-gradient-to-br from-brandWashedBlue/10"
-        customWrapperWidth="w-full"
-      >
+      <Card border="tr" blueGradient customWrapperWidth="w-full">
         <div className="flex items-center justify-between mb-6 gap-12">
           <h3>Lista Dokumentów</h3>
         </div>

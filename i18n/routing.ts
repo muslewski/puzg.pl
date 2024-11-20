@@ -189,6 +189,11 @@ export const routing = defineRouting({
       pl: "/biuletyn-informacji-publicznej/prawo/statut",
       en: "/public-information-bulletin/law/statute",
     },
+    "/biuletyn-informacji-publicznej/prawo/zasady-tworzenia-prowadzenia-i-likwidacji-kierunkow-studiow":
+      {
+        pl: "/biuletyn-informacji-publicznej/prawo/zasady-tworzenia-prowadzenia-i-likwidacji-kierunkow-studiow",
+        en: "/public-information-bulletin/law/rules-for-creating-conducting-and-closing-study-programs",
+      },
   },
 });
 

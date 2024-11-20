@@ -2,7 +2,7 @@ import Card from "@/components/card/Card";
 import CardList from "@/components/card/CardList";
 import MainTitle from "@/components/card/MainTitle";
 import SimpleText from "@/components/card/SimpleText";
-import Contact from "@/components/form/Contact";
+import ContactForm from "@/components/form/ContactForm";
 import LocalizationIframe from "@/components/LocalizationIframe";
 import MainWrapper from "@/components/MainWrapper";
 import { Metadata } from "next";
@@ -35,7 +35,7 @@ export default function KontaktPage({ params: { locale } }: Props) {
       <Card customWrapperWidth="w-full" border="l">
         <MainTitle>{t("mainTitle")}</MainTitle>
         <SimpleText>{t("simpleText")}</SimpleText>
-        <Contact />
+        <ContactForm />
       </Card>
 
       <Card border="bl">

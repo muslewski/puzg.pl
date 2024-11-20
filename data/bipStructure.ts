@@ -142,6 +142,10 @@ export const bipStructure: MenuItem[] = [
         // href: "/prawo/informacje-o-przetwarzaniu-danych",
       },
       {
+        title: "Zasady Tworzenia, Prowadzenia i Likwidacji Kierunków Studiów",
+        href: "/biuletyn-informacji-publicznej/prawo/zasady-tworzenia-prowadzenia-i-likwidacji-kierunkow-studiow",
+      },
+      {
         title: "Regulaminy", // href: "/prawo/regulaminy"
       },
     ],

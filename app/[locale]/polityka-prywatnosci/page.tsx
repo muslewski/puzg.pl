@@ -377,15 +377,22 @@ export default function PolitykaPrywatnosciPage({ params: { locale } }: Props) {
                       statystycznych PUZG korzysta z narzędzia Google Analytics,
                       działającego w oparciu o własne pliki "cookies". Polecamy
                       zapoznanie się z Polityką Prywatności Google Analytics:
+                      <br></br>
                       https://support.google.com/analytics/answer/6004245?hl=pl.
+                      <br></br>
                       Do celów jakościowych PUZG korzysta z aplikacji CUX,
                       działającego w oparciu o własny mechanizm "Web Storage".
                       Polecamy zapoznanie się z Polityką Prywatności CUX:
-                      https://cux.io/legal/privacy-policy/. Do celów
-                      marketingowych wykorzystujemy narzędzie Facebook Pixel,
-                      które działa w oparciu o własne pliki "cookies". Polecamy
-                      zapoznanie się z Polityką Prywatności Facebook Pixel na
-                      Stronie: https://www.facebook.com/privacy/explanation.
+                      <br></br>
+                      https://cux.io/legal/privacy-policy/.
+                      <br></br>
+                      Do celów marketingowych wykorzystujemy narzędzie Facebook
+                      Pixel, które działa w oparciu o własne pliki "cookies".
+                      Polecamy zapoznanie się z Polityką Prywatności Facebook
+                      Pixel na Stronie:
+                      <br></br>
+                      https://www.facebook.com/privacy/explanation.
+                      <br></br>
                       Dodatkowo wykorzystywane są: wtyczki, przyciski lub inne
                       narzędzia umożliwiające dzielenie się treścią na portalach
                       społecznościowych, takich jak: Facebook i Twitter, filmy z

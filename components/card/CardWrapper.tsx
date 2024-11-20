@@ -10,6 +10,7 @@ export default function CardWrapper({
   customGradient,
   customInsideBorder,
   customWrapperWidth,
+  blueGradient,
   grayCard = false,
   grayCardPosition,
 }: {
@@ -18,6 +19,7 @@ export default function CardWrapper({
   customGradient?: `from-${string}`;
   customInsideBorder?: string;
   customWrapperWidth?: string;
+  blueGradient?: boolean;
   grayCard?: boolean;
   grayCardPosition?: grayCardPosition;
 }) {
@@ -78,6 +80,8 @@ export default function CardWrapper({
         <div
           className={clsx(
             "flex flex-col gap-12 sm:gap-20 bg-white p-6 sm:p-12 rounded-xl",
+            blueGradient &&
+              "bg-gradient-to-tr from-brandWashedBlue/10 to-transparent",
             !grayCard &&
               (customInsideBorder ?? "border-washedBlue-300 border-double"),
             border === "bl" &&

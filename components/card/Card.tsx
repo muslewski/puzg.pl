@@ -15,6 +15,7 @@ type CardProps = {
   border?: border;
   customGradient?: `from-${string}`;
   customInsideBorder?: string;
+  blueGradient?: boolean;
   customWrapperWidth?: string;
   grayCard?: boolean;
   grayCardPosition?: grayCardPosition;
@@ -27,6 +28,7 @@ export default function Card({
   border,
   customGradient,
   customInsideBorder,
+  blueGradient,
   customWrapperWidth,
   grayCard,
   grayCardPosition,
@@ -40,6 +42,7 @@ export default function Card({
       customGradient={customGradient}
       customInsideBorder={customInsideBorder}
       customWrapperWidth={customWrapperWidth}
+      blueGradient={blueGradient}
       grayCard={grayCard}
       grayCardPosition={grayCardPosition}
     >

@@ -8,7 +8,7 @@ import { useCallback, useMemo, useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-export default function Contact() {
+export default function ContactForm() {
   const t = useTranslations("KontaktPage");
 
   const [formData, setFormData] = useState({
