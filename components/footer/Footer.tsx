@@ -12,14 +12,7 @@ export default function Footer() {
       <div className="flex flex-col gap-16 w-4/5 text-lg">
         <FooterTitle title={t("title")} iconAlt={t("titleAlt")} />
         <FooterHr />
-        <FooterContent
-          localization={t("localization")}
-          contact={t("contact")}
-          bip={t("bip")}
-          accessibilityDeclaration={t("accessibilityDeclaration")}
-          privacyPolicy={t("privacyPolicy")}
-          findUs={t("findUs")}
-        />
+        <FooterContent />
         <FooterHr />
         <FooterCopyright title={t("title")} />
       </div>

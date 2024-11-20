@@ -156,10 +156,6 @@ export const routing = defineRouting({
       pl: "/polityka-prywatnosci",
       en: "/privacy-policy",
     },
-    "/deklaracja-dostepnosci": {
-      pl: "/deklaracja-dostepnosci",
-      en: "/accessibility-declaration",
-    },
     "/biuletyn-informacji-publicznej": {
       pl: "/biuletyn-informacji-publicznej",
       en: "/public-information-bulletin",
@@ -167,6 +163,31 @@ export const routing = defineRouting({
     "/prawa-autorskie": {
       pl: "/prawa-autorskie",
       en: "/copyright",
+    },
+
+    // BIP
+    // Dostępność
+    "/biuletyn-informacji-publicznej/dostepnosc/dokumenty": {
+      pl: "/biuletyn-informacji-publicznej/dostepnosc/dokumenty",
+      en: "/public-information-bulletin/accessibility/documents",
+    },
+    "/biuletyn-informacji-publicznej/dostepnosc/deklaracja-dostepnosci": {
+      pl: "/biuletyn-informacji-publicznej/dostepnosc/deklaracja-dostepnosci",
+      en: "/public-information-bulletin/accessibility/declaration-of-accessibility",
+    },
+    "/biuletyn-informacji-publicznej/dostepnosc/jak-przegladac-bip": {
+      pl: "/biuletyn-informacji-publicznej/dostepnosc/jak-przegladac-bip",
+      en: "/public-information-bulletin/accessibility/how-to-browse-bip",
+    },
+
+    // Prawo
+    "/biuletyn-informacji-publicznej/prawo/zarzadzenia-rektora": {
+      pl: "/biuletyn-informacji-publicznej/prawo/zarzadzenia-rektora",
+      en: "/public-information-bulletin/law/rectors-order",
+    },
+    "/biuletyn-informacji-publicznej/prawo/statut": {
+      pl: "/biuletyn-informacji-publicznej/prawo/statut",
+      en: "/public-information-bulletin/law/statute",
     },
   },
 });

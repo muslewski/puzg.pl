@@ -126,7 +126,7 @@ export default function FooterContent() {
               />
             </div>
           </FooterLink>
-          <FooterLink href="/deklaracja-dostepnosci">
+          <FooterLink href="/biuletyn-informacji-publicznej/dostepnosc/deklaracja-dostepnosci">
             {t("accessibilityDeclaration")}
           </FooterLink>
           <FooterLink href="/polityka-prywatnosci">

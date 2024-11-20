@@ -40,7 +40,7 @@ export default function ZasadyTworzeniaKierunkowStudiowPage({
         <SimpleText>{t("simpleText")}</SimpleText>
         <FancyButton
           text={t("fancyButton")}
-          outsideLink="/files/zasady/Z.28.2024.2025-tworzenie-modyfikacje-i-likwidacja-kierunkow-studiow.pdf"
+          outsideLink="/files/zasady/Z.53.2024.2025.pdf"
           circle
           customGradient="bg-gradient-to-br from-brandBrightBlue to-brandNavyBlue"
         />
@@ -53,7 +53,7 @@ export default function ZasadyTworzeniaKierunkowStudiowPage({
           <FancyButton
             small
             text={t("button-2")}
-            outsideLink="/files/zasady/Wniosek-o-utworzenie-studiow.docx"
+            outsideLink="/files/zasady/Wniosek dotyczący utworzenia specjalności.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
@@ -61,7 +61,7 @@ export default function ZasadyTworzeniaKierunkowStudiowPage({
             small
             text={t("button-3")}
             customClass="max-w-2xl"
-            outsideLink="/files/zasady/Wykaz-nauczycieli-akademickich-proponowanych-do-realizacji-zajec-na-kierunku-studiow.docx"
+            outsideLink="/files/zasady/Wykaz nauczycieli akademickich proponowanych do realizacji zajęć na kierunku studiów.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
@@ -76,56 +76,56 @@ export default function ZasadyTworzeniaKierunkowStudiowPage({
           <FancyButton
             small
             text={t("button-5")}
-            outsideLink="/files/zasady/Deklaracja-nauczycieli-akademickich.docx"
+            outsideLink="/files/zasady/Deklaracja nauczycieli akademickich.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
             text={t("button-6")}
-            outsideLink="/files/zasady/Deklaracja-osoby-prowadzacej-zajecia-ze-studentami.docx"
+            outsideLink="/files/zasady/Deklaracja osoby prowadzącej zajęcia ze studentami.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
             text={t("button-7")}
-            outsideLink="/files/zasady/Zakladane-efekty-uczenia-sie-dla-kierunku.docx"
+            outsideLink="/files/zasady/Zakładane efekty uczenia się dla kierunku.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
             text={t("button-8")}
-            outsideLink="/files/zasady/Matryca-efektow-uczenia-sie-dla-kierunku.docx"
+            outsideLink="/files/zasady/Matryca efektów uczenia się dla kierunku.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
             text={t("button-9")}
-            outsideLink="/files/zasady/Karta-przedmiotu-sylabus.docx"
+            outsideLink="/files/zasady/Karta przedmiotusylabus.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
             text={t("button-10")}
-            outsideLink="/files/zasady/Wniosek-dotyczacy-modyfikacji-kierunku.docx"
+            outsideLink="/files/zasady/Wniosek dotyczący modyfikacji kierunku.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
             text={t("button-11")}
-            outsideLink="/files/zasady/Wniosek-dotyczacy-utworzenia-specjalnosci.docx"
+            outsideLink="/files/zasady/Wniosek dotyczący utworzenia specjalności.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />
           <FancyButton
             small
             text={t("button-12")}
-            outsideLink="/files/zasady/Wniosek-o-likwidacje-kierunku-specjalnosci.docx"
+            outsideLink="/files/zasady/Wniosek o likwidację kierunkuspecjalności.docx"
             circle
             customGradient="bg-gradient-to-br from-[#14283F] to-[#26384D]"
           />

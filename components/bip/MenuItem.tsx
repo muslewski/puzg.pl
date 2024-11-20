@@ -27,37 +27,52 @@ export const MenuItem = ({ item, level = 0 }: MenuItemProps) => {
 
   const textClasses = clsx("transition-colors", {
     "text-brandDark": level === 0,
-    "text-brandPrimaryBlue": level > 0,
+    "text-brandPrimaryBlue": level > 0 && item.href,
     "text-brandBrightBlue": isActive,
-    "hover:text-brandBrightBlue": !isActive,
+    "hover:text-brandBrightBlue": !isActive && item.href,
   });
 
   return (
     <div>
-      <div
-        className={itemClasses}
-        style={{ paddingLeft: `${level * 16}px` }}
-        onClick={() => hasChildren && setIsOpen(!isOpen)}
-      >
-        {hasChildren && (
-          <motion.div
-            initial={false}
-            animate={{ rotate: isOpen ? 180 : 0 }}
-            transition={{ duration: 0.2 }}
-            className="mr-2"
-          >
-            <IoIosArrowDown className={clsx("w-4 h-4", textClasses)} />
-          </motion.div>
-        )}
-
-        {item.href ? (
-          <Link href={item.href} className={textClasses}>
-            {item.title}
-          </Link>
-        ) : (
+      {item.href ? (
+        <Link
+          href={item.href}
+          className={itemClasses}
+          style={{ paddingLeft: `${level * 16}px` }}
+        >
+          <div>
+            {hasChildren && (
+              <motion.div
+                initial={false}
+                animate={{ rotate: isOpen ? 180 : 0 }}
+                transition={{ duration: 0.2 }}
+                className="mr-2"
+              >
+                <IoIosArrowDown className={clsx("w-4 h-4", textClasses)} />
+              </motion.div>
+            )}
+            <span className={textClasses}>{item.title}</span>
+          </div>
+        </Link>
+      ) : (
+        <div
+          className={itemClasses}
+          style={{ paddingLeft: `${level * 16}px` }}
+          onClick={() => hasChildren && setIsOpen(!isOpen)}
+        >
+          {hasChildren && (
+            <motion.div
+              initial={false}
+              animate={{ rotate: isOpen ? 180 : 0 }}
+              transition={{ duration: 0.2 }}
+              className="mr-2"
+            >
+              <IoIosArrowDown className={clsx("w-4 h-4", textClasses)} />
+            </motion.div>
+          )}
           <span className={textClasses}>{item.title}</span>
-        )}
-      </div>
+        </div>
+      )}
 
       <AnimatePresence>
         {isOpen && item.items && (

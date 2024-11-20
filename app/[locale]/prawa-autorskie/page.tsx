@@ -374,7 +374,12 @@ export default function PrawaAutorskiePage({ params: { locale } }: Props) {
       <Card grayCard grayCardPosition="left">
         <MainTitle>{t("mainTitle-2")}</MainTitle>
         <SimpleText>{t("simpleText-2")}</SimpleText>
-        <FancyButton text={t("button")} />
+        <FancyButton
+          text={t("button")}
+          link="/kontakt"
+          icon="/images/icons/MailWhite.svg"
+          iconAlt="Mail Icon"
+        />
       </Card>
     </MainWrapper>
   );

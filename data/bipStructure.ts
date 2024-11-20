@@ -3,8 +3,8 @@ import { ComponentProps } from "react";
 
 export interface MenuItem {
   title: string;
-  // href?: ComponentProps<typeof Link>["href"];
-  href?: any;
+  href?: ComponentProps<typeof Link>["href"];
+  // href?: any;
   items?: MenuItem[];
 }
 
@@ -114,13 +114,15 @@ export const bipStructure: MenuItem[] = [
     // href: "/prawo",
     items: [
       {
-        title: "Statut", // href: "/prawo/statut"
+        title: "Statut",
+        href: "/biuletyn-informacji-publicznej/prawo/statut",
       },
       {
         title: "Uchwały Senatu", // href: "/prawo/uchwaly-senatu"
       },
       {
-        title: "Zarządzenia Rektora", // href: "/prawo/zarzadzenia-rektora"
+        title: "Zarządzenia Rektora",
+        href: "/biuletyn-informacji-publicznej/prawo/zarzadzenia-rektora",
       },
       {
         title: "Zarządzenia Dyrektora Administracyjnego",
@@ -214,7 +216,12 @@ export const bipStructure: MenuItem[] = [
     // href: "/dostepnosc",
     items: [
       {
-        title: "Deklaracja dostępności", // href: "/dostepnosc/deklaracja"
+        title: "Deklaracja dostępności",
+        href: "/biuletyn-informacji-publicznej/dostepnosc/deklaracja-dostepnosci",
+      },
+      {
+        title: "Dokumenty",
+        href: "/biuletyn-informacji-publicznej/dostepnosc/dokumenty",
       },
       {
         title: "Zapewnienie dostępności osobom ze specjalnymi potrzebami",
@@ -233,7 +240,8 @@ export const bipStructure: MenuItem[] = [
         title: "Redaktorzy biuletynu", // href: "/dostepnosc/redaktorzy"
       },
       {
-        title: "Jak przeglądać BIP", // href: "/dostepnosc/jak-przegladac"
+        title: "Jak przeglądać BIP",
+        href: "/biuletyn-informacji-publicznej/dostepnosc/jak-przegladac-bip",
       },
       {
         title: "Rejestr zmian stron", // href: "/dostepnosc/rejestr-zmian"
