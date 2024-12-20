@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { bipStructure } from "@/data/bipStructure";
 import { MenuItem } from "@/components/bip/MenuItem";
 import { Link } from "@/i18n/routing";
