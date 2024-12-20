@@ -45,23 +45,24 @@ export default function SlideShow({ slides }: { slides: slideProps[] }) {
 
   useEffect(() => {
     // Preload all images
-    slides.forEach((slide, index) => {
-      const img = new Image();
-      img.src = slide.imageSrc;
-      img.onload = () => {
-        setImagesLoaded((prev) => {
-          const newState = [...prev];
-          newState[index] = true;
-          return newState;
-        });
-      };
+    const preloadImages = slides.map((slide) => {
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.src = slide.imageSrc;
+        img.onload = resolve;
+      });
+    });
+
+    // Wait for all images to be loaded
+    Promise.all(preloadImages).then(() => {
+      setImagesLoaded(new Array(slides.length).fill(true)); // Wszystkie obrazy załadowane
     });
   }, [slides]);
 
   return (
     <div className="flex flex-col items-center lg:items-start gap-12 w-full 2xl:w-4/5 lg:px-12 2xl:px-0">
       <AnimatePresence mode="wait">
-        {imagesLoaded[slideNumber] ? (
+        {imagesLoaded.every((loaded) => loaded) ? (
           <Slide data={slides[slideNumber]} key={slideNumber} />
         ) : (
           <div className="w-full h-full bg-gray-200 animate-pulse" />
