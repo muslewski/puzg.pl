@@ -11,6 +11,7 @@ import { notFound } from "next/navigation";
 import Footer from "@/components/footer/Footer";
 import { ToastContainer } from "react-toastify";
 import CookieAlert from "@/components/cookie/CookieAlert";
+import { Analytics } from "@vercel/analytics/next";
 
 type Props = {
   children: React.ReactNode;
@@ -78,6 +79,7 @@ export default async function LocaleLayout({
           <Navigation />
           {children}
           <Footer />
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>
