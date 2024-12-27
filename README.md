@@ -46,14 +46,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [ ] Delete eslintrc rules:
   - "@typescript-eslint/no-unused-vars": "off", // Disable unused variable rule for all files
   - "@typescript-eslint/no-explicit-any": "off", // Disable no-explicit-any rule for all files
-- [ ] Define classes for h1-h5 in global.css
 - [ ] Change HeroImage to [obraz](https://stock.adobe.com/pl/search?k=grudziadz&asset_id=65177066)
-- [ ] Change metaDescription of news to something shorter
+- [x] Change metaDescription of news to something shorter
 - [ ] Add Self-Healing Urls for news
-- [ ] Add alt images to oUczelniPage Carousel
+- [x] Add alt images to oUczelniPage Carousel
 - [ ] Add pagination to News when the news will be stored in database
 - [ ] Add PDF Reader https://react-pdf-viewer.dev/
-- [ ] Repair SearchBox Errors
+- [x] Repair SearchBox Errors
 - [ ] Make the pages inside brackets subpages of subpages like /student/dziekanat
 - [ ] Replace my email to sekretariat in contact form route.tsx
 - [x] Add Custom PopUp that the email was sent
