@@ -231,7 +231,7 @@ export default function PolitykaPrywatnosciPage({ params: { locale } }: Props) {
           </SimpleText>
           <div className="flex gap-4 mt-6">
             <a
-              href="/biuletyn-informacji-publicznej/dostepnosc"
+              href="/biuletyn-informacji-publicznej/dostepnosc/deklaracja-dostepnosci"
               className="inline-block text-brandPrimaryBlue hover:text-brandBrightBlue
                 transition-colors"
             >
@@ -256,24 +256,24 @@ export default function PolitykaPrywatnosciPage({ params: { locale } }: Props) {
             <div className="flex flex-col space-y-4 p-6 bg-brandWashedBlue/10 rounded-lg">
               <div className="flex items-center gap-3">
                 <FaUser className="w-5 h-5 text-brandPrimaryBlue" />
-                <span className="font-medium">mgr Jan Kowalski</span>
+                <span className="font-medium">Mateusz Muślewski</span>
               </div>
               <div className="flex items-center gap-3">
                 <FaEnvelope className="w-5 h-5 text-brandPrimaryBlue" />
                 <a
-                  href="mailto:bip@uczelnia.edu.pl"
+                  href="mailto:kontakt@muslewski.com"
                   className="text-brandPrimaryBlue hover:text-brandBrightBlue"
                 >
-                  bip@puzg.pl
+                  kontakt@muslewski.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <FaPhone className="w-5 h-5 text-brandPrimaryBlue" />
                 <a
-                  href="tel:+48123456789"
+                  href="tel:+48605458952"
                   className="text-brandPrimaryBlue hover:text-brandBrightBlue"
                 >
-                  +48 123 456 789
+                  +48 605 458 952
                 </a>
               </div>
             </div>
