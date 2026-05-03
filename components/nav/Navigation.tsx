@@ -80,10 +80,10 @@ export default function Navigation() {
       <motion.nav
         ref={navRef}
         className={clsx(
-          "flex flex-col items-center w-screen 3xl:w-10/12 max-w-[2000px] px-6 sm:px-8 lg:px-24 3xl:px-36 rounded-b-3xl pointer-events-auto lg:pointer-events-none transition-[padding,background-color,box-shadow,gap] duration-300 ease-out",
+          "flex flex-col items-center w-screen 3xl:w-10/12 max-w-[2000px] px-6 sm:px-8 lg:px-24 3xl:px-36 rounded-b-3xl lg:rounded-none lg:bg-transparent lg:shadow-none lg:ring-0 pointer-events-auto lg:pointer-events-none transition-[padding,background-color,gap] duration-300 ease-out",
           isScrolled
-            ? "py-3 lg:py-4 gap-3 bg-brandPrimaryBlue lg:bg-white shadow-elevated ring-1 ring-black/5"
-            : "py-5 lg:py-8 gap-5 bg-brandPrimaryBlue lg:bg-transparent shadow-lg lg:shadow-none ring-1 ring-white/10 lg:ring-0"
+            ? "py-3 lg:py-3 gap-3 bg-brandPrimaryBlue shadow-elevated ring-1 ring-white/10"
+            : "py-5 lg:py-6 gap-5 bg-brandPrimaryBlue shadow-lg ring-1 ring-white/10"
         )}
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
