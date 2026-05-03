@@ -66,7 +66,7 @@ export default function SearchBox({
       transition: {
         when: "beforeChildren",
         staggerChildren: 0.1,
-        ease: "easeOut",
+        ease: "easeOut" as const,
       },
     },
   };
@@ -77,7 +77,7 @@ export default function SearchBox({
       opacity: 1,
       y: 0,
       transition: {
-        ease: "easeOut",
+        ease: "easeOut" as const,
       },
     },
   };

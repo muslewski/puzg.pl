@@ -75,7 +75,7 @@ export default function NavigationLink({
                 scale: 0.95,
                 transition: {
                   duration: 0.2,
-                  ease: "easeInOut",
+                  ease: "easeInOut" as const,
                 },
                 pointerEvents: "none",
               }}
@@ -126,13 +126,13 @@ export default function NavigationLink({
                         transition: {
                           duration: 0.25,
                           delay: 0.05 + index * 0.04,
-                          ease: "easeOut",
+                          ease: "easeOut" as const,
                         },
                       }}
                       exit={{ opacity: 0, y: -6 }}
                       transition={{
                         duration: 0.2,
-                        ease: "easeOut",
+                        ease: "easeOut" as const,
                       }}
                     >
                       {item.label}

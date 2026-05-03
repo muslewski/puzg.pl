@@ -1,3 +1,4 @@
+import { use } from "react";
 import Card from "@/components/card/Card";
 import MainTitle from "@/components/card/MainTitle";
 import SimpleText from "@/components/card/SimpleText";
@@ -10,17 +11,27 @@ import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 type Props = {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
-export async function generateMetadata({
-  params: { locale },
-}: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   const t = await getTranslations({ locale, namespace: "KontaktPage" });
   return { title: t("title"), description: t("description") };
 }
 
-export default function KontaktPage({ params: { locale } }: Props) {
+export default function KontaktPage(props: Props) {
+  const params = use(props.params);
+
+  const {
+    locale
+  } = params;
+
   setRequestLocale(locale);
   const t = useTranslations("KontaktPage");
 

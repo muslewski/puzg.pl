@@ -1,3 +1,4 @@
+import { use } from "react";
 import MainWrapper from "@/components/MainWrapper";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
@@ -8,12 +9,16 @@ import { newsData, newsKeys } from "@/data/newsItems";
 import { ImageOrientation } from "@/components/card/Card";
 
 type Props = {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
-export async function generateMetadata({
-  params: { locale },
-}: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   const t = await getTranslations({ locale, namespace: "AktualnosciPage" });
 
   return {
@@ -30,7 +35,13 @@ export type newsProps = {
   description: React.ReactNode;
 };
 
-export default function AktualnosciPage({ params: { locale } }: Props) {
+export default function AktualnosciPage(props: Props) {
+  const params = use(props.params);
+
+  const {
+    locale
+  } = params;
+
   // Enable static rendering
   setRequestLocale(locale);
 

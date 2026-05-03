@@ -13,7 +13,7 @@ export default function LocationCard() {
         initial={{ opacity: 0, y: 32 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.1 }}
-        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
         className="rounded-[1.75rem] overflow-hidden bg-gradient-to-br from-brandNeutrals-200 via-brandNeutrals-300 to-brandNeutrals-400 ring-1 ring-brandNeutrals-500/40 shadow-soft"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">

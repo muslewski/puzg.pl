@@ -95,7 +95,7 @@ export default function LocaleButtons({ active }: { active: boolean }) {
               exit="hidden"
               transition={{
                 duration: 0.8,
-                ease: "easeInOut",
+                ease: "easeInOut" as const,
               }}
             >
               <LocaleButtonsLogic />

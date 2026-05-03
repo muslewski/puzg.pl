@@ -27,7 +27,7 @@ export default function SectionHeader({
       initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.4 }}
-      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
       className={clsx(
         "flex flex-col gap-4 sm:gap-5 max-w-3xl",
         align === "center" && "items-center text-center mx-auto",

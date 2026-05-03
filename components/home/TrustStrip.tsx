@@ -49,7 +49,7 @@ export default function TrustStrip() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
         className="rounded-[1.75rem] bg-gradient-to-br from-brandPrimaryBlue to-brandDark text-white p-8 sm:p-12 shadow-elevated relative overflow-hidden"
       >
         {/* Decorative grid pattern */}
@@ -81,7 +81,7 @@ export default function TrustStrip() {
                 transition={{
                   duration: 0.5,
                   delay: 0.1 + i * 0.08,
-                  ease: [0.22, 1, 0.36, 1],
+                  ease: [0.22, 1, 0.36, 1] as const,
                 }}
                 className="flex flex-col gap-3"
               >

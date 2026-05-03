@@ -10,7 +10,7 @@ export default function HeroArrow({ arrowAlt }: { arrowAlt: string }) {
       initial={{ x: "50%", opacity: 0 }} // Start off-screen to the left
       animate={{ x: 0, rotate: 0, opacity: 1 }} // Animate to on-screen position
       transition={{
-        duration: "0.5",
+        duration: 0.5,
         type: "spring",
         stiffness: 100,
       }}

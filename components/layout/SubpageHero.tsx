@@ -184,7 +184,7 @@ export default function SubpageHero({
               aria-label="Breadcrumb"
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] as const }}
               className="mb-6 sm:mb-8"
             >
               <ol className="!flex !flex-row !flex-wrap items-center gap-2 text-xs sm:text-sm font-outfit !pl-0 !list-none">
@@ -244,7 +244,7 @@ export default function SubpageHero({
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
             className="flex flex-col gap-6 sm:gap-8 max-w-4xl"
           >
             {eyebrow && (

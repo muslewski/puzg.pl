@@ -7,7 +7,7 @@ import React from "react";
 type Document = {
   title: string;
   href: string;
-  icon: JSX.Element;
+  icon: React.JSX.Element;
   date: string;
 };
 
@@ -15,7 +15,7 @@ export function getDocuments(): Document[] {
   const PUBLIC_FILES_PATH = path.join(process.cwd(), "public", "files");
 
   // Function to get file extension icon
-  const getFileIcon = (extension: string): JSX.Element => {
+  const getFileIcon = (extension: string): React.JSX.Element => {
     switch (extension.toLowerCase()) {
       case ".pdf":
         return <IoMdDocument className="w-6 h-6" />;

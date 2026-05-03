@@ -27,7 +27,7 @@ export const RichTextSlicer: React.FC<RichTextSlicerProps> = ({
       }
     }
 
-    if (React.isValidElement(node)) {
+    if (React.isValidElement<{ children?: React.ReactNode }>(node)) {
       return React.cloneElement(node, {
         children: React.Children.map(node.props.children, (child) =>
           sliceText(child)

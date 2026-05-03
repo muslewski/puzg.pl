@@ -1,3 +1,4 @@
+import { use } from "react";
 import { Locale } from "@/i18n/routing";
 import MainWrapper from "@/components/MainWrapper";
 import { useTranslations } from "next-intl";
@@ -13,10 +14,10 @@ import SimpleText from "@/components/card/SimpleText";
 import { newsData, newsKeys } from "@/data/newsItems";
 
 type Props = {
-  params: {
+  params: Promise<{
     locale: Locale;
     slug: string;
-  };
+  }>;
 };
 
 type NewsKey = (typeof newsKeys)[number];
@@ -25,9 +26,14 @@ function isValidSlug(slug: string): slug is NewsKey {
   return newsKeys.includes(slug as NewsKey);
 }
 
-export async function generateMetadata({
-  params: { locale, slug },
-}: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
+
+  const {
+    locale,
+    slug
+  } = params;
+
   if (isValidSlug(slug)) {
     const t = await getTranslations({
       locale,
@@ -46,7 +52,14 @@ export async function generateMetadata({
   }
 }
 
-export default function PostPage({ params: { locale, slug } }: Props) {
+export default function PostPage(props: Props) {
+  const params = use(props.params);
+
+  const {
+    locale,
+    slug
+  } = params;
+
   // Enable static rendering
   setRequestLocale(locale);
   const tButtons = useTranslations(`AktualnosciPage.news.buttons`);
