@@ -15,7 +15,6 @@
     "news": "Aktualności",
     "aboutCollege": "O Uczelni",
     "collegeAuthorities": "Władze Uczelni",
-
     "student": "Student",
     "deanery": "Dziekanat",
     "educationQuality": "Jakość Kształcenia",
@@ -26,12 +25,10 @@
     "studyProgram": "Program Studiów",
     "studyRegulations": "Regulamin Studiów",
     "scholarships": "Stypendia",
-
     "employee": "Pracownik",
     "jobOffers": "Oferty Pracy",
     "lawsAndRegulations": "Ustawy i Rozporządzenia MNiSW",
     "rulesForStudyPrograms": "Zasady Tworzenia, Prowadzenia i Likwidacji Kierunków Studiów",
-
     "recruitment": "Rekrutacja",
     "legalActs": "Akty Prawne",
     "electronicRegistration": "Elektroniczna Rejestracja Kandydata",
@@ -39,13 +36,11 @@
     "recruitmentFee": "Opłata Rekrutacyjna",
     "recruitmentStepByStep": "Rekrutacja Krok po Kroku",
     "recruitmentSchedule": "Terminarz Rekrutacji",
-
     "elections": "Wybory 2024",
     "collegeElectionCommittee": "Uczelniana Komisja Wyborcza",
     "announcements": "Komunikaty",
     "downloadableDocuments": "Dokumenty do pobrania",
     "resolutionsUKW": "Uchwały UKW",
-
     "institute": "Instytut",
     "collaboration": "Współpraca",
     "contact": "Kontakt"
@@ -77,13 +72,11 @@
   "HomePage": {
     "title": "Publiczna Uczelnia Zawodowa w Grudziądzu",
     "description": "Poznaj naszą uczelnię, ofertę edukacyjną oraz inicjatywy wspierające rozwój zawodowy i naukowy studentów.",
-
     "slogan": "Nowoczesne kształcenie <br></br>w zasięgu ręki!",
     "sloganMobile": "Nowoczesne kształcenie w zasięgu ręki!",
     "heroImageAlt": "Tło przedstawiające miasto Grudziądz",
     "arrowAlt": "Strzałka",
     "slidesEyebrow": "Aktualności",
-
     "slides": {
       "0": {
         "title": "Rekrutacja uzupełniająca na rok akademicki 2024/2025",
@@ -110,7 +103,6 @@
         "imageAlt": "Zdjęcie robotów"
       }
     },
-
     "card1": {
       "mainTitle": "Dlaczego warto wybrać naszą uczelnię?",
       "0": {
@@ -132,28 +124,36 @@
         "iconAlt": "Ikona walizki do pracy"
       }
     },
-
     "grayCard1": {
       "mainTitle": "Gdzie nas znajdziesz?",
       "simpleText": "Znajdziesz nas na ulicy Czarnieckiego 5/7 oraz Hoffmanna 1-7, gdzie mieści się nasza nowoczesna infrastruktura edukacyjna."
     },
-
     "card2": {
       "mainTitle": "Dołącz do nas na Microsoft Teams!",
       "simpleText": "Zajęcia, które nie mogą odbyć się na uczelni, będą prowadzone online na Microsoft Teams.",
       "buttonText": "Kliknij Tutaj"
     },
-
     "trust": {
       "eyebrow": "Państwowa Uczelnia Zawodowa",
       "items": {
-        "0": { "title": "Praktyczny profil", "description": "Program studiów oparty na realnych zadaniach inżynierskich i ścisłej współpracy z przemysłem." },
-        "1": { "title": "Doświadczona kadra", "description": "Wykładowcy z doświadczeniem akademickim i przemysłowym, prowadzący zajęcia warsztatowe." },
-        "2": { "title": "Nowoczesna infrastruktura", "description": "Laboratoria, pracownie CNC, robotyka i specjalistyczne stanowiska do nauki praktycznej." },
-        "3": { "title": "Współpraca z biznesem", "description": "Porozumienia z lokalnymi firmami, PSSE i przemysłem zbrojeniowym - praca dla absolwentów." }
+        "0": {
+          "title": "Praktyczny profil",
+          "description": "Program studiów oparty na realnych zadaniach inżynierskich i ścisłej współpracy z przemysłem."
+        },
+        "1": {
+          "title": "Doświadczona kadra",
+          "description": "Wykładowcy z doświadczeniem akademickim i przemysłowym, prowadzący zajęcia warsztatowe."
+        },
+        "2": {
+          "title": "Nowoczesna infrastruktura",
+          "description": "Laboratoria, pracownie CNC, robotyka i specjalistyczne stanowiska do nauki praktycznej."
+        },
+        "3": {
+          "title": "Współpraca z biznesem",
+          "description": "Porozumienia z lokalnymi firmami, PSSE i przemysłem zbrojeniowym - praca dla absolwentów."
+        }
       }
     },
-
     "programs": {
       "eyebrow": "Kierunki studiów",
       "mainTitle": "Studia inżynierskie z myślą o przyszłości",
@@ -175,7 +175,6 @@
         "description": "Pracujemy nad uruchomieniem nowych kierunków technicznych, które odpowiedzą na potrzeby pracodawców regionu."
       }
     },
-
     "location": {
       "eyebrow": "Lokalizacja",
       "mainTitle": "Gdzie nas znajdziesz?",
@@ -189,7 +188,6 @@
       "emailLabel": "E-mail",
       "email": "rekrutacja@puzg.pl"
     },
-
     "recruitmentCta": {
       "eyebrow": "Rekrutacja 2024/2025",
       "mainTitle": "Rozpocznij swoją drogę inżyniera",
@@ -205,15 +203,12 @@
     "buttonText": "Strona Główna",
     "buttonIconAlt": "Ikona domu"
   },
-
   "OfertyPracyPage": {
     "title": "Oferty Pracy",
     "description": "Znajdź aktualne konkursy na stanowiska dydaktyczne i badawczo-dydaktyczne. Sprawdź akty prawne oraz pobierz niezbędne dokumenty.",
-
     "mainTitle": "Akty prawne",
     "simpleText": "Akt prawny dotyczący zasad zatrudniania pracowników na stanowiskach dydaktycznych oraz badawczo - dydaktycznych na Publicznej Uczelni Zawodowej w Grudziądzu",
     "fancyButton": "Z.19.2024.2025 (przekierowanie do zarządzenia w PDF)",
-
     "mainTitle-2": "Dokumenty do pobrania",
     "simpleText-2": "Pobierz kluczowe dokumenty związane z zatrudnieniem na stanowiskach dydaktycznych oraz badawczo-dydaktycznych w Publicznej Uczelni Zawodowej w Grudziądzu.",
     "fancyButton-2": "Z.19.2024.2025_zał.2",
@@ -221,29 +216,34 @@
     "fancyButton-4": "Z.19.2024.2025_zał.4",
     "fancyButton-5": "Z.19.2024.2025_zał.5",
     "fancyButton-6": "Z.19.2024.2025_zał.8",
-    "fancyButton-7": "Z.19.2024.2025_zał.10"
+    "fancyButton-7": "Z.19.2024.2025_zał.10",
+    "hero": {
+      "eyebrow": "Pracownik",
+      "image": "/images/heroes/office.jpg",
+      "description": "Aktualne oferty pracy oraz konkursy na stanowiska dydaktyczne i administracyjne w Publicznej Uczelni Zawodowej w Grudziądzu."
+    }
   },
   "UstawyMNiSWPage": {
     "title": "Ustawy i Rozporządzenia MNiSW",
     "description": "Zapoznaj się z aktualnymi ustawami i rozporządzeniami Ministerstwa Nauki i Szkolnictwa Wyższego dotyczącymi szkolnictwa wyższego.",
-
     "h2-1": "Ustawa z dnia 20 lipca 2018 r. - Prawo o szkolnictwie wyższym i nauce",
     "h2-2": "Ustawa z dnia 22 grudnia 2015 r. o Zintegrowanym Systemie Kwalifikacji",
     "h2-3": "Rozporządzenie Ministra Nauki i Szkolnictwa Wyższego z dnia 27 września 2018 r. w sprawie studiów",
     "h2-4": "Rozporządzenie Ministra Nauki i Szkolnictwa Wyższego z dnia 12 września 2018 r. w sprawie kryteriów oceny programowej",
-
-    "bookIconAlt": "Ikona Książki"
+    "bookIconAlt": "Ikona Książki",
+    "hero": {
+      "eyebrow": "Pracownik",
+      "image": "/images/heroes/documents.jpg",
+      "description": "Ustawy i rozporządzenia Ministra Nauki i Szkolnictwa Wyższego dotyczące funkcjonowania uczelni publicznych w Polsce."
+    }
   },
   "ZasadyTworzeniaKierunkowStudiowPage": {
     "title": "Zasady Tworzenia, Prowadzenia i Likwidacji Kierunków Studiów",
     "description": "Dowiedz się, jakie są zasady tworzenia, prowadzenia oraz zamykania kierunków studiów na naszej uczelni.",
-
     "simpleText": "Zarządzenie nr Z.28.2024.2025 Rektora Publicznej Uczelni Zawodowej w Grudziądzu z dnia 6 sierpnia 2024 r. w sprawie ustalenia zasad tworzenia, prowadzenia i likwidacji kierunków studiów",
     "fancyButton": "Kliknij tutaj aby wyświetlić",
-
     "mainTitle": "Załączniki do pobrania:",
     "simpleText-2": "Znajdź wszystkie potrzebne dokumenty i załączniki związane z tworzeniem i zarządzaniem kierunkami studiów.",
-
     "button-2": "Wniosek o utworzenie studiów",
     "button-3": "Wykaz nauczycieli akademickich proponowanych do realizacji zajęć na kierunku studiów",
     "button-4": "Informacje o kompetencjach i doświadczeniu nauczycieli akademickich pozwalających na prawidłową realizację zajęć w ramach programu studiów",
@@ -256,62 +256,70 @@
     "button-11": "Wniosek dotyczący utworzenia specjalności",
     "button-12": "Wniosek o likwidację kierunku / specjalności"
   },
-
   "AktyPrawnePage": {
     "title": "Akty Prawne",
     "description": "Przegląd aktów prawnych dotyczących funkcjonowania naszej uczelni oraz szkolnictwa wyższego w Polsce.",
-
     "mainTitle": "Akty prawne dotyczące procesu rekrutacji w Publicznej Uczelni Zawodowej w Grudziądzu:",
     "simpleText": "Przegląd aktów prawnych związanych z rekrutacją na rok akademicki 2024/2025 w Publicznej Uczelni Zawodowej w Grudziądzu. Kliknij poniżej, aby zobaczyć wybrane dokumenty.",
-
-    "CardImageAlt": "Zdjęcie przedstawia osobę podpisującą dokument"
+    "CardImageAlt": "Zdjęcie przedstawia osobę podpisującą dokument",
+    "hero": {
+      "eyebrow": "Rekrutacja",
+      "image": "/images/heroes/documents.jpg",
+      "description": "Akty prawne regulujące proces rekrutacji - uchwały Senatu, zarządzenia Rektora oraz przepisy ministerialne."
+    }
   },
   "ElektronicznaRejestracjaPage": {
     "title": "Elektroniczna Rejestracja Kandydata",
-    "description": "Zarejestruj się online, aby wziąć udział w procesie rekrutacji na studia na naszej uczelni."
+    "description": "Zarejestruj się online, aby wziąć udział w procesie rekrutacji na studia na naszej uczelni.",
+    "hero": {
+      "eyebrow": "Rekrutacja",
+      "image": "/images/heroes/tech.jpg",
+      "description": "System elektronicznej rejestracji kandydatów (IRK) - utwórz konto, wybierz kierunek i wgraj dokumenty bez wychodzenia z domu."
+    }
   },
   "LimitPrzyjecNaStudiaPage": {
     "title": "Limit Przyjęć na Studia",
     "description": "Sprawdź limity miejsc na dostępne kierunki studiów w ramach bieżącej rekrutacji.",
-
     "mainTitle": "Limit przyjęć na stacjonarne studia pierwszego stopnia dla kierunku Mechatronika określony został w Zarządzeniu Rektora.",
     "simpleText": "Kształcenie prowadzone będzie w dwóch trybach:",
     "richText-1": "stacjonarny w trybie standardowym",
     "richText-2": "stacjonarny w trybie popołudniowym (dla osób pracujących)",
     "iconAlt-1": "Ikona wykładowcy tłumaczącego zagadnienie studentom",
     "iconAlt-2": "Ikona zachodu słońca",
-
     "simpleText-2": "Uruchomienie kierunku studiów nastąpi pod warunkiem zakwalifikowania się przynajmniej 25 kandydatów. W przypadku formy studiów w trybie dla osób pracujących otwarcie nastąpi przy utworzeniu grupy składającej się co najmniej z 18 kandydatów.",
-    "cardImageAlt": "Studenci siedzący na schodkach, rozmawiają ze sobą"
+    "cardImageAlt": "Studenci siedzący na schodkach, rozmawiają ze sobą",
+    "hero": {
+      "eyebrow": "Rekrutacja",
+      "image": "/images/heroes/graduation.jpg",
+      "description": "Limity miejsc na poszczególne kierunki studiów w bieżącym roku akademickim - sprawdź dostępność na wybranym kierunku."
+    }
   },
   "OplataRekrutacyjnaPage": {
     "title": "Opłata Rekrutacyjna",
     "description": "Dowiedz się, jaka jest wysokość opłaty rekrutacyjnej oraz w jaki sposób można ją uiścić.",
-
     "simpleText": "Wyciąg z Rozporządzenia Ministra Nauki i Szkolnictwa Wyższego z dnia 27 września 2018 r. w sprawie studiów (t. j. Dz.U. z 2023 r. poz. 2787), w części dotyczącej wysokości opłaty za przeprowadzenie rekrutacji na I rok studiów od roku akademickiego 2024/2025",
     "mainTitle": "Rozdział 10",
     "simpleText-2": "<b>Wysokość opłaty za przeprowadzenie rekrutacji:</b><br></br>§ 38. Opłata za przeprowadzenie rekrutacji na studia wynosi 85 zł, z tym że:",
-
     "li-1": "1) w przypadku konieczności sprawdzenia uzdolnień artystycznych - opłata wynosi 150 zł;",
     "li-2": "2) w przypadku przeprowadzania egzaminu wstępnego, w tym sprawdzianu sprawności fizycznej - opłata wynosi 100 zł.",
-
     "simpleText-3": "<b>Dane do przelewu:</b><br></br>konto PKO BP<br></br> numer rachunku bankowego: 75 1020 1462 0000 7902 0441 6327",
-    "cardImageAlt": "Człowiek trzymający kartę kredytową i dokonująca płatności online"
+    "cardImageAlt": "Człowiek trzymający kartę kredytową i dokonująca płatności online",
+    "hero": {
+      "eyebrow": "Rekrutacja",
+      "image": "/images/heroes/documents.jpg",
+      "description": "Wysokość opłaty rekrutacyjnej, sposoby płatności oraz dane do przelewu - wszystko, czego potrzebujesz, by dokończyć rejestrację."
+    }
   },
   "RekrutacjaKrokPoKrokuPage": {
     "title": "Rekrutacja Krok po Kroku",
     "description": "Zapoznaj się z procesem rekrutacyjnym i poznaj poszczególne etapy rejestracji na studia.",
-
     "mainTitle": "Rozpocznij studia w Publicznej Uczelni Zawodowej w Grudziądzu",
     "cardImageAlt": "Panorama miasta Grudziądz",
     "simpleText": "Publiczna Uczelnia Zawodowa w Grudziądzu to miejsce, w którym możesz rozwijać swoje umiejętności i zainteresowania. Uczelnia zlokalizowana jest w centrum Grudziądza, posiada przestrzeń do pozyskania teoretycznej wiedzy i praktycznych kompetencji, rozwoju kreatywności, budowania kariery oraz realizowania projektów.",
     "simpleText-2": "Zapraszamy do przesyłania zgłoszeń.",
-
     "fancyButton": "Aplikuj do nas",
     "fancyButtonAlt": "Ikona listu mailowego",
-
     "mainTitle-2": "Lista kroków:",
-
     "listTitle-1": "Krok 1 - Wypełnij formularz rekrutacyjny",
     "listTitle-2": "Krok 2 - Uzupełnij i załącz wymagane pliki",
     "listTitle-3": "Krok 3 - Dokonaj opłaty rekrutacyjnej",
@@ -319,7 +327,6 @@
     "listTitle-5": "Krok 5 - Dostarcz dokumenty",
     "listTitle-6": "Krok 6 - Wyniki rekrutacji",
     "listTitle-7": "Krok 7 - Widzimy się w październiku na uczelni",
-
     "listDesc-1": "<p>Postępowanie kwalifikacyjne na studia pierwszego stopnia na kierunku Mechatronika wymaga wypełnienia formularza rekrutacyjnego.</p>",
     "listDesc-2": "<ol><li>zdjęcie w postaci elektronicznej (jak do dowodu osobistego) o rozdzielczości co najmniej 492 x 610 pikseli i wielkości maksymalnie 2,5 MB, przesłane jako osobny plik JPG,</li><li>skan podpisanych oświadczeń kandydata w formacie PDF,</li><li>skan uzupełnionego i podpisanego podania o przyjęcie na studia w formacie PDF,</li><li>potwierdzenie wniesienia opłaty rekrutacyjnej.</li></ol>",
     "listDesc-3": "<p>Kandydat powinien dokonać wpłaty na konto Publicznej Uczelni Zawodowej w Grudziądzu w kwocie 85 zł.</p><br></br><p>konto PKO BP<br></br>numer rachunku bankowego:<br></br> 75 1020 1462 0000 7902 0441 6327</p>",
@@ -328,31 +335,31 @@
     "listDesc-5-fancyButton": "Sprawdź co powinien zawierać komplet dokumentów",
     "listDesc-6": "<p>Po zakończonej rekrutacji na adres e-mail podany w formularzu kandydat otrzyma informacje o przyjęciu/nieprzyjęciu na studia oraz ilości zdobytych punktów.</p>",
     "listDesc-7": "<p>Gratulacje!<br></br>Rekrutacja zakończona została pomyślnie, widzimy się w Październiku na I roku studiów.<br></br>Życzymy udanych wakacji.</p>",
-
     "listAlt-1": "Ikona formularza kontaktowego",
     "listAlt-2": "Ikona dokumentu w liście pocztowym",
     "listAlt-3": "Ikona płatności online telefonem bądź kartą",
     "listAlt-4": "Ikona guzika wyślij",
     "listAlt-5": "Ikona przekazywania dokumentów",
     "listAlt-6": "Ikona wyników i statystyk",
-    "listAlt-7": "Ikona uśmiechniętej emotikony"
+    "listAlt-7": "Ikona uśmiechniętej emotikony",
+    "hero": {
+      "eyebrow": "Rekrutacja",
+      "image": "/images/heroes/graduation.jpg",
+      "description": "Krok po kroku przeprowadzimy Cię przez proces rekrutacji - od rejestracji elektronicznej, przez dostarczenie dokumentów, po przyjęcie na studia."
+    }
   },
   "DostarczDokumentyPage": {
     "title": "Dostarcz Dokumenty",
     "description": "Gratulujemy zdania matury. Teraz należy dokończyć proces rekrutacyjny i dostarczyć dokumenty.",
-
     "mainTitle": "Gratulujemy zdania matury.",
     "cardImageAlt": "Studenci podrzucający czapki do góry",
     "simpleText-1": "Teraz należy dokończyć proces rekrutacyjny i dostarczyć dokumenty.",
     "simpleText-2": "Dokumenty należy złożyć osobiście w białej nieopisanej teczce.",
     "simpleText-3": "Przed przyjazdem na uczelnię należy sprawdzić godziny dyżurowania Uczelnianej Komisji Rekrutacyjnej, która przyjmuje dokumenty.",
-
     "fancyButton": "Sprawdź dyżury",
-
     "mainTitle-2": "Komplet dokumentów powinien zawierać:",
     "richText": "<ol><li>oryginał podania na studia załączany podczas rekrutacji elektronicznej,</li><li>oryginał świadectwa dojrzałości wraz z ewentualnym aneksem do świadectwa (do wglądu),</li><li>kserokopię świadectwa dojrzałości wraz z ewentualnym aneksem do świadectwa oryginał dyplomu potwierdzającego kwalifikacje zawodowe/dyplomu zawodowego, jeśli ukończyłeś/aś Technikum (do wglądu),</li><li>kserokopię dyplomu potwierdzającego kwalifikacje zawodowe/dyplomu zawodowego, jeśli ukończyłeś/aś Technikum,</li><li>kolorowe zdjęcie na papierze w formacie 35 x 45 mm (zgodne z formatem wymaganym podczas składania dokumentów o wydanie dowodu osobistego).</li></ol><h3>Dodatkowo, od wybranych kandydatów mogą być wymagane również:</h3><ol><li>kserokopia dokumentu potwierdzającego uzyskanie tytułu laureata lub finalisty olimpiady lub konkursu jeżeli było brane pod uwagę w rekrutacji na dane studia wraz z jego oryginałem do wglądu,</li><li>kserokopia dokumentu potwierdzającego osiągnięcia sportowe uzyskane w dyscyplinach olimpijskich lub ujętych w programie Akademickich Mistrzostw Polski,</li><li>zgoda rodzica na podjęcie studiów przez osobę niepełnoletnią (WZÓR).</li></ol>",
     "simpleText-4": "Podczas wpisu na studia kandydat musi potwierdzić swoją tożsamość i okazać dowód osobisty bądź paszport. W szczególnych przypadkach kandydata może reprezentować pełnomocnik, który podczas składnia dokumentów w imieniu kandydata okaże pełnomocnictwo z podpisem oraz legitymuje się swoim dowodem osobistym lub paszportem (zgodnie z treścią pełnomocnictwa).",
-
     "h3": "Do pobrania:",
     "fancyButton-2": "Pełnomocnictwo",
     "fancyButton-3": "Zgoda rodziców"
@@ -360,7 +367,6 @@
   "GodzinyDyzurowaniaPage": {
     "title": "Godziny Dyżurowania Uczelnianej Komisji Rekrutacyjnej",
     "description": "Sprawdź godziny dyżurów Uczelnianej Komisji Rekrutacyjnej, aby uzyskać pomoc w procesie rekrutacji na studia.",
-
     "month-1": "Czerwiec 2024",
     "month-2": "Lipiec 2024",
     "cardImage-1": "Godziny dyżurowania Uczelnianej Komisji Rekrutacyjnej w czerwcu",
@@ -369,7 +375,6 @@
   "TerminarzRekrutacjiPage": {
     "title": "Terminarz Rekrutacji",
     "description": "Sprawdź kluczowe terminy rekrutacyjne na studia, takie jak składanie dokumentów i ogłoszenie wyników.",
-
     "mainTitle": "Terminarz rekrutacji na rok akademicki 2024/2025 na stacjonarne studia pierwszego stopnia - Kierunek Mechatronika",
     "text-1": "rejestracja w ERK (elektronicznej rejestracji kandydata) oraz wniesienie opłaty rekrutacyjnej",
     "text-2": "składanie dokumentów",
@@ -378,44 +383,46 @@
     "text-5": "ogłoszenie wyników rekrutacji uzupełniającej",
     "from": "od",
     "to": "do",
-
     "simpleText-1": "Ogłoszenie wyników klasyfikacji nastąpi w formie elektronicznej na adres e-mail podany przez kandydata w formularzu, niezwłocznie po weryfikacji przez Uczelnianą Komisję Rekrutacyjną. Prawidłowo przesłany formularz rekrutacyjny uzyska status „zakwalifikowany”.",
     "simpleText-2": "Forma oraz miejsce składania dokumentów opublikowane zostaną na stronie internetowej Publicznej Uczelni Zawodowej w Grudziądzu (https://puzg.pl).",
     "simpleText-3": "Rekrutacja uzupełniająca odbędzie się w przypadku nie wypełnienia limitu miejsc.",
     "simpleText-4": "Uczelnia zastrzega sobie prawo do zmiany terminów.",
-    "cardImageAlt": "Kalendarz wyświetlany na ekranie obok klawiatury"
+    "cardImageAlt": "Kalendarz wyświetlany na ekranie obok klawiatury",
+    "hero": {
+      "eyebrow": "Rekrutacja",
+      "image": "/images/heroes/calendar.jpg",
+      "description": "Najważniejsze terminy procesu rekrutacyjnego - od otwarcia rejestracji aż po ogłoszenie wyników i rozpoczęcie zajęć."
+    }
   },
-
   "DziekanatPage": {
     "title": "Dziekanat",
     "description": "Skontaktuj się z dziekanatem i uzyskaj informacje dotyczące toku studiów oraz spraw administracyjnych.",
-
     "cardImageAlt": "Zdjęcie dziekanatu",
     "mainTitle": "Dane Kontaktowe",
     "specialist": "specjalista ds. administracyjnych",
     "street": "ul.",
-
     "cardAlt-1": "Ikona użytkownika",
     "cardAlt-2": "Ikona telefonu",
     "cardAlt-3": "Ikona e-mail",
     "cardAlt-4": "Ikona adresu",
     "cardAlt-5": "Ikona zegara",
-
     "mainTitle-2": "Godziny przyjęć studentów",
     "week-1": "poniedziałek, środa, piątek",
     "week-2": "wtorek, czwartek",
-    "hour": "godz."
+    "hour": "godz.",
+    "hero": {
+      "eyebrow": "Studia",
+      "image": "/images/heroes/office.jpg",
+      "description": "Dziekanat - centrum spraw studenckich. Sprawdź godziny przyjęć, kontakt oraz wykaz spraw, które załatwisz w dziekanacie."
+    }
   },
   "JakoscKsztalceniaPage": {
     "title": "Jakość Kształcenia",
     "description": "Dowiedz się, jak dbamy o wysoką jakość kształcenia na naszej uczelni oraz jakie inicjatywy podejmujemy w tym zakresie.",
-
     "mainTitle-1": "Wspólny Sukces Miasta i Władz",
     "simpleText-1": "Publiczna Uczelnia Zawodowa w Grudziądzu została stworzona po latach starań władz Wojskowych Zakładów Uzbrojenia, miasta oraz samorządowców. Doprowadziły one do tego, że 15 września 2023 roku Minister Edukacji i Nauki, podpisał rozporządzenie sankcjonujące utworzenie w Grudziądzu Publicznej Uczelni Zawodowej. Uroczystość odbyła się na terenie Wojskowych Zakładów Uzbrojenia S.A.",
-
     "mainTitle-2": "Cele Wewnętrznego Systemu Jakości Kształcenia",
     "cardImageAlt": "Szczęśliwi studenci pozujący do zdjęcia",
-
     "text-1": "kształtowanie postaw projakościowych oraz budowanie kultury jakości,",
     "text-2": "zapewnienie spójności kształcenia,",
     "text-3": "osiąganie przez studentów zakładanych efektów uczenia się,",
@@ -423,7 +430,6 @@
     "text-5": "wykorzystywanie potencjału otoczenia społeczno-gospodarczego do doskonalenia jakości kształcenia,",
     "text-6": "udostępnianie informacji o działaniach podejmowanych w zakresie podnoszenia jakości i osiąganych efektach uczenia się,",
     "text-7": "poprawa jakości i rozwoju infrastruktury oraz zwiększenie liczby laboratoriów i specjalistycznych warsztatów możliwych do wykorzystania przez studentów.",
-
     "listAlt-1": "Ikona ręki z haczykiem w górę",
     "listAlt-2": "Ikona koła ciągłości czynności",
     "listAlt-3": "Ikona czapki absolwentów",
@@ -431,23 +437,24 @@
     "listAlt-5": "Ikona podawania sobie ręki",
     "listAlt-6": "Ikona raportu",
     "listAlt-7": "Ikona probówek chemicznych",
-
     "mainTitle-3": "Podstawowymi procedurami w zakresie jakości kształcenia są",
     "text-2-1": "ocena zajęć dydaktycznych prowadzonych przez nauczycieli akademickich,",
     "text-2-2": "hospitacje zajęć dydaktycznych,",
     "text-2-3": "ocena satysfakcji studentów.",
-
     "listAlt-2-1": "Ikona wypełnianego komentarza",
     "listAlt-2-2": "Ikona badań w komputerze z lupą",
     "listAlt-2-3": "Ikona kciuka w górę z trzema gwiazdkami",
-
     "cardImageAlt-2": "Osoby z maskami od smutnego do uśmiechniętego",
-    "simpleText-2": "Jakość kształcenia obejmuje również procedury dyplomowania oraz monitorowanie losów zawodowych absolwentów. Zbiór informacji o jakości kształcenia zawarty został w Księdze Jakości Kształcenia, która jest wewnętrznym dokumentem funkcjonującym na Publicznej Uczelni Zawodowej w Grudziądzu."
+    "simpleText-2": "Jakość kształcenia obejmuje również procedury dyplomowania oraz monitorowanie losów zawodowych absolwentów. Zbiór informacji o jakości kształcenia zawarty został w Księdze Jakości Kształcenia, która jest wewnętrznym dokumentem funkcjonującym na Publicznej Uczelni Zawodowej w Grudziądzu.",
+    "hero": {
+      "eyebrow": "Studia",
+      "image": "/images/heroes/research.jpg",
+      "description": "Wewnętrzny system zapewnienia jakości kształcenia: ewaluacja przedmiotów, monitorowanie losów absolwentów oraz ciągłe doskonalenie programów studiów."
+    }
   },
   "KierunkiStudiowPage": {
     "title": "Kierunki Studiów",
     "description": "Poznaj dostępne kierunki studiów na naszej uczelni i znajdź odpowiedni program edukacyjny dla siebie.",
-
     "mainTitle": "Mechatronika",
     "listItemTitle-1": "Poziom studiów",
     "listItemTitle-2": "Profil kształcenia",
@@ -455,117 +462,133 @@
     "listItemTitle-4": "Liczba semestrów",
     "listItemTitle-5": "Tytuł zawodowy",
     "listItemTitle-6": "Język kształcenia",
-
     "listItemDescription-1": "Pierwszego stopnia",
     "listItemDescription-2": "Praktyczny",
     "listItemDescription-3": "Stacjonarne",
     "listItemDescription-4": "7",
     "listItemDescription-5": "Inżynier",
     "listItemDescription-6": "Polski",
-
     "listItemAlt-1": "Ikona certyfikatu",
     "listItemAlt-2": "Ikona listy profilu kształcenia",
     "listItemAlt-3": "Ikona krętej drogi nauki",
     "listItemAlt-4": "Ikona klocków liczbowych",
     "listItemAlt-5": "Ikona inżyniera",
     "listItemAlt-6": "Ikona chmury tłumaczenia",
-
     "simpleText-1": "Mechatronika to nauka łącząca wiedzę z zakresu mechaniki, elektroniki, informatyki, automatyki i robotyki. Jest to nowoczesny kierunek i zarazem jedna z najszybciej rozwijających się gałęzi przemysłu. Wiedza z tej dziedziny jest specjalistyczna i specyficzna, ale ze względu na duże zapotrzebowanie rynku pracy stwarza bardzo dobre perspektywy dla absolwentów. Mechatronika daje studentom wszechstronne wykształcenie w zakresie projektowania, wytwarzania oraz eksploatacji nowoczesnych urządzeń.",
     "simpleText-2": "Na mechatronice będziesz studiował podstawowe przedmioty nauk ścisłych, tj. matematykę, fizykę i chemię oraz przedmioty ogólne, tj. podstawy konstrukcji urządzeń specjalnych, teoria mechanizmów i maszyn, materiały inżynierskie, przedmioty kierunkowe, m.in. napędy maszyn i urządzeń, podstawy robotyki, mechatronika w systemach technicznych, technika mikroprocesorowa, układy i zespoły elektroniczne w mechatronice oraz języki programowania. Ponadto na poszczególnych specjalnościach prowadzone będą zajęcia z przedmiotów, tj. projektowanie i programowanie układów sterowania, automatyzacja procesów przemysłowych, panele i interfejsy komunikacyjne oraz mechatroniczne układy sterowania napędem.",
     "simpleText-3": "Studia trwają 3,5 roku, czyli 7 semestrów. W celu uzyskania tytułu zawodowego inżyniera student powinien zdobyć co najmniej 210 punktów ECTS (minimum po 30 punktów ECTS w każdym semestrze).",
-
     "mainTitle-2": "Realizowane specjalności",
     "h3-1": "Mechatronika stosowana",
     "h3-2": "Automatyka i sterowanie maszyn",
     "imageAlt-1": "Osoba lutująca kable",
     "imageAlt-2": "Osoba obsługująca maszyny automatyczne",
-
     "text-1": "specjalność przygotowuje specjalistów, którzy będą posiadali wiedzę oraz umiejętności z zakresu projektowania, konstruowania i badań systemów sterowania, kreowania zachowań inteligentnych oraz zarządzania procesami produkcji, automatyzacji i robotyzacji. Studenci tej specjalności zostaną zapoznani z podstawami robotyki, programowaniem robotów, algorytmami sterowania, programowaniem mikrokontrolerów i sterowników swobodnie programowalnych oraz komputerów przemysłowych, budową układów sensorycznych i napędowych. Wykształcenie takich kwalifikacji będzie możliwe dzięki poznaniu metod programowania układów i urządzeń mechatronicznych, modelowania i symulacji komputerowej, programowania regulatorów wielofunkcyjnych.",
     "text-2": "specjalność ukierunkowana jest na przekazywanie wiedzy i umiejętności z zakresu: projektowania, eksploatacji, obsługi i diagnostyki urządzeń mechatronicznych stosowanych w przemyśle. Wprowadzone są przedmioty, w których student zdobywa wiedzę i umiejętności dotyczące z jednej strony samych procesów, a z drugiej, metod sterowania tymi procesami, zarówno w sensie logicznym jak i wykonawczym, od idei programowania poprzez elektronikę i mechaniczne elementy wykonawcze. Zna podstawowe języki programowania i rozwijane są praktycznie umiejętności w tym zakresie. Uzyskają wiedzę związaną z nowoczesnymi metodami pomiaru wielkości mechanicznych i elektrycznych, którą następnie wykorzystają do opisu działania urządzenia mechatronicznego. Opracowane metody opisu zostaną wykorzystane do symulacji działania oraz projektowania. Poznają metody komputerowego wspomagania prac inżynierskich, od obrabiarek sterowanych numerycznie do symulacji układów mechanicznych, elektronicznych i wizualizacji zjawisk zachodzących w urządzeniach mechatronicznych.",
-
     "mainTitle-3": "Mechatronika i co dalej?",
     "simpleText-4": "Absolwent kierunku Mechatronika przygotowany będzie do pracy w nowoczesnych przedsiębiorstwach wymagających łączenia wiedzy z wielu dyscyplin naukowych. Absolwent tego kierunku będzie potrafił projektować, programować oraz obsługiwać nowoczesne urządzenia mechatroniczne.",
-
     "text-2-1": "przemysł elektromaszynowy,",
     "text-2-2": "przemysł motoryzacyjny i lotniczy,",
     "text-2-3": "przedsiębiorstwa produkcyjne,",
     "text-2-4": "przedsiębiorstwa zajmujące się eksploatacją nowoczesnych, zautomatyzowanych i zrobotyzowanych procesów przemysłowych,",
     "text-2-5": "przedsiębiorstwa zajmujące się sprzedażą oraz diagnozowaniem układów mechatronicznych.",
-
     "listItemAlt-2-1": "Ikona linii produkcyjnej",
     "listItemAlt-2-2": "Ikona motocykla",
     "listItemAlt-2-3": "Ikona fabryki",
     "listItemAlt-2-4": "Ikona robota z klawiaturą",
     "listItemAlt-2-5": "Ikona analizy",
-
     "simpleText-5": "Wiedza i umiejętności zdobyte na studiach pozwolą na podjęcie pracy przy budowie nowych, ale także modernizacji istniejących już maszyn i układów mechatronicznych w związku z przechodzeniem na sterowanie cyfrowe i implementacje nowoczesnych interfejsów.",
-
     "cardImageAlt": "Inżynier pracujący z komputerem, cały ubrany na niebiesko",
     "mainTitle-4": "Dlaczego mechatronika w Grudziądzu?",
-    "simpleText-6": "Na kierunku Mechatronika kształcenie będzie realizowane według nowoczesnych standardów edukacyjnych przy udziale doświadczonych fachowców (teoretyków i praktyków) w celu kształtowania nowoczesnego człowieka otwartego na nowe doświadczenia techniczne, mobilnego na rynku pracy, kreatywnego i skutecznego w realizacji aspiracji intelektualnych i zawodowych. Program studiów dużą wagę przywiązuje do opinii i uwag przedstawicieli pracodawców z regionu (interesariuszy zewnętrznych), którzy również zobowiązują się do pomocy w realizacji programu studiów chociażby poprzez ofertę realizacji laboratoriów i praktyk w ich instytucjach. Kierunek Mechatronika realizowany na Publicznej Uczelni Zawodowej w Grudziądzu przygotowuje także młodego człowieka do aktywnego i świadomego uczestnictwa w społeczeństwie obywatelskim."
+    "simpleText-6": "Na kierunku Mechatronika kształcenie będzie realizowane według nowoczesnych standardów edukacyjnych przy udziale doświadczonych fachowców (teoretyków i praktyków) w celu kształtowania nowoczesnego człowieka otwartego na nowe doświadczenia techniczne, mobilnego na rynku pracy, kreatywnego i skutecznego w realizacji aspiracji intelektualnych i zawodowych. Program studiów dużą wagę przywiązuje do opinii i uwag przedstawicieli pracodawców z regionu (interesariuszy zewnętrznych), którzy również zobowiązują się do pomocy w realizacji programu studiów chociażby poprzez ofertę realizacji laboratoriów i praktyk w ich instytucjach. Kierunek Mechatronika realizowany na Publicznej Uczelni Zawodowej w Grudziądzu przygotowuje także młodego człowieka do aktywnego i świadomego uczestnictwa w społeczeństwie obywatelskim.",
+    "hero": {
+      "eyebrow": "Studia",
+      "image": "/images/heroes/students.jpg",
+      "description": "Praktyczne kierunki inżynierskie odpowiadające potrzebom nowoczesnego przemysłu - obecnie Mechatronika, w planach kolejne specjalizacje techniczne."
+    }
   },
   "LegitymacjaStudenckaPage": {
     "title": "Legitymacja studencka",
     "description": "Dowiedz się, jak uzyskać legitymację studencką, jakie uprawnienia daje oraz gdzie można ją odebrać.",
-
     "mainTitle": "Załączniki do pobrania:",
-    "simpleText": "W tej sekcji znajdziesz wszystkie niezbędne dokumenty związane z legitymacją studencką. Prosimy o pobranie i zapoznanie się z zawartością przed złożeniem wniosku o legitymację studencką."
+    "simpleText": "W tej sekcji znajdziesz wszystkie niezbędne dokumenty związane z legitymacją studencką. Prosimy o pobranie i zapoznanie się z zawartością przed złożeniem wniosku o legitymację studencką.",
+    "hero": {
+      "eyebrow": "Studia",
+      "image": "/images/heroes/students.jpg",
+      "description": "Elektroniczna legitymacja studencka (ELS) - dokument tożsamości studenta, uprawniający do zniżek komunikacyjnych i wielu udogodnień."
+    }
   },
   "OrganizacjaRokuAkademickiegoPage": {
     "title": "Organizacja Roku Akademickiego",
     "description": "Sprawdź kalendarz roku akademickiego, w tym daty rozpoczęcia i zakończenia semestrów oraz przerwy świąteczne.",
-
-    "simpleText": "Rok akademicki 2024/2025 trwa od 1 października 2024 r. do 14 września 2025 r. i jest podzielony na dwa semestry: zimowy i letni. <br></br> Uroczysta inauguracja roku akademickiego odbędzie się 4 października 2024 r."
+    "simpleText": "Rok akademicki 2024/2025 trwa od 1 października 2024 r. do 14 września 2025 r. i jest podzielony na dwa semestry: zimowy i letni. <br></br> Uroczysta inauguracja roku akademickiego odbędzie się 4 października 2024 r.",
+    "hero": {
+      "eyebrow": "Studia",
+      "image": "/images/heroes/calendar.jpg",
+      "description": "Kalendarium roku akademickiego: terminy semestrów, sesji egzaminacyjnych, przerw świątecznych oraz dni wolnych od zajęć."
+    }
   },
   "PlanZajecPage": {
     "title": "Plan Zajęć",
     "description": "Sprawdź plan zajęć na dany semestr, aby dowiedzieć się, kiedy odbywają się wykłady, ćwiczenia i seminaria.",
-
     "cardImageAlt": "Plan zajęć",
     "mainTitle": "Plan semestralny - semestr I Mechatronika",
     "simpleText": "Poniżej znajdziesz plan zajęć na I semestr Mechatroniki. Sprawdź, co czeka Cię w tym roku!",
-    "buttonText": "Pobierz"
+    "buttonText": "Pobierz",
+    "hero": {
+      "eyebrow": "Studia",
+      "image": "/images/heroes/calendar.jpg",
+      "description": "Aktualne plany zajęć dla wszystkich grup studenckich. Sprawdź godziny wykładów, ćwiczeń, laboratoriów i konsultacji."
+    }
   },
   "ProgramStudiowPage": {
     "title": "Program Studiów",
     "description": "Zapoznaj się z programami studiów, wymaganymi przedmiotami i planem nauczania na poszczególnych kierunkach.",
-
     "mainTitle": "Program studiów kierunku Mechatronika obowiązujący od roku akademickiego 2024/2025:",
     "button-1": "specjalność Mechatronika Stosowana",
     "button-2": "specjalność Automatyka i Sterowanie Maszyn",
     "h3-1": "Sylabusy:",
     "h3-2": "Efekty uczenia:",
     "button-3": "Kierunek Mechatronika",
-    "imageAlt": "Statystyki wyświetlane na ekranie laptopa"
+    "imageAlt": "Statystyki wyświetlane na ekranie laptopa",
+    "hero": {
+      "eyebrow": "Studia",
+      "image": "/images/heroes/library.jpg",
+      "description": "Szczegółowy program kształcenia: efekty uczenia się, plan studiów, sylabus przedmiotów oraz koncepcja kształcenia inżynierskiego."
+    }
   },
   "RegulaminStudiowPage": {
     "title": "Regulamin Studiów",
     "description": "Przeczytaj regulamin studiów obowiązujący na naszej uczelni, w tym prawa i obowiązki studentów.",
-
     "simpleText": "Regulamin studiów na Publicznej Uczelni Zawodowej w Grudziądzu obowiązujący w roku akademickim 2024/2025.",
     "button-1": "Kliknij tutaj aby wyświetlić",
-    "imageAlt-1": "Regulamin na biurku"
+    "imageAlt-1": "Regulamin na biurku",
+    "hero": {
+      "eyebrow": "Studia",
+      "image": "/images/heroes/documents.jpg",
+      "description": "Regulamin studiów określa prawa i obowiązki studenta, zasady zaliczania semestrów, warunki dyplomowania oraz procedury obowiązujące na uczelni."
+    }
   },
   "StypendiaPage": {
     "title": "Stypendium socjalne na rok akademicki 2024/2025",
     "description": "Sprawdź, czy kwalifikujesz się do stypendium socjalnego i jakie dokumenty są wymagane do aplikacji na rok akademicki 2024/2025.",
-
     "mainTitle-1": "Warunki ubiegania się o stypendium socjalne",
     "mainTitle-2": "Wykaz dokumentacji obowiązującej przy ubieganiu się o stypendium socjalne:",
     "richText-1": "<p>Stypendium socjalne może być przyznane studentowi znajdującemu się w trudnej sytuacji materialnej na jego wniosek. W celu uzyskania stypendium student jest zobowiązany udokumentować swoją sytuację materialną.</p><ul><li><strong>Limit dochodu:</strong> Studenci mogą ubiegać się o stypendium, jeśli dochód netto na jedną osobę w rodzinie nie przekracza 1.570,50 zł miesięcznie.</li><li><strong>Zaświadczenie z ośrodka pomocy społecznej:</strong> Jeśli miesięczny dochód na osobę w rodzinie nie przekracza 600,00 zł, student musi dostarczyć zaświadczenie o korzystaniu ze świadczeń pomocy społecznej przez siebie lub członków rodziny w 2024 roku. W przypadku braku korzystania z tych świadczeń, należy udokumentować źródło utrzymania rodziny.</li><li><strong>Wniosek:</strong> Studenci ubiegający się o stypendium muszą obowiązkowo złożyć wniosek.</li></ul>",
     "richText-2": "<ol><li>Zaświadczenia z US o dochodach uzyskanych w ubiegłym roku kalendarzowym przez członków rodziny uzyskujących dochody podlegające opodatkowaniu podatkiem dochodowym od osób fizycznych na zasadach ogólnych.</li><li>Zaświadczenia z US o zryczałtowanym podatku dochodowym za ubiegły rok kalendarzowy członków rodziny rozliczających się w formie podatku ryczałtowego/karty podatkowej.</li><li>Oświadczenia członków rodziny o wysokości uzyskanego w ubiegłym roku kalendarzowym innego dochodu niepodlegającego opodatkowaniu podatkiem (załącznik 7).</li><li>Zaświadczenie właściwego organu gminy o wielkości gospodarstwa rolnego w ubiegłym roku Kalendarzowym.</li><li>Kserokopia nakazu płatniczego.</li><li>Zaświadczenia rodzeństwa pobierającego naukę.</li><li>Oświadczenie wnioskodawcy.</li><li>Oświadczenie wnioskodawcy o nieprowadzeniu wspólnego gospodarstwa domowego z żadnym z rodziców, opiekunów prawych lub faktycznych - dotyczy studenta, który ubiega się o stypendium bez wykazywania dochodów członków rodziny.</li><li>Zaświadczenie wydane przez ośrodek pomocy społecznej albo przez centrum usług społecznych o korzystaniu w roku złożenia wniosku o stypendium socjalne ze świadczeń z pomocy społecznej przez studenta lub członków jego rodziny (dotyczy studenta, którego miesięczny dochód na osobę w rodzinie nie przekracza kwoty 600,00 zł.).</li><li>Oświadczenie wnioskodawcy (załącznik 15).</li><li>Oświadczenie o sytuacji rodzinnej i materialnej studenta będącego obywatelem Ukrainy.</li><li>Zaświadczenia zawierające informację o wysokości składek na ubezpieczenie zdrowotne w roku kalendarzowym poprzedzającym rok, w którym student składa wniosek (zaświadczenie z ZUS-u lub zakładu emerytalno- rentowego MSW), dotyczy członków rodziny lub studenta, którzy w roku poprzednim osiągali dochody wykazane w zaświadczeniu z Urzędu Skarbowego podlegające opodatkowaniu podatkiem dochodowym od osób fizycznych na zasadach ogólnych.</li></ol>",
-
     "mainTitle-3": "Zarządzenia",
-    "simpleText": "Zarządzenie Rektora nr Z.22.2024.2025 w sprawie wprowadzenia regulaminu świadczeń dla studentów Publicznej Uczelni Zawodowej w Grudziądzu:"
+    "simpleText": "Zarządzenie Rektora nr Z.22.2024.2025 w sprawie wprowadzenia regulaminu świadczeń dla studentów Publicznej Uczelni Zawodowej w Grudziądzu:",
+    "hero": {
+      "eyebrow": "Studia",
+      "image": "/images/heroes/graduation.jpg",
+      "description": "System wsparcia finansowego studentów: stypendia socjalne, naukowe, dla osób niepełnosprawnych oraz zapomogi i nagrody rektora."
+    }
   },
-
   "AktualnosciPage": {
     "title": "Aktualności",
     "description": "Bądź na bieżąco z najnowszymi wydarzeniami, ogłoszeniami i informacjami dotyczącymi życia uczelni.",
     "button": "Zobacz Więcej",
     "latest": "Od najnowszych",
     "oldest": "Od najstarszych",
-
     "news": {
       "0": {
         "title": "Spotkanie Rektora ze Studentami",
@@ -603,7 +626,6 @@
         "imagesAlt": "Zdjęcie przedstawia 3 osoby w tym Rektora|Zdjęcie przedstawia Rektora ubranego w specjalne ubranie",
         "description": "<p>Dnia 18 października 2024 r. na Publicznej Uczelni Zawodowej w Grudziądzu odbyły się wybory Rektora na kadencję 2024 - 2028. JM Rektorem PUZG został dr inż. Michał Sójka, prof. Uczelni.</p><p>Serdecznie gratulujemy!</p>"
       },
-
       "notFound": {
         "title": "Post nie został znaleziony",
         "heading": "Przepraszamy",
@@ -616,12 +638,16 @@
         "buttonText": "Wróć",
         "buttonIconAlt": "Strzałka powrotu"
       }
+    },
+    "hero": {
+      "eyebrow": "Uczelnia",
+      "image": "/images/heroes/documents.jpg",
+      "description": "Najnowsze wydarzenia, ogłoszenia i komunikaty z życia uczelni - rekrutacja, certyfikacje, sukcesy studentów i wydarzenia akademickie."
     }
   },
   "OUczelniPage": {
     "title": "O Uczelni",
     "description": "Dowiedz się więcej o historii, misji i wartościach naszej uczelni oraz oferowanych kierunkach studiów.",
-
     "carouselAlts": {
       "1": "Specjalnie zbudowane Komputery z nowoczesnymi funkcjami",
       "2": "Samochód na podnośniku",
@@ -631,21 +657,16 @@
       "6": "Zaawansowana maszyna CTX 310 ecaline",
       "7": "Człowiek wykorzystujący specjalną klawiaturę do komputera"
     },
-
     "imageAlt-1": "Studenci pracujący w laboratorium",
     "mainTitle": "Nasza misja",
     "simpleText": "Misją Publicznej Uczelni Zawodowej w Grudziądzu jest przede wszystkim stworzenie silnego ośrodka edukacyjnego, który nie tylko kształci przyszłych specjalistów, ale również aktywnie uczestniczy w rozwiązywaniu głównych wyzwań społecznych i gospodarczych. Stawiamy na rozwój umiejętności praktycznych, innowacyjność i współpracę z lokalnymi oraz krajowymi instytucjami.",
-
     "imageAlt-2": "Studenci stoją przy tablicy",
-
     "mainTitle-2": "Realizujemy wizję",
     "simpleText-2": "Dążymy do kształtowania przyszłości poprzez edukację, innowacje oraz zaangażowanie społeczne. Naszym celem jest nie tylko przygotowanie studentów do rynku pracy, ale także inspirowanie ich do tworzenia nowoczesnych rozwiązań technologicznych, które mogą zmieniać gospodarkę.",
     "mainTitle-3": "Mechatronika i Nowoczesne Laboratoria dla Studentów",
     "simpleText-3": "Od 1 października 2024 roku na Uczelni rozpocznie się kształcenie studentów na kierunku mechatronika, a w przyszłości planowane jest poszerzenie oferty o kolejne kierunki studiów. Koncepcja kształcenia zakłada wprowadzenie do tradycyjnych elementów kształcenia, nowatorskie przedmioty i wynikające z nich efekty uczenia się, które uwzględniają postęp w obszarze stosunków gospodarczych, ekonomicznych i społecznych. Zakładane efekty uczenia się powinny być uzyskane również w oparciu o elektroniczne źródła wiedzy i umiejętności - programy i aplikacje umożliwiające wyszukiwanie najnowszych publikacji, studiów przypadków i literatury w obszarze kształconego kierunku.",
     "simpleText-4": "Nauka w PUZ będzie się odbywać z wykorzystaniem pomieszczeń i wyposażenia Centrum Kształcenia Zawodowego przy ul. Czarnieckiego 5/7 oraz Zespołu Szkół Technicznych im. Jana i Jędrzeja Śniadeckich przy ul. Hoffmanna 1-7. Z myślą o studentach, którzy już wkrótce rozpoczną tam rok akademicki wyposażono sale w nowoczesny sprzęt dydaktyczny, a ponadto dzięki zapleczu Branżowego Centrum Umiejętności będzie można zaoferować studentom całą gamę bezpłatnych kursów, m.in. z projektowania robotów czy modelowania 3D.",
-
     "mainTitle-4": "Nasze mocne strony",
-
     "listTitle-1": "Nowoczesna infrastruktura",
     "listTitle-2": "Praktyczne podejście do nauki",
     "listTitle-3": "Bezpłatne kursy",
@@ -655,30 +676,35 @@
     "listAlt-1": "Ikona rakiety kosmicznej",
     "listAlt-2": "Ikona analityki",
     "listAlt-3": "Ikona ludzi",
-
     "mainTitle-5": "Gdzie nas znajdziesz?",
-    "simpleText-5": "Znajdziesz nas na ulicy Czarnieckiego 5/7 oraz Hoffmanna 1-7, gdzie mieści się nasza nowoczesna infrastruktura edukacyjna."
+    "simpleText-5": "Znajdziesz nas na ulicy Czarnieckiego 5/7 oraz Hoffmanna 1-7, gdzie mieści się nasza nowoczesna infrastruktura edukacyjna.",
+    "hero": {
+      "eyebrow": "Uczelnia",
+      "image": "/images/heroes/campus.jpg",
+      "description": "Państwowa Uczelnia Zawodowa w Grudziądzu kształci nowe pokolenie inżynierów - praktycznie, blisko przemysłu i z myślą o realnych potrzebach rynku pracy."
+    }
   },
   "WladzeUczelniPage": {
     "title": "Władze Uczelni",
     "description": "Poznaj skład władz uczelni oraz dowiedz się, kto odpowiada za poszczególne dziedziny jej funkcjonowania.",
-
     "imageAlt-1": "Zdjęcie Rektora",
     "imageAlt-2": "Zdjęcie Kwestora",
     "imageAlt-3": "Zdjęcie Kanclerza",
-
     "dataTitle-1": "Rektor",
     "dataTitle-2": "Kwestor",
     "dataTitle-3": "Kanclerz",
     "dataDesc-1": "dr inż. Michał Sójka",
     "dataDesc-2": "mgr Małgorzata Kosińska",
-    "dataDesc-3": "mgr Artur Mach"
+    "dataDesc-3": "mgr Artur Mach",
+    "hero": {
+      "eyebrow": "Uczelnia",
+      "image": "/images/heroes/meeting.jpg",
+      "description": "Poznaj kierownictwo i strukturę organizacyjną Publicznej Uczelni Zawodowej w Grudziądzu - rektora, prorektorów oraz kolegium uczelni."
+    }
   },
-
   "DokumentyDoPobraniaPage": {
     "title": "Dokumenty do Pobrania",
     "description": "Znajdź niezbędne dokumenty, w tym formularze zgłoszeniowe, wzory kart do głosowania oraz klauzule informacyjne związane z procesem wyborczym.",
-
     "mainTitle": "Dokumenty niezbędne w procesie wyborczym",
     "simpleText": "Skorzystaj z poniższych linków, aby pobrać dokumenty wymagane do zgłoszenia kandydatów oraz przeprowadzenia wyborów.",
     "button-1": "Zgłoszenie kandydatów do Kolegium Elektorów",
@@ -691,63 +717,49 @@
   "KomunikatyPage": {
     "title": "Komunikaty",
     "description": "Aktualne ogłoszenia i informacje dotyczące harmonogramu wyborów, zgłoszeń kandydatów oraz wyników głosowań.",
-
     "mainTitle": "Komunikat 1 - Kalendarz wyborczy",
     "simpleText": "Zapoznaj się z kalendarzem wyborczym, który zawiera kluczowe daty i terminy związane z nadchodzącymi wyborami.",
     "button-1": "Komunikat",
-
     "mainTitle-2": "Komunikat 2 - Wybory do Senatu",
     "simpleText-2": "Znajdziesz tutaj dokumenty dotyczące zgłoszonych kandydatów oraz skład nowo wybranego Senatu.",
-
     "button-2": "Komunikat",
     "button-3": "Zgłoszeni kandydaci do Senatu",
     "button-4": "Skład Senatu",
-
     "mainTitle-3": "Komunikat 3 - Wybory do Kolegium Elektorów",
     "simpleText-3": "Dokumenty dotyczące wyborów do Kolegium Elektorów, w tym lista zgłoszonych kandydatów oraz skład nowo wybranego Kolegium.",
-
     "button-5": "Komunikat",
     "button-6": "Zgłoszeni kandydaci do Kolegium Elektorów",
     "button-7": "Skład Kolegium Elektorów",
-
     "mainTitle-4": "Komunikat 4 - Wybory na Rektora",
     "simpleText-4": "Zapoznaj się z listą kandydatów oraz wynikami wyborów na stanowisko Rektora uczelni.",
-
     "button-8": "Lista kandydatów",
     "button-9": "Wyniki wyborów"
   },
   "UchwalyUKWPage": {
     "title": "Uchwały UKW",
     "description": "Przeglądaj najnowsze uchwały senatu UKW dotyczące kluczowych decyzji i zmian organizacyjnych na uczelni.",
-
     "mainTitle": "Uchwały i zarządzenia wyborcze",
     "simpleText": "Przedstawiamy listę zarządzeń związanych z procesem wyborczym na rok 2024, które regulują kluczowe aspekty wyborów w naszej uczelni.",
-
     "button-1": "Zarządzenie 1/UKW/2024",
     "button-2": "Zarządzenie 2/UKW/2024",
     "button-3": "Zarządzenie 3/UKW/2024",
     "button-4": "Zarządzenie 4/UKW/2024",
     "button-5": "Zarządzenie 5/UKW/2024",
-
     "imageAlt": "Człowiek trzyma w ręce skoroszyt z dokumentami"
   },
   "UczelnianaKomisjaWyborczaPage": {
     "title": "Uczelniana Komisja Wyborcza",
     "description": "Dowiedz się więcej o działalności i składzie Uczelnianej Komisji Wyborczej oraz zasadach wyborczych.",
-
     "mainTitle": "Skład Uczelnianej Komisji Wyborczej",
     "text-1": "przewodniczący",
     "mainTitle2": "Siedziba Uczelnianej Komisji Wyborczej",
     "text-2": "Biuro Rektora",
     "street": "ul."
   },
-
   "InstytutPage": {
     "title": "Instytut Mechatroniki Stosowanej",
     "description": "Zapoznaj się z działalnością naszych instytutów, prowadzonymi badaniami oraz ofertą edukacyjną.",
-
     "iconAlt": "Ikona człowieka",
-
     "carouselAlts": {
       "1": "Maszyny specjalnego zastosowania",
       "2": "Student uczący się w laboratorium",
@@ -755,21 +767,24 @@
       "4": "Zdjęcie pracującego studenta",
       "5": "Wykładowca i studenci w sali z komputerami"
     },
-
     "mainTitle": "Główny cel",
     "simpleText-1": "Głównym celem pracy Instytutu jest prowadzenie procesu kształcenia na kierunku Mechatronika. Działalność Instytutu Mechatroniki obejmuje problematykę projektowania systemów mechatronicznych, programowania sterowników logicznych, budowy sieci komputerowych i sieci przemysłowych, systemów eksploatacji układów automatyki, systemów sterowania oraz systemów wspomagania decyzji, a także zdobywanie umiejętności z zakresu budowy, technologii i eksploatacji maszyn i pojazdów sterowanych mechatronicznie, projektowania mechatronicznych procesów technologicznych obróbki i montażu z wykorzystaniem programów CAD/CAM.",
     "simpleText-2": "W instytucie zatrudnieni są nauczyciele akademiccy, którzy realizują proces kształcenia studentów na kierunku Mechatronika. W roku akademickim 2024/2025 planowane jest utworzenie Koła Naukowego Mechatroników, nad którym pracownicy Instytutu będą sprawować opiekę. Rada Naukowa Instytutu:",
-
     "imageAlt": "Człowiek w rękawicach pracujący przy silniku",
     "jobTitle-1": "Dr inż.",
-    "jobTitle-2": "Mgr inż."
+    "jobTitle-2": "Mgr inż.",
+    "hero": {
+      "eyebrow": "Instytut",
+      "image": "/images/heroes/engineering.jpg",
+      "description": "Instytut Mechatroniki Stosowanej - serce praktycznego kształcenia inżynierskiego na PUZ. Zaawansowane laboratoria, robotyka, automatyka i ścisła współpraca z przemysłem."
+    }
   },
   "KontaktPage": {
     "title": "Kontakt",
     "description": "Skontaktuj się z nami poprzez e-mail, telefon lub odwiedź nas osobiście. Sprawdź szczegóły kontaktowe.",
-
     "hero": {
-      "eyebrow": "Skontaktuj się z nami"
+      "eyebrow": "Skontaktuj się",
+      "image": "/images/heroes/office.jpg"
     },
     "contactCards": {
       "phoneLabel": "Telefon",
@@ -783,17 +798,13 @@
       "primary": "Zadzwoń do sekretariatu",
       "secondary": "Krok po kroku"
     },
-
     "mainTitle": "Formularz kontaktowy",
     "simpleText": "Jesteśmy tutaj, aby Ci pomóc. Masz pytania dotyczące naszej oferty lub rekrutacji? Skontaktuj się z nami, a z przyjemnością udzielimy odpowiedzi na wszystkie Twoje wątpliwości!",
-
     "phone": "Telefon",
-
     "iconAlt-1": "Ikona koperty na list",
     "iconAlt-2": "Ikona telefonu",
     "mainTitle-2": "Gdzie nas znajdziesz?",
     "simpleText-2": "Znajdziesz nas na ulicy Czarnieckiego 5/7 oraz Hoffmanna 1-7, gdzie mieści się nasza nowoczesna infrastruktura edukacyjna.",
-
     "labelMessage": "Wiadomość",
     "labelTitle": "Tytuł",
     "labelName": "Imię i Nazwisko",
@@ -802,7 +813,6 @@
     "sendIconAlt": "Ikona wysłania listu",
     "emailSent": "Email został wysłany pomyślnie!",
     "emailError": "Wystąpił błąd podczas wysyłania emaila. Spróbuj ponownie później.",
-
     "Email": {
       "sender": "Publiczna Uczelnia Zawodowa w Grudziądzu",
       "thanksForMessage": "Dziękujemy za Twoją wiadomość!",
@@ -814,7 +824,6 @@
       "copyright": "Wszelkie prawa zastrzeżone.",
       "privacyPolicy": "Polityka prywatności",
       "Bip": "Biuletyn Informacji Publicznej",
-
       "subjectClient": "Dziękujemy za wiadomość - nasz zespół się z Tobą skontaktuje!",
       "title": "Tytuł",
       "message": "Wiadomość",
@@ -825,17 +834,13 @@
   "WspolpracaPage": {
     "title": "Współpraca",
     "description": "Odkryj możliwości współpracy z naszą uczelnią w zakresie projektów naukowych, dydaktyki oraz rozwoju zawodowego.",
-
     "mainTitle-1": "Inicjatywa Współpracy z Przemysłem",
     "simpleText-1": "Działalność Publicznej Uczelni Zawodowej w Grudziądzu zainicjowana została przez Wojskowe Zakłady Uzbrojenia S.A w Grudziądzu, co stanowi silne podłoże do ścisłej współpracy pomiędzy uczelnią a przemysłem. W regionie, w którym zlokalizowana jest uczelnia, funkcjonuje wiele przedsiębiorstw, które poszukują wykwalifikowanej kadry w zakresie mechatroniki, robotyki, automatyzacji, logistyki, zarządzania, obsługi urządzeń medycznych oraz bezpieczeństwa i obronności kraju. Współpraca uczelni z otoczeniem gospodarczym jest istotnym elementem w procesie kształcenia, dlatego dokładane są wszelkie starania aby otoczenie reprezentujące lokalny przemysł było zintegrowane z prowadzonymi kierunkami studiów.",
-
     "mainTitle-2": "Umowy o Współpracy z Przedsiębiorstwami",
     "simpleText-2": "Publiczna Uczelnia Zawodowa w Grudziądzu podpisała umowy o współpracę z kilkunastoma zakładami pracy z Grudziądza i okolic, które zatrudniają inżynierów mechatroniki. Aktualnie uczelnia posiada deklaracje współpracy z ośmioma przedsiębiorstwami:",
-
     "mainTitle-3": "Wsparcie Przemysłu w Kształceniu Inżynierów",
     "simpleText-3": "Realizacja potrzeb gospodarczych w zakresie kształcenia inżynierów związana jest bezpośrednio ze wsparciem działań dydaktycznych przez przemysł. Władze uczelni prowadzą rozmowy oraz podpisują porozumienia z kolejnymi przedsiębiorstwami, które stworzą w przyszłości miejsca pracy dla absolwentów Publicznej Uczelni Zawodowej w Grudziądzu.",
     "simpleText-4": "Współpraca z interesariuszami zewnętrznymi opiera się na kształceniu wysoko wykwalifikowanych absolwentów, którzy przygotowani będą do wymagań rynku pracy. Aktualnie na PUZ kształcenie odbywa się na kierunku Mechatronika, ma ono charakter praktyczny. Program proponowanych studiów jest odpowiedzią na potrzeby przemysłu zbrojeniowego, samorządu lokalnego oraz przedsiębiorców z Pomorskiej Specjalnej Strefy Ekonomicznej.",
-
     "iconAlt-1": "Ikona elektrycznego panelu",
     "iconAlt-2": "Ikona morskiego statku",
     "iconAlt-3": "Ikona chemicznej misktury",
@@ -844,16 +849,17 @@
     "iconAlt-6": "Ikona linii produkcyjnej",
     "iconAlt-7": "Ikona koła zębatego",
     "iconAlt-8": "Ikona procesora",
-
-    "imageAlt-1": "Dwie osoby siędzące na kanapie, patrzą na laptop"
+    "imageAlt-1": "Dwie osoby siędzące na kanapie, patrzą na laptop",
+    "hero": {
+      "eyebrow": "Współpraca",
+      "image": "/images/heroes/meeting.jpg",
+      "description": "Współpraca z lokalnymi i krajowymi pracodawcami, samorządem i przemysłem zbrojeniowym tworzy realne miejsca pracy dla naszych absolwentów."
+    }
   },
-
   "PolitykaPrywatnosciPage": {
     "title": "Polityka Prywatności",
     "description": "Dowiedz się, jak chronimy Twoje dane osobowe i jakie masz prawa dotyczące prywatności na naszej stronie.",
-
     "iconAlt": "Ikona książki",
-
     "itemTitle-1": "1. Informacje o Administratorze Danych Osobowych",
     "itemTitle-2": "2. Dane Osobowe",
     "itemTitle-3": "3. Cel i Zakres Przetwarzania Danych Osobowych",
@@ -861,7 +867,6 @@
     "itemTitle-5": "5. Utrzymanie Strony",
     "itemTitle-6": "6. Prawa Użytkowników",
     "itemTitle-7": "7. Zmiany w Polityce Prywatności",
-
     "text-1": "Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych przekazywanych przez użytkowników w związku z korzystaniem z serwisu internetowego",
     "text-2": "Administratorem danych osobowych jest:",
     "text-3": "Publiczna Uczelnia Zawodowa w Grudziądzu",
@@ -880,39 +885,29 @@
   "DeklaracjaDostepnosciPage": {
     "title": "Deklaracja Dostępności",
     "description": "Zapoznaj się z informacjami na temat dostępności naszej strony internetowej oraz działaniami, które podejmujemy, aby zapewnić dostępność dla wszystkich użytkowników.",
-
     "simpleText": "Publiczna Uczelnia Zawodowa w Grudziądzu zobowiązuje się zapewnić dostępność swojej strony internetowej zgodnie z przepisami ustawy z dnia 4 kwietnia 2019 r. o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych.",
-
     "text-1": "Deklaracja dostępności dotyczy strony internetowej:",
     "mainTitle-1": "Daty i status",
     "mainTitle-2": "Treści niedostępne",
     "mainTitle-3": "Wyłączenia",
     "mainTitle-4": "Przygotowanie deklaracji dostępności",
-
     "list-1": "<ul><li>Data publikacji strony internetowej: 2015 r.</li><li>Data ostatniej istotnej aktualizacji: 2024-11-17</li><li> Status pod względem zgodności z ustawą: Strona internetowa jest częściowo zgodna z ustawą o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych z powodu niezgodności lub wyłączeń wymienionych poniżej.</li></ul>",
     "list-2": "<ul><li>Niektóre zdjęcia nie posiadają tekstów alternatywnych</li><li>Część dokumentów PDF nie jest dostępna cyfrowo</li><li>Niektóre formularze nie posiadają odpowiednich etykiet i opisów pól</li></ul>",
     "list-3": "<ul><li>Mapy są wyłączone z obowiązku zapewniania dostępności</li><li>Dokumenty archiwalne opublikowane przed 23 września 2018 r. nie są dostępne cyfrowo</li><li>Multimedia opublikowane przed 23 września 2020 r. nie posiadają napisów dla osób niesłyszących i Głuchych</li></ul>",
     "list-4": "<ul><li>Data sporządzenia deklaracji: 2024-11-12</li><li>Data ostatniego przeglądu deklaracji: 2024-11-12</li><li>Deklarację sporządzono na podstawie samooceny przeprowadzonej przez podmiot publiczny</li></ul>",
-
     "mainTitle-5": "Informacje zwrotne i dane kontaktowe",
     "simpleText-2": "W przypadku problemów z dostępnością strony internetowej prosimy o kontakt z Działem IT PUZG w Grudziądzu:",
     "phone": "telefon:",
-
     "simpleText-3": "Tą samą drogą można składać wnioski o udostępnienie informacji niedostępnej oraz składać skargi na brak zapewnienia dostępności.",
     "mainTitle-6": "Procedura wnioskowo-skargowa",
     "simpleText-4": "Każdy ma prawo do wystąpienia z żądaniem zapewnienia dostępności cyfrowej strony internetowej, aplikacji mobilnej lub jakiegoś ich elementu. Można także zażądać udostępnienia informacji w formie alternatywnej, na przykład przez odczytanie niedostępnego cyfrowo dokumentu, opisanie zawartości filmu bez audiodeskrypcji itp.",
     "simpleText-5": "Żądanie powinno zawierać:",
-
     "list-5": "<ul><li>dane osoby zgłaszającej</li><li>wskazanie strony lub elementu strony, której dotyczy żądanie</li><li>sposób kontaktu</li><li>preferowany sposób udostępnienia informacji, jeśli dotyczy</li></ul>",
-
     "simpleText-6": "Uczelnia zrealizuje żądanie niezwłocznie i nie później niż w ciągu 7 dni. Jeżeli dotrzymanie tego terminu nie jest możliwe, niezwłocznie poinformujemy o tym, kiedy realizacja żądania będzie możliwa, przy czym termin ten nie może być dłuższy niż 2 miesiące. Jeżeli zapewnienie dostępności nie jest możliwe, zaproponujemy alternatywny sposób dostępu do informacji.",
     "simpleText-7": "W przypadku odmowy zapewnienia dostępności cyfrowej wskazanej w żądaniu, można złożyć skargę. Po wyczerpaniu procedury skargowej można także złożyć wniosek do Rzecznika Praw Obywatelskich.",
-
     "mainTitle-7": "Dostępność architektoniczna",
     "simpleText-8": "Siedziba główna PUZ w Grudziądzu znajduje się przy ul.",
-
     "list-6": "<ul><li>Budynek jest wyposażony w podjazd dla wózków przy wejściu głównym</li><li>Na parterze znajduje się punkt informacyjny</li><li>Dostępna jest winda obsługująca wszystkie kondygnacje</li><li>W budynku znajdują się toalety przystosowane dla osób z niepełnosprawnościami</li><li>Przed budynkiem wyznaczono miejsca parkingowe dla osób z niepełnosprawnościami</li><li>Do budynku i wszystkich jego pomieszczeń można wejść z psem asystującym i psem przewodnikiem</li></ul>",
-
     "mainTitle-8": "Dostępność komunikacyjno-informacyjna",
     "list-7": "<ul><li>W uczelni można skorzystać z tłumacza polskiego języka migowego (PJM) online</li><li>Usługa tłumacza jest dostępna w godzinach pracy uczelni</li><li>W budynku znajdują się pętle indukcyjne w wybranych salach wykładowych</li><li>Istnieje możliwość załatwienia spraw przez telefon, e-mail lub poprzez osobisty kontakt z pracownikiem administracyjnym</li></ul>"
   },
@@ -923,10 +918,8 @@
   "PrawaAutorskiePage": {
     "title": "Prawa autorskie",
     "description": "Zapoznaj się z informacjami dotyczącymi praw autorskich na stronie publicznej uczelni zawodowej w Grudziądzu. Przeczytaj o zasadach wykorzystywania grafik, ikon i innych materiałów zamieszczonych na stronie.",
-
     "mainTitle": "Ikony",
     "simpleText": "Poniżej znajdziesz ikony z odnośnikami do ich źródeł:",
-
     "fancyButtonAlts": {
       "handshake_2618623": "ikona uścisku dłoni",
       "place_1692037": "ikona miejsca",
@@ -970,12 +963,10 @@
       "processor_2353989": "ikona procesora",
       "home_25694": "ikona domu"
     },
-
     "mainTitle-2": "Brakujące informacje?",
     "simpleText-2": "Zauważyłeś brakujące informacje lub jesteś właścicielem pominiętego materiału? Daj nam znać! Napisz do nas, a szybko uzupełnimy brakujące dane.",
     "button": "Przejdź do formularza kontaktowego"
   },
-
   "Cookie": {
     "text-1": "Używamy pliki cookies dla lepszej nawigacji.",
     "buttonAccept": "Akceptuj",
@@ -988,7 +979,6 @@
     "label-3": "Analityka",
     "label-4": "Wydajność",
     "label-5": "Reklama",
-
     "buttonSave": "Zapisz preferencje",
     "buttonCancel": "Anuluj"
   },

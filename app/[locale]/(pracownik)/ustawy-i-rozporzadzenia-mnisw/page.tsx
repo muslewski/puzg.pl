@@ -28,7 +28,14 @@ export default function UstawyMNiSWPage({ params: { locale } }: Props) {
   const t = useTranslations("UstawyMNiSWPage");
 
   return (
-    <MainWrapper topTitle={t("title")}>
+    <MainWrapper
+      topTitle={t("title")}
+      eyebrow={t("hero.eyebrow")}
+      description={t("description")}
+      heroVariant="image"
+      heroImage={t("hero.image")}
+      heroImageAlt=""
+    >
       <CardVertical>
         <Card grayCard grayCardPosition="left">
           <CardList

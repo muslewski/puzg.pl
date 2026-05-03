@@ -45,7 +45,14 @@ export default function OUczelniPage({ params: { locale } }: Props) {
   // ! Remember to add alt images
 
   return (
-    <MainWrapper topTitle={t("title")}>
+    <MainWrapper
+      topTitle={t("title")}
+      eyebrow={t("hero.eyebrow")}
+      description={t("description")}
+      heroVariant="image"
+      heroImage={t("hero.image")}
+      heroImageAlt=""
+    >
       <ImageCarousel
         images={images}
         altImages={[

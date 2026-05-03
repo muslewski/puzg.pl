@@ -37,7 +37,14 @@ export default function RekrutacjaKrokPoKrokuPage({
   const t = useTranslations("RekrutacjaKrokPoKrokuPage");
 
   return (
-    <MainWrapper topTitle={t("title")}>
+    <MainWrapper
+      topTitle={t("title")}
+      eyebrow={t("hero.eyebrow")}
+      description={t("description")}
+      heroVariant="image"
+      heroImage={t("hero.image")}
+      heroImageAlt=""
+    >
       <Card border="bl">
         <MainTitle>{t("mainTitle")}</MainTitle>
         <CardImage

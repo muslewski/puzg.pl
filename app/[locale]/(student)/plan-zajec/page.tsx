@@ -30,7 +30,14 @@ export default function PlanZajecPage({ params: { locale } }: Props) {
   const t = useTranslations("PlanZajecPage");
 
   return (
-    <MainWrapper topTitle={t("title")}>
+    <MainWrapper
+      topTitle={t("title")}
+      eyebrow={t("hero.eyebrow")}
+      description={t("description")}
+      heroVariant="image"
+      heroImage={t("hero.image")}
+      heroImageAlt=""
+    >
       <Card
         grayCard
         grayCardPosition="left"

@@ -39,7 +39,14 @@ export default function InstytutPage({ params: { locale } }: Props) {
   ];
 
   return (
-    <MainWrapper topTitle={t("title")}>
+    <MainWrapper
+      topTitle={t("title")}
+      eyebrow={t("hero.eyebrow")}
+      description={t("description")}
+      heroVariant="image"
+      heroImage={t("hero.image")}
+      heroImageAlt=""
+    >
       <ImageCarousel
         images={images}
         altImages={[

@@ -32,7 +32,14 @@ export default function RegulaminStudiowPage({ params: { locale } }: Props) {
   const t = useTranslations("RegulaminStudiowPage");
 
   return (
-    <MainWrapper topTitle={t("title")}>
+    <MainWrapper
+      topTitle={t("title")}
+      eyebrow={t("hero.eyebrow")}
+      description={t("description")}
+      heroVariant="image"
+      heroImage={t("hero.image")}
+      heroImageAlt=""
+    >
       <Card grayCard grayCardPosition="right">
         <SimpleText>{t("simpleText")}</SimpleText>
         <FancyButton

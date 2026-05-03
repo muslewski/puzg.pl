@@ -51,7 +51,15 @@ export default function AktualnosciPage({ params: { locale } }: Props) {
   });
 
   return (
-    <MainWrapper topTitle={t("title")} zeroGap="gap-8 lg:gap-8">
+    <MainWrapper
+      topTitle={t("title")}
+      eyebrow={t("hero.eyebrow")}
+      description={t("description")}
+      heroVariant="image"
+      heroImage={t("hero.image")}
+      heroImageAlt=""
+      zeroGap="gap-8 lg:gap-8 pt-12 sm:pt-16 lg:pt-20 pb-12"
+    >
       <NewsList news={news} buttonText={t("button")} />
     </MainWrapper>
   );

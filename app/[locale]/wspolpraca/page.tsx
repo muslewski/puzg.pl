@@ -30,7 +30,14 @@ export default function WspolpracaPage({ params: { locale } }: Props) {
   const t = useTranslations("WspolpracaPage");
 
   return (
-    <MainWrapper topTitle={t("title")}>
+    <MainWrapper
+      topTitle={t("title")}
+      eyebrow={t("hero.eyebrow")}
+      description={t("description")}
+      heroVariant="image"
+      heroImage={t("hero.image")}
+      heroImageAlt=""
+    >
       <Card border="bl">
         <MainTitle>{t("mainTitle-1")}</MainTitle>
         <SimpleText>{t("simpleText-1")}</SimpleText>

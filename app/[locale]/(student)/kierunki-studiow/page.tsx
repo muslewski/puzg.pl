@@ -32,7 +32,14 @@ export default function KierunkiStudiowPage({ params: { locale } }: Props) {
   const t = useTranslations("KierunkiStudiowPage");
 
   return (
-    <MainWrapper topTitle={t("title")}>
+    <MainWrapper
+      topTitle={t("title")}
+      eyebrow={t("hero.eyebrow")}
+      description={t("description")}
+      heroVariant="image"
+      heroImage={t("hero.image")}
+      heroImageAlt=""
+    >
       <Card border="bl">
         <MainTitle>{t("mainTitle")}</MainTitle>
         <CardList

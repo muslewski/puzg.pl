@@ -37,7 +37,14 @@ export default function ElektronicznaRejestracjaPage({
   const t = useTranslations("ElektronicznaRejestracjaPage");
 
   return (
-    <MainWrapper topTitle={t("title")}>
+    <MainWrapper
+      topTitle={t("title")}
+      eyebrow={t("hero.eyebrow")}
+      description={t("description")}
+      heroVariant="image"
+      heroImage={t("hero.image")}
+      heroImageAlt=""
+    >
       <Card border="bl">
         <MainTitle>Informacje</MainTitle>
         <SimpleText>
