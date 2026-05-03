@@ -35,7 +35,14 @@ export default function LimitPrzyjecNaStudiaPage({
   const t = useTranslations("LimitPrzyjecNaStudiaPage");
 
   return (
-    <MainWrapper topTitle={t("title")}>
+    <MainWrapper
+      topTitle={t("title")}
+      eyebrow={t("hero.eyebrow")}
+      description={t("description")}
+      heroVariant="image"
+      heroImage={t("hero.image")}
+      heroImageAlt=""
+    >
       <Card border="bl">
         <MainTitle>{t("mainTitle")}</MainTitle>
 

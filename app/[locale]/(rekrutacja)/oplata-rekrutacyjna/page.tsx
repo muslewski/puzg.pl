@@ -33,7 +33,14 @@ export default function OplataRekrutacyjnaPage({ params: { locale } }: Props) {
   const t = useTranslations("OplataRekrutacyjnaPage");
 
   return (
-    <MainWrapper topTitle={t("title")}>
+    <MainWrapper
+      topTitle={t("title")}
+      eyebrow={t("hero.eyebrow")}
+      description={t("description")}
+      heroVariant="image"
+      heroImage={t("hero.image")}
+      heroImageAlt=""
+    >
       <Card border="bl">
         <SimpleText>{t("simpleText")}</SimpleText>
         <MainTitle>{t("mainTitle")}</MainTitle>

@@ -130,17 +130,19 @@ export default function SubpageHero({
             className="object-cover"
             sizes="100vw"
           />
+          {/* Left-to-right dark fade keeps text readable while image stays visible on the right */}
           <div
             aria-hidden
-            className="absolute inset-0 bg-gradient-to-t from-brandDark/95 via-brandDark/70 to-brandDark/45"
+            className="absolute inset-0 bg-gradient-to-r from-brandDark/95 via-brandDark/70 to-brandDark/30"
+          />
+          {/* Bottom darken so the hairline edge stays clean */}
+          <div
+            aria-hidden
+            className="absolute inset-0 bg-gradient-to-t from-brandDark/60 via-transparent to-brandDark/40"
           />
           <div
             aria-hidden
-            className="absolute inset-0 bg-grid-faint bg-grid-24 opacity-[0.05]"
-          />
-          <div
-            aria-hidden
-            className="absolute -top-32 -right-32 h-[28rem] w-[28rem] rounded-full bg-brandBrightBlue/30 blur-3xl"
+            className="absolute inset-0 bg-grid-faint bg-grid-24 opacity-[0.06]"
           />
         </>
       )}

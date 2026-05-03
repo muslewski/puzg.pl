@@ -33,7 +33,14 @@ export default function PlanZajecPage({ params: { locale } }: Props) {
   const t = useTranslations("LegitymacjaStudenckaPage");
 
   return (
-    <MainWrapper topTitle={t("title")}>
+    <MainWrapper
+      topTitle={t("title")}
+      eyebrow={t("hero.eyebrow")}
+      description={t("description")}
+      heroVariant="image"
+      heroImage={t("hero.image")}
+      heroImageAlt=""
+    >
       <Card border="bl">
         <MainTitle>{t("mainTitle")}</MainTitle>
         <SimpleText>{t("simpleText")}</SimpleText>

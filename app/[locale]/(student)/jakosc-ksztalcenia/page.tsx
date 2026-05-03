@@ -33,7 +33,14 @@ export default function JakoscKsztalceniaPage({ params: { locale } }: Props) {
   const t = useTranslations("JakoscKsztalceniaPage");
 
   return (
-    <MainWrapper topTitle={t("title")}>
+    <MainWrapper
+      topTitle={t("title")}
+      eyebrow={t("hero.eyebrow")}
+      description={t("description")}
+      heroVariant="image"
+      heroImage={t("hero.image")}
+      heroImageAlt=""
+    >
       <Card grayCard grayCardPosition="right">
         <MainTitle>{t("mainTitle-1")}</MainTitle>
         <SimpleText>{t("simpleText-1")}</SimpleText>

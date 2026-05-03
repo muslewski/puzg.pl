@@ -30,7 +30,14 @@ export default function ProgramStudiowPage({ params: { locale } }: Props) {
   const t = useTranslations("ProgramStudiowPage");
 
   return (
-    <MainWrapper topTitle={t("title")}>
+    <MainWrapper
+      topTitle={t("title")}
+      eyebrow={t("hero.eyebrow")}
+      description={t("description")}
+      heroVariant="image"
+      heroImage={t("hero.image")}
+      heroImageAlt=""
+    >
       <Card border="bl">
         <MainTitle>{t("mainTitle")}</MainTitle>
         <div className="flex flex-col gap-6">

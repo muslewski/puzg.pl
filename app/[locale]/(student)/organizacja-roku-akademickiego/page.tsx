@@ -33,7 +33,14 @@ export default function OrganizacjaRokuAkademickiegoPage({
   const t = useTranslations("OrganizacjaRokuAkademickiegoPage");
 
   return (
-    <MainWrapper topTitle={t("title")}>
+    <MainWrapper
+      topTitle={t("title")}
+      eyebrow={t("hero.eyebrow")}
+      description={t("description")}
+      heroVariant="image"
+      heroImage={t("hero.image")}
+      heroImageAlt=""
+    >
       <Card border="l">
         <SimpleText>
           <RichText>{(tags) => t.rich("simpleText", tags)}</RichText>
