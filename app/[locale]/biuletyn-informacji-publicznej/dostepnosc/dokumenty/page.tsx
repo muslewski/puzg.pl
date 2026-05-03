@@ -1,3 +1,4 @@
+import { use } from "react";
 import Card from "@/components/card/Card";
 import MainWrapper from "@/components/MainWrapper";
 import { getDocuments } from "@/data/documents";
@@ -7,12 +8,16 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { FaFileDownload } from "react-icons/fa";
 
 type Props = {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
-export async function generateMetadata({
-  params: { locale },
-}: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   const t = await getTranslations({
     locale,
     namespace: "BipPage",
@@ -24,7 +29,13 @@ export async function generateMetadata({
   };
 }
 
-export default function BipDokumentyPage({ params: { locale } }: Props) {
+export default function BipDokumentyPage(props: Props) {
+  const params = use(props.params);
+
+  const {
+    locale
+  } = params;
+
   // Enable static rendering
   setRequestLocale(locale);
 

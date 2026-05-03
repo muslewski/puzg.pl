@@ -11,10 +11,8 @@ type Props = {
   };
 };
 
-export async function POST(
-  request: NextRequest,
-  { params }: { params: { locale: string } }
-) {
+export async function POST(request: NextRequest, props: { params: Promise<{ locale: string }> }) {
+  const params = await props.params;
   try {
     if (!process.env.RESEND_API_KEY) {
       return Response.json(
@@ -50,13 +48,15 @@ export async function POST(
       from: `${t("Email.sender")} <onboarding@resend.dev>`,
       to: [email],
       subject: t("Email.subjectClient"),
-      react: EmailTemplate({
-        message,
-        title,
-        name,
-        email,
-        translations: userEmailTranslations,
-      }),
+      react: (
+        <EmailTemplate
+          message={message}
+          title={title}
+          name={name}
+          email={email}
+          translations={userEmailTranslations}
+        />
+      ),
     });
 
     const sekretariatEmailTranslations = {
@@ -85,14 +85,16 @@ export async function POST(
         to: ["mateusz.mus@proton.me"],
         subject: `${title} - Wiadomość z formularza kontaktowego - puzg.pl`,
         replyTo: email,
-        react: EmailTemplate({
-          message,
-          title,
-          name,
-          email,
-          locale,
-          translations: sekretariatEmailTranslations,
-        }),
+        react: (
+          <EmailTemplate
+            message={message}
+            title={title}
+            name={name}
+            email={email}
+            locale={locale}
+            translations={sekretariatEmailTranslations}
+          />
+        ),
       });
 
     if (error || sekretariatError) {

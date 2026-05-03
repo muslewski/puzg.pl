@@ -1,3 +1,4 @@
+import { use } from "react";
 import Card from "@/components/card/Card";
 import MainTitle from "@/components/card/MainTitle";
 import SimpleText from "@/components/card/SimpleText";
@@ -28,12 +29,16 @@ import { MdOutlineAccessibility } from "react-icons/md";
 import { getDocuments, getLastFiveDocuments } from "@/data/documents";
 
 type Props = {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
-export async function generateMetadata({
-  params: { locale },
-}: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   const t = await getTranslations({
     locale,
     namespace: "BipPage",
@@ -45,7 +50,13 @@ export async function generateMetadata({
   };
 }
 
-export default function PolitykaPrywatnosciPage({ params: { locale } }: Props) {
+export default function PolitykaPrywatnosciPage(props: Props) {
+  const params = use(props.params);
+
+  const {
+    locale
+  } = params;
+
   // Enable static rendering
   setRequestLocale(locale);
 

@@ -1,3 +1,4 @@
+import { use } from "react";
 import Card from "@/components/card/Card";
 import CardHorizontal from "@/components/card/CardHorizontal";
 import { CardImage } from "@/components/card/CardImage";
@@ -8,12 +9,16 @@ import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 type Props = {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
-export async function generateMetadata({
-  params: { locale },
-}: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   const t = await getTranslations({
     locale,
     namespace: "GodzinyDyzurowaniaPage",
@@ -25,7 +30,13 @@ export async function generateMetadata({
   };
 }
 
-export default function GodzinyDyzurowaniaPage({ params: { locale } }: Props) {
+export default function GodzinyDyzurowaniaPage(props: Props) {
+  const params = use(props.params);
+
+  const {
+    locale
+  } = params;
+
   // Enable static rendering
   setRequestLocale(locale);
 

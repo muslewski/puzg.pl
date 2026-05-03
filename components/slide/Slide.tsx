@@ -13,7 +13,7 @@ export default function Slide({ data }: { data: slideProps }) {
         initial={{ opacity: 0, x: 60, scale: 0.98 }}
         animate={{ opacity: 1, x: 0, scale: 1 }}
         exit={{ opacity: 0, x: 60, scale: 0.98 }}
-        transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] as const }}
       >
         <Image
           src={data.imageSrc}
@@ -35,7 +35,7 @@ export default function Slide({ data }: { data: slideProps }) {
         initial={{ opacity: 0, x: -40, y: 12 }}
         animate={{ opacity: 1, x: 0, y: 0 }}
         exit={{ opacity: 0, x: -40, y: 12 }}
-        transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] as const }}
       >
         <div className="glass rounded-3xl px-6 sm:px-10 py-6 sm:py-8">
           {/* Eyebrow */}
@@ -49,7 +49,7 @@ export default function Slide({ data }: { data: slideProps }) {
           <motion.h2
             initial={{ x: -16, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut" as const, delay: 0.1 }}
             className="!text-brandInk"
           >
             {data.title}
@@ -58,7 +58,7 @@ export default function Slide({ data }: { data: slideProps }) {
           <motion.p
             initial={{ x: -24, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.18 }}
+            transition={{ duration: 0.6, ease: "easeOut" as const, delay: 0.18 }}
             className="mt-4 text-brandInkSoft text-base sm:text-lg leading-relaxed"
           >
             {data.description}

@@ -91,7 +91,7 @@ export default function TopBar({
               exit="hidden"
               transition={{
                 duration: 0.8,
-                ease: "easeInOut",
+                ease: "easeInOut" as const,
               }}
             >
               <SearchBox

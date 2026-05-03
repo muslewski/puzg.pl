@@ -61,7 +61,7 @@ export default function Hero({
           className="absolute left-4 sm:left-8 lg:left-14 right-4 sm:right-auto bottom-6 sm:bottom-8 lg:bottom-10 z-20 max-w-[95%] sm:max-w-[78%] lg:max-w-[64%] xl:max-w-[54%]"
           initial={{ y: 24, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
         >
           <div className="glass rounded-3xl px-5 sm:px-8 lg:px-10 py-4 sm:py-6">
             <div className="mb-2 sm:mb-3 flex items-center gap-3">
