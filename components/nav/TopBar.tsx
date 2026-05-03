@@ -48,10 +48,10 @@ export default function TopBar({
               fill
               sizes="62px"
               alt={t("logoAlt")}
-              className="object-contain brightness-0 invert lg:filter-none"
+              className="object-contain brightness-0 invert"
             />
           </div>
-          <h3 className="font-outfit text-base sm:text-xl font-normal text-white lg:text-brandDark bg-none max-w-48 sm:max-w-56 ">
+          <h3 className="font-outfit text-base sm:text-xl font-normal text-white bg-none max-w-48 sm:max-w-56 ">
             {t("home")}
           </h3>
         </Link>

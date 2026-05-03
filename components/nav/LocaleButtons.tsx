@@ -34,7 +34,7 @@ export function LocaleButtonsLogic() {
       <button
         title="Zmień język na Polski"
         className={clsx(
-          "text-white lg:text-brandDark transition-all",
+          "text-white transition-all",
           currentLocale !== "pl" &&
             "opacity-70 scale-95 hover:scale-100 active:opacity-95 active:scale-110"
         )}
@@ -46,7 +46,7 @@ export function LocaleButtonsLogic() {
       <button
         title="Zmień język na Angielski"
         className={clsx(
-          "text-white lg:text-brandDark transition-all",
+          "text-white transition-all",
           currentLocale !== "en" &&
             "opacity-70 scale-95 hover:scale-100 active:opacity-95 active:scale-110"
         )}
