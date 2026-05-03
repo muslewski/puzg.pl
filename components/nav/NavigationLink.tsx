@@ -79,14 +79,24 @@ export default function NavigationLink({
                 },
                 pointerEvents: "none",
               }}
-              className="absolute left-0 w-full lg:w-fit lg:left-2 top-0 lg:top-full  bg-white/85 backdrop-blur-md lg:bg-brandPrimaryBlue rounded-t-md rounded-b-3xl py-6 px-8 shadow-md z-30"
+              className="absolute left-0 w-full lg:w-fit lg:left-2 top-0 lg:top-full bg-white/85 backdrop-blur-md lg:bg-brandPrimaryBlue rounded-t-md rounded-b-3xl py-6 px-8 shadow-md z-30 lg:max-h-[calc(100vh-12rem)] lg:overflow-y-auto"
               onMouseEnter={() => setIsOpen(true)}
               onMouseLeave={() => setIsOpen(false)}
             >
               <div
-                className="w-full flex flex-row flex-wrap lg:flex-col gap-y-4 gap-x-6"
+                className={clsx(
+                  "w-full grid gap-y-3 gap-x-8",
+                  // 2 columns when 7+ items so the dropdown doesn't overflow the viewport
+                  submenu.length > 6
+                    ? "grid-cols-2 lg:grid-cols-2"
+                    : "grid-cols-1 lg:grid-cols-1"
+                )}
                 style={{
-                  width: isTabletOrMobile ? "100%" : `${submenuWidth}rem`,
+                  width: isTabletOrMobile
+                    ? "100%"
+                    : submenu.length > 6
+                    ? `${submenuWidth * 1.6}rem`
+                    : `${submenuWidth}rem`,
                 }}
                 role="menu"
                 aria-orientation="vertical"
