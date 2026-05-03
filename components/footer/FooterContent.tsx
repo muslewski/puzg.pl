@@ -31,7 +31,7 @@ export default function FooterContent() {
       variants={containerVariants}
       className="flex flex-col gap-10 gap-y-24"
     >
-      <div className="flex flex-col lg:flex-row gap-x-10 gap-y-16 justify-between bg-gradient-to-tr from-gray-800/20 p-6 rounded-3xl backdrop-blur-sm">
+      <div className="flex flex-col lg:flex-row gap-x-10 gap-y-12 justify-between glass-dark p-8 sm:p-10 rounded-3xl">
         <BoxItem
           icon={
             <svg
@@ -110,7 +110,7 @@ export default function FooterContent() {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-32 2xl:gap-x-64 gap-y-16 justify-start">
-        <div className="flex flex-col gap-5 bg-gradient-to-br from-gray-800/20 p-6 rounded-3xl backdrop-blur-sm">
+        <div className="flex flex-col gap-4 glass-dark p-8 rounded-3xl">
           <FooterLink
             href="/biuletyn-informacji-publicznej"
             className="flex items-center gap-3"

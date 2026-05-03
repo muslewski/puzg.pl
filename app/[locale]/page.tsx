@@ -1,11 +1,14 @@
 import Card from "@/components/card/Card";
 import CardList from "@/components/card/CardList";
 import MainTitle from "@/components/card/MainTitle";
-import SimpleText from "@/components/card/SimpleText";
 import FancyButton from "@/components/FancyButton";
 import Hero from "@/components/home/Hero";
-import LocalizationIframe from "@/components/LocalizationIframe";
+import LocationCard from "@/components/home/LocationCard";
+import ProgramsPreview from "@/components/home/ProgramsPreview";
+import RecruitmentCTA from "@/components/home/RecruitmentCTA";
+import TrustStrip from "@/components/home/TrustStrip";
 import SlideShow, { slideProps } from "@/components/slide/SlideShow";
+import Image from "next/image";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -26,12 +29,10 @@ export async function generateMetadata({
 }
 
 export default function HomePage({ params: { locale } }: Props) {
-  // Enable static rendering
   setRequestLocale(locale);
 
   const t = useTranslations("HomePage");
 
-  // Get translation for SlideShow component
   const slideKeys = ["0", "1", "2", "3"] as const;
   const slides: slideProps[] = slideKeys.map((key) => ({
     title: t(`slides.${key}.title`),
@@ -49,9 +50,14 @@ export default function HomePage({ params: { locale } }: Props) {
         arrowAlt={t("arrowAlt")}
       />
 
-      <div className="w-full flex flex-col gap-32 lg:gap-52 items-center">
+      <div className="relative w-full flex flex-col gap-24 lg:gap-36 items-center pt-20 lg:pt-28">
+        {/* News carousel */}
         <SlideShow slides={slides} />
 
+        {/* Trust / credibility strip */}
+        <TrustStrip />
+
+        {/* Why choose us — existing 3-icon card, kept */}
         <Card border="bl">
           <MainTitle>{t("card1.mainTitle")}</MainTitle>
           <CardList
@@ -79,28 +85,46 @@ export default function HomePage({ params: { locale } }: Props) {
           />
         </Card>
 
-        <Card grayCard grayCardPosition="left">
-          <MainTitle>{t("grayCard1.mainTitle")}</MainTitle>
-          <SimpleText>{t("grayCard1.simpleText")}</SimpleText>
-          <LocalizationIframe />
-        </Card>
+        {/* Programs preview — most important call to action target */}
+        <ProgramsPreview />
 
-        <Card
-          border="tr"
-          customGradient="from-[#383d8f]/55 via-[#1c1f4a]/35 to-[#1c1f4a]/0"
-          customInsideBorder="border-[#c9d4f2] border-double"
-        >
-          <MainTitle>{t("card2.mainTitle")}</MainTitle>
-          <SimpleText>{t("card2.simpleText")}</SimpleText>
-          <FancyButton
-            text={t("card2.buttonText")}
-            outsideLink="https://login.live.com/oauth20_authorize.srf?client_id=4b3e8f46-56d3-427f-b1e2-d239b2ea6bca&scope=openId+profile+openid+offline_access&redirect_uri=https%3a%2f%2fteams.live.com%2fv2&response_type=code&state=eyJpZCI6IjAxOTI1ZDZjLTNmYTMtN2M4NS1iMmQ1LTAwNWFhNjI3ZjhiMSIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3d&response_mode=fragment&nonce=01925d6c-3fa3-7b17-aa06-da3212bc8a36&prompt=select_account&code_challenge=y0y6zPSLzg-tvfpm01abYr4in3HO1t4AoWAgkRt9nHw&code_challenge_method=S256&x-client-SKU=msal.js.browser&x-client-Ver=3.18.0&uaid=01925d6c3fa37766b9a7542c795e6b19&msproxy=1&issuer=mso&tenant=consumers&ui_locales=en-US&client_info=1&epct=PAQABDgEAAADW6jl31mB3T7ugrWTT8pFe0G62luMn0w2_6XEt1koW9BJheFm531kwXsfRrruQirLSUwSDtBF8QpEZZOWRiNvVjJBv3ND1XULEeKstz-7qyz7zqqNtwXY1Xm5lNRlHFaxS2TJDXup2o_iF72V-8XfY0PUAFY-FVsGONRfnqNYcJfdvrdpXzIdkI3itE3iIJG3vyJeUVwTQsjSGHXGDexKFcXgEFRK3V1XbplA1iidMkyAA&jshs=0#"
-            icon="/images/icons/teams.png"
-            iconAlt="Logo Microsoft Teams"
-            customGradient="bg-gradient-to-br from-[#1c1f4a] to-[#7B83EB]"
-            borderColor="border-[rgba(22,21,90,0.5)]"
-          />
-        </Card>
+        {/* Location with rich contact info + map */}
+        <LocationCard />
+
+        {/* Final recruitment CTA */}
+        <RecruitmentCTA />
+
+        {/* Microsoft Teams — secondary, compact */}
+        <section className="w-full 2xl:w-4/5 px-4 sm:px-6 lg:px-12 2xl:px-0">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8 rounded-2xl bg-white ring-1 ring-brandWashedBlue/40 px-6 sm:px-8 py-6 sm:py-7 shadow-soft">
+            <div className="flex-shrink-0 h-14 w-14 rounded-xl bg-gradient-to-br from-[#1c1f4a] to-[#7B83EB] flex items-center justify-center p-3">
+              <Image
+                src="/images/icons/teams.png"
+                width={36}
+                height={36}
+                alt="Microsoft Teams"
+                className="object-contain"
+              />
+            </div>
+            <div className="flex-1 flex flex-col gap-1">
+              <h3 className="!bg-none !text-brandInk font-semibold text-lg">
+                {t("card2.mainTitle")}
+              </h3>
+              <p className="text-sm sm:text-base text-brandInkSoft">
+                {t("card2.simpleText")}
+              </p>
+            </div>
+            <div className="flex-shrink-0">
+              <FancyButton
+                text={t("card2.buttonText")}
+                outsideLink="https://teams.microsoft.com/"
+                small
+                customGradient="bg-gradient-to-br from-[#1c1f4a] to-[#7B83EB]"
+                stopAnimation
+              />
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   );

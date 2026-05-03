@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { NextRequest } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+export const dynamic = "force-dynamic";
 
 type Props = {
   params: {
@@ -16,6 +16,13 @@ export async function POST(
   { params }: { params: { locale: string } }
 ) {
   try {
+    if (!process.env.RESEND_API_KEY) {
+      return Response.json(
+        { error: "Email service is not configured." },
+        { status: 503 }
+      );
+    }
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const { message, title, name, email } = await request.json();
     const { locale } = params;
 

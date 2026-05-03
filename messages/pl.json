@@ -128,6 +128,60 @@
       "mainTitle": "Dołącz do nas na Microsoft Teams!",
       "simpleText": "Zajęcia, które nie mogą odbyć się na uczelni, będą prowadzone online na Microsoft Teams.",
       "buttonText": "Kliknij Tutaj"
+    },
+
+    "trust": {
+      "eyebrow": "Państwowa Uczelnia Zawodowa",
+      "items": {
+        "0": { "title": "Praktyczny profil", "description": "Program studiów oparty na realnych zadaniach inżynierskich i ścisłej współpracy z przemysłem." },
+        "1": { "title": "Doświadczona kadra", "description": "Wykładowcy z doświadczeniem akademickim i przemysłowym, prowadzący zajęcia warsztatowe." },
+        "2": { "title": "Nowoczesna infrastruktura", "description": "Laboratoria, pracownie CNC, robotyka i specjalistyczne stanowiska do nauki praktycznej." },
+        "3": { "title": "Współpraca z biznesem", "description": "Porozumienia z lokalnymi firmami, PSSE i przemysłem zbrojeniowym - praca dla absolwentów." }
+      }
+    },
+
+    "programs": {
+      "eyebrow": "Kierunki studiów",
+      "mainTitle": "Studia inżynierskie z myślą o przyszłości",
+      "intro": "Aktualnie kształcimy na kierunku Mechatronika, a wkrótce uruchomimy kolejne kierunki techniczne dopasowane do potrzeb rynku pracy.",
+      "featured": {
+        "tag": "Aktualnie nabór",
+        "name": "Mechatronika",
+        "summary": "Mechanika, elektronika, informatyka, automatyka i robotyka w jednym - kierunek o ogromnym zapotrzebowaniu na rynku pracy.",
+        "bullets": {
+          "0": "Studia inżynierskie - 7 semestrów",
+          "1": "Profil praktyczny - laboratoria i staże w przemyśle",
+          "2": "Stypendia, w tym socjalne i naukowe"
+        },
+        "cta": "Zobacz program studiów",
+        "ctaSecondary": "Pełna oferta kierunków"
+      },
+      "upcoming": {
+        "title": "Wkrótce kolejne kierunki",
+        "description": "Pracujemy nad uruchomieniem nowych kierunków technicznych, które odpowiedzą na potrzeby pracodawców regionu."
+      }
+    },
+
+    "location": {
+      "eyebrow": "Lokalizacja",
+      "mainTitle": "Gdzie nas znajdziesz?",
+      "description": "Nasza nowoczesna infrastruktura edukacyjna mieści się w samym centrum Grudziądza, 15 minut spacerem od dworca PKP.",
+      "addressLabel": "Adres",
+      "address": "ul. Czarnieckiego 5/7, 86-300 Grudziądz",
+      "addressSecondary": "ul. Hoffmanna 1-7, 86-300 Grudziądz",
+      "contactLabel": "Kontakt",
+      "phone": "576 060 123",
+      "phoneSecondary": "576 060 124",
+      "emailLabel": "E-mail",
+      "email": "rekrutacja@puzg.pl"
+    },
+
+    "recruitmentCta": {
+      "eyebrow": "Rekrutacja 2024/2025",
+      "mainTitle": "Rozpocznij swoją drogę inżyniera",
+      "description": "Dołącz do studentów Publicznej Uczelni Zawodowej w Grudziądzu i zdobądź zawód, który otwiera drzwi w nowoczesnym przemyśle.",
+      "primaryCta": "Rozpocznij rekrutację",
+      "secondaryCta": "Krok po kroku"
     }
   },
   "NotFoundPage": {

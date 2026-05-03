@@ -1,4 +1,4 @@
-import { montserrat, outfit, galindo, rubik_vinyl } from "@/app/fonts";
+import { montserrat, outfit, galindo, rubik_vinyl, fraunces } from "@/app/fonts";
 import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
@@ -71,7 +71,7 @@ export default async function LocaleLayout({
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </head>
       <body
-        className={`${montserrat.variable} ${outfit.variable} ${rubik_vinyl.variable} ${galindo.variable}`}
+        className={`${montserrat.variable} ${outfit.variable} ${rubik_vinyl.variable} ${galindo.variable} ${fraunces.variable} bg-brandSurface text-brandInk antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
           <ToastContainer position="top-right" autoClose={3000} />

@@ -128,6 +128,60 @@
       "mainTitle": "Join Us on Microsoft Teams!",
       "simpleText": "Classes that cannot be held on campus will be conducted online on Microsoft Teams.",
       "buttonText": "Click Here"
+    },
+
+    "trust": {
+      "eyebrow": "Public Vocational College",
+      "items": {
+        "0": { "title": "Hands-on curriculum", "description": "A program built around real engineering tasks and close partnership with industry." },
+        "1": { "title": "Experienced faculty", "description": "Lecturers with both academic and industry backgrounds, leading workshop-style sessions." },
+        "2": { "title": "Modern facilities", "description": "Labs, CNC workshops, robotics, and specialised stations for true hands-on learning." },
+        "3": { "title": "Industry partnerships", "description": "Agreements with local employers, the PSSE economic zone, and the defence industry - real jobs for graduates." }
+      }
+    },
+
+    "programs": {
+      "eyebrow": "Fields of study",
+      "mainTitle": "Engineering programs designed for what's next",
+      "intro": "We currently educate students in Mechatronics, with additional engineering programs launching soon - aligned with what employers actually need.",
+      "featured": {
+        "tag": "Now recruiting",
+        "name": "Mechatronics",
+        "summary": "Mechanics, electronics, computing, automation and robotics in one - a discipline with strong demand on the labour market.",
+        "bullets": {
+          "0": "Engineering degree - 7 semesters",
+          "1": "Practical profile - labs and industry placements",
+          "2": "Scholarships, including social and academic"
+        },
+        "cta": "View the program",
+        "ctaSecondary": "All study fields"
+      },
+      "upcoming": {
+        "title": "More programs coming soon",
+        "description": "We are launching new technical programs that respond to the needs of the region's employers."
+      }
+    },
+
+    "location": {
+      "eyebrow": "Location",
+      "mainTitle": "Where to find us",
+      "description": "Our modern educational facilities sit in the heart of Grudziadz, a 15-minute walk from the central train station.",
+      "addressLabel": "Address",
+      "address": "Czarnieckiego 5/7, 86-300 Grudziadz",
+      "addressSecondary": "Hoffmanna 1-7, 86-300 Grudziadz",
+      "contactLabel": "Contact",
+      "phone": "576 060 123",
+      "phoneSecondary": "576 060 124",
+      "emailLabel": "E-mail",
+      "email": "rekrutacja@puzg.pl"
+    },
+
+    "recruitmentCta": {
+      "eyebrow": "Recruitment 2024/2025",
+      "mainTitle": "Start your engineering journey",
+      "description": "Join the students of the Public Vocational College in Grudziadz and learn a profession that opens doors in modern industry.",
+      "primaryCta": "Start recruitment",
+      "secondaryCta": "Step by step"
     }
   },
   "NotFoundPage": {

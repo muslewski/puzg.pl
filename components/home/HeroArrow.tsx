@@ -19,6 +19,7 @@ export default function HeroArrow({ arrowAlt }: { arrowAlt: string }) {
         src="/images/home/arrow.png"
         fill
         sizes="261px"
+        priority
         alt={arrowAlt}
         className="object-contain"
       />

@@ -35,7 +35,7 @@ export default function ListItem({
         }}
       >
         <motion.div
-          className="h-full w-full"
+          className="relative h-full w-full"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.95 }}
           transition={{
@@ -48,8 +48,8 @@ export default function ListItem({
           <Image
             src={icon}
             fill
-            sizes="16"
-            className="object-cover"
+            sizes="96px"
+            className="object-contain"
             alt={iconAlt}
           />
         </motion.div>
