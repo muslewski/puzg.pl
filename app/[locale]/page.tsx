@@ -4,10 +4,10 @@ import MainTitle from "@/components/card/MainTitle";
 import FancyButton from "@/components/FancyButton";
 import Hero from "@/components/home/Hero";
 import LocationCard from "@/components/home/LocationCard";
+import NewsCarousel, { NewsSlide } from "@/components/home/NewsCarousel";
 import ProgramsPreview from "@/components/home/ProgramsPreview";
 import RecruitmentCTA from "@/components/home/RecruitmentCTA";
 import TrustStrip from "@/components/home/TrustStrip";
-import SlideShow, { slideProps } from "@/components/slide/SlideShow";
 import Image from "next/image";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
@@ -34,7 +34,7 @@ export default function HomePage({ params: { locale } }: Props) {
   const t = useTranslations("HomePage");
 
   const slideKeys = ["0", "1", "2", "3"] as const;
-  const slides: slideProps[] = slideKeys.map((key) => ({
+  const slides: NewsSlide[] = slideKeys.map((key) => ({
     title: t(`slides.${key}.title`),
     description: t(`slides.${key}.description`),
     imageSrc: t(`slides.${key}.imageSrc`),
@@ -52,7 +52,7 @@ export default function HomePage({ params: { locale } }: Props) {
 
       <div className="relative w-full flex flex-col gap-24 lg:gap-36 items-center pt-20 lg:pt-28">
         {/* News carousel */}
-        <SlideShow slides={slides} />
+        <NewsCarousel slides={slides} eyebrow={t("slidesEyebrow")} />
 
         {/* Trust / credibility strip */}
         <TrustStrip />

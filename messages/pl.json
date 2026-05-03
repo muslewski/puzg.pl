@@ -82,6 +82,7 @@
     "sloganMobile": "Nowoczesne kształcenie w zasięgu ręki!",
     "heroImageAlt": "Tło przedstawiające miasto Grudziądz",
     "arrowAlt": "Strzałka",
+    "slidesEyebrow": "Aktualności",
 
     "slides": {
       "0": {
@@ -766,6 +767,22 @@
   "KontaktPage": {
     "title": "Kontakt",
     "description": "Skontaktuj się z nami poprzez e-mail, telefon lub odwiedź nas osobiście. Sprawdź szczegóły kontaktowe.",
+
+    "hero": {
+      "eyebrow": "Skontaktuj się z nami"
+    },
+    "contactCards": {
+      "phoneLabel": "Telefon",
+      "emailLabel": "E-mail",
+      "addressLabel": "Adres"
+    },
+    "cta": {
+      "eyebrow": "Rekrutacja",
+      "title": "Masz pytanie o rekrutację?",
+      "description": "Sekretariat odpowiada od poniedziałku do piątku w godzinach 8:00 - 16:00. Zachęcamy też do odwiedzenia kroków rekrutacji online.",
+      "primary": "Zadzwoń do sekretariatu",
+      "secondary": "Krok po kroku"
+    },
 
     "mainTitle": "Formularz kontaktowy",
     "simpleText": "Jesteśmy tutaj, aby Ci pomóc. Masz pytania dotyczące naszej oferty lub rekrutacji? Skontaktuj się z nami, a z przyjemnością udzielimy odpowiedzi na wszystkie Twoje wątpliwości!",

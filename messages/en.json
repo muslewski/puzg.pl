@@ -82,6 +82,7 @@
     "sloganMobile": "Modern education within your reach!",
     "heroImageAlt": "Background showing the city of Grudziądz",
     "arrowAlt": "Arrow",
+    "slidesEyebrow": "News",
 
     "slides": {
       "0": {
@@ -766,6 +767,22 @@
   "KontaktPage": {
     "title": "Contact",
     "description": "Reach out to us via email, phone, or visit us in person. Check contact details.",
+
+    "hero": {
+      "eyebrow": "Get in touch"
+    },
+    "contactCards": {
+      "phoneLabel": "Phone",
+      "emailLabel": "E-mail",
+      "addressLabel": "Address"
+    },
+    "cta": {
+      "eyebrow": "Recruitment",
+      "title": "Have a recruitment question?",
+      "description": "The secretariat answers Monday to Friday, 8:00 - 16:00. You can also walk through the recruitment steps online at any time.",
+      "primary": "Call the secretariat",
+      "secondary": "Step by step"
+    },
 
     "mainTitle": "Contact Form",
     "simpleText": "We are here to help. Do you have questions about our offer or recruitment? Get in touch with us, and we will gladly answer all your concerns!",
