@@ -53,13 +53,26 @@
   "Footer": {
     "title": "Publiczna Uczelnia Zawodowa w Grudziądzu",
     "titleAlt": "Logo Publicznej Uczelni Zawodowej w Grudziądzu",
+    "tagline": "Praktyczne studia inżynierskie w samym sercu Grudziądza.",
     "localization": "Ul.",
     "contact": "Kontakt telefoniczny (Rekrutacja):",
     "bip": "Biuletyn Informacji Publicznej",
     "accessibilityDeclaration": "Deklaracja Dostępności",
     "privacyPolicy": "Polityka Prywatności",
     "copyright": "Prawa Autorskie",
-    "findUs": "Znajdź nas na:"
+    "findUs": "Znajdź nas na:",
+    "sections": {
+      "contact": "Kontakt",
+      "explore": "Uczelnia",
+      "documents": "Dokumenty"
+    },
+    "links": {
+      "news": "Aktualności",
+      "about": "O uczelni",
+      "programs": "Kierunki studiów",
+      "recruitment": "Rekrutacja",
+      "contactPage": "Skontaktuj się"
+    }
   },
   "HomePage": {
     "title": "Publiczna Uczelnia Zawodowa w Grudziądzu",

@@ -53,13 +53,26 @@
   "Footer": {
     "title": "Public Vocational College in Grudziądz",
     "titleAlt": "Logo of the Public Vocational School in Grudziądz",
+    "tagline": "Practical engineering education in the heart of Grudziądz.",
     "localization": "St.",
     "contact": "Telephone contact (Recruitment):",
     "bip": "Public Information Bulletin",
     "accessibilityDeclaration": "Accessibility Declaration",
     "privacyPolicy": "Privacy Policy",
     "copyright": "Copyright",
-    "findUs": "Find us on:"
+    "findUs": "Find us on:",
+    "sections": {
+      "contact": "Contact",
+      "explore": "College",
+      "documents": "Documents"
+    },
+    "links": {
+      "news": "News",
+      "about": "About the college",
+      "programs": "Fields of study",
+      "recruitment": "Recruitment",
+      "contactPage": "Get in touch"
+    }
   },
   "HomePage": {
     "title": "Public Vocational College in Grudziądz",
