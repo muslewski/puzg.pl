@@ -194,7 +194,9 @@
       "description": "Dołącz do studentów Publicznej Uczelni Zawodowej w Grudziądzu i zdobądź zawód, który otwiera drzwi w nowoczesnym przemyśle.",
       "primaryCta": "Rozpocznij rekrutację",
       "secondaryCta": "Krok po kroku"
-    }
+    },
+    "heroEyebrow": "Państwowa Uczelnia Zawodowa · Grudziądz",
+    "heroDescription": "Praktyczne studia inżynierskie w samym sercu Grudziądza. Mechatronika, robotyka i kolejne kierunki techniczne odpowiadające na realne potrzeby pracodawców."
   },
   "NotFoundPage": {
     "title": "Strona nie została znaleziona",

@@ -59,6 +59,8 @@ export default function HomePage(props: Props) {
         sloganMobile={t.rich("sloganMobile", { br: () => <br /> })}
         heroImageAlt={t("heroImageAlt")}
         arrowAlt={t("arrowAlt")}
+        eyebrow={t("heroEyebrow")}
+        description={t("heroDescription")}
       />
 
       <div className="relative w-full flex flex-col gap-24 lg:gap-36 items-center pt-20 lg:pt-28">

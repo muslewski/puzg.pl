@@ -194,7 +194,9 @@
       "description": "Join the students of the Public Vocational College in Grudziadz and learn a profession that opens doors in modern industry.",
       "primaryCta": "Start recruitment",
       "secondaryCta": "Step by step"
-    }
+    },
+    "heroEyebrow": "Public Vocational College · Grudziądz",
+    "heroDescription": "Practical engineering education in the heart of Grudziądz. Mechatronics, robotics and more technical programs aligned with real employer needs."
   },
   "NotFoundPage": {
     "title": "Page Not Found",
