@@ -32,23 +32,33 @@ export default function CardWrapper({
       opacity: 0,
       x:
         grayCardPosition === "left"
-          ? -75
+          ? -60
           : grayCardPosition === "right"
-          ? 75
+          ? 60
           : 0,
-      y: !grayCardPosition && border ? 50 : 0,
+      y: !grayCardPosition && border ? 32 : 0,
     },
     visible: {
       opacity: 1,
       x: 0,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
     },
   };
 
+  // Map border position → corner accent direction
+  const accentCorner = {
+    bl: "bottom-0 left-0 rounded-tr-3xl",
+    br: "bottom-0 right-0 rounded-tl-3xl",
+    tl: "top-0 left-0 rounded-br-3xl",
+    tr: "top-0 right-0 rounded-bl-3xl",
+    l: "top-0 left-0 h-full w-1.5 rounded-r-full",
+    btlr: "inset-0 rounded-3xl pointer-events-none border-2 border-brandBrightBlue/35",
+  } as const;
+
   return (
     <motion.div
-      className="w-full 2xl:w-4/5 px-6 lg:px-12 2xl:px-0"
+      className="w-full 2xl:w-4/5 px-4 sm:px-6 lg:px-12 2xl:px-0"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.05 }}
@@ -56,56 +66,77 @@ export default function CardWrapper({
     >
       <div
         className={clsx(
-          "rounded-2xl",
-          customWrapperWidth ?? "w-fit",
-          !grayCard &&
-            (customGradient ??
-              "from-brandBrightBlue/55 via-brandWashedBlue/35 to-brandWashedBlue/0"),
-          border === "bl" && "pb-1 pl-1 bg-gradient-to-tr",
-          border === "br" && "pb-1 pr-1 bg-gradient-to-tl",
-          border === "tl" && "pt-1 pl-1 bg-gradient-to-br",
-          border === "tr" && "pt-1 pr-1 bg-gradient-to-bl",
-          border === "l" && "pl-1 bg-gradient-to-r",
-          border === "btlr" && "p-1 bg-gradient-to-br",
-          grayCard &&
-            clsx(
-              "relative from-brandNeutrals-700/55 via-brandNeutrals-300/35 to-brandNeutrals-300/0 before:absolute before:bg-brandNeutrals-300 before:w-[200%] before:top-0 before:h-full",
-              grayCardPosition === "left" &&
-                "before:right-[99%] before:shadow-[inset_4px_2px_4px_0_rgb(0,0,0,0.1)] pr-1 bg-gradient-to-bl",
-              grayCardPosition === "right" &&
-                "before:left-[99%] before:shadow-[inset_-4px_2px_4px_0_rgb(0,0,0,0.1)] pl-1 bg-gradient-to-br"
-            )
+          "relative isolate",
+          customWrapperWidth ?? "w-full",
         )}
       >
+        {/* Soft glow layer behind card */}
+        {!grayCard && (
+          <div
+            aria-hidden
+            className={clsx(
+              "absolute -inset-px rounded-[2rem] -z-10 opacity-60 blur-2xl",
+              customGradient ??
+                "bg-gradient-to-br from-brandBrightBlue/25 via-brandWashedBlue/15 to-transparent"
+            )}
+          />
+        )}
+
+        {/* Main card body */}
         <div
           className={clsx(
-            "flex flex-col gap-12 sm:gap-20 bg-white p-6 sm:p-12 rounded-xl",
-            blueGradient &&
-              "bg-gradient-to-tr from-brandWashedBlue/10 to-transparent",
-            !grayCard &&
-              (customInsideBorder ?? "border-washedBlue-300 border-double"),
-            border === "bl" &&
-              "shadow-[inset_15px_-15px_12px_-15px_rgba(9,84,124,0.1)] border-b-4 border-l-4",
-            border === "br" &&
-              "shadow-[inset_-15px_-15px_12px_-15px_rgba(9,84,124,0.1)] border-b-4 border-r-4",
-            border === "tl" &&
-              "shadow-[inset_15px_15px_12px_-15px_rgba(9,84,124,0.1)] border-t-4 border-l-4",
-            border === "tr" &&
-              "shadow-[inset_-15px_15px_12px_-15px_rgba(9,84,124,0.1)] border-t-4 border-r-4",
-            border === "l" &&
-              "shadow-[inset_15px_0px_12px_-15px_rgba(9,84,124,0.1)] border-l-4",
-            border === "btlr" &&
-              "shadow-[inset_0px_0px_12px_-8px_rgba(9,84,124,0.1)] border-4",
+            "relative flex flex-col gap-10 sm:gap-16 rounded-[1.75rem] p-6 sm:p-10 lg:p-14 overflow-hidden",
+            grayCard
+              ? "bg-gradient-to-br from-brandNeutrals-200 via-brandNeutrals-300 to-brandNeutrals-400 ring-1 ring-brandNeutrals-500/40"
+              : blueGradient
+              ? "bg-gradient-to-br from-white via-washedBlue-50 to-white ring-1 ring-brandWashedBlue/30"
+              : "bg-white/85 backdrop-blur-sm ring-1 ring-brandWashedBlue/30",
+            !grayCard && "shadow-soft hover:shadow-elevated transition-shadow duration-500",
             grayCard &&
               clsx(
-                "from-brandNeutrals-300 via-brandNeutrals-300 to-brandNeutrals-400 border-brandNeutrals-600  border-double",
                 grayCardPosition === "left" &&
-                  "bg-gradient-to-r rounded-r-2xl rounded-l-none shadow-[inset_-2px_2px_4px_0_rgb(0,0,0,0.1)] border-r-4",
+                  "rounded-l-none rounded-r-[1.75rem] shadow-[inset_4px_0_8px_-6px_rgba(11,27,51,0.15)]",
                 grayCardPosition === "right" &&
-                  "bg-gradient-to-l rounded-l-2xl rounded-r-none shadow-[inset_2px_2px_4px_0_rgb(0,0,0,0.1)] border-l-4"
+                  "rounded-r-none rounded-l-[1.75rem] shadow-[inset_-4px_0_8px_-6px_rgba(11,27,51,0.15)]"
               )
           )}
         >
+          {/* Corner accent strip — replaces heavy border-double */}
+          {!grayCard && border && border !== "btlr" && border !== "l" && (
+            <div
+              aria-hidden
+              className={clsx(
+                "absolute h-1.5 w-24 sm:w-32",
+                accentCorner[border],
+                "bg-gradient-to-r from-brandPrimaryBlue via-brandBrightBlue to-brandWashedBlue"
+              )}
+            />
+          )}
+          {!grayCard && border === "l" && (
+            <div
+              aria-hidden
+              className={clsx(
+                "absolute",
+                accentCorner.l,
+                "bg-gradient-to-b from-brandPrimaryBlue via-brandBrightBlue to-brandWashedBlue"
+              )}
+            />
+          )}
+          {!grayCard && border === "btlr" && (
+            <div aria-hidden className={accentCorner.btlr} />
+          )}
+
+          {/* Optional inside border override (used by some custom calls) */}
+          {customInsideBorder && (
+            <div
+              aria-hidden
+              className={clsx(
+                "absolute inset-2 rounded-[1.5rem] pointer-events-none",
+                customInsideBorder
+              )}
+            />
+          )}
+
           {children}
         </div>
       </div>

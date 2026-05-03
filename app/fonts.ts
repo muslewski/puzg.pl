@@ -4,7 +4,16 @@ import {
   Rubik_Vinyl,
   Barriecito,
   Galindo,
+  Fraunces,
 } from "next/font/google";
+
+export const fraunces = Fraunces({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-fraunces",
+  preload: true,
+  axes: ["opsz"],
+});
 
 export const montserrat = Montserrat({
   subsets: ["latin"],

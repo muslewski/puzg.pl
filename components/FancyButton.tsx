@@ -78,17 +78,22 @@ function FancyButton({
       >
         <div
           className={clsx(
-            "px-8 sm:px-10 py-3 sm:py-4 w-fit border-l-2 border-b-2  font-outfit font-semibold rounded-xl flex items-center transition-transform hover:scale-105 hover:disabled:scale-95 disabled:scale-95 active:disabled:scale-95 active:scale-[107%] text-center",
+            "group relative px-7 sm:px-9 py-3 sm:py-4 w-fit font-outfit font-semibold rounded-2xl flex items-center transition-all duration-300 ease-out text-center shadow-soft ring-1 ring-white/15 hover:shadow-elevated hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brandBrightBlue overflow-hidden",
             small
-              ? "text-base md:text-lg 3xl:text-xl gap-4"
-              : "text-lg md:text-xl 3xl:text-2xl gap-5",
+              ? "text-base md:text-lg 3xl:text-xl gap-3"
+              : "text-lg md:text-xl 3xl:text-2xl gap-4",
             textColor ?? "text-white",
-            borderColor ?? "border-brandDark/50",
+            borderColor ?? "border-transparent",
             customGradient ??
-              "bg-gradient-to-br from-brandPrimaryBlue to-brandBrightBlue",
+              "bg-gradient-to-br from-brandPrimaryBlue via-brandPrimaryBlue to-brandBrightBlue",
             customClass
           )}
         >
+          {/* Sheen on hover */}
+          <span
+            aria-hidden
+            className="pointer-events-none absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/15 to-transparent"
+          />
           {icon && iconAlt && (
             <div
               className={clsx(

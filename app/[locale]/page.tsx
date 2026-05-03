@@ -49,7 +49,7 @@ export default function HomePage({ params: { locale } }: Props) {
         arrowAlt={t("arrowAlt")}
       />
 
-      <div className="w-full flex flex-col gap-32 lg:gap-52 items-center">
+      <div className="relative w-full flex flex-col gap-28 lg:gap-44 items-center pt-20 lg:pt-32">
         <SlideShow slides={slides} />
 
         <Card border="bl">

@@ -1,7 +1,5 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
-
 export default function SlideDot({
   isOpen = false,
   onClick,
@@ -11,23 +9,18 @@ export default function SlideDot({
 }) {
   return (
     <button
-      className="w-8 sm:w-10 h-8 sm:h-10 border-4 border-brandPrimaryBlue rounded-full flex items-center justify-center hover:scale-105 active:scale-110 transition-transform"
+      aria-label={isOpen ? "Aktualny slajd" : "Przejdź do slajdu"}
+      aria-current={isOpen}
+      className="group relative flex h-11 w-11 items-center justify-center rounded-full transition-transform hover:scale-110 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandBrightBlue focus-visible:ring-offset-2"
       onClick={onClick}
     >
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            className="w-4 sm:w-5 h-4 sm:h-5 bg-primaryBlue-400 rounded-full"
-            initial={{ scale: 0, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0, opacity: 0 }}
-            transition={{
-              duration: 0.5,
-              ease: "easeInOut",
-            }}
-          ></motion.div>
-        )}
-      </AnimatePresence>
+      <span
+        className={`block rounded-full transition-all duration-300 ease-out ${
+          isOpen
+            ? "h-3 w-8 bg-gradient-to-r from-brandPrimaryBlue to-brandBrightBlue"
+            : "h-2.5 w-2.5 bg-brandWashedBlue/70 group-hover:bg-brandPrimaryBlue/70"
+        }`}
+      />
     </button>
   );
 }
