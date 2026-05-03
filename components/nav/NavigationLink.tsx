@@ -79,25 +79,28 @@ export default function NavigationLink({
                 },
                 pointerEvents: "none",
               }}
-              className="absolute left-0 w-full lg:w-fit lg:left-2 top-0 lg:top-full bg-white/85 backdrop-blur-md lg:bg-brandPrimaryBlue rounded-t-md rounded-b-3xl py-6 px-8 shadow-md z-30 lg:max-h-[calc(100vh-12rem)] lg:overflow-y-auto"
+              className={clsx(
+                "absolute top-0 lg:top-full z-30 shadow-elevated overflow-hidden",
+                // Mobile: full width below trigger
+                "left-0 w-full",
+                // Desktop: align with trigger, set explicit max width per column count
+                "lg:left-1/2 lg:-translate-x-1/2 lg:w-auto lg:min-w-[18rem]",
+                submenu.length > 6 ? "lg:max-w-[34rem]" : "lg:max-w-[20rem]",
+                "bg-white/95 backdrop-blur-md lg:bg-brandPrimaryBlue lg:ring-1 lg:ring-white/10 rounded-t-md rounded-b-2xl py-6 px-8 lg:max-h-[calc(100vh-10rem)] lg:overflow-y-auto"
+              )}
               onMouseEnter={() => setIsOpen(true)}
               onMouseLeave={() => setIsOpen(false)}
             >
               <div
                 className={clsx(
-                  "w-full grid gap-y-3 gap-x-8",
-                  // 2 columns when 7+ items so the dropdown doesn't overflow the viewport
-                  submenu.length > 6
-                    ? "grid-cols-2 lg:grid-cols-2"
-                    : "grid-cols-1 lg:grid-cols-1"
-                )}
-                style={{
-                  width: isTabletOrMobile
-                    ? "100%"
+                  // Use CSS columns for natural top-down flow
+                  "w-full",
+                  isTabletOrMobile
+                    ? "flex flex-row flex-wrap gap-x-6 gap-y-3"
                     : submenu.length > 6
-                    ? `${submenuWidth * 1.6}rem`
-                    : `${submenuWidth}rem`,
-                }}
+                    ? "columns-2 gap-x-8 [column-fill:balance]"
+                    : "flex flex-col gap-3"
+                )}
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="options-menu"
@@ -106,26 +109,29 @@ export default function NavigationLink({
                   <Link
                     key={index}
                     aria-current={path === item.href ? "page" : undefined}
-                    className={clsx("text-base", linkStyle)}
+                    className={clsx(
+                      "text-base block break-inside-avoid mb-2 last:mb-0",
+                      linkStyle
+                    )}
                     style={{ opacity: path === item.href ? "70%" : "" }}
                     href={item.href}
                     role="menuitem"
                   >
                     <CustomUnderline />
                     <motion.div
-                      initial={{ opacity: 0, y: -10 }}
+                      initial={{ opacity: 0, y: -6 }}
                       animate={{
                         opacity: 1,
                         y: 0,
                         transition: {
-                          duration: 0.3,
-                          delay: index * 0.1, // Add stagger effect with delay
+                          duration: 0.25,
+                          delay: 0.05 + index * 0.04,
                           ease: "easeOut",
                         },
                       }}
-                      exit={{ opacity: 0, y: -10 }}
+                      exit={{ opacity: 0, y: -6 }}
                       transition={{
-                        duration: 0.3,
+                        duration: 0.2,
                         ease: "easeOut",
                       }}
                     >

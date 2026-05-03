@@ -1,6 +1,12 @@
 import SubpageHero from "@/components/layout/SubpageHero";
+import { Link } from "@/i18n/routing";
 import clsx from "clsx";
-import { ReactNode } from "react";
+import { ComponentProps, ReactNode } from "react";
+
+type Crumb = {
+  label: string;
+  href?: ComponentProps<typeof Link>["href"];
+};
 
 type MainWrapperProps = {
   children: ReactNode;
@@ -8,12 +14,19 @@ type MainWrapperProps = {
   topTitle: string;
   /** Optional small label above the title (e.g. section/category name) */
   eyebrow?: string;
+  /** Optional breadcrumb trail above the eyebrow */
+  breadcrumbs?: Crumb[];
   /** Optional intro paragraph below the title */
   description?: ReactNode;
   /** Hero visual variant */
-  heroVariant?: "default" | "ink" | "minimal";
-  /** Pass content to render in the hero (right-side aside on lg+) */
-  heroAside?: ReactNode;
+  heroVariant?: "default" | "ink" | "minimal" | "image";
+  /** Background image (when heroVariant="image") */
+  heroImage?: string;
+  heroImageAlt?: string;
+  /** Decorative serif accent (year, roman numeral, single word) — bottom-right of hero */
+  heroMark?: ReactNode;
+  /** Pass content rendered inside the hero (under title/description) */
+  heroMeta?: ReactNode;
   /** Override the gap between content blocks */
   zeroGap?: string;
   /** When true, skip rendering the hero (useful when the page provides its own) */
@@ -24,9 +37,13 @@ export default function MainWrapper({
   children,
   topTitle,
   eyebrow,
+  breadcrumbs,
   description,
   heroVariant,
-  heroAside,
+  heroImage,
+  heroImageAlt,
+  heroMark,
+  heroMeta,
   zeroGap,
   noHero,
 }: MainWrapperProps) {
@@ -35,10 +52,14 @@ export default function MainWrapper({
       {!noHero && (
         <SubpageHero
           eyebrow={eyebrow}
+          breadcrumbs={breadcrumbs}
           title={topTitle}
           description={description}
           variant={heroVariant}
-          aside={heroAside}
+          image={heroImage}
+          imageAlt={heroImageAlt}
+          mark={heroMark}
+          meta={heroMeta}
         />
       )}
       <div

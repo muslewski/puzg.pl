@@ -29,6 +29,11 @@ export default function KontaktPage({ params: { locale } }: Props) {
       topTitle={t("title")}
       eyebrow={t("hero.eyebrow")}
       description={t("description")}
+      breadcrumbs={[
+        { label: "PUZG", href: "/" },
+        { label: t("title") },
+      ]}
+      heroMark="@"
     >
       {/* Quick contact methods - clean institutional grid */}
       <section className="w-full px-6 sm:px-8 lg:px-12">
