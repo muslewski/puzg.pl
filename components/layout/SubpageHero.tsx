@@ -50,7 +50,7 @@ export default function SubpageHero({
       className={clsx(
         "relative w-full overflow-hidden",
         // Top padding clears the fixed nav comfortably (nav ~216px tall when not scrolled)
-        "pt-56 sm:pt-64 lg:pt-72 xl:pt-80 pb-16 sm:pb-20 lg:pb-28",
+        "pt-36 sm:pt-40 lg:pt-44 xl:pt-48 pb-14 sm:pb-18 lg:pb-24",
         isDark ? "text-white" : "text-brandInk"
       )}
     >
@@ -93,7 +93,7 @@ export default function SubpageHero({
           {/* Decorative dot pattern in top-right */}
           <div
             aria-hidden
-            className="absolute top-56 right-6 lg:top-72 lg:right-12 hidden md:block opacity-50"
+            className="absolute top-36 right-6 lg:top-44 lg:right-12 hidden md:block opacity-50"
           >
             <svg width="160" height="160" viewBox="0 0 160 160" fill="none">
               <defs>
